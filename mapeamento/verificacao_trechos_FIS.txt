@@ -1,0 +1,65 @@
+Verificação dos trechos literais — normas_FIS.json × texto/processo_completo.txt
+Normalização: NFKC, aspas/travessões, hifenização de fim de linha, espaços e quebras de linha, caixa baixa; rodapés de página do SEI removidos.
+Normas: 36 | trechos e menções conferidos: 26 | sem correspondência: 0 | trechos vazios fora dos autos: 21 | textos de referência P06 idênticos: 13 | página declarada divergente: 0
+Resultado: APROVADO (0 trecho sem correspondência)
+
+[OK] N-FIS-01 trecho: achado (literal) na(s) pág. [1] (1 ocorrência(s)); página declarada 1
+[OK] N-FIS-01 mencao_nos_autos: achado (literal) na(s) pág. [227] (1 ocorrência(s)); página declarada 227
+[OK] N-FIS-02 trecho: achado (hifenização desfeita) na(s) pág. [1] (1 ocorrência(s)); página declarada 1
+[FORA DOS AUTOS] N-FIS-03 trecho vazio (Contrato de Concessão dos serviços de água e esgoto do Bloco 1 (Águas do Rio), cláusulas de fiscalização (não identificadas nos autos))
+[OK] N-FIS-03 mencao_nos_autos: achado (literal) na(s) pág. [148] (3 ocorrência(s)); página declarada 148
+[FORA DOS AUTOS] N-FIS-04 trecho vazio (Contrato de Concessão dos serviços de água e esgoto do Bloco 1 (Águas do Rio), obrigações da concessionária e penalidades (cláusulas não identificadas nos autos))
+[OK] N-FIS-04 mencao_nos_autos: achado (literal) na(s) pág. [229] (1 ocorrência(s)); página declarada 229
+[FORA DOS AUTOS] N-FIS-05 trecho vazio (Contrato de Concessão do Bloco 1 — Anexo III (Indicadores de Desempenho) e cláusulas de carência, períodos de carência (não identificados nos autos))
+[OK] N-FIS-05 mencao_nos_autos: achado (literal) na(s) pág. [229] (1 ocorrência(s)); página declarada 229
+[FORA DOS AUTOS] N-FIS-06 trecho vazio (Contrato de Concessão do Bloco 1 — Anexo IV (Caderno de Encargos), metas técnicas e rotinas operacionais)
+[OK] N-FIS-06 mencao_nos_autos: achado (literal) na(s) pág. [229] (1 ocorrência(s)); página declarada 229
+[FORA DOS AUTOS] N-FIS-07 trecho vazio (Regulamento de Serviços (Bloco 1), manutenção, interrupções e informações à agência)
+[OK] N-FIS-07 mencao_nos_autos: achado (literal) na(s) pág. [229] (1 ocorrência(s)); página declarada 229
+[FORA DOS AUTOS] N-FIS-08 trecho vazio (Leis federais nº 11.445/2007 e nº 14.026/2020, diretrizes do saneamento básico (dispositivos não indicados))
+[OK] N-FIS-08 mencao_nos_autos: achado (literal) na(s) pág. [228] (1 ocorrência(s)); página declarada 228
+[FORA DOS AUTOS] N-FIS-09 trecho vazio (Decreto federal nº 7.217/2010, Resoluções do CONAMA, normas técnicas da ABNT e Portarias do Ministério da Saúde, não indicados)
+[OK] N-FIS-09 mencao_nos_autos: achado (literal) na(s) pág. [31] (4 ocorrência(s)); página declarada 31
+[FORA DOS AUTOS] N-FIS-10 trecho vazio (Resoluções e instruções normativas da AGENERSA (não identificadas), não indicados)
+[OK] N-FIS-10 mencao_nos_autos: achado (literal) na(s) pág. [31] (8 ocorrência(s)); página declarada 31
+[OK] N-FIS-11 trecho: achado (literal) na(s) pág. [28] (1 ocorrência(s)); página declarada 28
+[OK] N-FIS-12 trecho: achado (literal) na(s) pág. [108] (2 ocorrência(s)); página declarada 108
+[OK] N-FIS-13 trecho: achado (literal) na(s) pág. [30] (2 ocorrência(s)); página declarada 30
+[OK] N-FIS-14 trecho: achado (literal) na(s) pág. [37] (1 ocorrência(s)); página declarada 37
+[OK] N-FIS-15 trecho: achado (literal) na(s) pág. [45] (2 ocorrência(s)); página declarada 45
+[OK] N-FIS-16 trecho: achado (literal) na(s) pág. [116] (4 ocorrência(s)); página declarada 116
+[OK] N-FIS-17 trecho: achado (literal) na(s) pág. [53] (1 ocorrência(s)); página declarada 53
+[OK] N-FIS-18 trecho: achado (literal) na(s) pág. [73] (1 ocorrência(s)); página declarada 73
+[OK] N-FIS-19 trecho: achado (literal) na(s) pág. [146] (1 ocorrência(s)); página declarada 146
+[OK] N-FIS-20 trecho: achado (literal) na(s) pág. [138] (1 ocorrência(s)); página declarada 138
+[OK] N-FIS-20 mencao_nos_autos: achado (literal) na(s) pág. [139] (1 ocorrência(s)); página declarada 139
+[OK] N-FIS-21 trecho: achado (literal) na(s) pág. [230] (1 ocorrência(s)); página declarada 230
+[OK] N-FIS-22 trecho: achado (literal) na(s) pág. [233] (1 ocorrência(s)); página declarada 233
+[OK] N-FIS-22 mencao_nos_autos: achado (literal) na(s) pág. [233] (1 ocorrência(s)); página declarada 233
+[OK] N-FIS-23 trecho: achado (literal) na(s) pág. [11] (102 ocorrência(s)); página declarada 29
+[FORA DOS AUTOS] N-FIS-24 trecho vazio (Lei estadual nº 4.556/2005, art. 4º, IV)
+[REFERÊNCIA P06] N-FIS-24 = N-P06-01: cópia idêntica ao normas_P06.json (texto fora dos autos)
+[FORA DOS AUTOS] N-FIS-25 trecho vazio (Lei federal nº 8.987/1995, art. 6º, § 1º)
+[REFERÊNCIA P06] N-FIS-25 = N-P06-32: cópia idêntica ao normas_P06.json (texto fora dos autos)
+[FORA DOS AUTOS] N-FIS-26 trecho vazio (Regimento Interno da AGENERSA (Resolução CODIR nº 394/2013, texto consolidado), art. 27, III)
+[REFERÊNCIA P06] N-FIS-26 = N-P06-03: cópia idêntica ao normas_P06.json (texto fora dos autos)
+[FORA DOS AUTOS] N-FIS-27 trecho vazio (Regimento Interno da AGENERSA (Resolução CODIR nº 394/2013, texto consolidado), art. 17, VI)
+[REFERÊNCIA P06] N-FIS-27 = N-P06-04: cópia idêntica ao normas_P06.json (texto fora dos autos)
+[FORA DOS AUTOS] N-FIS-28 trecho vazio (Regimento Interno da AGENERSA (Resolução CODIR nº 394/2013, texto consolidado), art. 53, caput)
+[REFERÊNCIA P06] N-FIS-28 = N-P06-07: cópia idêntica ao normas_P06.json (texto fora dos autos)
+[FORA DOS AUTOS] N-FIS-29 trecho vazio (Lei estadual nº 5.427/2009 (processo administrativo do Estado do Rio de Janeiro), art. 45)
+[REFERÊNCIA P06] N-FIS-29 = N-P06-12: cópia idêntica ao normas_P06.json (texto fora dos autos)
+[FORA DOS AUTOS] N-FIS-30 trecho vazio (Lei estadual nº 5.427/2009 (processo administrativo do Estado do Rio de Janeiro), art. 48, I e II)
+[REFERÊNCIA P06] N-FIS-30 = N-P06-13: cópia idêntica ao normas_P06.json (texto fora dos autos)
+[FORA DOS AUTOS] N-FIS-31 trecho vazio (Lei estadual nº 5.427/2009 (processo administrativo do Estado do Rio de Janeiro), art. 69)
+[REFERÊNCIA P06] N-FIS-31 = N-P06-14: cópia idêntica ao normas_P06.json (texto fora dos autos)
+[FORA DOS AUTOS] N-FIS-32 trecho vazio (Lei estadual nº 5.427/2009 (processo administrativo do Estado do Rio de Janeiro), art. 74, § 1º)
+[REFERÊNCIA P06] N-FIS-32 = N-P06-16: cópia idêntica ao normas_P06.json (texto fora dos autos)
+[FORA DOS AUTOS] N-FIS-33 trecho vazio (Lei estadual nº 9.789/2022, art. 4º (nova redação do art. 67, § 2º, I, da Lei nº 5.427/2009))
+[REFERÊNCIA P06] N-FIS-33 = N-P06-18: cópia idêntica ao normas_P06.json (texto fora dos autos)
+[FORA DOS AUTOS] N-FIS-34 trecho vazio (Instrução Normativa AGENERSA nº 128/2024, art. 4º)
+[REFERÊNCIA P06] N-FIS-34 = N-P06-25: cópia idêntica ao normas_P06.json (texto fora dos autos)
+[FORA DOS AUTOS] N-FIS-35 trecho vazio (Instrução Normativa AGENERSA nº 128/2024, art. 32, caput)
+[REFERÊNCIA P06] N-FIS-35 = N-P06-26: cópia idêntica ao normas_P06.json (texto fora dos autos)
+[FORA DOS AUTOS] N-FIS-36 trecho vazio (Instrução Normativa AGENERSA nº 128/2024, art. 33, caput e § 1º)
+[REFERÊNCIA P06] N-FIS-36 = N-P06-27: cópia idêntica ao normas_P06.json (texto fora dos autos)

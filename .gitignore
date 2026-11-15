@@ -1,0 +1,7 @@
+# Dados com nomes e e-mails de pessoas (texto integral do processo e áudio): fora do git
+texto/
+audio/
+dados/
+__pycache__/
+*.pyc
+.env

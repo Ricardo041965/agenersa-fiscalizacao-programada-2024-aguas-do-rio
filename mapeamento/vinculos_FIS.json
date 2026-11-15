@@ -1,0 +1,179 @@
+{
+ "codigo": "FIS",
+ "processo": "SEI-480002/001314/2024",
+ "observacao": "Estudo de caso único. docs: peças produzidas pela AGENERSA; docs_entrada: peças externas que são insumo direto. Referência no formato processo:SEI do documento; docs_n e docs_entrada_n trazem o número de ordem do documento em texto/indice_documentos.md (null quando a peça não está no PDF).",
+ "atividades": {
+  "t1": {
+   "docs": [
+    "SEI-480002/001314/2024:82718456",
+    "SEI-480002/001314/2024:82834832"
+   ],
+   "docs_n": [
+    20,
+    21
+   ],
+   "docs_entrada": [],
+   "docs_entrada_n": [],
+   "descritivo": "A CASAN oficia a concessionária pedindo o agendamento de vistoria técnica em um conjunto de unidades (estações elevatórias de água bruta e tratada, ETAs, reservatórios e poços), com as datas propostas, e o assistente envia o ofício por e-mail pelo SEI. A programação anual decorre da deliberação do Conselho-Diretor que determinou processo específico por concessionária para cronograma e vistorias anuais.",
+   "gatilho": "Programação anual de vistorias nas unidades da concessionária",
+   "saida": "Ofício de agendamento com unidades e datas, enviado por e-mail à área regulatória da concessionária",
+   "observacoes": "Só um ofício de agendamento nos autos (unidades de Cambuci e Miracema); os relatórios dessas vistorias não estão no PDF. A Deliberação AGENERSA nº 4216/2021 (SEI 68285969, recorte do Diário Oficial na primeira página) é a origem do processo e não tem número próprio no índice."
+  },
+  "t2": {
+   "docs": [
+    "SEI-480002/001314/2024:69710124",
+    "SEI-480002/001314/2024:69712392",
+    "SEI-480002/001314/2024:69716140",
+    "SEI-480002/001314/2024:74334571",
+    "SEI-480002/001314/2024:74336951",
+    "SEI-480002/001314/2024:74338948",
+    "SEI-480002/001314/2024:75824232",
+    "SEI-480002/001314/2024:75824539",
+    "SEI-480002/001314/2024:76104339",
+    "SEI-480002/001314/2024:76213730",
+    "SEI-480002/001314/2024:79901118",
+    "SEI-480002/001314/2024:80655356",
+    "SEI-480002/001314/2024:80654568",
+    "SEI-480002/001314/2024:80656194",
+    "SEI-480002/001314/2024:80656240",
+    "SEI-480002/001314/2024:82895573",
+    "SEI-480002/001314/2024:86162193",
+    "SEI-480002/001314/2024:86161531",
+    "SEI-480002/001314/2024:86827856",
+    "SEI-480002/001314/2024:86826650",
+    "SEI-480002/001314/2024:86826664",
+    "SEI-480002/001314/2024:87028948",
+    "SEI-480002/001314/2024:91278977"
+   ],
+   "docs_n": [
+    1,
+    2,
+    3,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    16,
+    17,
+    18,
+    19,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    31
+   ],
+   "docs_entrada": [],
+   "docs_entrada_n": [],
+   "descritivo": "A equipe de fiscalização da CASAN (especialistas em regulação e engenheiros) vistoria a unidade da concessionária, aplica checklist anexo sobre operação, conservação, segurança, registros de manutenção e licenças, mede pressões quando há ponto disponível e registra fotos. O relatório lista as não conformidades e as recomendações, em geral com prazo para saná-las ou apresentar cronograma. Em unidade com obra em andamento (EEE Parafuso) a vistoria seguinte acompanha a obra.",
+   "gatilho": "Vistoria programada ou acompanhamento de obra em unidade fiscalizada",
+   "saida": "Relatório de fiscalização com checklist, fotos, não conformidades e recomendações à concessionária",
+   "observacoes": "O PDF traz 23 relatórios dos 42 listados no Parecer 250/2025. O Relatório 227/2024 (SEI 91278977) só tem cabeçalho no texto extraído. Há datas internas divergentes (vistoria, conclusão e assinaturas) e texto de modelo reaproveitado em vários relatórios. Algumas vistorias não avaliaram o interior da unidade (abrigo lacrado, chave do painel no setor de eletromecânica)."
+  },
+  "t3": {
+   "docs": [],
+   "docs_n": [],
+   "docs_entrada": [],
+   "docs_entrada_n": [],
+   "descritivo": "O gerente da CASAN registra o de acordo nos relatórios já assinados pela equipe, por assinatura eletrônica no próprio documento; nos primeiros relatórios do ano há também assinaturas do assistente entre a equipe e o gerente. A aprovação libera o relatório para o ofício de encaminhamento.",
+   "gatilho": "Relatório assinado pela equipe de fiscalização",
+   "saida": "Relatório com o de acordo do gerente da CASAN, pronto para envio",
+   "observacoes": "Sem documento próprio: a aprovação é a assinatura do gerente nos relatórios vinculados a t2 (um documento entra em no máximo uma atividade). O intervalo entre a primeira assinatura e o de acordo está em fatos_FIS.json. Não há registro de relatório devolvido para ajuste."
+  },
+  "t4": {
+   "docs": [
+    "SEI-480002/001314/2024:74141761",
+    "SEI-480002/001314/2024:74179603",
+    "SEI-480002/001314/2024:80501066",
+    "SEI-480002/001314/2024:80626379",
+    "SEI-480002/001314/2024:87188346",
+    "SEI-480002/001314/2024:87308946"
+   ],
+   "docs_n": [
+    4,
+    5,
+    14,
+    15,
+    29,
+    30
+   ],
+   "docs_entrada": [],
+   "docs_entrada_n": [],
+   "descritivo": "O gerente da CASAN assina ofício ao diretor-presidente da concessionária que encaminha um lote de relatórios de fiscalização e pede manifestação sobre as orientações e recomendações técnicas, com prazo; o assistente envia o ofício por e-mail pelo SEI no mesmo dia ou no seguinte. Nos autos há três lotes (Ofícios 349, 682 e 946/2024, com doze, cinco e seis relatórios).",
+   "gatilho": "Conjunto de relatórios aprovados pela gerência da CASAN",
+   "saida": "Ofício à concessionária pedindo manifestação com prazo, enviado por e-mail ao setor regulatório",
+   "observacoes": "Os ofícios citam relatórios que não estão no PDF, e vários relatórios do PDF (por exemplo 56, 52, 59, 70, 73, 65, 90/2024 e os de Magé) não aparecem em nenhum ofício dos autos."
+  },
+  "t5": {
+   "docs": [
+    "SEI-480002/001314/2024:104033188",
+    "SEI-480002/001314/2024:104117825"
+   ],
+   "docs_n": [
+    32,
+    33
+   ],
+   "docs_entrada": [],
+   "docs_entrada_n": [],
+   "descritivo": "A CASAN examina em conjunto os relatórios do ano, os ofícios e as respostas, cronogramas e relatórios técnicos enviados pela concessionária, à luz do contrato de concessão, do regulamento, do caderno de encargos e da legislação federal, e emite parecer anual. O parecer conclui pelo atendimento parcial, aponta prazos postergados por cronogramas sem evidência de conclusão e recomenda comprovação documental e monitoramento contínuo. O despacho do assistente remete o parecer à SECEX para prosseguir a instrução.",
+   "gatilho": "Respostas, cronogramas e relatórios técnicos da concessionária sobre as fiscalizações do ano",
+   "saida": "Parecer técnico consolidado sobre o atendimento das recomendações, remetido à SECEX por despacho",
+   "observacoes": "As respostas da concessionária (insumo direto) não estão no PDF exportado, por isso docs_entrada está vazio. O parecer foi emitido cerca de oito meses após o último ofício dos autos."
+  },
+  "t6": {
+   "docs": [],
+   "docs_n": [],
+   "docs_entrada": [],
+   "docs_entrada_n": [],
+   "descritivo": "Pelo despacho da SECEX à Procuradoria, a concessionária apresentou manifestação em resposta ao Parecer 250/2025, o que pressupõe que o parecer lhe foi comunicado depois de chegar à SECEX.",
+   "gatilho": "Parecer técnico da CASAN encaminhado à SECEX para prosseguimento da instrução",
+   "saida": "Comunicação do parecer à concessionária para manifestação",
+   "observacoes": "Inferência: a peça de comunicação não está no PDF e não se sabe se foi a SECEX ou a CASAN que oficiou. Validar."
+  },
+  "t7": {
+   "docs": [],
+   "docs_n": [],
+   "docs_entrada": [
+    "SEI-480002/001314/2024:117463902"
+   ],
+   "docs_entrada_n": [
+    null
+   ],
+   "descritivo": "A concessionária respondeu ao parecer reiterando gradualidade e carência contratual e sustentando que a fiscalização deveria se limitar aos indicadores de desempenho. A CASAN reanalisou o caso e reiterou integralmente o parecer, sustentando que a fiscalização abrange todas as obrigações contratuais, legais e regulamentares.",
+   "gatilho": "Manifestação da concessionária contestando o escopo da fiscalização",
+   "saida": "Nova manifestação técnica da CASAN reiterando o parecer",
+   "observacoes": "A manifestação da concessionária (ID 117463902) e a reiteração da CASAN só aparecem citadas no despacho da SECEX; nenhuma das duas está no PDF exportado."
+  },
+  "t8": {
+   "docs": [
+    "SEI-480002/001314/2024:117907053"
+   ],
+   "docs_n": [
+    34
+   ],
+   "docs_entrada": [],
+   "docs_entrada_n": [],
+   "descritivo": "A assessoria da SECEX resume o resultado das fiscalizações, o parecer, a manifestação da concessionária e a reiteração da CASAN, registra o pedido de arquivamento feito pela concessionária e encaminha os autos à Procuradoria para análise da adequação dos fundamentos jurídicos da fiscalização.",
+   "gatilho": "Parecer reiterado pela CASAN e pedido de arquivamento da concessionária pendente",
+   "saida": "Despacho à Procuradoria pedindo análise dos fundamentos jurídicos da fiscalização",
+   "observacoes": "É um despacho de encaminhamento, mas vira tarefa porque formula a questão jurídica e consolida as manifestações. Último documento do PDF."
+  },
+  "t9": {
+   "docs": [],
+   "docs_n": [],
+   "docs_entrada": [],
+   "docs_entrada_n": [],
+   "descritivo": "A Procuradoria recebe os autos para examinar se os fundamentos jurídicos da fiscalização se sustentam diante da tese da concessionária (obrigações de resultado versus obrigações de meio) e do pedido de arquivamento.",
+   "gatilho": "Despacho da SECEX com o questionamento da concessionária",
+   "saida": "Manifestação jurídica sobre o escopo da fiscalização e o pedido de arquivamento",
+   "observacoes": "Atividade em curso no fim do recorte: nenhuma peça da Procuradoria nos autos exportados."
+  }
+ }
+}

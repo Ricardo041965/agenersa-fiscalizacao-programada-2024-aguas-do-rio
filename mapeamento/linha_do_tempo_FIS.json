@@ -1,0 +1,1009 @@
+[
+ {
+  "n": 1,
+  "sei": "69710124",
+  "tipo": "Relatório de Fiscalização",
+  "paginas": "1-12",
+  "relatorio_n": null,
+  "instalacao": "EEAT Praça Paris - Glória (estação elevatória de água)",
+  "data_vistoria": "2024-01-18",
+  "assinaturas": [
+   {
+    "cargo": "Especialista em Regulação",
+    "data": "2024-03-07",
+    "hora": "15:50"
+   },
+   {
+    "cargo": "Especialista em Regulação",
+    "data": "2024-03-07",
+    "hora": "16:36"
+   },
+   {
+    "cargo": "Especialista em Regulação",
+    "data": "2024-03-07",
+    "hora": "16:36"
+   },
+   {
+    "cargo": "Assistente",
+    "data": "2024-03-08",
+    "hora": "15:00"
+   },
+   {
+    "cargo": "Assistente",
+    "data": "2024-04-24",
+    "hora": "15:00"
+   },
+   {
+    "cargo": "Gerente",
+    "data": "2024-04-29",
+    "hora": "09:47"
+   }
+  ],
+  "data_envio_email": null,
+  "relatorios_citados": [],
+  "nao_conformidades": 5
+ },
+ {
+  "n": 2,
+  "sei": "69712392",
+  "tipo": "Relatório de Fiscalização",
+  "paginas": "13-18",
+  "relatorio_n": null,
+  "instalacao": "Estação Elevatória de Água Tratada Barão de Guaratiba (EEAT Barão de Guaratiba)",
+  "data_vistoria": "2024-01-18",
+  "assinaturas": [
+   {
+    "cargo": "Especialista em Regulação",
+    "data": "2024-03-07",
+    "hora": "15:51"
+   },
+   {
+    "cargo": "Especialista em Regulação",
+    "data": "2024-03-07",
+    "hora": "16:36"
+   },
+   {
+    "cargo": "Especialista em Regulação",
+    "data": "2024-03-07",
+    "hora": "16:37"
+   },
+   {
+    "cargo": "Assistente",
+    "data": "2024-03-08",
+    "hora": "15:03"
+   },
+   {
+    "cargo": "Assistente",
+    "data": "2024-04-24",
+    "hora": "15:00"
+   },
+   {
+    "cargo": "Gerente",
+    "data": "2024-04-29",
+    "hora": "09:47"
+   }
+  ],
+  "data_envio_email": null,
+  "relatorios_citados": [],
+  "nao_conformidades": 2
+ },
+ {
+  "n": 3,
+  "sei": "69716140",
+  "tipo": "Relatório de Fiscalização",
+  "paginas": "19-27",
+  "relatorio_n": "12",
+  "instalacao": "EEAT Cisterna do Aterro (estação elevatória de água)",
+  "data_vistoria": null,
+  "assinaturas": [
+   {
+    "cargo": "Especialista em Regulação",
+    "data": "2024-03-07",
+    "hora": "15:51"
+   },
+   {
+    "cargo": "Especialista em Regulação",
+    "data": "2024-03-07",
+    "hora": "16:37"
+   },
+   {
+    "cargo": "Especialista em Regulação",
+    "data": "2024-03-07",
+    "hora": "16:37"
+   },
+   {
+    "cargo": "Assistente",
+    "data": "2024-03-08",
+    "hora": "15:05"
+   },
+   {
+    "cargo": "Assistente",
+    "data": "2024-04-24",
+    "hora": "15:01"
+   },
+   {
+    "cargo": "Gerente",
+    "data": "2024-04-29",
+    "hora": "09:47"
+   }
+  ],
+  "data_envio_email": null,
+  "relatorios_citados": [],
+  "nao_conformidades": 4
+ },
+ {
+  "n": 4,
+  "sei": "74141761",
+  "tipo": "Ofício",
+  "paginas": "28-29",
+  "relatorio_n": null,
+  "instalacao": "",
+  "data_vistoria": null,
+  "assinaturas": [
+   {
+    "cargo": "Gerente",
+    "data": "2024-05-08",
+    "hora": "12:29"
+   }
+  ],
+  "data_envio_email": null,
+  "relatorios_citados": [
+   10,
+   11,
+   12,
+   33,
+   34,
+   38,
+   46,
+   47,
+   48,
+   53,
+   54,
+   55
+  ],
+  "nao_conformidades": 0
+ },
+ {
+  "n": 5,
+  "sei": "74179603",
+  "tipo": "E-mail",
+  "paginas": "30-30",
+  "relatorio_n": null,
+  "instalacao": "",
+  "data_vistoria": null,
+  "assinaturas": [],
+  "data_envio_email": "2024-05-08",
+  "relatorios_citados": [],
+  "nao_conformidades": 0
+ },
+ {
+  "n": 6,
+  "sei": "74334571",
+  "tipo": "Relatório de Fiscalização",
+  "paginas": "31-38",
+  "relatorio_n": "56",
+  "instalacao": "EEE 34 - Cantagalo (Estação Elevatória de Esgoto Cantagalo)",
+  "data_vistoria": "2024-04-04",
+  "assinaturas": [
+   {
+    "cargo": "Especialista em Regulação",
+    "data": "2024-05-10",
+    "hora": "15:24"
+   },
+   {
+    "cargo": "Assessor",
+    "data": "2024-05-20",
+    "hora": "10:52"
+   },
+   {
+    "cargo": "Especialista em Regulação",
+    "data": "2024-05-20",
+    "hora": "11:01"
+   },
+   {
+    "cargo": "Gerente",
+    "data": "2024-05-24",
+    "hora": "15:10"
+   }
+  ],
+  "data_envio_email": null,
+  "relatorios_citados": [],
+  "nao_conformidades": 9
+ },
+ {
+  "n": 7,
+  "sei": "74336951",
+  "tipo": "Relatório de Fiscalização",
+  "paginas": "39-47",
+  "relatorio_n": "52",
+  "instalacao": "EEE São Conrado (EEE49)",
+  "data_vistoria": "2024-04-02",
+  "assinaturas": [
+   {
+    "cargo": "Especialista em Regulação",
+    "data": "2024-05-10",
+    "hora": "15:23"
+   },
+   {
+    "cargo": "Especialista em Regulação",
+    "data": "2024-05-20",
+    "hora": "10:51"
+   },
+   {
+    "cargo": "Assessor",
+    "data": "2024-05-20",
+    "hora": "10:51"
+   },
+   {
+    "cargo": "Especialista em Regulação",
+    "data": "2024-05-20",
+    "hora": "16:26"
+   },
+   {
+    "cargo": "Gerente",
+    "data": "2024-05-24",
+    "hora": "15:10"
+   }
+  ],
+  "data_envio_email": null,
+  "relatorios_citados": [],
+  "nao_conformidades": 4
+ },
+ {
+  "n": 8,
+  "sei": "74338948",
+  "tipo": "Relatório de Fiscalização",
+  "paginas": "48-54",
+  "relatorio_n": null,
+  "instalacao": "EEE 30 - Captação em Tempo Seco Cantagalo",
+  "data_vistoria": "2024-04-04",
+  "assinaturas": [
+   {
+    "cargo": "Especialista em Regulação",
+    "data": "2024-05-10",
+    "hora": "15:22"
+   },
+   {
+    "cargo": "Assessor",
+    "data": "2024-05-20",
+    "hora": "10:53"
+   },
+   {
+    "cargo": "Especialista em Regulação",
+    "data": "2024-05-20",
+    "hora": "11:03"
+   },
+   {
+    "cargo": "Gerente",
+    "data": "2024-05-24",
+    "hora": "15:10"
+   }
+  ],
+  "data_envio_email": null,
+  "relatorios_citados": [],
+  "nao_conformidades": 6
+ },
+ {
+  "n": 9,
+  "sei": "75824232",
+  "tipo": "Relatório de Fiscalização",
+  "paginas": "55-62",
+  "relatorio_n": null,
+  "instalacao": "EEE Aquarela do Brasil (EEE 96)",
+  "data_vistoria": "2024-04-02",
+  "assinaturas": [
+   {
+    "cargo": "Especialista em Regulação",
+    "data": "2024-06-04",
+    "hora": "14:27"
+   },
+   {
+    "cargo": "Especialista em Regulação",
+    "data": "2024-06-05",
+    "hora": "16:45"
+   },
+   {
+    "cargo": "Especialista em Regulação",
+    "data": "2024-06-06",
+    "hora": "11:34"
+   },
+   {
+    "cargo": "Assessor",
+    "data": "2024-06-06",
+    "hora": "11:36"
+   },
+   {
+    "cargo": "Gerente",
+    "data": "2024-06-10",
+    "hora": "16:53"
+   }
+  ],
+  "data_envio_email": null,
+  "relatorios_citados": [],
+  "nao_conformidades": 6
+ },
+ {
+  "n": 10,
+  "sei": "75824539",
+  "tipo": "Relatório de Fiscalização",
+  "paginas": "63-75",
+  "relatorio_n": "73",
+  "instalacao": "EEE Parafuso",
+  "data_vistoria": "2024-04-10",
+  "assinaturas": [
+   {
+    "cargo": "Especialista em Regulação",
+    "data": "2024-06-03",
+    "hora": "13:18"
+   },
+   {
+    "cargo": "Especialista em Regulação",
+    "data": "2024-06-06",
+    "hora": "10:35"
+   },
+   {
+    "cargo": "Assistente",
+    "data": "2024-06-06",
+    "hora": "11:29"
+   },
+   {
+    "cargo": "Assessor",
+    "data": "2024-06-06",
+    "hora": "11:39"
+   },
+   {
+    "cargo": "Gerente",
+    "data": "2024-06-10",
+    "hora": "16:53"
+   }
+  ],
+  "data_envio_email": null,
+  "relatorios_citados": [],
+  "nao_conformidades": 6
+ },
+ {
+  "n": 11,
+  "sei": "76104339",
+  "tipo": "Relatório de Fiscalização",
+  "paginas": "76-87",
+  "relatorio_n": "65",
+  "instalacao": "EEE Leblon (EEE 51)",
+  "data_vistoria": "2024-04-16",
+  "assinaturas": [
+   {
+    "cargo": "Especialista em Regulação",
+    "data": "2024-06-06",
+    "hora": "11:33"
+   },
+   {
+    "cargo": "Assessor",
+    "data": "2024-06-06",
+    "hora": "11:34"
+   },
+   {
+    "cargo": "Especialista em Regulação",
+    "data": "2024-06-06",
+    "hora": "14:12"
+   },
+   {
+    "cargo": "Especialista em Regulação",
+    "data": "2024-06-07",
+    "hora": "10:10"
+   },
+   {
+    "cargo": "Gerente",
+    "data": "2024-06-10",
+    "hora": "16:54"
+   }
+  ],
+  "data_envio_email": null,
+  "relatorios_citados": [],
+  "nao_conformidades": 8
+ },
+ {
+  "n": 12,
+  "sei": "76213730",
+  "tipo": "Relatório de Fiscalização",
+  "paginas": "88-100",
+  "relatorio_n": null,
+  "instalacao": "EEE 16 / André Azevedo (Hipica)",
+  "data_vistoria": "2024-04-10",
+  "assinaturas": [
+   {
+    "cargo": "Assessor",
+    "data": "2024-06-06",
+    "hora": "17:27"
+   },
+   {
+    "cargo": "Especialista em Regulação",
+    "data": "2024-06-07",
+    "hora": "10:08"
+   },
+   {
+    "cargo": "Assistente",
+    "data": "2024-06-10",
+    "hora": "12:08"
+   },
+   {
+    "cargo": "Especialista em Regulação",
+    "data": "2024-06-10",
+    "hora": "14:33"
+   },
+   {
+    "cargo": "Gerente",
+    "data": "2024-06-10",
+    "hora": "16:54"
+   }
+  ],
+  "data_envio_email": null,
+  "relatorios_citados": [],
+  "nao_conformidades": 4
+ },
+ {
+  "n": 13,
+  "sei": "79901118",
+  "tipo": "Relatório de Fiscalização",
+  "paginas": "101-107",
+  "relatorio_n": "159",
+  "instalacao": "EEAT Ojuara",
+  "data_vistoria": "2024-06-26",
+  "assinaturas": [
+   {
+    "cargo": "Especialista em Regulação",
+    "data": "2024-08-02",
+    "hora": "12:13"
+   },
+   {
+    "cargo": "Assistente",
+    "data": "2024-08-02",
+    "hora": "13:44"
+   },
+   {
+    "cargo": "Assessor",
+    "data": "2024-08-02",
+    "hora": "14:05"
+   },
+   {
+    "cargo": "Especialista em Regulação",
+    "data": "2024-08-02",
+    "hora": "14:48"
+   },
+   {
+    "cargo": "Gerente",
+    "data": "2024-08-06",
+    "hora": "16:52"
+   }
+  ],
+  "data_envio_email": null,
+  "relatorios_citados": [],
+  "nao_conformidades": 3
+ },
+ {
+  "n": 14,
+  "sei": "80501066",
+  "tipo": "Ofício",
+  "paginas": "108-109",
+  "relatorio_n": null,
+  "instalacao": "",
+  "data_vistoria": null,
+  "assinaturas": [
+   {
+    "cargo": "Gerente",
+    "data": "2024-08-07",
+    "hora": "16:05"
+   }
+  ],
+  "data_envio_email": null,
+  "relatorios_citados": [
+   111,
+   123,
+   134,
+   135,
+   159
+  ],
+  "nao_conformidades": 0
+ },
+ {
+  "n": 15,
+  "sei": "80626379",
+  "tipo": "E-mail",
+  "paginas": "110-110",
+  "relatorio_n": null,
+  "instalacao": "",
+  "data_vistoria": null,
+  "assinaturas": [],
+  "data_envio_email": "2024-08-08",
+  "relatorios_citados": [],
+  "nao_conformidades": 0
+ },
+ {
+  "n": 16,
+  "sei": "80655356",
+  "tipo": "Relatório de Fiscalização",
+  "paginas": "111-117",
+  "relatorio_n": "155",
+  "instalacao": "EEAT 791 - Canal",
+  "data_vistoria": "2024-07-16",
+  "assinaturas": [
+   {
+    "cargo": "Assistente",
+    "data": "2024-08-09",
+    "hora": "14:45"
+   },
+   {
+    "cargo": "Assistente",
+    "data": "2024-08-12",
+    "hora": "10:11"
+   },
+   {
+    "cargo": "Assessor",
+    "data": "2024-08-27",
+    "hora": "17:40"
+   },
+   {
+    "cargo": "Gerente",
+    "data": "2024-09-24",
+    "hora": "16:06"
+   }
+  ],
+  "data_envio_email": null,
+  "relatorios_citados": [],
+  "nao_conformidades": 9
+ },
+ {
+  "n": 17,
+  "sei": "80654568",
+  "tipo": "Relatório de Fiscalização",
+  "paginas": "118-125",
+  "relatorio_n": "156",
+  "instalacao": "EEAT 790 - Mageense",
+  "data_vistoria": "2024-07-16",
+  "assinaturas": [
+   {
+    "cargo": "Assistente",
+    "data": "2024-08-09",
+    "hora": "14:47"
+   },
+   {
+    "cargo": "Assistente",
+    "data": "2024-08-12",
+    "hora": "10:16"
+   },
+   {
+    "cargo": "Assessor",
+    "data": "2024-08-27",
+    "hora": "17:40"
+   },
+   {
+    "cargo": "Gerente",
+    "data": "2024-09-24",
+    "hora": "16:06"
+   }
+  ],
+  "data_envio_email": null,
+  "relatorios_citados": [],
+  "nao_conformidades": 6
+ },
+ {
+  "n": 18,
+  "sei": "80656194",
+  "tipo": "Relatório de Fiscalização",
+  "paginas": "126-130",
+  "relatorio_n": "157",
+  "instalacao": "EEAT 792 - Presídio I",
+  "data_vistoria": "2024-07-16",
+  "assinaturas": [
+   {
+    "cargo": "Assistente",
+    "data": "2024-08-09",
+    "hora": "14:48"
+   },
+   {
+    "cargo": "Assistente",
+    "data": "2024-08-12",
+    "hora": "10:19"
+   },
+   {
+    "cargo": "Assessor",
+    "data": "2024-08-27",
+    "hora": "17:41"
+   },
+   {
+    "cargo": "Gerente",
+    "data": "2024-09-24",
+    "hora": "16:06"
+   }
+  ],
+  "data_envio_email": null,
+  "relatorios_citados": [],
+  "nao_conformidades": 6
+ },
+ {
+  "n": 19,
+  "sei": "80656240",
+  "tipo": "Relatório de Fiscalização",
+  "paginas": "131-137",
+  "relatorio_n": "158",
+  "instalacao": "EEAT 794 - Meu Boi",
+  "data_vistoria": "2024-07-16",
+  "assinaturas": [
+   {
+    "cargo": "Assistente",
+    "data": "2024-08-09",
+    "hora": "14:49"
+   },
+   {
+    "cargo": "Assistente",
+    "data": "2024-08-12",
+    "hora": "10:26"
+   },
+   {
+    "cargo": "Assessor",
+    "data": "2024-08-27",
+    "hora": "17:41"
+   },
+   {
+    "cargo": "Gerente",
+    "data": "2024-09-24",
+    "hora": "16:06"
+   }
+  ],
+  "data_envio_email": null,
+  "relatorios_citados": [],
+  "nao_conformidades": 9
+ },
+ {
+  "n": 20,
+  "sei": "82718456",
+  "tipo": "Ofício",
+  "paginas": "138-139",
+  "relatorio_n": null,
+  "instalacao": "",
+  "data_vistoria": null,
+  "assinaturas": [
+   {
+    "cargo": "Gerente",
+    "data": "2024-09-09",
+    "hora": "14:41"
+   }
+  ],
+  "data_envio_email": null,
+  "relatorios_citados": [],
+  "nao_conformidades": 0
+ },
+ {
+  "n": 21,
+  "sei": "82834832",
+  "tipo": "E-mail",
+  "paginas": "140-140",
+  "relatorio_n": null,
+  "instalacao": "",
+  "data_vistoria": null,
+  "assinaturas": [],
+  "data_envio_email": "2024-09-09",
+  "relatorios_citados": [],
+  "nao_conformidades": 0
+ },
+ {
+  "n": 22,
+  "sei": "82895573",
+  "tipo": "Relatório de Fiscalização",
+  "paginas": "141-147",
+  "relatorio_n": "153",
+  "instalacao": "ETA Magé (Sistema Roncador)",
+  "data_vistoria": "2024-07-16",
+  "assinaturas": [
+   {
+    "cargo": "Assistente",
+    "data": "2024-09-11",
+    "hora": "10:15"
+   },
+   {
+    "cargo": "Assessor",
+    "data": "2024-09-11",
+    "hora": "10:35"
+   },
+   {
+    "cargo": "Assistente",
+    "data": "2024-09-16",
+    "hora": "17:13"
+   },
+   {
+    "cargo": "Gerente",
+    "data": "2024-09-17",
+    "hora": "17:57"
+   }
+  ],
+  "data_envio_email": null,
+  "relatorios_citados": [],
+  "nao_conformidades": 2
+ },
+ {
+  "n": 23,
+  "sei": "86162193",
+  "tipo": "Relatório de Fiscalização",
+  "paginas": "148-154",
+  "relatorio_n": "259",
+  "instalacao": "EEE Parafuso (obra de reforma)",
+  "data_vistoria": "2024-08-14",
+  "assinaturas": [
+   {
+    "cargo": "Assistente",
+    "data": "2024-11-06",
+    "hora": "10:55"
+   },
+   {
+    "cargo": "Assessor",
+    "data": "2024-11-06",
+    "hora": "17:18"
+   },
+   {
+    "cargo": "Gerente",
+    "data": "2024-11-08",
+    "hora": "13:40"
+   }
+  ],
+  "data_envio_email": null,
+  "relatorios_citados": [],
+  "nao_conformidades": 0
+ },
+ {
+  "n": 24,
+  "sei": "86161531",
+  "tipo": "Relatório de Fiscalização",
+  "paginas": "155-160",
+  "relatorio_n": "209",
+  "instalacao": "EEE Parafuso (obra de reforma)",
+  "data_vistoria": "2024-08-14",
+  "assinaturas": [
+   {
+    "cargo": "Assistente",
+    "data": "2024-11-06",
+    "hora": "10:57"
+   },
+   {
+    "cargo": "Assessor",
+    "data": "2024-11-06",
+    "hora": "17:18"
+   },
+   {
+    "cargo": "Gerente",
+    "data": "2024-11-08",
+    "hora": "13:41"
+   }
+  ],
+  "data_envio_email": null,
+  "relatorios_citados": [],
+  "nao_conformidades": 0
+ },
+ {
+  "n": 25,
+  "sei": "86827856",
+  "tipo": "Relatório de Fiscalização",
+  "paginas": "161-167",
+  "relatorio_n": "212",
+  "instalacao": "EEE Mário Quintão",
+  "data_vistoria": "2024-08-20",
+  "assinaturas": [
+   {
+    "cargo": "Especialista em Regulação",
+    "data": "2024-11-06",
+    "hora": "16:08"
+   },
+   {
+    "cargo": "Assessor",
+    "data": "2024-11-06",
+    "hora": "17:19"
+   },
+   {
+    "cargo": "Gerente",
+    "data": "2024-11-08",
+    "hora": "13:41"
+   }
+  ],
+  "data_envio_email": null,
+  "relatorios_citados": [],
+  "nao_conformidades": 5
+ },
+ {
+  "n": 26,
+  "sei": "86826650",
+  "tipo": "Relatório de Fiscalização",
+  "paginas": "168-174",
+  "relatorio_n": "213",
+  "instalacao": "EEE Frederico Marques",
+  "data_vistoria": "2024-08-20",
+  "assinaturas": [
+   {
+    "cargo": "Especialista em Regulação",
+    "data": "2024-11-06",
+    "hora": "16:08"
+   },
+   {
+    "cargo": "Assessor",
+    "data": "2024-11-06",
+    "hora": "17:19"
+   },
+   {
+    "cargo": "Gerente",
+    "data": "2024-11-08",
+    "hora": "13:41"
+   }
+  ],
+  "data_envio_email": null,
+  "relatorios_citados": [],
+  "nao_conformidades": 5
+ },
+ {
+  "n": 27,
+  "sei": "86826664",
+  "tipo": "Relatório de Fiscalização",
+  "paginas": "175-179",
+  "relatorio_n": "214",
+  "instalacao": "EEE Piscinão",
+  "data_vistoria": "2024-08-20",
+  "assinaturas": [
+   {
+    "cargo": "Especialista em Regulação",
+    "data": "2024-11-06",
+    "hora": "16:07"
+   },
+   {
+    "cargo": "Assessor",
+    "data": "2024-11-06",
+    "hora": "17:19"
+   },
+   {
+    "cargo": "Gerente",
+    "data": "2024-11-08",
+    "hora": "13:41"
+   }
+  ],
+  "data_envio_email": null,
+  "relatorios_citados": [],
+  "nao_conformidades": 3
+ },
+ {
+  "n": 28,
+  "sei": "87028948",
+  "tipo": "Relatório de Fiscalização",
+  "paginas": "180-197",
+  "relatorio_n": "17",
+  "instalacao": "ETE São Gonçalo",
+  "data_vistoria": "2024-03-06",
+  "assinaturas": [
+   {
+    "cargo": "Especialista em Regulação",
+    "data": "2024-11-07",
+    "hora": "16:33"
+   },
+   {
+    "cargo": "Assessor",
+    "data": "2024-11-07",
+    "hora": "16:36"
+   },
+   {
+    "cargo": "Gerente",
+    "data": "2024-11-08",
+    "hora": "13:41"
+   }
+  ],
+  "data_envio_email": null,
+  "relatorios_citados": [],
+  "nao_conformidades": 11
+ },
+ {
+  "n": 29,
+  "sei": "87188346",
+  "tipo": "Ofício",
+  "paginas": "198-199",
+  "relatorio_n": null,
+  "instalacao": "",
+  "data_vistoria": null,
+  "assinaturas": [
+   {
+    "cargo": "Gerente",
+    "data": "2024-11-11",
+    "hora": "15:00"
+   }
+  ],
+  "data_envio_email": null,
+  "relatorios_citados": [
+   17,
+   209,
+   212,
+   213,
+   214,
+   259
+  ],
+  "nao_conformidades": 0
+ },
+ {
+  "n": 30,
+  "sei": "87308946",
+  "tipo": "E-mail",
+  "paginas": "200-200",
+  "relatorio_n": null,
+  "instalacao": "",
+  "data_vistoria": null,
+  "assinaturas": [],
+  "data_envio_email": "2024-11-11",
+  "relatorios_citados": [],
+  "nao_conformidades": 0
+ },
+ {
+  "n": 31,
+  "sei": "91278977",
+  "tipo": "Relatório de Fiscalização",
+  "paginas": "201-226",
+  "relatorio_n": "227",
+  "instalacao": "",
+  "data_vistoria": null,
+  "assinaturas": [],
+  "data_envio_email": null,
+  "relatorios_citados": [],
+  "nao_conformidades": 0
+ },
+ {
+  "n": 32,
+  "sei": "104033188",
+  "tipo": "Parecer",
+  "paginas": "227-231",
+  "relatorio_n": null,
+  "instalacao": "Relatório nº 10/2024 – EEAT Pça Paris-Glória (69710124); Relatório nº 11/2024 – EEAT Barão de Guaratiba (69712392); Relatório nº 12/2024 (69716140); Relatório nº 38/2024 – EEEB Forte de S.João (72642867); Relatório nº 33/2024 – EEEB Comida Árabe (72710417); Relatório nº 34/2024 – EEE Parque dos Patins (72711316); Relatório nº 53/2024 – EEB Marina da Glória (72838107); Relatório nº 54/2024 – EEEB Urca (72851141); Relatório nº 55/2024 – EEEB Hípica (72853692); Relatório nº 46/2024 – EEE 14 Jardim Botânico (72974318); Relatório nº 47/2024 – EEE 43 Caiçaras (72975320); Relatório nº 48/2024 – EEE 32 José Mariano (72980247); Relatório nº 56/2024 – EEE 34 Cantagalo (74334571); Relatório nº 52/2024 – EEE São Conrado (74336951); Relatório nº 59/2024 – EEE 30 CTS Cantagalo (74338948); Relatório nº 044/2024 – EEEB Praça do Índio (74871240); Relatório nº 045/2024 – EEE Saturnino de Brit (74873701); Relatório nº 051/2024 – CTS J. Mariano (74881165); Relatório nº 060/2024 – EEE Farme de Amoedo (74882333); Relatório nº 070/2024 – EEE Aquarela do Brasil (75824232); Relatório nº 073/2024 – EEE Parafuso (75824539); Relatório nº 065 – EEE Leblon (76104339); Relatório nº 090/2024 – EEE André Azevedo (76213730); Relatório nº 111/2024 – EEAT Jacuba (79573239); Relatório nº 123/2024 – EEAT Rio Vermelho (79573103); Relatório nº 135/2024 – ETA Rio Bonito (79575319); Relatório nº 134/2024 – EEAT Boa Esperança (79900134); Relatório nº 159/2024 – EEAT Ojuara (79901118); Relatório nº 155/2024 – EAT Canal (80655356); Relatório nº 156/2024 – EAT Mageense (80654568); Relatório nº 157/2024 – EAT Presídio I (80656194); Relatório nº 158/2024 – EAT Meu Boi (80656240); Relatório nº 153/2024 (82895573); Relatório nº 259/2024 (86162193); Relatório nº 209/2024 (86161531); Relatório nº 212/2024 (86827856); Relatório nº 213/2024 (86826650); Relatório nº 214/2024 (86826664); Relatório nº 017/2024 (87028948); Relatório nº 211/2024 (89901514); Relatório nº 229/2024 (91213447); Relatório nº 227/2024 (91278977)",
+  "data_vistoria": null,
+  "assinaturas": [
+   {
+    "cargo": "Especialista em Regulação",
+    "data": "2025-07-08",
+    "hora": "16:34"
+   },
+   {
+    "cargo": "Gerente",
+    "data": "2025-07-08",
+    "hora": "16:35"
+   }
+  ],
+  "data_envio_email": null,
+  "relatorios_citados": [],
+  "nao_conformidades": 4
+ },
+ {
+  "n": 33,
+  "sei": "104117825",
+  "tipo": "Despacho",
+  "paginas": "232-232",
+  "relatorio_n": null,
+  "instalacao": "",
+  "data_vistoria": null,
+  "assinaturas": [
+   {
+    "cargo": "Assistente",
+    "data": "2025-07-08",
+    "hora": "17:26"
+   }
+  ],
+  "data_envio_email": null,
+  "relatorios_citados": [],
+  "nao_conformidades": 0
+ },
+ {
+  "n": 34,
+  "sei": "117907053",
+  "tipo": "Despacho",
+  "paginas": "233-233",
+  "relatorio_n": null,
+  "instalacao": "",
+  "data_vistoria": null,
+  "assinaturas": [
+   {
+    "cargo": "Assessora",
+    "data": "2025-11-03",
+    "hora": "09:36"
+   }
+  ],
+  "data_envio_email": null,
+  "relatorios_citados": [],
+  "nao_conformidades": 0
+ }
+]

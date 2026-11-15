@@ -1,0 +1,4147 @@
+{
+ "codigo": "FIS",
+ "caso": "SEI-480002/001314/2024",
+ "gerado_por": "scripts/conformidade_fis.py",
+ "fontes": [
+  "mapeamento/normas_FIS.json",
+  "mapeamento/linha_do_tempo_FIS.json",
+  "mapeamento/fatos_FIS.json",
+  "fichas/",
+  "texto/processo_completo.txt"
+ ],
+ "observacao": "Vários casos por requisito (relatório, ofício ou vistoria) quando o requisito se repete; 'processo' = caso único. O PDF é recorte: respostas da concessionária e parte dos relatórios não estão nele ('sem evidência'). Dias úteis pelo calendário de scripts/fatos_fis.py (hipótese).",
+ "contagem_casos": {
+  "conforme": 75,
+  "não conforme": 3,
+  "sem evidência": 35,
+  "não aplicável": 66
+ },
+ "pct_conforme_casos": 96.2,
+ "definicao_pct": "conformes ÷ (conformes + não conformes)",
+ "datas_lidas_dos_autos": {
+  "rf10.vistoria": {
+   "data": "2024-01-18",
+   "origem": "ficha SEI 69710124, fiscalizacao.data_vistoria"
+  },
+  "rf10.data_no_texto": {
+   "data": "2024-01-23",
+   "origem": "doc 1, 'Em dd/mm/aaaa' no fecho do relatório"
+  },
+  "rf11.vistoria": {
+   "data": "2024-01-18",
+   "origem": "ficha SEI 69712392, fiscalizacao.data_vistoria"
+  },
+  "rf11.data_no_texto": {
+   "data": "2024-01-23",
+   "origem": "doc 2, 'Em dd/mm/aaaa' no fecho do relatório"
+  },
+  "rf12.data_no_texto": {
+   "data": "2024-01-22",
+   "origem": "doc 3, 'Em dd/mm/aaaa' no fecho do relatório"
+  },
+  "rf56.vistoria": {
+   "data": "2024-04-04",
+   "origem": "ficha SEI 74334571, fiscalizacao.data_vistoria"
+  },
+  "rf56.data_no_texto": {
+   "data": "2024-04-23",
+   "origem": "doc 6, 'Em dd/mm/aaaa' no fecho do relatório"
+  },
+  "rf52.vistoria": {
+   "data": "2024-04-02",
+   "origem": "ficha SEI 74336951, fiscalizacao.data_vistoria"
+  },
+  "rf52.data_no_texto": {
+   "data": "2024-04-24",
+   "origem": "doc 7, 'Em dd/mm/aaaa' no fecho do relatório"
+  },
+  "rf59.vistoria": {
+   "data": "2024-04-04",
+   "origem": "ficha SEI 74338948, fiscalizacao.data_vistoria"
+  },
+  "rf59.data_no_texto": {
+   "data": "2024-05-07",
+   "origem": "doc 8, 'Em dd/mm/aaaa' no fecho do relatório"
+  },
+  "rf70.vistoria": {
+   "data": "2024-04-02",
+   "origem": "ficha SEI 75824232, fiscalizacao.data_vistoria"
+  },
+  "rf70.data_no_texto": {
+   "data": "2024-04-18",
+   "origem": "doc 9, 'Em dd/mm/aaaa' no fecho do relatório"
+  },
+  "rf73.vistoria": {
+   "data": "2024-04-10",
+   "origem": "ficha SEI 75824539, fiscalizacao.data_vistoria"
+  },
+  "rf73.data_no_texto": {
+   "data": "2024-05-10",
+   "origem": "doc 10, 'Em dd/mm/aaaa' no fecho do relatório"
+  },
+  "rf65.vistoria": {
+   "data": "2024-04-16",
+   "origem": "ficha SEI 76104339, fiscalizacao.data_vistoria"
+  },
+  "rf65.data_no_texto": {
+   "data": "2024-05-09",
+   "origem": "doc 11, 'Em dd/mm/aaaa' no fecho do relatório"
+  },
+  "rf90.vistoria": {
+   "data": "2024-04-10",
+   "origem": "ficha SEI 76213730, fiscalizacao.data_vistoria"
+  },
+  "rf90.data_no_texto": {
+   "data": "2024-06-04",
+   "origem": "doc 12, 'Em dd/mm/aaaa' no fecho do relatório"
+  },
+  "rf159.vistoria": {
+   "data": "2024-06-26",
+   "origem": "ficha SEI 79901118, fiscalizacao.data_vistoria"
+  },
+  "rf159.data_no_texto": {
+   "data": "2024-07-22",
+   "origem": "doc 13, 'Em dd/mm/aaaa' no fecho do relatório"
+  },
+  "rf155.vistoria": {
+   "data": "2024-07-16",
+   "origem": "ficha SEI 80655356, fiscalizacao.data_vistoria"
+  },
+  "rf155.data_no_texto": {
+   "data": "2024-07-25",
+   "origem": "doc 16, 'Em dd/mm/aaaa' no fecho do relatório"
+  },
+  "rf156.vistoria": {
+   "data": "2024-07-16",
+   "origem": "ficha SEI 80654568, fiscalizacao.data_vistoria"
+  },
+  "rf156.data_no_texto": {
+   "data": "2024-07-24",
+   "origem": "doc 17, 'Em dd/mm/aaaa' no fecho do relatório"
+  },
+  "rf157.vistoria": {
+   "data": "2024-07-16",
+   "origem": "ficha SEI 80656194, fiscalizacao.data_vistoria"
+  },
+  "rf157.data_no_texto": {
+   "data": "2024-07-29",
+   "origem": "doc 18, 'Em dd/mm/aaaa' no fecho do relatório"
+  },
+  "rf158.vistoria": {
+   "data": "2024-07-16",
+   "origem": "ficha SEI 80656240, fiscalizacao.data_vistoria"
+  },
+  "rf158.data_no_texto": {
+   "data": "2024-07-16",
+   "origem": "doc 19, 'Em dd/mm/aaaa' no fecho do relatório"
+  },
+  "rf153.vistoria": {
+   "data": "2024-07-16",
+   "origem": "ficha SEI 82895573, fiscalizacao.data_vistoria"
+  },
+  "rf153.data_no_texto": {
+   "data": "2024-07-29",
+   "origem": "doc 22, 'Em dd/mm/aaaa' no fecho do relatório"
+  },
+  "rf259.vistoria": {
+   "data": "2024-08-14",
+   "origem": "ficha SEI 86162193, fiscalizacao.data_vistoria"
+  },
+  "rf259.data_no_texto": {
+   "data": "2024-10-07",
+   "origem": "doc 23, 'Em dd/mm/aaaa' no fecho do relatório"
+  },
+  "rf209.vistoria": {
+   "data": "2024-08-14",
+   "origem": "ficha SEI 86161531, fiscalizacao.data_vistoria"
+  },
+  "rf209.data_no_texto": {
+   "data": "2024-08-27",
+   "origem": "doc 24, 'Em dd/mm/aaaa' no fecho do relatório"
+  },
+  "rf212.vistoria": {
+   "data": "2024-08-20",
+   "origem": "ficha SEI 86827856, fiscalizacao.data_vistoria"
+  },
+  "rf212.data_no_texto": {
+   "data": "2024-10-10",
+   "origem": "doc 25, 'Em dd/mm/aaaa' no fecho do relatório"
+  },
+  "rf213.vistoria": {
+   "data": "2024-08-20",
+   "origem": "ficha SEI 86826650, fiscalizacao.data_vistoria"
+  },
+  "rf213.data_no_texto": {
+   "data": "2024-08-29",
+   "origem": "doc 26, 'Em dd/mm/aaaa' no fecho do relatório"
+  },
+  "rf214.vistoria": {
+   "data": "2024-08-20",
+   "origem": "ficha SEI 86826664, fiscalizacao.data_vistoria"
+  },
+  "rf214.data_no_texto": {
+   "data": "2024-10-11",
+   "origem": "doc 27, 'Em dd/mm/aaaa' no fecho do relatório"
+  },
+  "rf17.vistoria": {
+   "data": "2024-03-06",
+   "origem": "ficha SEI 87028948, fiscalizacao.data_vistoria"
+  },
+  "rf17.data_no_texto": {
+   "data": "2024-10-16",
+   "origem": "doc 28, 'Em dd/mm/aaaa' no fecho do relatório"
+  },
+  "oficio349.data_escrita": {
+   "data": "2024-05-08",
+   "origem": "doc 4, cabeçalho 'Rio de Janeiro, …'"
+  },
+  "oficio682.data_escrita": {
+   "data": "2024-08-07",
+   "origem": "doc 14, cabeçalho 'Rio de Janeiro, …'"
+  },
+  "oficio757.data_escrita": {
+   "data": "2024-09-06",
+   "origem": "doc 20, cabeçalho 'Rio de Janeiro, …'"
+  },
+  "oficio946.data_escrita": {
+   "data": "2024-11-08",
+   "origem": "doc 29, cabeçalho 'Rio de Janeiro, …'"
+  },
+  "oficio757.primeira_vistoria": {
+   "data": "2024-09-10",
+   "origem": "doc 20, 'Datas das Vistorias'"
+  }
+ },
+ "intervalos_calculados": [
+  {
+   "id": "calc.rf10.lavratura_ate_gerente.dc",
+   "descricao": "RF 10: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 53,
+   "unidade": "dc",
+   "de": "2024-03-07",
+   "ate": "2024-04-29",
+   "origem": "doc 1"
+  },
+  {
+   "id": "calc.rf10.lavratura_ate_gerente.du",
+   "descricao": "RF 10: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 35,
+   "unidade": "du",
+   "de": "2024-03-07",
+   "ate": "2024-04-29",
+   "origem": "doc 1"
+  },
+  {
+   "id": "calc.rf10.data_texto_ate_gerente.dc",
+   "descricao": "RF 10: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 97,
+   "unidade": "dc",
+   "de": "2024-01-23",
+   "ate": "2024-04-29",
+   "origem": "doc 1"
+  },
+  {
+   "id": "calc.rf10.data_texto_ate_gerente.du",
+   "descricao": "RF 10: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 65,
+   "unidade": "du",
+   "de": "2024-01-23",
+   "ate": "2024-04-29",
+   "origem": "doc 1"
+  },
+  {
+   "id": "calc.rf10.vistoria_ate_lavratura.dc",
+   "descricao": "RF 10: vistoria até 1ª assinatura",
+   "valor": 49,
+   "unidade": "dc",
+   "de": "2024-01-18",
+   "ate": "2024-03-07",
+   "origem": "doc 1"
+  },
+  {
+   "id": "calc.rf10.vistoria_ate_lavratura.du",
+   "descricao": "RF 10: vistoria até 1ª assinatura",
+   "valor": 33,
+   "unidade": "du",
+   "de": "2024-01-18",
+   "ate": "2024-03-07",
+   "origem": "doc 1"
+  },
+  {
+   "id": "calc.rf11.lavratura_ate_gerente.dc",
+   "descricao": "RF 11: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 53,
+   "unidade": "dc",
+   "de": "2024-03-07",
+   "ate": "2024-04-29",
+   "origem": "doc 2"
+  },
+  {
+   "id": "calc.rf11.lavratura_ate_gerente.du",
+   "descricao": "RF 11: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 35,
+   "unidade": "du",
+   "de": "2024-03-07",
+   "ate": "2024-04-29",
+   "origem": "doc 2"
+  },
+  {
+   "id": "calc.rf11.data_texto_ate_gerente.dc",
+   "descricao": "RF 11: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 97,
+   "unidade": "dc",
+   "de": "2024-01-23",
+   "ate": "2024-04-29",
+   "origem": "doc 2"
+  },
+  {
+   "id": "calc.rf11.data_texto_ate_gerente.du",
+   "descricao": "RF 11: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 65,
+   "unidade": "du",
+   "de": "2024-01-23",
+   "ate": "2024-04-29",
+   "origem": "doc 2"
+  },
+  {
+   "id": "calc.rf11.vistoria_ate_lavratura.dc",
+   "descricao": "RF 11: vistoria até 1ª assinatura",
+   "valor": 49,
+   "unidade": "dc",
+   "de": "2024-01-18",
+   "ate": "2024-03-07",
+   "origem": "doc 2"
+  },
+  {
+   "id": "calc.rf11.vistoria_ate_lavratura.du",
+   "descricao": "RF 11: vistoria até 1ª assinatura",
+   "valor": 33,
+   "unidade": "du",
+   "de": "2024-01-18",
+   "ate": "2024-03-07",
+   "origem": "doc 2"
+  },
+  {
+   "id": "calc.rf12.lavratura_ate_gerente.dc",
+   "descricao": "RF 12: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 53,
+   "unidade": "dc",
+   "de": "2024-03-07",
+   "ate": "2024-04-29",
+   "origem": "doc 3"
+  },
+  {
+   "id": "calc.rf12.lavratura_ate_gerente.du",
+   "descricao": "RF 12: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 35,
+   "unidade": "du",
+   "de": "2024-03-07",
+   "ate": "2024-04-29",
+   "origem": "doc 3"
+  },
+  {
+   "id": "calc.rf12.data_texto_ate_gerente.dc",
+   "descricao": "RF 12: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 98,
+   "unidade": "dc",
+   "de": "2024-01-22",
+   "ate": "2024-04-29",
+   "origem": "doc 3"
+  },
+  {
+   "id": "calc.rf12.data_texto_ate_gerente.du",
+   "descricao": "RF 12: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 66,
+   "unidade": "du",
+   "de": "2024-01-22",
+   "ate": "2024-04-29",
+   "origem": "doc 3"
+  },
+  {
+   "id": "calc.rf56.lavratura_ate_gerente.dc",
+   "descricao": "RF 56: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 14,
+   "unidade": "dc",
+   "de": "2024-05-10",
+   "ate": "2024-05-24",
+   "origem": "doc 6"
+  },
+  {
+   "id": "calc.rf56.lavratura_ate_gerente.du",
+   "descricao": "RF 56: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 10,
+   "unidade": "du",
+   "de": "2024-05-10",
+   "ate": "2024-05-24",
+   "origem": "doc 6"
+  },
+  {
+   "id": "calc.rf56.data_texto_ate_gerente.dc",
+   "descricao": "RF 56: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 31,
+   "unidade": "dc",
+   "de": "2024-04-23",
+   "ate": "2024-05-24",
+   "origem": "doc 6"
+  },
+  {
+   "id": "calc.rf56.data_texto_ate_gerente.du",
+   "descricao": "RF 56: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 22,
+   "unidade": "du",
+   "de": "2024-04-23",
+   "ate": "2024-05-24",
+   "origem": "doc 6"
+  },
+  {
+   "id": "calc.rf56.vistoria_ate_lavratura.dc",
+   "descricao": "RF 56: vistoria até 1ª assinatura",
+   "valor": 36,
+   "unidade": "dc",
+   "de": "2024-04-04",
+   "ate": "2024-05-10",
+   "origem": "doc 6"
+  },
+  {
+   "id": "calc.rf56.vistoria_ate_lavratura.du",
+   "descricao": "RF 56: vistoria até 1ª assinatura",
+   "valor": 24,
+   "unidade": "du",
+   "de": "2024-04-04",
+   "ate": "2024-05-10",
+   "origem": "doc 6"
+  },
+  {
+   "id": "calc.rf52.lavratura_ate_gerente.dc",
+   "descricao": "RF 52: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 14,
+   "unidade": "dc",
+   "de": "2024-05-10",
+   "ate": "2024-05-24",
+   "origem": "doc 7"
+  },
+  {
+   "id": "calc.rf52.lavratura_ate_gerente.du",
+   "descricao": "RF 52: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 10,
+   "unidade": "du",
+   "de": "2024-05-10",
+   "ate": "2024-05-24",
+   "origem": "doc 7"
+  },
+  {
+   "id": "calc.rf52.data_texto_ate_gerente.dc",
+   "descricao": "RF 52: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 30,
+   "unidade": "dc",
+   "de": "2024-04-24",
+   "ate": "2024-05-24",
+   "origem": "doc 7"
+  },
+  {
+   "id": "calc.rf52.data_texto_ate_gerente.du",
+   "descricao": "RF 52: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 21,
+   "unidade": "du",
+   "de": "2024-04-24",
+   "ate": "2024-05-24",
+   "origem": "doc 7"
+  },
+  {
+   "id": "calc.rf52.vistoria_ate_lavratura.dc",
+   "descricao": "RF 52: vistoria até 1ª assinatura",
+   "valor": 38,
+   "unidade": "dc",
+   "de": "2024-04-02",
+   "ate": "2024-05-10",
+   "origem": "doc 7"
+  },
+  {
+   "id": "calc.rf52.vistoria_ate_lavratura.du",
+   "descricao": "RF 52: vistoria até 1ª assinatura",
+   "valor": 26,
+   "unidade": "du",
+   "de": "2024-04-02",
+   "ate": "2024-05-10",
+   "origem": "doc 7"
+  },
+  {
+   "id": "calc.rf59.lavratura_ate_gerente.dc",
+   "descricao": "RF 59: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 14,
+   "unidade": "dc",
+   "de": "2024-05-10",
+   "ate": "2024-05-24",
+   "origem": "doc 8"
+  },
+  {
+   "id": "calc.rf59.lavratura_ate_gerente.du",
+   "descricao": "RF 59: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 10,
+   "unidade": "du",
+   "de": "2024-05-10",
+   "ate": "2024-05-24",
+   "origem": "doc 8"
+  },
+  {
+   "id": "calc.rf59.data_texto_ate_gerente.dc",
+   "descricao": "RF 59: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 17,
+   "unidade": "dc",
+   "de": "2024-05-07",
+   "ate": "2024-05-24",
+   "origem": "doc 8"
+  },
+  {
+   "id": "calc.rf59.data_texto_ate_gerente.du",
+   "descricao": "RF 59: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 13,
+   "unidade": "du",
+   "de": "2024-05-07",
+   "ate": "2024-05-24",
+   "origem": "doc 8"
+  },
+  {
+   "id": "calc.rf59.vistoria_ate_lavratura.dc",
+   "descricao": "RF 59: vistoria até 1ª assinatura",
+   "valor": 36,
+   "unidade": "dc",
+   "de": "2024-04-04",
+   "ate": "2024-05-10",
+   "origem": "doc 8"
+  },
+  {
+   "id": "calc.rf59.vistoria_ate_lavratura.du",
+   "descricao": "RF 59: vistoria até 1ª assinatura",
+   "valor": 24,
+   "unidade": "du",
+   "de": "2024-04-04",
+   "ate": "2024-05-10",
+   "origem": "doc 8"
+  },
+  {
+   "id": "calc.rf70.lavratura_ate_gerente.dc",
+   "descricao": "RF 70: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 6,
+   "unidade": "dc",
+   "de": "2024-06-04",
+   "ate": "2024-06-10",
+   "origem": "doc 9"
+  },
+  {
+   "id": "calc.rf70.lavratura_ate_gerente.du",
+   "descricao": "RF 70: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 4,
+   "unidade": "du",
+   "de": "2024-06-04",
+   "ate": "2024-06-10",
+   "origem": "doc 9"
+  },
+  {
+   "id": "calc.rf70.data_texto_ate_gerente.dc",
+   "descricao": "RF 70: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 53,
+   "unidade": "dc",
+   "de": "2024-04-18",
+   "ate": "2024-06-10",
+   "origem": "doc 9"
+  },
+  {
+   "id": "calc.rf70.data_texto_ate_gerente.du",
+   "descricao": "RF 70: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 34,
+   "unidade": "du",
+   "de": "2024-04-18",
+   "ate": "2024-06-10",
+   "origem": "doc 9"
+  },
+  {
+   "id": "calc.rf70.vistoria_ate_lavratura.dc",
+   "descricao": "RF 70: vistoria até 1ª assinatura",
+   "valor": 63,
+   "unidade": "dc",
+   "de": "2024-04-02",
+   "ate": "2024-06-04",
+   "origem": "doc 9"
+  },
+  {
+   "id": "calc.rf70.vistoria_ate_lavratura.du",
+   "descricao": "RF 70: vistoria até 1ª assinatura",
+   "valor": 42,
+   "unidade": "du",
+   "de": "2024-04-02",
+   "ate": "2024-06-04",
+   "origem": "doc 9"
+  },
+  {
+   "id": "calc.rf73.lavratura_ate_gerente.dc",
+   "descricao": "RF 73: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 7,
+   "unidade": "dc",
+   "de": "2024-06-03",
+   "ate": "2024-06-10",
+   "origem": "doc 10"
+  },
+  {
+   "id": "calc.rf73.lavratura_ate_gerente.du",
+   "descricao": "RF 73: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 5,
+   "unidade": "du",
+   "de": "2024-06-03",
+   "ate": "2024-06-10",
+   "origem": "doc 10"
+  },
+  {
+   "id": "calc.rf73.data_texto_ate_gerente.dc",
+   "descricao": "RF 73: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 31,
+   "unidade": "dc",
+   "de": "2024-05-10",
+   "ate": "2024-06-10",
+   "origem": "doc 10"
+  },
+  {
+   "id": "calc.rf73.data_texto_ate_gerente.du",
+   "descricao": "RF 73: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 20,
+   "unidade": "du",
+   "de": "2024-05-10",
+   "ate": "2024-06-10",
+   "origem": "doc 10"
+  },
+  {
+   "id": "calc.rf73.vistoria_ate_lavratura.dc",
+   "descricao": "RF 73: vistoria até 1ª assinatura",
+   "valor": 54,
+   "unidade": "dc",
+   "de": "2024-04-10",
+   "ate": "2024-06-03",
+   "origem": "doc 10"
+  },
+  {
+   "id": "calc.rf73.vistoria_ate_lavratura.du",
+   "descricao": "RF 73: vistoria até 1ª assinatura",
+   "valor": 35,
+   "unidade": "du",
+   "de": "2024-04-10",
+   "ate": "2024-06-03",
+   "origem": "doc 10"
+  },
+  {
+   "id": "calc.rf65.lavratura_ate_gerente.dc",
+   "descricao": "RF 65: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 4,
+   "unidade": "dc",
+   "de": "2024-06-06",
+   "ate": "2024-06-10",
+   "origem": "doc 11"
+  },
+  {
+   "id": "calc.rf65.lavratura_ate_gerente.du",
+   "descricao": "RF 65: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 2,
+   "unidade": "du",
+   "de": "2024-06-06",
+   "ate": "2024-06-10",
+   "origem": "doc 11"
+  },
+  {
+   "id": "calc.rf65.data_texto_ate_gerente.dc",
+   "descricao": "RF 65: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 32,
+   "unidade": "dc",
+   "de": "2024-05-09",
+   "ate": "2024-06-10",
+   "origem": "doc 11"
+  },
+  {
+   "id": "calc.rf65.data_texto_ate_gerente.du",
+   "descricao": "RF 65: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 21,
+   "unidade": "du",
+   "de": "2024-05-09",
+   "ate": "2024-06-10",
+   "origem": "doc 11"
+  },
+  {
+   "id": "calc.rf65.vistoria_ate_lavratura.dc",
+   "descricao": "RF 65: vistoria até 1ª assinatura",
+   "valor": 51,
+   "unidade": "dc",
+   "de": "2024-04-16",
+   "ate": "2024-06-06",
+   "origem": "doc 11"
+  },
+  {
+   "id": "calc.rf65.vistoria_ate_lavratura.du",
+   "descricao": "RF 65: vistoria até 1ª assinatura",
+   "valor": 34,
+   "unidade": "du",
+   "de": "2024-04-16",
+   "ate": "2024-06-06",
+   "origem": "doc 11"
+  },
+  {
+   "id": "calc.rf90.lavratura_ate_gerente.dc",
+   "descricao": "RF 90: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 4,
+   "unidade": "dc",
+   "de": "2024-06-06",
+   "ate": "2024-06-10",
+   "origem": "doc 12"
+  },
+  {
+   "id": "calc.rf90.lavratura_ate_gerente.du",
+   "descricao": "RF 90: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 2,
+   "unidade": "du",
+   "de": "2024-06-06",
+   "ate": "2024-06-10",
+   "origem": "doc 12"
+  },
+  {
+   "id": "calc.rf90.data_texto_ate_gerente.dc",
+   "descricao": "RF 90: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 6,
+   "unidade": "dc",
+   "de": "2024-06-04",
+   "ate": "2024-06-10",
+   "origem": "doc 12"
+  },
+  {
+   "id": "calc.rf90.data_texto_ate_gerente.du",
+   "descricao": "RF 90: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 4,
+   "unidade": "du",
+   "de": "2024-06-04",
+   "ate": "2024-06-10",
+   "origem": "doc 12"
+  },
+  {
+   "id": "calc.rf90.vistoria_ate_lavratura.dc",
+   "descricao": "RF 90: vistoria até 1ª assinatura",
+   "valor": 57,
+   "unidade": "dc",
+   "de": "2024-04-10",
+   "ate": "2024-06-06",
+   "origem": "doc 12"
+  },
+  {
+   "id": "calc.rf90.vistoria_ate_lavratura.du",
+   "descricao": "RF 90: vistoria até 1ª assinatura",
+   "valor": 38,
+   "unidade": "du",
+   "de": "2024-04-10",
+   "ate": "2024-06-06",
+   "origem": "doc 12"
+  },
+  {
+   "id": "calc.rf159.lavratura_ate_gerente.dc",
+   "descricao": "RF 159: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 4,
+   "unidade": "dc",
+   "de": "2024-08-02",
+   "ate": "2024-08-06",
+   "origem": "doc 13"
+  },
+  {
+   "id": "calc.rf159.lavratura_ate_gerente.du",
+   "descricao": "RF 159: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 2,
+   "unidade": "du",
+   "de": "2024-08-02",
+   "ate": "2024-08-06",
+   "origem": "doc 13"
+  },
+  {
+   "id": "calc.rf159.data_texto_ate_gerente.dc",
+   "descricao": "RF 159: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 15,
+   "unidade": "dc",
+   "de": "2024-07-22",
+   "ate": "2024-08-06",
+   "origem": "doc 13"
+  },
+  {
+   "id": "calc.rf159.data_texto_ate_gerente.du",
+   "descricao": "RF 159: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 11,
+   "unidade": "du",
+   "de": "2024-07-22",
+   "ate": "2024-08-06",
+   "origem": "doc 13"
+  },
+  {
+   "id": "calc.rf159.vistoria_ate_lavratura.dc",
+   "descricao": "RF 159: vistoria até 1ª assinatura",
+   "valor": 37,
+   "unidade": "dc",
+   "de": "2024-06-26",
+   "ate": "2024-08-02",
+   "origem": "doc 13"
+  },
+  {
+   "id": "calc.rf159.vistoria_ate_lavratura.du",
+   "descricao": "RF 159: vistoria até 1ª assinatura",
+   "valor": 27,
+   "unidade": "du",
+   "de": "2024-06-26",
+   "ate": "2024-08-02",
+   "origem": "doc 13"
+  },
+  {
+   "id": "calc.rf155.lavratura_ate_gerente.dc",
+   "descricao": "RF 155: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 46,
+   "unidade": "dc",
+   "de": "2024-08-09",
+   "ate": "2024-09-24",
+   "origem": "doc 16"
+  },
+  {
+   "id": "calc.rf155.lavratura_ate_gerente.du",
+   "descricao": "RF 155: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 32,
+   "unidade": "du",
+   "de": "2024-08-09",
+   "ate": "2024-09-24",
+   "origem": "doc 16"
+  },
+  {
+   "id": "calc.rf155.data_texto_ate_gerente.dc",
+   "descricao": "RF 155: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 61,
+   "unidade": "dc",
+   "de": "2024-07-25",
+   "ate": "2024-09-24",
+   "origem": "doc 16"
+  },
+  {
+   "id": "calc.rf155.data_texto_ate_gerente.du",
+   "descricao": "RF 155: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 43,
+   "unidade": "du",
+   "de": "2024-07-25",
+   "ate": "2024-09-24",
+   "origem": "doc 16"
+  },
+  {
+   "id": "calc.rf155.vistoria_ate_lavratura.dc",
+   "descricao": "RF 155: vistoria até 1ª assinatura",
+   "valor": 24,
+   "unidade": "dc",
+   "de": "2024-07-16",
+   "ate": "2024-08-09",
+   "origem": "doc 16"
+  },
+  {
+   "id": "calc.rf155.vistoria_ate_lavratura.du",
+   "descricao": "RF 155: vistoria até 1ª assinatura",
+   "valor": 18,
+   "unidade": "du",
+   "de": "2024-07-16",
+   "ate": "2024-08-09",
+   "origem": "doc 16"
+  },
+  {
+   "id": "calc.rf156.lavratura_ate_gerente.dc",
+   "descricao": "RF 156: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 46,
+   "unidade": "dc",
+   "de": "2024-08-09",
+   "ate": "2024-09-24",
+   "origem": "doc 17"
+  },
+  {
+   "id": "calc.rf156.lavratura_ate_gerente.du",
+   "descricao": "RF 156: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 32,
+   "unidade": "du",
+   "de": "2024-08-09",
+   "ate": "2024-09-24",
+   "origem": "doc 17"
+  },
+  {
+   "id": "calc.rf156.data_texto_ate_gerente.dc",
+   "descricao": "RF 156: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 62,
+   "unidade": "dc",
+   "de": "2024-07-24",
+   "ate": "2024-09-24",
+   "origem": "doc 17"
+  },
+  {
+   "id": "calc.rf156.data_texto_ate_gerente.du",
+   "descricao": "RF 156: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 44,
+   "unidade": "du",
+   "de": "2024-07-24",
+   "ate": "2024-09-24",
+   "origem": "doc 17"
+  },
+  {
+   "id": "calc.rf156.vistoria_ate_lavratura.dc",
+   "descricao": "RF 156: vistoria até 1ª assinatura",
+   "valor": 24,
+   "unidade": "dc",
+   "de": "2024-07-16",
+   "ate": "2024-08-09",
+   "origem": "doc 17"
+  },
+  {
+   "id": "calc.rf156.vistoria_ate_lavratura.du",
+   "descricao": "RF 156: vistoria até 1ª assinatura",
+   "valor": 18,
+   "unidade": "du",
+   "de": "2024-07-16",
+   "ate": "2024-08-09",
+   "origem": "doc 17"
+  },
+  {
+   "id": "calc.rf157.lavratura_ate_gerente.dc",
+   "descricao": "RF 157: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 46,
+   "unidade": "dc",
+   "de": "2024-08-09",
+   "ate": "2024-09-24",
+   "origem": "doc 18"
+  },
+  {
+   "id": "calc.rf157.lavratura_ate_gerente.du",
+   "descricao": "RF 157: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 32,
+   "unidade": "du",
+   "de": "2024-08-09",
+   "ate": "2024-09-24",
+   "origem": "doc 18"
+  },
+  {
+   "id": "calc.rf157.data_texto_ate_gerente.dc",
+   "descricao": "RF 157: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 57,
+   "unidade": "dc",
+   "de": "2024-07-29",
+   "ate": "2024-09-24",
+   "origem": "doc 18"
+  },
+  {
+   "id": "calc.rf157.data_texto_ate_gerente.du",
+   "descricao": "RF 157: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 41,
+   "unidade": "du",
+   "de": "2024-07-29",
+   "ate": "2024-09-24",
+   "origem": "doc 18"
+  },
+  {
+   "id": "calc.rf157.vistoria_ate_lavratura.dc",
+   "descricao": "RF 157: vistoria até 1ª assinatura",
+   "valor": 24,
+   "unidade": "dc",
+   "de": "2024-07-16",
+   "ate": "2024-08-09",
+   "origem": "doc 18"
+  },
+  {
+   "id": "calc.rf157.vistoria_ate_lavratura.du",
+   "descricao": "RF 157: vistoria até 1ª assinatura",
+   "valor": 18,
+   "unidade": "du",
+   "de": "2024-07-16",
+   "ate": "2024-08-09",
+   "origem": "doc 18"
+  },
+  {
+   "id": "calc.rf158.lavratura_ate_gerente.dc",
+   "descricao": "RF 158: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 46,
+   "unidade": "dc",
+   "de": "2024-08-09",
+   "ate": "2024-09-24",
+   "origem": "doc 19"
+  },
+  {
+   "id": "calc.rf158.lavratura_ate_gerente.du",
+   "descricao": "RF 158: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 32,
+   "unidade": "du",
+   "de": "2024-08-09",
+   "ate": "2024-09-24",
+   "origem": "doc 19"
+  },
+  {
+   "id": "calc.rf158.data_texto_ate_gerente.dc",
+   "descricao": "RF 158: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 70,
+   "unidade": "dc",
+   "de": "2024-07-16",
+   "ate": "2024-09-24",
+   "origem": "doc 19"
+  },
+  {
+   "id": "calc.rf158.data_texto_ate_gerente.du",
+   "descricao": "RF 158: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 50,
+   "unidade": "du",
+   "de": "2024-07-16",
+   "ate": "2024-09-24",
+   "origem": "doc 19"
+  },
+  {
+   "id": "calc.rf158.vistoria_ate_lavratura.dc",
+   "descricao": "RF 158: vistoria até 1ª assinatura",
+   "valor": 24,
+   "unidade": "dc",
+   "de": "2024-07-16",
+   "ate": "2024-08-09",
+   "origem": "doc 19"
+  },
+  {
+   "id": "calc.rf158.vistoria_ate_lavratura.du",
+   "descricao": "RF 158: vistoria até 1ª assinatura",
+   "valor": 18,
+   "unidade": "du",
+   "de": "2024-07-16",
+   "ate": "2024-08-09",
+   "origem": "doc 19"
+  },
+  {
+   "id": "calc.rf153.lavratura_ate_gerente.dc",
+   "descricao": "RF 153: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 6,
+   "unidade": "dc",
+   "de": "2024-09-11",
+   "ate": "2024-09-17",
+   "origem": "doc 22"
+  },
+  {
+   "id": "calc.rf153.lavratura_ate_gerente.du",
+   "descricao": "RF 153: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 4,
+   "unidade": "du",
+   "de": "2024-09-11",
+   "ate": "2024-09-17",
+   "origem": "doc 22"
+  },
+  {
+   "id": "calc.rf153.data_texto_ate_gerente.dc",
+   "descricao": "RF 153: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 50,
+   "unidade": "dc",
+   "de": "2024-07-29",
+   "ate": "2024-09-17",
+   "origem": "doc 22"
+  },
+  {
+   "id": "calc.rf153.data_texto_ate_gerente.du",
+   "descricao": "RF 153: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 36,
+   "unidade": "du",
+   "de": "2024-07-29",
+   "ate": "2024-09-17",
+   "origem": "doc 22"
+  },
+  {
+   "id": "calc.rf153.vistoria_ate_lavratura.dc",
+   "descricao": "RF 153: vistoria até 1ª assinatura",
+   "valor": 57,
+   "unidade": "dc",
+   "de": "2024-07-16",
+   "ate": "2024-09-11",
+   "origem": "doc 22"
+  },
+  {
+   "id": "calc.rf153.vistoria_ate_lavratura.du",
+   "descricao": "RF 153: vistoria até 1ª assinatura",
+   "valor": 41,
+   "unidade": "du",
+   "de": "2024-07-16",
+   "ate": "2024-09-11",
+   "origem": "doc 22"
+  },
+  {
+   "id": "calc.rf259.lavratura_ate_gerente.dc",
+   "descricao": "RF 259: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 2,
+   "unidade": "dc",
+   "de": "2024-11-06",
+   "ate": "2024-11-08",
+   "origem": "doc 23"
+  },
+  {
+   "id": "calc.rf259.lavratura_ate_gerente.du",
+   "descricao": "RF 259: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 2,
+   "unidade": "du",
+   "de": "2024-11-06",
+   "ate": "2024-11-08",
+   "origem": "doc 23"
+  },
+  {
+   "id": "calc.rf259.data_texto_ate_gerente.dc",
+   "descricao": "RF 259: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 32,
+   "unidade": "dc",
+   "de": "2024-10-07",
+   "ate": "2024-11-08",
+   "origem": "doc 23"
+  },
+  {
+   "id": "calc.rf259.data_texto_ate_gerente.du",
+   "descricao": "RF 259: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 23,
+   "unidade": "du",
+   "de": "2024-10-07",
+   "ate": "2024-11-08",
+   "origem": "doc 23"
+  },
+  {
+   "id": "calc.rf259.vistoria_ate_lavratura.dc",
+   "descricao": "RF 259: vistoria até 1ª assinatura",
+   "valor": 84,
+   "unidade": "dc",
+   "de": "2024-08-14",
+   "ate": "2024-11-06",
+   "origem": "doc 23"
+  },
+  {
+   "id": "calc.rf259.vistoria_ate_lavratura.du",
+   "descricao": "RF 259: vistoria até 1ª assinatura",
+   "valor": 59,
+   "unidade": "du",
+   "de": "2024-08-14",
+   "ate": "2024-11-06",
+   "origem": "doc 23"
+  },
+  {
+   "id": "calc.rf209.lavratura_ate_gerente.dc",
+   "descricao": "RF 209: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 2,
+   "unidade": "dc",
+   "de": "2024-11-06",
+   "ate": "2024-11-08",
+   "origem": "doc 24"
+  },
+  {
+   "id": "calc.rf209.lavratura_ate_gerente.du",
+   "descricao": "RF 209: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 2,
+   "unidade": "du",
+   "de": "2024-11-06",
+   "ate": "2024-11-08",
+   "origem": "doc 24"
+  },
+  {
+   "id": "calc.rf209.data_texto_ate_gerente.dc",
+   "descricao": "RF 209: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 73,
+   "unidade": "dc",
+   "de": "2024-08-27",
+   "ate": "2024-11-08",
+   "origem": "doc 24"
+  },
+  {
+   "id": "calc.rf209.data_texto_ate_gerente.du",
+   "descricao": "RF 209: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 52,
+   "unidade": "du",
+   "de": "2024-08-27",
+   "ate": "2024-11-08",
+   "origem": "doc 24"
+  },
+  {
+   "id": "calc.rf209.vistoria_ate_lavratura.dc",
+   "descricao": "RF 209: vistoria até 1ª assinatura",
+   "valor": 84,
+   "unidade": "dc",
+   "de": "2024-08-14",
+   "ate": "2024-11-06",
+   "origem": "doc 24"
+  },
+  {
+   "id": "calc.rf209.vistoria_ate_lavratura.du",
+   "descricao": "RF 209: vistoria até 1ª assinatura",
+   "valor": 59,
+   "unidade": "du",
+   "de": "2024-08-14",
+   "ate": "2024-11-06",
+   "origem": "doc 24"
+  },
+  {
+   "id": "calc.rf212.lavratura_ate_gerente.dc",
+   "descricao": "RF 212: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 2,
+   "unidade": "dc",
+   "de": "2024-11-06",
+   "ate": "2024-11-08",
+   "origem": "doc 25"
+  },
+  {
+   "id": "calc.rf212.lavratura_ate_gerente.du",
+   "descricao": "RF 212: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 2,
+   "unidade": "du",
+   "de": "2024-11-06",
+   "ate": "2024-11-08",
+   "origem": "doc 25"
+  },
+  {
+   "id": "calc.rf212.data_texto_ate_gerente.dc",
+   "descricao": "RF 212: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 29,
+   "unidade": "dc",
+   "de": "2024-10-10",
+   "ate": "2024-11-08",
+   "origem": "doc 25"
+  },
+  {
+   "id": "calc.rf212.data_texto_ate_gerente.du",
+   "descricao": "RF 212: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 20,
+   "unidade": "du",
+   "de": "2024-10-10",
+   "ate": "2024-11-08",
+   "origem": "doc 25"
+  },
+  {
+   "id": "calc.rf212.vistoria_ate_lavratura.dc",
+   "descricao": "RF 212: vistoria até 1ª assinatura",
+   "valor": 78,
+   "unidade": "dc",
+   "de": "2024-08-20",
+   "ate": "2024-11-06",
+   "origem": "doc 25"
+  },
+  {
+   "id": "calc.rf212.vistoria_ate_lavratura.du",
+   "descricao": "RF 212: vistoria até 1ª assinatura",
+   "valor": 55,
+   "unidade": "du",
+   "de": "2024-08-20",
+   "ate": "2024-11-06",
+   "origem": "doc 25"
+  },
+  {
+   "id": "calc.rf213.lavratura_ate_gerente.dc",
+   "descricao": "RF 213: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 2,
+   "unidade": "dc",
+   "de": "2024-11-06",
+   "ate": "2024-11-08",
+   "origem": "doc 26"
+  },
+  {
+   "id": "calc.rf213.lavratura_ate_gerente.du",
+   "descricao": "RF 213: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 2,
+   "unidade": "du",
+   "de": "2024-11-06",
+   "ate": "2024-11-08",
+   "origem": "doc 26"
+  },
+  {
+   "id": "calc.rf213.data_texto_ate_gerente.dc",
+   "descricao": "RF 213: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 71,
+   "unidade": "dc",
+   "de": "2024-08-29",
+   "ate": "2024-11-08",
+   "origem": "doc 26"
+  },
+  {
+   "id": "calc.rf213.data_texto_ate_gerente.du",
+   "descricao": "RF 213: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 50,
+   "unidade": "du",
+   "de": "2024-08-29",
+   "ate": "2024-11-08",
+   "origem": "doc 26"
+  },
+  {
+   "id": "calc.rf213.vistoria_ate_lavratura.dc",
+   "descricao": "RF 213: vistoria até 1ª assinatura",
+   "valor": 78,
+   "unidade": "dc",
+   "de": "2024-08-20",
+   "ate": "2024-11-06",
+   "origem": "doc 26"
+  },
+  {
+   "id": "calc.rf213.vistoria_ate_lavratura.du",
+   "descricao": "RF 213: vistoria até 1ª assinatura",
+   "valor": 55,
+   "unidade": "du",
+   "de": "2024-08-20",
+   "ate": "2024-11-06",
+   "origem": "doc 26"
+  },
+  {
+   "id": "calc.rf214.lavratura_ate_gerente.dc",
+   "descricao": "RF 214: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 2,
+   "unidade": "dc",
+   "de": "2024-11-06",
+   "ate": "2024-11-08",
+   "origem": "doc 27"
+  },
+  {
+   "id": "calc.rf214.lavratura_ate_gerente.du",
+   "descricao": "RF 214: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 2,
+   "unidade": "du",
+   "de": "2024-11-06",
+   "ate": "2024-11-08",
+   "origem": "doc 27"
+  },
+  {
+   "id": "calc.rf214.data_texto_ate_gerente.dc",
+   "descricao": "RF 214: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 28,
+   "unidade": "dc",
+   "de": "2024-10-11",
+   "ate": "2024-11-08",
+   "origem": "doc 27"
+  },
+  {
+   "id": "calc.rf214.data_texto_ate_gerente.du",
+   "descricao": "RF 214: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 19,
+   "unidade": "du",
+   "de": "2024-10-11",
+   "ate": "2024-11-08",
+   "origem": "doc 27"
+  },
+  {
+   "id": "calc.rf214.vistoria_ate_lavratura.dc",
+   "descricao": "RF 214: vistoria até 1ª assinatura",
+   "valor": 78,
+   "unidade": "dc",
+   "de": "2024-08-20",
+   "ate": "2024-11-06",
+   "origem": "doc 27"
+  },
+  {
+   "id": "calc.rf214.vistoria_ate_lavratura.du",
+   "descricao": "RF 214: vistoria até 1ª assinatura",
+   "valor": 55,
+   "unidade": "du",
+   "de": "2024-08-20",
+   "ate": "2024-11-06",
+   "origem": "doc 27"
+  },
+  {
+   "id": "calc.rf17.lavratura_ate_gerente.dc",
+   "descricao": "RF 17: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 1,
+   "unidade": "dc",
+   "de": "2024-11-07",
+   "ate": "2024-11-08",
+   "origem": "doc 28"
+  },
+  {
+   "id": "calc.rf17.lavratura_ate_gerente.du",
+   "descricao": "RF 17: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 1,
+   "unidade": "du",
+   "de": "2024-11-07",
+   "ate": "2024-11-08",
+   "origem": "doc 28"
+  },
+  {
+   "id": "calc.rf17.data_texto_ate_gerente.dc",
+   "descricao": "RF 17: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 23,
+   "unidade": "dc",
+   "de": "2024-10-16",
+   "ate": "2024-11-08",
+   "origem": "doc 28"
+  },
+  {
+   "id": "calc.rf17.data_texto_ate_gerente.du",
+   "descricao": "RF 17: data escrita no relatório até 'De acordo' do Gerente",
+   "valor": 16,
+   "unidade": "du",
+   "de": "2024-10-16",
+   "ate": "2024-11-08",
+   "origem": "doc 28"
+  },
+  {
+   "id": "calc.rf17.vistoria_ate_lavratura.dc",
+   "descricao": "RF 17: vistoria até 1ª assinatura",
+   "valor": 246,
+   "unidade": "dc",
+   "de": "2024-03-06",
+   "ate": "2024-11-07",
+   "origem": "doc 28"
+  },
+  {
+   "id": "calc.rf17.vistoria_ate_lavratura.du",
+   "descricao": "RF 17: vistoria até 1ª assinatura",
+   "valor": 171,
+   "unidade": "du",
+   "de": "2024-03-06",
+   "ate": "2024-11-07",
+   "origem": "doc 28"
+  },
+  {
+   "id": "calc.rf10.gerente_ate_oficio.dc",
+   "descricao": "RF 10: 'De acordo' até o ofício de encaminhamento",
+   "valor": 9,
+   "unidade": "dc",
+   "de": "2024-04-29",
+   "ate": "2024-05-08",
+   "origem": "doc 1 → doc 4"
+  },
+  {
+   "id": "calc.rf10.gerente_ate_oficio.du",
+   "descricao": "RF 10: 'De acordo' até o ofício de encaminhamento",
+   "valor": 6,
+   "unidade": "du",
+   "de": "2024-04-29",
+   "ate": "2024-05-08",
+   "origem": "doc 1 → doc 4"
+  },
+  {
+   "id": "calc.rf11.gerente_ate_oficio.dc",
+   "descricao": "RF 11: 'De acordo' até o ofício de encaminhamento",
+   "valor": 9,
+   "unidade": "dc",
+   "de": "2024-04-29",
+   "ate": "2024-05-08",
+   "origem": "doc 2 → doc 4"
+  },
+  {
+   "id": "calc.rf11.gerente_ate_oficio.du",
+   "descricao": "RF 11: 'De acordo' até o ofício de encaminhamento",
+   "valor": 6,
+   "unidade": "du",
+   "de": "2024-04-29",
+   "ate": "2024-05-08",
+   "origem": "doc 2 → doc 4"
+  },
+  {
+   "id": "calc.rf12.gerente_ate_oficio.dc",
+   "descricao": "RF 12: 'De acordo' até o ofício de encaminhamento",
+   "valor": 9,
+   "unidade": "dc",
+   "de": "2024-04-29",
+   "ate": "2024-05-08",
+   "origem": "doc 3 → doc 4"
+  },
+  {
+   "id": "calc.rf12.gerente_ate_oficio.du",
+   "descricao": "RF 12: 'De acordo' até o ofício de encaminhamento",
+   "valor": 6,
+   "unidade": "du",
+   "de": "2024-04-29",
+   "ate": "2024-05-08",
+   "origem": "doc 3 → doc 4"
+  },
+  {
+   "id": "calc.rf159.gerente_ate_oficio.dc",
+   "descricao": "RF 159: 'De acordo' até o ofício de encaminhamento",
+   "valor": 1,
+   "unidade": "dc",
+   "de": "2024-08-06",
+   "ate": "2024-08-07",
+   "origem": "doc 13 → doc 14"
+  },
+  {
+   "id": "calc.rf159.gerente_ate_oficio.du",
+   "descricao": "RF 159: 'De acordo' até o ofício de encaminhamento",
+   "valor": 1,
+   "unidade": "du",
+   "de": "2024-08-06",
+   "ate": "2024-08-07",
+   "origem": "doc 13 → doc 14"
+  },
+  {
+   "id": "calc.rf259.gerente_ate_oficio.dc",
+   "descricao": "RF 259: 'De acordo' até o ofício de encaminhamento",
+   "valor": 3,
+   "unidade": "dc",
+   "de": "2024-11-08",
+   "ate": "2024-11-11",
+   "origem": "doc 23 → doc 29"
+  },
+  {
+   "id": "calc.rf259.gerente_ate_oficio.du",
+   "descricao": "RF 259: 'De acordo' até o ofício de encaminhamento",
+   "valor": 1,
+   "unidade": "du",
+   "de": "2024-11-08",
+   "ate": "2024-11-11",
+   "origem": "doc 23 → doc 29"
+  },
+  {
+   "id": "calc.rf209.gerente_ate_oficio.dc",
+   "descricao": "RF 209: 'De acordo' até o ofício de encaminhamento",
+   "valor": 3,
+   "unidade": "dc",
+   "de": "2024-11-08",
+   "ate": "2024-11-11",
+   "origem": "doc 24 → doc 29"
+  },
+  {
+   "id": "calc.rf209.gerente_ate_oficio.du",
+   "descricao": "RF 209: 'De acordo' até o ofício de encaminhamento",
+   "valor": 1,
+   "unidade": "du",
+   "de": "2024-11-08",
+   "ate": "2024-11-11",
+   "origem": "doc 24 → doc 29"
+  },
+  {
+   "id": "calc.rf212.gerente_ate_oficio.dc",
+   "descricao": "RF 212: 'De acordo' até o ofício de encaminhamento",
+   "valor": 3,
+   "unidade": "dc",
+   "de": "2024-11-08",
+   "ate": "2024-11-11",
+   "origem": "doc 25 → doc 29"
+  },
+  {
+   "id": "calc.rf212.gerente_ate_oficio.du",
+   "descricao": "RF 212: 'De acordo' até o ofício de encaminhamento",
+   "valor": 1,
+   "unidade": "du",
+   "de": "2024-11-08",
+   "ate": "2024-11-11",
+   "origem": "doc 25 → doc 29"
+  },
+  {
+   "id": "calc.rf213.gerente_ate_oficio.dc",
+   "descricao": "RF 213: 'De acordo' até o ofício de encaminhamento",
+   "valor": 3,
+   "unidade": "dc",
+   "de": "2024-11-08",
+   "ate": "2024-11-11",
+   "origem": "doc 26 → doc 29"
+  },
+  {
+   "id": "calc.rf213.gerente_ate_oficio.du",
+   "descricao": "RF 213: 'De acordo' até o ofício de encaminhamento",
+   "valor": 1,
+   "unidade": "du",
+   "de": "2024-11-08",
+   "ate": "2024-11-11",
+   "origem": "doc 26 → doc 29"
+  },
+  {
+   "id": "calc.rf214.gerente_ate_oficio.dc",
+   "descricao": "RF 214: 'De acordo' até o ofício de encaminhamento",
+   "valor": 3,
+   "unidade": "dc",
+   "de": "2024-11-08",
+   "ate": "2024-11-11",
+   "origem": "doc 27 → doc 29"
+  },
+  {
+   "id": "calc.rf214.gerente_ate_oficio.du",
+   "descricao": "RF 214: 'De acordo' até o ofício de encaminhamento",
+   "valor": 1,
+   "unidade": "du",
+   "de": "2024-11-08",
+   "ate": "2024-11-11",
+   "origem": "doc 27 → doc 29"
+  },
+  {
+   "id": "calc.rf17.gerente_ate_oficio.dc",
+   "descricao": "RF 17: 'De acordo' até o ofício de encaminhamento",
+   "valor": 3,
+   "unidade": "dc",
+   "de": "2024-11-08",
+   "ate": "2024-11-11",
+   "origem": "doc 28 → doc 29"
+  },
+  {
+   "id": "calc.rf17.gerente_ate_oficio.du",
+   "descricao": "RF 17: 'De acordo' até o ofício de encaminhamento",
+   "valor": 1,
+   "unidade": "du",
+   "de": "2024-11-08",
+   "ate": "2024-11-11",
+   "origem": "doc 28 → doc 29"
+  },
+  {
+   "id": "calc.oficio349.data_escrita_ate_assinatura.dc",
+   "descricao": "Ofício 349: data escrita até assinatura",
+   "valor": 0,
+   "unidade": "dc",
+   "de": "2024-05-08",
+   "ate": "2024-05-08",
+   "origem": "doc 4"
+  },
+  {
+   "id": "calc.oficio349.data_escrita_ate_assinatura.du",
+   "descricao": "Ofício 349: data escrita até assinatura",
+   "valor": 0,
+   "unidade": "du",
+   "de": "2024-05-08",
+   "ate": "2024-05-08",
+   "origem": "doc 4"
+  },
+  {
+   "id": "calc.oficio682.data_escrita_ate_assinatura.dc",
+   "descricao": "Ofício 682: data escrita até assinatura",
+   "valor": 0,
+   "unidade": "dc",
+   "de": "2024-08-07",
+   "ate": "2024-08-07",
+   "origem": "doc 14"
+  },
+  {
+   "id": "calc.oficio682.data_escrita_ate_assinatura.du",
+   "descricao": "Ofício 682: data escrita até assinatura",
+   "valor": 0,
+   "unidade": "du",
+   "de": "2024-08-07",
+   "ate": "2024-08-07",
+   "origem": "doc 14"
+  },
+  {
+   "id": "calc.oficio946.data_escrita_ate_assinatura.dc",
+   "descricao": "Ofício 946: data escrita até assinatura",
+   "valor": 3,
+   "unidade": "dc",
+   "de": "2024-11-08",
+   "ate": "2024-11-11",
+   "origem": "doc 29"
+  },
+  {
+   "id": "calc.oficio946.data_escrita_ate_assinatura.du",
+   "descricao": "Ofício 946: data escrita até assinatura",
+   "valor": 1,
+   "unidade": "du",
+   "de": "2024-11-08",
+   "ate": "2024-11-11",
+   "origem": "doc 29"
+  },
+  {
+   "id": "calc.oficio349.vencimento_dc",
+   "descricao": "Ofício 349: vencimento em dias corridos",
+   "valor": "2024-06-07",
+   "unidade": "data",
+   "origem": "e-mail doc 5 + prazo do ofício"
+  },
+  {
+   "id": "calc.oficio349.vencimento_du",
+   "descricao": "Ofício 349: vencimento em dias úteis",
+   "valor": "2024-06-20",
+   "unidade": "data",
+   "origem": "e-mail doc 5 + prazo do ofício (du)"
+  },
+  {
+   "id": "calc.oficio682.vencimento_dc",
+   "descricao": "Ofício 682: vencimento em dias corridos",
+   "valor": "2024-09-07",
+   "unidade": "data",
+   "origem": "e-mail doc 15 + prazo do ofício"
+  },
+  {
+   "id": "calc.oficio682.vencimento_du",
+   "descricao": "Ofício 682: vencimento em dias úteis",
+   "valor": "2024-09-19",
+   "unidade": "data",
+   "origem": "e-mail doc 15 + prazo do ofício (du)"
+  },
+  {
+   "id": "calc.oficio946.vencimento_dc",
+   "descricao": "Ofício 946: vencimento em dias corridos",
+   "valor": "2024-12-11",
+   "unidade": "data",
+   "origem": "e-mail doc 30 + prazo do ofício"
+  },
+  {
+   "id": "calc.oficio946.vencimento_du",
+   "descricao": "Ofício 946: vencimento em dias úteis",
+   "valor": "2024-12-26",
+   "unidade": "data",
+   "origem": "e-mail doc 30 + prazo do ofício (du)"
+  },
+  {
+   "id": "calc.oficio349.envio_ate_parecer.dc",
+   "descricao": "Ofício 349: envio até o Parecer 250/2025",
+   "valor": 426,
+   "unidade": "dc",
+   "de": "2024-05-08",
+   "ate": "2025-07-08",
+   "origem": "doc 5 → marco.parecer"
+  },
+  {
+   "id": "calc.oficio349.envio_ate_parecer.du",
+   "descricao": "Ofício 349: envio até o Parecer 250/2025",
+   "valor": 290,
+   "unidade": "du",
+   "de": "2024-05-08",
+   "ate": "2025-07-08",
+   "origem": "doc 5 → marco.parecer"
+  },
+  {
+   "id": "calc.oficio682.envio_ate_parecer.dc",
+   "descricao": "Ofício 682: envio até o Parecer 250/2025",
+   "valor": 334,
+   "unidade": "dc",
+   "de": "2024-08-08",
+   "ate": "2025-07-08",
+   "origem": "doc 15 → marco.parecer"
+  },
+  {
+   "id": "calc.oficio682.envio_ate_parecer.du",
+   "descricao": "Ofício 682: envio até o Parecer 250/2025",
+   "valor": 225,
+   "unidade": "du",
+   "de": "2024-08-08",
+   "ate": "2025-07-08",
+   "origem": "doc 15 → marco.parecer"
+  },
+  {
+   "id": "calc.oficio946.envio_ate_parecer.dc",
+   "descricao": "Ofício 946: envio até o Parecer 250/2025",
+   "valor": 239,
+   "unidade": "dc",
+   "de": "2024-11-11",
+   "ate": "2025-07-08",
+   "origem": "doc 30 → marco.parecer"
+  },
+  {
+   "id": "calc.oficio946.envio_ate_parecer.du",
+   "descricao": "Ofício 946: envio até o Parecer 250/2025",
+   "valor": 159,
+   "unidade": "du",
+   "de": "2024-11-11",
+   "ate": "2025-07-08",
+   "origem": "doc 30 → marco.parecer"
+  },
+  {
+   "id": "calc.ultimo_vencimento_ate_parecer.dc",
+   "descricao": "Último vencimento de prazo de manifestação (du) até o parecer",
+   "valor": 194,
+   "unidade": "dc",
+   "de": "2024-12-26",
+   "ate": "2025-07-08",
+   "origem": "calc.oficio*.vencimento_du → marco.parecer"
+  },
+  {
+   "id": "calc.ultimo_vencimento_ate_parecer.du",
+   "descricao": "Último vencimento de prazo de manifestação (du) até o parecer",
+   "valor": 129,
+   "unidade": "du",
+   "de": "2024-12-26",
+   "ate": "2025-07-08",
+   "origem": "calc.oficio*.vencimento_du → marco.parecer"
+  },
+  {
+   "id": "calc.parecer_ate_procuradoria.dc",
+   "descricao": "Parecer 250/2025 até o envio à Procuradoria",
+   "valor": 118,
+   "unidade": "dc",
+   "de": "2025-07-08",
+   "ate": "2025-11-03",
+   "origem": "marco.parecer → marco.despacho_procuradoria"
+  },
+  {
+   "id": "calc.parecer_ate_procuradoria.du",
+   "descricao": "Parecer 250/2025 até o envio à Procuradoria",
+   "valor": 83,
+   "unidade": "du",
+   "de": "2025-07-08",
+   "ate": "2025-11-03",
+   "origem": "marco.parecer → marco.despacho_procuradoria"
+  },
+  {
+   "id": "calc.vencimento_procuradoria",
+   "descricao": "Vencimento do prazo da Procuradoria (dc)",
+   "valor": "2025-11-18",
+   "unidade": "data",
+   "origem": "marco.despacho_procuradoria + prazo de N-FIS-27"
+  },
+  {
+   "id": "calc.vencimento_procuradoria_prorrogado",
+   "descricao": "Vencimento com uma prorrogação por igual período (dc)",
+   "valor": "2025-12-03",
+   "unidade": "data",
+   "origem": "idem, prorrogado"
+  },
+  {
+   "id": "calc.maior_hiato_entre_pecas.dc",
+   "descricao": "Maior intervalo entre peças datadas",
+   "valor": 239,
+   "unidade": "dc",
+   "de": "2024-11-11",
+   "ate": "2025-07-08",
+   "origem": "assinaturas e e-mails da linha do tempo"
+  },
+  {
+   "id": "calc.maior_hiato_entre_pecas.du",
+   "descricao": "Maior intervalo entre peças datadas",
+   "valor": 159,
+   "unidade": "du",
+   "de": "2024-11-11",
+   "ate": "2025-07-08",
+   "origem": "assinaturas e e-mails da linha do tempo"
+  },
+  {
+   "id": "calc.oficio757.aviso_ate_vistoria.dc",
+   "descricao": "Ofício 757: envio do aviso até a 1ª vistoria",
+   "valor": 1,
+   "unidade": "dc",
+   "de": "2024-09-09",
+   "ate": "2024-09-10",
+   "origem": "doc 21 → data literal"
+  },
+  {
+   "id": "calc.oficio757.aviso_ate_vistoria.du",
+   "descricao": "Ofício 757: envio do aviso até a 1ª vistoria",
+   "valor": 1,
+   "unidade": "du",
+   "de": "2024-09-09",
+   "ate": "2024-09-10",
+   "origem": "doc 21 → data literal"
+  },
+  {
+   "id": "calc.oficio757.data_escrita_ate_assinatura.dc",
+   "descricao": "Ofício 757: data escrita até assinatura",
+   "valor": 3,
+   "unidade": "dc",
+   "de": "2024-09-06",
+   "ate": "2024-09-09",
+   "origem": "doc 20"
+  },
+  {
+   "id": "calc.oficio757.data_escrita_ate_assinatura.du",
+   "descricao": "Ofício 757: data escrita até assinatura",
+   "valor": 1,
+   "unidade": "du",
+   "de": "2024-09-06",
+   "ate": "2024-09-09",
+   "origem": "doc 20"
+  }
+ ],
+ "requisitos": {
+  "R-FIS-01": {
+   "exigencia": "Há processo regulatório específico da concessionária para as vistorias anuais.",
+   "tipo": "obrigacao",
+   "normas": [
+    "N-FIS-01"
+   ],
+   "criticidade": "media",
+   "unidade_caso": "processo",
+   "n_casos": 1,
+   "contagem": {
+    "conforme": 1,
+    "não conforme": 0,
+    "sem evidência": 0,
+    "não aplicável": 0
+   },
+   "taxa_conformidade": 100.0,
+   "validar_procuradoria": false,
+   "nota_validacao": "",
+   "casos": [
+    {
+     "caso": "processo",
+     "situacao": "conforme",
+     "detalhe": "23 relatórios e 4 ofícios; concessionárias nas fichas: ['Concessionária Águas do Rio – Bloco 1', 'Águas do Rio', 'Águas do Rio - Bloco 1']. Todos os ofícios são dirigidos à mesma concessionária.",
+     "calculos": [],
+     "documentos": [
+      1,
+      2,
+      3,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      16,
+      17,
+      18,
+      19,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      31
+     ]
+    }
+   ]
+  },
+  "R-FIS-02": {
+   "exigencia": "O cronograma anual de vistorias é elaborado e juntado antes da primeira vistoria do exercício.",
+   "tipo": "obrigacao",
+   "normas": [
+    "N-FIS-01"
+   ],
+   "criticidade": "media",
+   "unidade_caso": "processo",
+   "n_casos": 1,
+   "contagem": {
+    "conforme": 0,
+    "não conforme": 0,
+    "sem evidência": 1,
+    "não aplicável": 0
+   },
+   "taxa_conformidade": null,
+   "validar_procuradoria": true,
+   "nota_validacao": "Dizer se o cronograma do art. 2º (N-FIS-01) deve constar deste processo e se o aviso pontual o substitui.",
+   "casos": [
+    {
+     "caso": "processo",
+     "situacao": "sem evidência",
+     "detalhe": "Nenhuma peça com cronograma de vistorias nos autos (busca por 'cronograma de vistorias/fiscalização': páginas []). Primeira vistoria registrada em 2024-01-18; programação comunicada só em aviso pontual: ['Ofício 757/2024 (doc 20)'].",
+     "calculos": [],
+     "documentos": [
+      20
+     ]
+    }
+   ]
+  },
+  "R-FIS-03": {
+   "exigencia": "Cada unidade do programa é vistoriada dentro do exercício do programa.",
+   "tipo": "periodicidade",
+   "normas": [
+    "N-FIS-01"
+   ],
+   "criticidade": "media",
+   "unidade_caso": "relatório",
+   "n_casos": 23,
+   "contagem": {
+    "conforme": 21,
+    "não conforme": 0,
+    "sem evidência": 2,
+    "não aplicável": 0
+   },
+   "taxa_conformidade": 100.0,
+   "validar_procuradoria": true,
+   "nota_validacao": "Estações de tratamento com relatório no PDF: 2 (ETA Magé (Sistema Roncador), ETE São Gonçalo). O parecer lista 42 relatórios; 19 não têm texto no PDF. Confirmar com a CASAN a lista completa de estações do Bloco 1 sujeitas à vistoria anual.",
+   "interpretacao": "O intervalo entre vistorias da mesma unidade em exercícios diferentes não é verificável: os programas de outros anos não estão nos autos.",
+   "casos": [
+    {
+     "caso": "RF 10/2024 (doc 1)",
+     "situacao": "conforme",
+     "detalhe": "EEAT vistoriada em 2024-01-18 (exercício 2024).",
+     "calculos": [],
+     "documentos": [
+      1
+     ]
+    },
+    {
+     "caso": "RF 11/2024 (doc 2)",
+     "situacao": "conforme",
+     "detalhe": "EEAT vistoriada em 2024-01-18 (exercício 2024).",
+     "calculos": [],
+     "documentos": [
+      2
+     ]
+    },
+    {
+     "caso": "RF 12/2024 (doc 3)",
+     "situacao": "sem evidência",
+     "detalhe": "Data da vistoria não legível no relatório/ficha.",
+     "calculos": [],
+     "documentos": [
+      3
+     ]
+    },
+    {
+     "caso": "RF 56/2024 (doc 6)",
+     "situacao": "conforme",
+     "detalhe": "EEE vistoriada em 2024-04-04 (exercício 2024).",
+     "calculos": [],
+     "documentos": [
+      6
+     ]
+    },
+    {
+     "caso": "RF 52/2024 (doc 7)",
+     "situacao": "conforme",
+     "detalhe": "EEE vistoriada em 2024-04-02 (exercício 2024).",
+     "calculos": [],
+     "documentos": [
+      7
+     ]
+    },
+    {
+     "caso": "RF 59/2024 (doc 8)",
+     "situacao": "conforme",
+     "detalhe": "EEE vistoriada em 2024-04-04 (exercício 2024).",
+     "calculos": [],
+     "documentos": [
+      8
+     ]
+    },
+    {
+     "caso": "RF 70/2024 (doc 9)",
+     "situacao": "conforme",
+     "detalhe": "EEE vistoriada em 2024-04-02 (exercício 2024).",
+     "calculos": [],
+     "documentos": [
+      9
+     ]
+    },
+    {
+     "caso": "RF 73/2024 (doc 10)",
+     "situacao": "conforme",
+     "detalhe": "EEE vistoriada em 2024-04-10 (exercício 2024).",
+     "calculos": [],
+     "documentos": [
+      10
+     ]
+    },
+    {
+     "caso": "RF 65/2024 (doc 11)",
+     "situacao": "conforme",
+     "detalhe": "EEE vistoriada em 2024-04-16 (exercício 2024).",
+     "calculos": [],
+     "documentos": [
+      11
+     ]
+    },
+    {
+     "caso": "RF 90/2024 (doc 12)",
+     "situacao": "conforme",
+     "detalhe": "EEE vistoriada em 2024-04-10 (exercício 2024).",
+     "calculos": [],
+     "documentos": [
+      12
+     ]
+    },
+    {
+     "caso": "RF 159/2024 (doc 13)",
+     "situacao": "conforme",
+     "detalhe": "EEAT vistoriada em 2024-06-26 (exercício 2024).",
+     "calculos": [],
+     "documentos": [
+      13
+     ]
+    },
+    {
+     "caso": "RF 155/2024 (doc 16)",
+     "situacao": "conforme",
+     "detalhe": "EEAT vistoriada em 2024-07-16 (exercício 2024).",
+     "calculos": [],
+     "documentos": [
+      16
+     ]
+    },
+    {
+     "caso": "RF 156/2024 (doc 17)",
+     "situacao": "conforme",
+     "detalhe": "EEAT vistoriada em 2024-07-16 (exercício 2024).",
+     "calculos": [],
+     "documentos": [
+      17
+     ]
+    },
+    {
+     "caso": "RF 157/2024 (doc 18)",
+     "situacao": "conforme",
+     "detalhe": "EEAT vistoriada em 2024-07-16 (exercício 2024).",
+     "calculos": [],
+     "documentos": [
+      18
+     ]
+    },
+    {
+     "caso": "RF 158/2024 (doc 19)",
+     "situacao": "conforme",
+     "detalhe": "EEAT vistoriada em 2024-07-16 (exercício 2024).",
+     "calculos": [],
+     "documentos": [
+      19
+     ]
+    },
+    {
+     "caso": "RF 153/2024 (doc 22)",
+     "situacao": "conforme",
+     "detalhe": "ETA vistoriada em 2024-07-16 (exercício 2024).",
+     "calculos": [],
+     "documentos": [
+      22
+     ]
+    },
+    {
+     "caso": "RF 259/2024 (doc 23)",
+     "situacao": "conforme",
+     "detalhe": "EEE vistoriada em 2024-08-14 (exercício 2024).",
+     "calculos": [],
+     "documentos": [
+      23
+     ]
+    },
+    {
+     "caso": "RF 209/2024 (doc 24)",
+     "situacao": "conforme",
+     "detalhe": "EEE vistoriada em 2024-08-14 (exercício 2024).",
+     "calculos": [],
+     "documentos": [
+      24
+     ]
+    },
+    {
+     "caso": "RF 212/2024 (doc 25)",
+     "situacao": "conforme",
+     "detalhe": "EEE vistoriada em 2024-08-20 (exercício 2024).",
+     "calculos": [],
+     "documentos": [
+      25
+     ]
+    },
+    {
+     "caso": "RF 213/2024 (doc 26)",
+     "situacao": "conforme",
+     "detalhe": "EEE vistoriada em 2024-08-20 (exercício 2024).",
+     "calculos": [],
+     "documentos": [
+      26
+     ]
+    },
+    {
+     "caso": "RF 214/2024 (doc 27)",
+     "situacao": "conforme",
+     "detalhe": "EEE vistoriada em 2024-08-20 (exercício 2024).",
+     "calculos": [],
+     "documentos": [
+      27
+     ]
+    },
+    {
+     "caso": "RF 17/2024 (doc 28)",
+     "situacao": "conforme",
+     "detalhe": "ETE vistoriada em 2024-03-06 (exercício 2024).",
+     "calculos": [],
+     "documentos": [
+      28
+     ]
+    },
+    {
+     "caso": "RF 227/2024 (doc 31)",
+     "situacao": "sem evidência",
+     "detalhe": "Data da vistoria não legível no relatório/ficha.",
+     "calculos": [],
+     "documentos": [
+      31
+     ]
+    }
+   ]
+  },
+  "R-FIS-04": {
+   "exigencia": "O relatório de fiscalização é enviado ao Gerente da câmara em até 5 dias úteis da lavratura.",
+   "tipo": "prazo",
+   "normas": [
+    "N-FIS-35"
+   ],
+   "criticidade": "baixa",
+   "unidade_caso": "relatório",
+   "n_casos": 23,
+   "contagem": {
+    "conforme": 6,
+    "não conforme": 0,
+    "sem evidência": 1,
+    "não aplicável": 16
+   },
+   "taxa_conformidade": 100.0,
+   "validar_procuradoria": true,
+   "nota_validacao": "Fixar o marco da 'lavratura' (1ª assinatura ou data escrita no relatório) e se o 'De acordo' equivale ao envio ao Gerente (N-FIS-35).",
+   "interpretacao": "Lavratura = 1ª assinatura eletrônica; envio ao Gerente = data do 'De acordo' (aproximação). Leitura alternativa, também calculada: data escrita no texto do relatório ('Em dd/mm/aaaa'). Relatório lavrado antes da vigência = não aplicável.",
+   "casos": [
+    {
+     "caso": "RF 10/2024 (doc 1)",
+     "situacao": "não aplicável",
+     "detalhe": "Lavrado em 2024-03-07, antes da vigência (2024-10-01). Medido: 35 du até o Gerente. Leitura alternativa (data escrita no texto 2024-01-23): 65 du (acima do limite). Vistoria → 1ª assinatura: 49 dc.",
+     "calculos": [
+      "calc.rf10.lavratura_ate_gerente.dc",
+      "calc.rf10.lavratura_ate_gerente.du",
+      "calc.rf10.data_texto_ate_gerente.dc",
+      "calc.rf10.data_texto_ate_gerente.du",
+      "calc.rf10.vistoria_ate_lavratura.dc",
+      "calc.rf10.vistoria_ate_lavratura.du"
+     ],
+     "documentos": [
+      1
+     ]
+    },
+    {
+     "caso": "RF 11/2024 (doc 2)",
+     "situacao": "não aplicável",
+     "detalhe": "Lavrado em 2024-03-07, antes da vigência (2024-10-01). Medido: 35 du até o Gerente. Leitura alternativa (data escrita no texto 2024-01-23): 65 du (acima do limite). Vistoria → 1ª assinatura: 49 dc.",
+     "calculos": [
+      "calc.rf11.lavratura_ate_gerente.dc",
+      "calc.rf11.lavratura_ate_gerente.du",
+      "calc.rf11.data_texto_ate_gerente.dc",
+      "calc.rf11.data_texto_ate_gerente.du",
+      "calc.rf11.vistoria_ate_lavratura.dc",
+      "calc.rf11.vistoria_ate_lavratura.du"
+     ],
+     "documentos": [
+      2
+     ]
+    },
+    {
+     "caso": "RF 12/2024 (doc 3)",
+     "situacao": "não aplicável",
+     "detalhe": "Lavrado em 2024-03-07, antes da vigência (2024-10-01). Medido: 35 du até o Gerente. Leitura alternativa (data escrita no texto 2024-01-22): 66 du (acima do limite).",
+     "calculos": [
+      "calc.rf12.lavratura_ate_gerente.dc",
+      "calc.rf12.lavratura_ate_gerente.du",
+      "calc.rf12.data_texto_ate_gerente.dc",
+      "calc.rf12.data_texto_ate_gerente.du"
+     ],
+     "documentos": [
+      3
+     ]
+    },
+    {
+     "caso": "RF 56/2024 (doc 6)",
+     "situacao": "não aplicável",
+     "detalhe": "Lavrado em 2024-05-10, antes da vigência (2024-10-01). Medido: 10 du até o Gerente. Leitura alternativa (data escrita no texto 2024-04-23): 22 du (acima do limite). Vistoria → 1ª assinatura: 36 dc.",
+     "calculos": [
+      "calc.rf56.lavratura_ate_gerente.dc",
+      "calc.rf56.lavratura_ate_gerente.du",
+      "calc.rf56.data_texto_ate_gerente.dc",
+      "calc.rf56.data_texto_ate_gerente.du",
+      "calc.rf56.vistoria_ate_lavratura.dc",
+      "calc.rf56.vistoria_ate_lavratura.du"
+     ],
+     "documentos": [
+      6
+     ]
+    },
+    {
+     "caso": "RF 52/2024 (doc 7)",
+     "situacao": "não aplicável",
+     "detalhe": "Lavrado em 2024-05-10, antes da vigência (2024-10-01). Medido: 10 du até o Gerente. Leitura alternativa (data escrita no texto 2024-04-24): 21 du (acima do limite). Vistoria → 1ª assinatura: 38 dc.",
+     "calculos": [
+      "calc.rf52.lavratura_ate_gerente.dc",
+      "calc.rf52.lavratura_ate_gerente.du",
+      "calc.rf52.data_texto_ate_gerente.dc",
+      "calc.rf52.data_texto_ate_gerente.du",
+      "calc.rf52.vistoria_ate_lavratura.dc",
+      "calc.rf52.vistoria_ate_lavratura.du"
+     ],
+     "documentos": [
+      7
+     ]
+    },
+    {
+     "caso": "RF 59/2024 (doc 8)",
+     "situacao": "não aplicável",
+     "detalhe": "Lavrado em 2024-05-10, antes da vigência (2024-10-01). Medido: 10 du até o Gerente. Leitura alternativa (data escrita no texto 2024-05-07): 13 du (acima do limite). Vistoria → 1ª assinatura: 36 dc.",
+     "calculos": [
+      "calc.rf59.lavratura_ate_gerente.dc",
+      "calc.rf59.lavratura_ate_gerente.du",
+      "calc.rf59.data_texto_ate_gerente.dc",
+      "calc.rf59.data_texto_ate_gerente.du",
+      "calc.rf59.vistoria_ate_lavratura.dc",
+      "calc.rf59.vistoria_ate_lavratura.du"
+     ],
+     "documentos": [
+      8
+     ]
+    },
+    {
+     "caso": "RF 70/2024 (doc 9)",
+     "situacao": "não aplicável",
+     "detalhe": "Lavrado em 2024-06-04, antes da vigência (2024-10-01). Medido: 4 du até o Gerente. Leitura alternativa (data escrita no texto 2024-04-18): 34 du (acima do limite). Vistoria → 1ª assinatura: 63 dc.",
+     "calculos": [
+      "calc.rf70.lavratura_ate_gerente.dc",
+      "calc.rf70.lavratura_ate_gerente.du",
+      "calc.rf70.data_texto_ate_gerente.dc",
+      "calc.rf70.data_texto_ate_gerente.du",
+      "calc.rf70.vistoria_ate_lavratura.dc",
+      "calc.rf70.vistoria_ate_lavratura.du"
+     ],
+     "documentos": [
+      9
+     ]
+    },
+    {
+     "caso": "RF 73/2024 (doc 10)",
+     "situacao": "não aplicável",
+     "detalhe": "Lavrado em 2024-06-03, antes da vigência (2024-10-01). Medido: 5 du até o Gerente. Leitura alternativa (data escrita no texto 2024-05-10): 20 du (acima do limite). Vistoria → 1ª assinatura: 54 dc.",
+     "calculos": [
+      "calc.rf73.lavratura_ate_gerente.dc",
+      "calc.rf73.lavratura_ate_gerente.du",
+      "calc.rf73.data_texto_ate_gerente.dc",
+      "calc.rf73.data_texto_ate_gerente.du",
+      "calc.rf73.vistoria_ate_lavratura.dc",
+      "calc.rf73.vistoria_ate_lavratura.du"
+     ],
+     "documentos": [
+      10
+     ]
+    },
+    {
+     "caso": "RF 65/2024 (doc 11)",
+     "situacao": "não aplicável",
+     "detalhe": "Lavrado em 2024-06-06, antes da vigência (2024-10-01). Medido: 2 du até o Gerente. Leitura alternativa (data escrita no texto 2024-05-09): 21 du (acima do limite). Vistoria → 1ª assinatura: 51 dc.",
+     "calculos": [
+      "calc.rf65.lavratura_ate_gerente.dc",
+      "calc.rf65.lavratura_ate_gerente.du",
+      "calc.rf65.data_texto_ate_gerente.dc",
+      "calc.rf65.data_texto_ate_gerente.du",
+      "calc.rf65.vistoria_ate_lavratura.dc",
+      "calc.rf65.vistoria_ate_lavratura.du"
+     ],
+     "documentos": [
+      11
+     ]
+    },
+    {
+     "caso": "RF 90/2024 (doc 12)",
+     "situacao": "não aplicável",
+     "detalhe": "Lavrado em 2024-06-06, antes da vigência (2024-10-01). Medido: 2 du até o Gerente. Leitura alternativa (data escrita no texto 2024-06-04): 4 du. Vistoria → 1ª assinatura: 57 dc.",
+     "calculos": [
+      "calc.rf90.lavratura_ate_gerente.dc",
+      "calc.rf90.lavratura_ate_gerente.du",
+      "calc.rf90.data_texto_ate_gerente.dc",
+      "calc.rf90.data_texto_ate_gerente.du",
+      "calc.rf90.vistoria_ate_lavratura.dc",
+      "calc.rf90.vistoria_ate_lavratura.du"
+     ],
+     "documentos": [
+      12
+     ]
+    },
+    {
+     "caso": "RF 159/2024 (doc 13)",
+     "situacao": "não aplicável",
+     "detalhe": "Lavrado em 2024-08-02, antes da vigência (2024-10-01). Medido: 2 du até o Gerente. Leitura alternativa (data escrita no texto 2024-07-22): 11 du (acima do limite). Vistoria → 1ª assinatura: 37 dc.",
+     "calculos": [
+      "calc.rf159.lavratura_ate_gerente.dc",
+      "calc.rf159.lavratura_ate_gerente.du",
+      "calc.rf159.data_texto_ate_gerente.dc",
+      "calc.rf159.data_texto_ate_gerente.du",
+      "calc.rf159.vistoria_ate_lavratura.dc",
+      "calc.rf159.vistoria_ate_lavratura.du"
+     ],
+     "documentos": [
+      13
+     ]
+    },
+    {
+     "caso": "RF 155/2024 (doc 16)",
+     "situacao": "não aplicável",
+     "detalhe": "Lavrado em 2024-08-09, antes da vigência (2024-10-01). Medido: 32 du até o Gerente. Leitura alternativa (data escrita no texto 2024-07-25): 43 du (acima do limite). Vistoria → 1ª assinatura: 24 dc.",
+     "calculos": [
+      "calc.rf155.lavratura_ate_gerente.dc",
+      "calc.rf155.lavratura_ate_gerente.du",
+      "calc.rf155.data_texto_ate_gerente.dc",
+      "calc.rf155.data_texto_ate_gerente.du",
+      "calc.rf155.vistoria_ate_lavratura.dc",
+      "calc.rf155.vistoria_ate_lavratura.du"
+     ],
+     "documentos": [
+      16
+     ]
+    },
+    {
+     "caso": "RF 156/2024 (doc 17)",
+     "situacao": "não aplicável",
+     "detalhe": "Lavrado em 2024-08-09, antes da vigência (2024-10-01). Medido: 32 du até o Gerente. Leitura alternativa (data escrita no texto 2024-07-24): 44 du (acima do limite). Vistoria → 1ª assinatura: 24 dc.",
+     "calculos": [
+      "calc.rf156.lavratura_ate_gerente.dc",
+      "calc.rf156.lavratura_ate_gerente.du",
+      "calc.rf156.data_texto_ate_gerente.dc",
+      "calc.rf156.data_texto_ate_gerente.du",
+      "calc.rf156.vistoria_ate_lavratura.dc",
+      "calc.rf156.vistoria_ate_lavratura.du"
+     ],
+     "documentos": [
+      17
+     ]
+    },
+    {
+     "caso": "RF 157/2024 (doc 18)",
+     "situacao": "não aplicável",
+     "detalhe": "Lavrado em 2024-08-09, antes da vigência (2024-10-01). Medido: 32 du até o Gerente. Leitura alternativa (data escrita no texto 2024-07-29): 41 du (acima do limite). Vistoria → 1ª assinatura: 24 dc.",
+     "calculos": [
+      "calc.rf157.lavratura_ate_gerente.dc",
+      "calc.rf157.lavratura_ate_gerente.du",
+      "calc.rf157.data_texto_ate_gerente.dc",
+      "calc.rf157.data_texto_ate_gerente.du",
+      "calc.rf157.vistoria_ate_lavratura.dc",
+      "calc.rf157.vistoria_ate_lavratura.du"
+     ],
+     "documentos": [
+      18
+     ]
+    },
+    {
+     "caso": "RF 158/2024 (doc 19)",
+     "situacao": "não aplicável",
+     "detalhe": "Lavrado em 2024-08-09, antes da vigência (2024-10-01). Medido: 32 du até o Gerente. Leitura alternativa (data escrita no texto 2024-07-16): 50 du (acima do limite). Vistoria → 1ª assinatura: 24 dc.",
+     "calculos": [
+      "calc.rf158.lavratura_ate_gerente.dc",
+      "calc.rf158.lavratura_ate_gerente.du",
+      "calc.rf158.data_texto_ate_gerente.dc",
+      "calc.rf158.data_texto_ate_gerente.du",
+      "calc.rf158.vistoria_ate_lavratura.dc",
+      "calc.rf158.vistoria_ate_lavratura.du"
+     ],
+     "documentos": [
+      19
+     ]
+    },
+    {
+     "caso": "RF 153/2024 (doc 22)",
+     "situacao": "não aplicável",
+     "detalhe": "Lavrado em 2024-09-11, antes da vigência (2024-10-01). Medido: 4 du até o Gerente. Leitura alternativa (data escrita no texto 2024-07-29): 36 du (acima do limite). Vistoria → 1ª assinatura: 57 dc.",
+     "calculos": [
+      "calc.rf153.lavratura_ate_gerente.dc",
+      "calc.rf153.lavratura_ate_gerente.du",
+      "calc.rf153.data_texto_ate_gerente.dc",
+      "calc.rf153.data_texto_ate_gerente.du",
+      "calc.rf153.vistoria_ate_lavratura.dc",
+      "calc.rf153.vistoria_ate_lavratura.du"
+     ],
+     "documentos": [
+      22
+     ]
+    },
+    {
+     "caso": "RF 259/2024 (doc 23)",
+     "situacao": "conforme",
+     "detalhe": "Lavrado em 2024-11-06; 'De acordo' em 2024-11-08: 2 du (limite 5 du). Leitura alternativa (data escrita no texto 2024-10-07): 23 du (acima do limite). Vistoria → 1ª assinatura: 84 dc.",
+     "calculos": [
+      "calc.rf259.lavratura_ate_gerente.dc",
+      "calc.rf259.lavratura_ate_gerente.du",
+      "calc.rf259.data_texto_ate_gerente.dc",
+      "calc.rf259.data_texto_ate_gerente.du",
+      "calc.rf259.vistoria_ate_lavratura.dc",
+      "calc.rf259.vistoria_ate_lavratura.du"
+     ],
+     "documentos": [
+      23
+     ]
+    },
+    {
+     "caso": "RF 209/2024 (doc 24)",
+     "situacao": "conforme",
+     "detalhe": "Lavrado em 2024-11-06; 'De acordo' em 2024-11-08: 2 du (limite 5 du). Leitura alternativa (data escrita no texto 2024-08-27): 52 du (acima do limite). Vistoria → 1ª assinatura: 84 dc.",
+     "calculos": [
+      "calc.rf209.lavratura_ate_gerente.dc",
+      "calc.rf209.lavratura_ate_gerente.du",
+      "calc.rf209.data_texto_ate_gerente.dc",
+      "calc.rf209.data_texto_ate_gerente.du",
+      "calc.rf209.vistoria_ate_lavratura.dc",
+      "calc.rf209.vistoria_ate_lavratura.du"
+     ],
+     "documentos": [
+      24
+     ]
+    },
+    {
+     "caso": "RF 212/2024 (doc 25)",
+     "situacao": "conforme",
+     "detalhe": "Lavrado em 2024-11-06; 'De acordo' em 2024-11-08: 2 du (limite 5 du). Leitura alternativa (data escrita no texto 2024-10-10): 20 du (acima do limite). Vistoria → 1ª assinatura: 78 dc.",
+     "calculos": [
+      "calc.rf212.lavratura_ate_gerente.dc",
+      "calc.rf212.lavratura_ate_gerente.du",
+      "calc.rf212.data_texto_ate_gerente.dc",
+      "calc.rf212.data_texto_ate_gerente.du",
+      "calc.rf212.vistoria_ate_lavratura.dc",
+      "calc.rf212.vistoria_ate_lavratura.du"
+     ],
+     "documentos": [
+      25
+     ]
+    },
+    {
+     "caso": "RF 213/2024 (doc 26)",
+     "situacao": "conforme",
+     "detalhe": "Lavrado em 2024-11-06; 'De acordo' em 2024-11-08: 2 du (limite 5 du). Leitura alternativa (data escrita no texto 2024-08-29): 50 du (acima do limite). Vistoria → 1ª assinatura: 78 dc.",
+     "calculos": [
+      "calc.rf213.lavratura_ate_gerente.dc",
+      "calc.rf213.lavratura_ate_gerente.du",
+      "calc.rf213.data_texto_ate_gerente.dc",
+      "calc.rf213.data_texto_ate_gerente.du",
+      "calc.rf213.vistoria_ate_lavratura.dc",
+      "calc.rf213.vistoria_ate_lavratura.du"
+     ],
+     "documentos": [
+      26
+     ]
+    },
+    {
+     "caso": "RF 214/2024 (doc 27)",
+     "situacao": "conforme",
+     "detalhe": "Lavrado em 2024-11-06; 'De acordo' em 2024-11-08: 2 du (limite 5 du). Leitura alternativa (data escrita no texto 2024-10-11): 19 du (acima do limite). Vistoria → 1ª assinatura: 78 dc.",
+     "calculos": [
+      "calc.rf214.lavratura_ate_gerente.dc",
+      "calc.rf214.lavratura_ate_gerente.du",
+      "calc.rf214.data_texto_ate_gerente.dc",
+      "calc.rf214.data_texto_ate_gerente.du",
+      "calc.rf214.vistoria_ate_lavratura.dc",
+      "calc.rf214.vistoria_ate_lavratura.du"
+     ],
+     "documentos": [
+      27
+     ]
+    },
+    {
+     "caso": "RF 17/2024 (doc 28)",
+     "situacao": "conforme",
+     "detalhe": "Lavrado em 2024-11-07; 'De acordo' em 2024-11-08: 1 du (limite 5 du). Leitura alternativa (data escrita no texto 2024-10-16): 16 du (acima do limite). Vistoria → 1ª assinatura: 246 dc.",
+     "calculos": [
+      "calc.rf17.lavratura_ate_gerente.dc",
+      "calc.rf17.lavratura_ate_gerente.du",
+      "calc.rf17.data_texto_ate_gerente.dc",
+      "calc.rf17.data_texto_ate_gerente.du",
+      "calc.rf17.vistoria_ate_lavratura.dc",
+      "calc.rf17.vistoria_ate_lavratura.du"
+     ],
+     "documentos": [
+      28
+     ]
+    },
+    {
+     "caso": "RF 227/2024 (doc 31)",
+     "situacao": "sem evidência",
+     "detalhe": "Relatório sem assinaturas no PDF.",
+     "calculos": [],
+     "documentos": [
+      31
+     ]
+    }
+   ]
+  },
+  "R-FIS-05": {
+   "exigencia": "O relatório tem o 'De acordo' do Gerente antes de ser encaminhado à concessionária.",
+   "tipo": "forma",
+   "normas": [
+    "N-FIS-23",
+    "N-FIS-35"
+   ],
+   "criticidade": "media",
+   "unidade_caso": "relatório",
+   "n_casos": 23,
+   "contagem": {
+    "conforme": 10,
+    "não conforme": 0,
+    "sem evidência": 0,
+    "não aplicável": 13
+   },
+   "taxa_conformidade": 100.0,
+   "validar_procuradoria": false,
+   "nota_validacao": "",
+   "casos": [
+    {
+     "caso": "RF 10/2024 (doc 1)",
+     "situacao": "conforme",
+     "detalhe": "'De acordo' em 2024-04-29; Ofício 349/2024 (doc 4) assinado em 2024-05-08 (9 dc depois).",
+     "calculos": [
+      "calc.rf10.gerente_ate_oficio.dc",
+      "calc.rf10.gerente_ate_oficio.du"
+     ],
+     "documentos": [
+      1,
+      4
+     ]
+    },
+    {
+     "caso": "RF 11/2024 (doc 2)",
+     "situacao": "conforme",
+     "detalhe": "'De acordo' em 2024-04-29; Ofício 349/2024 (doc 4) assinado em 2024-05-08 (9 dc depois).",
+     "calculos": [
+      "calc.rf11.gerente_ate_oficio.dc",
+      "calc.rf11.gerente_ate_oficio.du"
+     ],
+     "documentos": [
+      2,
+      4
+     ]
+    },
+    {
+     "caso": "RF 12/2024 (doc 3)",
+     "situacao": "conforme",
+     "detalhe": "'De acordo' em 2024-04-29; Ofício 349/2024 (doc 4) assinado em 2024-05-08 (9 dc depois).",
+     "calculos": [
+      "calc.rf12.gerente_ate_oficio.dc",
+      "calc.rf12.gerente_ate_oficio.du"
+     ],
+     "documentos": [
+      3,
+      4
+     ]
+    },
+    {
+     "caso": "RF 56/2024 (doc 6)",
+     "situacao": "não aplicável",
+     "detalhe": "Nenhum ofício nos autos cita este relatório (ver R-FIS-06).",
+     "calculos": [],
+     "documentos": [
+      6
+     ]
+    },
+    {
+     "caso": "RF 52/2024 (doc 7)",
+     "situacao": "não aplicável",
+     "detalhe": "Nenhum ofício nos autos cita este relatório (ver R-FIS-06).",
+     "calculos": [],
+     "documentos": [
+      7
+     ]
+    },
+    {
+     "caso": "RF 59/2024 (doc 8)",
+     "situacao": "não aplicável",
+     "detalhe": "Nenhum ofício nos autos cita este relatório (ver R-FIS-06).",
+     "calculos": [],
+     "documentos": [
+      8
+     ]
+    },
+    {
+     "caso": "RF 70/2024 (doc 9)",
+     "situacao": "não aplicável",
+     "detalhe": "Nenhum ofício nos autos cita este relatório (ver R-FIS-06).",
+     "calculos": [],
+     "documentos": [
+      9
+     ]
+    },
+    {
+     "caso": "RF 73/2024 (doc 10)",
+     "situacao": "não aplicável",
+     "detalhe": "Nenhum ofício nos autos cita este relatório (ver R-FIS-06).",
+     "calculos": [],
+     "documentos": [
+      10
+     ]
+    },
+    {
+     "caso": "RF 65/2024 (doc 11)",
+     "situacao": "não aplicável",
+     "detalhe": "Nenhum ofício nos autos cita este relatório (ver R-FIS-06).",
+     "calculos": [],
+     "documentos": [
+      11
+     ]
+    },
+    {
+     "caso": "RF 90/2024 (doc 12)",
+     "situacao": "não aplicável",
+     "detalhe": "Nenhum ofício nos autos cita este relatório (ver R-FIS-06).",
+     "calculos": [],
+     "documentos": [
+      12
+     ]
+    },
+    {
+     "caso": "RF 159/2024 (doc 13)",
+     "situacao": "conforme",
+     "detalhe": "'De acordo' em 2024-08-06; Ofício 682/2024 (doc 14) assinado em 2024-08-07 (1 dc depois).",
+     "calculos": [
+      "calc.rf159.gerente_ate_oficio.dc",
+      "calc.rf159.gerente_ate_oficio.du"
+     ],
+     "documentos": [
+      13,
+      14
+     ]
+    },
+    {
+     "caso": "RF 155/2024 (doc 16)",
+     "situacao": "não aplicável",
+     "detalhe": "Nenhum ofício nos autos cita este relatório (ver R-FIS-06).",
+     "calculos": [],
+     "documentos": [
+      16
+     ]
+    },
+    {
+     "caso": "RF 156/2024 (doc 17)",
+     "situacao": "não aplicável",
+     "detalhe": "Nenhum ofício nos autos cita este relatório (ver R-FIS-06).",
+     "calculos": [],
+     "documentos": [
+      17
+     ]
+    },
+    {
+     "caso": "RF 157/2024 (doc 18)",
+     "situacao": "não aplicável",
+     "detalhe": "Nenhum ofício nos autos cita este relatório (ver R-FIS-06).",
+     "calculos": [],
+     "documentos": [
+      18
+     ]
+    },
+    {
+     "caso": "RF 158/2024 (doc 19)",
+     "situacao": "não aplicável",
+     "detalhe": "Nenhum ofício nos autos cita este relatório (ver R-FIS-06).",
+     "calculos": [],
+     "documentos": [
+      19
+     ]
+    },
+    {
+     "caso": "RF 153/2024 (doc 22)",
+     "situacao": "não aplicável",
+     "detalhe": "Nenhum ofício nos autos cita este relatório (ver R-FIS-06).",
+     "calculos": [],
+     "documentos": [
+      22
+     ]
+    },
+    {
+     "caso": "RF 259/2024 (doc 23)",
+     "situacao": "conforme",
+     "detalhe": "'De acordo' em 2024-11-08; Ofício 946/2024 (doc 29) assinado em 2024-11-11 (3 dc depois).",
+     "calculos": [
+      "calc.rf259.gerente_ate_oficio.dc",
+      "calc.rf259.gerente_ate_oficio.du"
+     ],
+     "documentos": [
+      23,
+      29
+     ]
+    },
+    {
+     "caso": "RF 209/2024 (doc 24)",
+     "situacao": "conforme",
+     "detalhe": "'De acordo' em 2024-11-08; Ofício 946/2024 (doc 29) assinado em 2024-11-11 (3 dc depois).",
+     "calculos": [
+      "calc.rf209.gerente_ate_oficio.dc",
+      "calc.rf209.gerente_ate_oficio.du"
+     ],
+     "documentos": [
+      24,
+      29
+     ]
+    },
+    {
+     "caso": "RF 212/2024 (doc 25)",
+     "situacao": "conforme",
+     "detalhe": "'De acordo' em 2024-11-08; Ofício 946/2024 (doc 29) assinado em 2024-11-11 (3 dc depois).",
+     "calculos": [
+      "calc.rf212.gerente_ate_oficio.dc",
+      "calc.rf212.gerente_ate_oficio.du"
+     ],
+     "documentos": [
+      25,
+      29
+     ]
+    },
+    {
+     "caso": "RF 213/2024 (doc 26)",
+     "situacao": "conforme",
+     "detalhe": "'De acordo' em 2024-11-08; Ofício 946/2024 (doc 29) assinado em 2024-11-11 (3 dc depois).",
+     "calculos": [
+      "calc.rf213.gerente_ate_oficio.dc",
+      "calc.rf213.gerente_ate_oficio.du"
+     ],
+     "documentos": [
+      26,
+      29
+     ]
+    },
+    {
+     "caso": "RF 214/2024 (doc 27)",
+     "situacao": "conforme",
+     "detalhe": "'De acordo' em 2024-11-08; Ofício 946/2024 (doc 29) assinado em 2024-11-11 (3 dc depois).",
+     "calculos": [
+      "calc.rf214.gerente_ate_oficio.dc",
+      "calc.rf214.gerente_ate_oficio.du"
+     ],
+     "documentos": [
+      27,
+      29
+     ]
+    },
+    {
+     "caso": "RF 17/2024 (doc 28)",
+     "situacao": "conforme",
+     "detalhe": "'De acordo' em 2024-11-08; Ofício 946/2024 (doc 29) assinado em 2024-11-11 (3 dc depois).",
+     "calculos": [
+      "calc.rf17.gerente_ate_oficio.dc",
+      "calc.rf17.gerente_ate_oficio.du"
+     ],
+     "documentos": [
+      28,
+      29
+     ]
+    },
+    {
+     "caso": "RF 227/2024 (doc 31)",
+     "situacao": "não aplicável",
+     "detalhe": "Nenhum ofício nos autos cita este relatório (ver R-FIS-06).",
+     "calculos": [],
+     "documentos": [
+      31
+     ]
+    }
+   ]
+  },
+  "R-FIS-06": {
+   "exigencia": "Todo relatório com não conformidades é comunicado à concessionária por ofício com comprovante de envio.",
+   "tipo": "obrigacao",
+   "normas": [
+    "N-FIS-11",
+    "N-FIS-12",
+    "N-FIS-13",
+    "N-FIS-31"
+   ],
+   "criticidade": "alta",
+   "unidade_caso": "relatório",
+   "n_casos": 23,
+   "contagem": {
+    "conforme": 10,
+    "não conforme": 0,
+    "sem evidência": 13,
+    "não aplicável": 0
+   },
+   "taxa_conformidade": 100.0,
+   "validar_procuradoria": true,
+   "nota_validacao": "Relatórios sem ofício de encaminhamento nos autos: [56, 52, 59, 70, 73, 65, 90, 155, 156, 157, 158, 153, 227]. Dizer se o prazo dado nesses relatórios corre sem notificação formal e se a falta impede cobrar o saneamento.",
+   "interpretacao": "Sem ofício nos autos, o prazo dado no relatório não tem termo inicial demonstrado; o PDF é recorte e o envio pode ter ocorrido em outro processo.",
+   "casos": [
+    {
+     "caso": "RF 10/2024 (doc 1)",
+     "situacao": "conforme",
+     "detalhe": "Citado no Ofício 349/2024 (doc 4); e-mail de envio em 2024-05-08 (doc 5).",
+     "calculos": [],
+     "documentos": [
+      1,
+      4,
+      5
+     ]
+    },
+    {
+     "caso": "RF 11/2024 (doc 2)",
+     "situacao": "conforme",
+     "detalhe": "Citado no Ofício 349/2024 (doc 4); e-mail de envio em 2024-05-08 (doc 5).",
+     "calculos": [],
+     "documentos": [
+      2,
+      4,
+      5
+     ]
+    },
+    {
+     "caso": "RF 12/2024 (doc 3)",
+     "situacao": "conforme",
+     "detalhe": "Citado no Ofício 349/2024 (doc 4); e-mail de envio em 2024-05-08 (doc 5).",
+     "calculos": [],
+     "documentos": [
+      3,
+      4,
+      5
+     ]
+    },
+    {
+     "caso": "RF 56/2024 (doc 6)",
+     "situacao": "sem evidência",
+     "detalhe": "Nenhum ofício dos autos cita o relatório (3 ofícios de encaminhamento conferidos). Fixa prazo para a concessionária ('no prazo de 30 (trinta) dias').",
+     "calculos": [],
+     "documentos": [
+      6
+     ]
+    },
+    {
+     "caso": "RF 52/2024 (doc 7)",
+     "situacao": "sem evidência",
+     "detalhe": "Nenhum ofício dos autos cita o relatório (3 ofícios de encaminhamento conferidos). Fixa prazo para a concessionária ('no prazo de 30 (trinta)').",
+     "calculos": [],
+     "documentos": [
+      7
+     ]
+    },
+    {
+     "caso": "RF 59/2024 (doc 8)",
+     "situacao": "sem evidência",
+     "detalhe": "Nenhum ofício dos autos cita o relatório (3 ofícios de encaminhamento conferidos). Fixa prazo para a concessionária ('no prazo de 30 (trinta) dias').",
+     "calculos": [],
+     "documentos": [
+      8
+     ]
+    },
+    {
+     "caso": "RF 70/2024 (doc 9)",
+     "situacao": "sem evidência",
+     "detalhe": "Nenhum ofício dos autos cita o relatório (3 ofícios de encaminhamento conferidos). Fixa prazo para a concessionária ('de 30 (trinta) dias').",
+     "calculos": [],
+     "documentos": [
+      9
+     ]
+    },
+    {
+     "caso": "RF 73/2024 (doc 10)",
+     "situacao": "sem evidência",
+     "detalhe": "Nenhum ofício dos autos cita o relatório (3 ofícios de encaminhamento conferidos). Fixa prazo para a concessionária ('no prazo de 30 dias').",
+     "calculos": [],
+     "documentos": [
+      10
+     ]
+    },
+    {
+     "caso": "RF 65/2024 (doc 11)",
+     "situacao": "sem evidência",
+     "detalhe": "Nenhum ofício dos autos cita o relatório (3 ofícios de encaminhamento conferidos).",
+     "calculos": [],
+     "documentos": [
+      11
+     ]
+    },
+    {
+     "caso": "RF 90/2024 (doc 12)",
+     "situacao": "sem evidência",
+     "detalhe": "Nenhum ofício dos autos cita o relatório (3 ofícios de encaminhamento conferidos).",
+     "calculos": [],
+     "documentos": [
+      12
+     ]
+    },
+    {
+     "caso": "RF 159/2024 (doc 13)",
+     "situacao": "conforme",
+     "detalhe": "Citado no Ofício 682/2024 (doc 14); e-mail de envio em 2024-08-08 (doc 15).",
+     "calculos": [],
+     "documentos": [
+      13,
+      14,
+      15
+     ]
+    },
+    {
+     "caso": "RF 155/2024 (doc 16)",
+     "situacao": "sem evidência",
+     "detalhe": "Nenhum ofício dos autos cita o relatório (3 ofícios de encaminhamento conferidos). Fixa prazo para a concessionária ('no prazo de 30 (trinta) dias').",
+     "calculos": [],
+     "documentos": [
+      16
+     ]
+    },
+    {
+     "caso": "RF 156/2024 (doc 17)",
+     "situacao": "sem evidência",
+     "detalhe": "Nenhum ofício dos autos cita o relatório (3 ofícios de encaminhamento conferidos). Fixa prazo para a concessionária ('no prazo de 30 (trinta) dias').",
+     "calculos": [],
+     "documentos": [
+      17
+     ]
+    },
+    {
+     "caso": "RF 157/2024 (doc 18)",
+     "situacao": "sem evidência",
+     "detalhe": "Nenhum ofício dos autos cita o relatório (3 ofícios de encaminhamento conferidos). Fixa prazo para a concessionária ('no prazo de 30 (trinta) dias').",
+     "calculos": [],
+     "documentos": [
+      18
+     ]
+    },
+    {
+     "caso": "RF 158/2024 (doc 19)",
+     "situacao": "sem evidência",
+     "detalhe": "Nenhum ofício dos autos cita o relatório (3 ofícios de encaminhamento conferidos). Fixa prazo para a concessionária ('no prazo de 30 (trinta) dias').",
+     "calculos": [],
+     "documentos": [
+      19
+     ]
+    },
+    {
+     "caso": "RF 153/2024 (doc 22)",
+     "situacao": "sem evidência",
+     "detalhe": "Nenhum ofício dos autos cita o relatório (3 ofícios de encaminhamento conferidos). Fixa prazo para a concessionária ('no prazo de 30 (trinta) dias').",
+     "calculos": [],
+     "documentos": [
+      22
+     ]
+    },
+    {
+     "caso": "RF 259/2024 (doc 23)",
+     "situacao": "conforme",
+     "detalhe": "Citado no Ofício 946/2024 (doc 29); e-mail de envio em 2024-11-11 (doc 30).",
+     "calculos": [],
+     "documentos": [
+      23,
+      29,
+      30
+     ]
+    },
+    {
+     "caso": "RF 209/2024 (doc 24)",
+     "situacao": "conforme",
+     "detalhe": "Citado no Ofício 946/2024 (doc 29); e-mail de envio em 2024-11-11 (doc 30).",
+     "calculos": [],
+     "documentos": [
+      24,
+      29,
+      30
+     ]
+    },
+    {
+     "caso": "RF 212/2024 (doc 25)",
+     "situacao": "conforme",
+     "detalhe": "Citado no Ofício 946/2024 (doc 29); e-mail de envio em 2024-11-11 (doc 30).",
+     "calculos": [],
+     "documentos": [
+      25,
+      29,
+      30
+     ]
+    },
+    {
+     "caso": "RF 213/2024 (doc 26)",
+     "situacao": "conforme",
+     "detalhe": "Citado no Ofício 946/2024 (doc 29); e-mail de envio em 2024-11-11 (doc 30).",
+     "calculos": [],
+     "documentos": [
+      26,
+      29,
+      30
+     ]
+    },
+    {
+     "caso": "RF 214/2024 (doc 27)",
+     "situacao": "conforme",
+     "detalhe": "Citado no Ofício 946/2024 (doc 29); e-mail de envio em 2024-11-11 (doc 30).",
+     "calculos": [],
+     "documentos": [
+      27,
+      29,
+      30
+     ]
+    },
+    {
+     "caso": "RF 17/2024 (doc 28)",
+     "situacao": "conforme",
+     "detalhe": "Citado no Ofício 946/2024 (doc 29); e-mail de envio em 2024-11-11 (doc 30).",
+     "calculos": [],
+     "documentos": [
+      28,
+      29,
+      30
+     ]
+    },
+    {
+     "caso": "RF 227/2024 (doc 31)",
+     "situacao": "sem evidência",
+     "detalhe": "Nenhum ofício dos autos cita o relatório (3 ofícios de encaminhamento conferidos).",
+     "calculos": [],
+     "documentos": [
+      31
+     ]
+    }
+   ]
+  },
+  "R-FIS-07": {
+   "exigencia": "O ofício de encaminhamento fixa prazo expresso, em dias, para a manifestação da concessionária.",
+   "tipo": "forma",
+   "normas": [
+    "N-FIS-11",
+    "N-FIS-12"
+   ],
+   "criticidade": "media",
+   "unidade_caso": "ofício",
+   "n_casos": 3,
+   "contagem": {
+    "conforme": 3,
+    "não conforme": 0,
+    "sem evidência": 0,
+    "não aplicável": 0
+   },
+   "taxa_conformidade": 100.0,
+   "validar_procuradoria": false,
+   "nota_validacao": "",
+   "interpretacao": "Nenhuma norma transcrita nos autos fixa o prazo de manifestação sobre relatório de fiscalização; o teste só confere que o ofício o declara. Também se registra a diferença entre a data escrita no ofício e a da assinatura.",
+   "casos": [
+    {
+     "caso": "Ofício 349/2024 (doc 4)",
+     "situacao": "conforme",
+     "detalhe": "Fixa prazo de 30 dias para manifestação. Data escrita 2024-05-08, assinatura 2024-05-08 (0 dc).",
+     "calculos": [
+      "calc.oficio349.data_escrita_ate_assinatura.dc",
+      "calc.oficio349.data_escrita_ate_assinatura.du"
+     ],
+     "documentos": [
+      4
+     ]
+    },
+    {
+     "caso": "Ofício 682/2024 (doc 14)",
+     "situacao": "conforme",
+     "detalhe": "Fixa prazo de 30 dias para manifestação. Data escrita 2024-08-07, assinatura 2024-08-07 (0 dc).",
+     "calculos": [
+      "calc.oficio682.data_escrita_ate_assinatura.dc",
+      "calc.oficio682.data_escrita_ate_assinatura.du"
+     ],
+     "documentos": [
+      14
+     ]
+    },
+    {
+     "caso": "Ofício 946/2024 (doc 29)",
+     "situacao": "conforme",
+     "detalhe": "Fixa prazo de 30 dias para manifestação. Data escrita 2024-11-08, assinatura 2024-11-11 (3 dc).",
+     "calculos": [
+      "calc.oficio946.data_escrita_ate_assinatura.dc",
+      "calc.oficio946.data_escrita_ate_assinatura.du"
+     ],
+     "documentos": [
+      29
+     ]
+    }
+   ]
+  },
+  "R-FIS-08": {
+   "exigencia": "A concessionária se manifesta dentro do prazo do ofício.",
+   "tipo": "prazo",
+   "normas": [
+    "N-FIS-11",
+    "N-FIS-12",
+    "N-FIS-13",
+    "N-FIS-33"
+   ],
+   "criticidade": "alta",
+   "unidade_caso": "ofício",
+   "n_casos": 3,
+   "contagem": {
+    "conforme": 0,
+    "não conforme": 0,
+    "sem evidência": 3,
+    "não aplicável": 0
+   },
+   "taxa_conformidade": null,
+   "validar_procuradoria": true,
+   "nota_validacao": "Fixar a contagem do prazo de manifestação (dias corridos ou úteis, N-FIS-33) e o termo inicial (envio do e-mail ou leitura).",
+   "casos": [
+    {
+     "caso": "Ofício 349/2024 (doc 4)",
+     "situacao": "sem evidência",
+     "detalhe": "Enviado em 2024-05-08; prazo vence em 2024-06-07 (dc) ou 2024-06-20 (du). As respostas da concessionária não estão no PDF; o parecer só registra que ela 'encaminhou respostas formais'.",
+     "calculos": [
+      "calc.oficio349.vencimento_dc",
+      "calc.oficio349.vencimento_du"
+     ],
+     "documentos": [
+      4,
+      5,
+      32
+     ]
+    },
+    {
+     "caso": "Ofício 682/2024 (doc 14)",
+     "situacao": "sem evidência",
+     "detalhe": "Enviado em 2024-08-08; prazo vence em 2024-09-07 (dc) ou 2024-09-19 (du). As respostas da concessionária não estão no PDF; o parecer só registra que ela 'encaminhou respostas formais'.",
+     "calculos": [
+      "calc.oficio682.vencimento_dc",
+      "calc.oficio682.vencimento_du"
+     ],
+     "documentos": [
+      14,
+      15,
+      32
+     ]
+    },
+    {
+     "caso": "Ofício 946/2024 (doc 29)",
+     "situacao": "sem evidência",
+     "detalhe": "Enviado em 2024-11-11; prazo vence em 2024-12-11 (dc) ou 2024-12-26 (du). As respostas da concessionária não estão no PDF; o parecer só registra que ela 'encaminhou respostas formais'.",
+     "calculos": [
+      "calc.oficio946.vencimento_dc",
+      "calc.oficio946.vencimento_du"
+     ],
+     "documentos": [
+      29,
+      30,
+      32
+     ]
+    }
+   ]
+  },
+  "R-FIS-09": {
+   "exigencia": "A concessionária sana as não conformidades (ou apresenta o cronograma/plano de ação) no prazo dado no relatório.",
+   "tipo": "prazo",
+   "normas": [
+    "N-FIS-14",
+    "N-FIS-15",
+    "N-FIS-16",
+    "N-FIS-17",
+    "N-FIS-18",
+    "N-FIS-19",
+    "N-FIS-04"
+   ],
+   "criticidade": "alta",
+   "unidade_caso": "relatório",
+   "n_casos": 23,
+   "contagem": {
+    "conforme": 0,
+    "não conforme": 0,
+    "sem evidência": 10,
+    "não aplicável": 13
+   },
+   "taxa_conformidade": null,
+   "validar_procuradoria": true,
+   "nota_validacao": "Dizer se a conclusão agregada do parecer ('cumprimento apenas parcial') basta para caracterizar descumprimento ou se é preciso apurar por unidade.",
+   "casos": [
+    {
+     "caso": "RF 10/2024 (doc 1)",
+     "situacao": "não aplicável",
+     "detalhe": "Relatório sem prazo numérico para a concessionária.",
+     "calculos": [],
+     "documentos": [
+      1
+     ]
+    },
+    {
+     "caso": "RF 11/2024 (doc 2)",
+     "situacao": "não aplicável",
+     "detalhe": "Relatório sem prazo numérico para a concessionária.",
+     "calculos": [],
+     "documentos": [
+      2
+     ]
+    },
+    {
+     "caso": "RF 12/2024 (doc 3)",
+     "situacao": "não aplicável",
+     "detalhe": "Relatório sem prazo numérico para a concessionária.",
+     "calculos": [],
+     "documentos": [
+      3
+     ]
+    },
+    {
+     "caso": "RF 56/2024 (doc 6)",
+     "situacao": "sem evidência",
+     "detalhe": "Prazo de 30 dias sem termo inicial nos autos (relatório não encaminhado por ofício juntado).",
+     "calculos": [],
+     "documentos": [
+      6
+     ]
+    },
+    {
+     "caso": "RF 52/2024 (doc 7)",
+     "situacao": "sem evidência",
+     "detalhe": "Prazo de 30 dias sem termo inicial nos autos (relatório não encaminhado por ofício juntado).",
+     "calculos": [],
+     "documentos": [
+      7
+     ]
+    },
+    {
+     "caso": "RF 59/2024 (doc 8)",
+     "situacao": "sem evidência",
+     "detalhe": "Prazo de 30 dias sem termo inicial nos autos (relatório não encaminhado por ofício juntado).",
+     "calculos": [],
+     "documentos": [
+      8
+     ]
+    },
+    {
+     "caso": "RF 70/2024 (doc 9)",
+     "situacao": "sem evidência",
+     "detalhe": "Prazo de 30 dias sem termo inicial nos autos (relatório não encaminhado por ofício juntado).",
+     "calculos": [],
+     "documentos": [
+      9
+     ]
+    },
+    {
+     "caso": "RF 73/2024 (doc 10)",
+     "situacao": "sem evidência",
+     "detalhe": "Prazo de 30 dias sem termo inicial nos autos (relatório não encaminhado por ofício juntado).",
+     "calculos": [],
+     "documentos": [
+      10
+     ]
+    },
+    {
+     "caso": "RF 65/2024 (doc 11)",
+     "situacao": "não aplicável",
+     "detalhe": "Relatório sem prazo numérico para a concessionária.",
+     "calculos": [],
+     "documentos": [
+      11
+     ]
+    },
+    {
+     "caso": "RF 90/2024 (doc 12)",
+     "situacao": "não aplicável",
+     "detalhe": "Relatório sem prazo numérico para a concessionária.",
+     "calculos": [],
+     "documentos": [
+      12
+     ]
+    },
+    {
+     "caso": "RF 159/2024 (doc 13)",
+     "situacao": "não aplicável",
+     "detalhe": "Relatório sem prazo numérico para a concessionária.",
+     "calculos": [],
+     "documentos": [
+      13
+     ]
+    },
+    {
+     "caso": "RF 155/2024 (doc 16)",
+     "situacao": "sem evidência",
+     "detalhe": "Prazo de 30 dias sem termo inicial nos autos (relatório não encaminhado por ofício juntado).",
+     "calculos": [],
+     "documentos": [
+      16
+     ]
+    },
+    {
+     "caso": "RF 156/2024 (doc 17)",
+     "situacao": "sem evidência",
+     "detalhe": "Prazo de 30 dias sem termo inicial nos autos (relatório não encaminhado por ofício juntado).",
+     "calculos": [],
+     "documentos": [
+      17
+     ]
+    },
+    {
+     "caso": "RF 157/2024 (doc 18)",
+     "situacao": "sem evidência",
+     "detalhe": "Prazo de 30 dias sem termo inicial nos autos (relatório não encaminhado por ofício juntado).",
+     "calculos": [],
+     "documentos": [
+      18
+     ]
+    },
+    {
+     "caso": "RF 158/2024 (doc 19)",
+     "situacao": "sem evidência",
+     "detalhe": "Prazo de 30 dias sem termo inicial nos autos (relatório não encaminhado por ofício juntado).",
+     "calculos": [],
+     "documentos": [
+      19
+     ]
+    },
+    {
+     "caso": "RF 153/2024 (doc 22)",
+     "situacao": "sem evidência",
+     "detalhe": "Prazo de 30 dias sem termo inicial nos autos (relatório não encaminhado por ofício juntado).",
+     "calculos": [],
+     "documentos": [
+      22
+     ]
+    },
+    {
+     "caso": "RF 259/2024 (doc 23)",
+     "situacao": "não aplicável",
+     "detalhe": "Relatório sem prazo numérico para a concessionária.",
+     "calculos": [],
+     "documentos": [
+      23
+     ]
+    },
+    {
+     "caso": "RF 209/2024 (doc 24)",
+     "situacao": "não aplicável",
+     "detalhe": "Relatório sem prazo numérico para a concessionária.",
+     "calculos": [],
+     "documentos": [
+      24
+     ]
+    },
+    {
+     "caso": "RF 212/2024 (doc 25)",
+     "situacao": "não aplicável",
+     "detalhe": "Relatório sem prazo numérico para a concessionária.",
+     "calculos": [],
+     "documentos": [
+      25
+     ]
+    },
+    {
+     "caso": "RF 213/2024 (doc 26)",
+     "situacao": "não aplicável",
+     "detalhe": "Relatório sem prazo numérico para a concessionária.",
+     "calculos": [],
+     "documentos": [
+      26
+     ]
+    },
+    {
+     "caso": "RF 214/2024 (doc 27)",
+     "situacao": "não aplicável",
+     "detalhe": "Relatório sem prazo numérico para a concessionária.",
+     "calculos": [],
+     "documentos": [
+      27
+     ]
+    },
+    {
+     "caso": "RF 17/2024 (doc 28)",
+     "situacao": "não aplicável",
+     "detalhe": "Relatório sem prazo numérico para a concessionária.",
+     "calculos": [],
+     "documentos": [
+      28
+     ]
+    },
+    {
+     "caso": "RF 227/2024 (doc 31)",
+     "situacao": "não aplicável",
+     "detalhe": "Relatório sem prazo numérico para a concessionária.",
+     "calculos": [],
+     "documentos": [
+      31
+     ]
+    }
+   ]
+  },
+  "R-FIS-10": {
+   "exigencia": "Entre o envio do ofício que abre prazo à concessionária e a análise das respostas decorre ao menos o prazo concedido.",
+   "tipo": "prazo",
+   "normas": [
+    "N-FIS-11",
+    "N-FIS-12",
+    "N-FIS-33"
+   ],
+   "criticidade": "alta",
+   "unidade_caso": "ofício",
+   "n_casos": 3,
+   "contagem": {
+    "conforme": 3,
+    "não conforme": 0,
+    "sem evidência": 0,
+    "não aplicável": 0
+   },
+   "taxa_conformidade": 100.0,
+   "validar_procuradoria": false,
+   "nota_validacao": "",
+   "interpretacao": "Requisito derivado (ESPECIFICACAO_CONFORMIDADE: todo prazo concedido vira prazo_min); protege a espera no TO-BE.",
+   "casos": [
+    {
+     "caso": "Ofício 349/2024 (doc 4)",
+     "situacao": "conforme",
+     "detalhe": "Envio 2024-05-08 → parecer 2025-07-08: 426 dc / 290 du (mínimo 30).",
+     "calculos": [
+      "calc.oficio349.envio_ate_parecer.dc",
+      "calc.oficio349.envio_ate_parecer.du"
+     ],
+     "documentos": [
+      4,
+      32
+     ]
+    },
+    {
+     "caso": "Ofício 682/2024 (doc 14)",
+     "situacao": "conforme",
+     "detalhe": "Envio 2024-08-08 → parecer 2025-07-08: 334 dc / 225 du (mínimo 30).",
+     "calculos": [
+      "calc.oficio682.envio_ate_parecer.dc",
+      "calc.oficio682.envio_ate_parecer.du"
+     ],
+     "documentos": [
+      14,
+      32
+     ]
+    },
+    {
+     "caso": "Ofício 946/2024 (doc 29)",
+     "situacao": "conforme",
+     "detalhe": "Envio 2024-11-11 → parecer 2025-07-08: 239 dc / 159 du (mínimo 30).",
+     "calculos": [
+      "calc.oficio946.envio_ate_parecer.dc",
+      "calc.oficio946.envio_ate_parecer.du"
+     ],
+     "documentos": [
+      29,
+      32
+     ]
+    }
+   ]
+  },
+  "R-FIS-11": {
+   "exigencia": "A CASAN emite o parecer técnico em até 15 dias de instada (respostas recebidas).",
+   "tipo": "prazo",
+   "normas": [
+    "N-FIS-26"
+   ],
+   "criticidade": "baixa",
+   "unidade_caso": "processo",
+   "n_casos": 1,
+   "contagem": {
+    "conforme": 0,
+    "não conforme": 0,
+    "sem evidência": 1,
+    "não aplicável": 0
+   },
+   "taxa_conformidade": null,
+   "validar_procuradoria": true,
+   "nota_validacao": "Dizer se o prazo de parecer técnico do Regimento (N-FIS-26) se aplica à análise anual das respostas e qual é o termo inicial.",
+   "casos": [
+    {
+     "caso": "processo",
+     "situacao": "sem evidência",
+     "detalhe": "Data em que as respostas chegaram à CASAN não está nos autos. Do último vencimento (2024-12-26) ao parecer (2025-07-08): 194 dc (limite 15 dc a partir do recebimento). Último ofício até o parecer: 239 dc (fato intervalo.ultimo_oficio_parecer).",
+     "calculos": [
+      "calc.ultimo_vencimento_ate_parecer.dc",
+      "calc.ultimo_vencimento_ate_parecer.du",
+      "intervalo.ultimo_oficio_parecer"
+     ],
+     "documentos": [
+      32
+     ]
+    }
+   ]
+  },
+  "R-FIS-12": {
+   "exigencia": "O relatório que impõe providências indica os fatos e o fundamento normativo.",
+   "tipo": "motivacao",
+   "normas": [
+    "N-FIS-30",
+    "N-FIS-09"
+   ],
+   "criticidade": "media",
+   "unidade_caso": "relatório",
+   "n_casos": 23,
+   "contagem": {
+    "conforme": 19,
+    "não conforme": 3,
+    "sem evidência": 1,
+    "não aplicável": 0
+   },
+   "taxa_conformidade": 86.4,
+   "validar_procuradoria": true,
+   "nota_validacao": "Dizer se o relatório que fixa prazo à concessionária é ato que exige motivação com fundamento jurídico (N-FIS-30) e se a falta de citação o invalida.",
+   "interpretacao": "Relatório de fiscalização lido como ato que impõe deveres (prazo para sanar); a Procuradoria deve confirmar se o art. 48 alcança esse ato.",
+   "casos": [
+    {
+     "caso": "RF 10/2024 (doc 1)",
+     "situacao": "não conforme",
+     "detalhe": "Fundamento normativo citado: não; descrição dos fatos: sim.",
+     "calculos": [],
+     "documentos": [
+      1
+     ]
+    },
+    {
+     "caso": "RF 11/2024 (doc 2)",
+     "situacao": "não conforme",
+     "detalhe": "Fundamento normativo citado: não; descrição dos fatos: sim.",
+     "calculos": [],
+     "documentos": [
+      2
+     ]
+    },
+    {
+     "caso": "RF 12/2024 (doc 3)",
+     "situacao": "não conforme",
+     "detalhe": "Fundamento normativo citado: não; descrição dos fatos: sim.",
+     "calculos": [],
+     "documentos": [
+      3
+     ]
+    },
+    {
+     "caso": "RF 56/2024 (doc 6)",
+     "situacao": "conforme",
+     "detalhe": "Fundamento normativo citado: sim; descrição dos fatos: sim.",
+     "calculos": [],
+     "documentos": [
+      6
+     ]
+    },
+    {
+     "caso": "RF 52/2024 (doc 7)",
+     "situacao": "conforme",
+     "detalhe": "Fundamento normativo citado: sim; descrição dos fatos: sim.",
+     "calculos": [],
+     "documentos": [
+      7
+     ]
+    },
+    {
+     "caso": "RF 59/2024 (doc 8)",
+     "situacao": "conforme",
+     "detalhe": "Fundamento normativo citado: sim; descrição dos fatos: sim.",
+     "calculos": [],
+     "documentos": [
+      8
+     ]
+    },
+    {
+     "caso": "RF 70/2024 (doc 9)",
+     "situacao": "conforme",
+     "detalhe": "Fundamento normativo citado: sim; descrição dos fatos: sim.",
+     "calculos": [],
+     "documentos": [
+      9
+     ]
+    },
+    {
+     "caso": "RF 73/2024 (doc 10)",
+     "situacao": "conforme",
+     "detalhe": "Fundamento normativo citado: sim; descrição dos fatos: sim.",
+     "calculos": [],
+     "documentos": [
+      10
+     ]
+    },
+    {
+     "caso": "RF 65/2024 (doc 11)",
+     "situacao": "conforme",
+     "detalhe": "Fundamento normativo citado: sim; descrição dos fatos: sim.",
+     "calculos": [],
+     "documentos": [
+      11
+     ]
+    },
+    {
+     "caso": "RF 90/2024 (doc 12)",
+     "situacao": "conforme",
+     "detalhe": "Fundamento normativo citado: sim; descrição dos fatos: sim.",
+     "calculos": [],
+     "documentos": [
+      12
+     ]
+    },
+    {
+     "caso": "RF 159/2024 (doc 13)",
+     "situacao": "conforme",
+     "detalhe": "Fundamento normativo citado: sim; descrição dos fatos: sim.",
+     "calculos": [],
+     "documentos": [
+      13
+     ]
+    },
+    {
+     "caso": "RF 155/2024 (doc 16)",
+     "situacao": "conforme",
+     "detalhe": "Fundamento normativo citado: sim; descrição dos fatos: sim.",
+     "calculos": [],
+     "documentos": [
+      16
+     ]
+    },
+    {
+     "caso": "RF 156/2024 (doc 17)",
+     "situacao": "conforme",
+     "detalhe": "Fundamento normativo citado: sim; descrição dos fatos: sim.",
+     "calculos": [],
+     "documentos": [
+      17
+     ]
+    },
+    {
+     "caso": "RF 157/2024 (doc 18)",
+     "situacao": "conforme",
+     "detalhe": "Fundamento normativo citado: sim; descrição dos fatos: sim.",
+     "calculos": [],
+     "documentos": [
+      18
+     ]
+    },
+    {
+     "caso": "RF 158/2024 (doc 19)",
+     "situacao": "conforme",
+     "detalhe": "Fundamento normativo citado: sim; descrição dos fatos: sim.",
+     "calculos": [],
+     "documentos": [
+      19
+     ]
+    },
+    {
+     "caso": "RF 153/2024 (doc 22)",
+     "situacao": "conforme",
+     "detalhe": "Fundamento normativo citado: sim; descrição dos fatos: sim.",
+     "calculos": [],
+     "documentos": [
+      22
+     ]
+    },
+    {
+     "caso": "RF 259/2024 (doc 23)",
+     "situacao": "conforme",
+     "detalhe": "Fundamento normativo citado: sim; descrição dos fatos: sim.",
+     "calculos": [],
+     "documentos": [
+      23
+     ]
+    },
+    {
+     "caso": "RF 209/2024 (doc 24)",
+     "situacao": "conforme",
+     "detalhe": "Fundamento normativo citado: sim; descrição dos fatos: sim.",
+     "calculos": [],
+     "documentos": [
+      24
+     ]
+    },
+    {
+     "caso": "RF 212/2024 (doc 25)",
+     "situacao": "conforme",
+     "detalhe": "Fundamento normativo citado: sim; descrição dos fatos: sim. Erro material: cita o município de Pomerode (fora do Bloco 1).",
+     "calculos": [],
+     "documentos": [
+      25
+     ]
+    },
+    {
+     "caso": "RF 213/2024 (doc 26)",
+     "situacao": "conforme",
+     "detalhe": "Fundamento normativo citado: sim; descrição dos fatos: sim. Erro material: cita o município de Pomerode (fora do Bloco 1).",
+     "calculos": [],
+     "documentos": [
+      26
+     ]
+    },
+    {
+     "caso": "RF 214/2024 (doc 27)",
+     "situacao": "conforme",
+     "detalhe": "Fundamento normativo citado: sim; descrição dos fatos: sim. Erro material: cita o município de Pomerode (fora do Bloco 1).",
+     "calculos": [],
+     "documentos": [
+      27
+     ]
+    },
+    {
+     "caso": "RF 17/2024 (doc 28)",
+     "situacao": "conforme",
+     "detalhe": "Fundamento normativo citado: sim; descrição dos fatos: sim.",
+     "calculos": [],
+     "documentos": [
+      28
+     ]
+    },
+    {
+     "caso": "RF 227/2024 (doc 31)",
+     "situacao": "sem evidência",
+     "detalhe": "Relatório sem texto extraível no PDF (páginas só com rodapé).",
+     "calculos": [],
+     "documentos": [
+      31
+     ]
+    }
+   ]
+  },
+  "R-FIS-13": {
+   "exigencia": "O parecer técnico conclusivo da câmara precede o envio à Procuradoria e qualquer deliberação.",
+   "tipo": "ordem",
+   "normas": [
+    "N-FIS-28",
+    "N-FIS-22"
+   ],
+   "criticidade": "alta",
+   "unidade_caso": "processo",
+   "n_casos": 1,
+   "contagem": {
+    "conforme": 1,
+    "não conforme": 0,
+    "sem evidência": 0,
+    "não aplicável": 0
+   },
+   "taxa_conformidade": 100.0,
+   "validar_procuradoria": false,
+   "nota_validacao": "",
+   "casos": [
+    {
+     "caso": "processo",
+     "situacao": "conforme",
+     "detalhe": "Parecer em 2025-07-08, envio à Procuradoria em 2025-11-03 (118 dc). Não há deliberação nos autos.",
+     "calculos": [
+      "calc.parecer_ate_procuradoria.dc",
+      "calc.parecer_ate_procuradoria.du"
+     ],
+     "documentos": [
+      32,
+      33,
+      34
+     ]
+    }
+   ]
+  },
+  "R-FIS-14": {
+   "exigencia": "A Procuradoria se manifesta em até 15 dias do recebimento.",
+   "tipo": "prazo",
+   "normas": [
+    "N-FIS-27",
+    "N-FIS-22"
+   ],
+   "criticidade": "media",
+   "unidade_caso": "processo",
+   "n_casos": 1,
+   "contagem": {
+    "conforme": 0,
+    "não conforme": 0,
+    "sem evidência": 1,
+    "não aplicável": 0
+   },
+   "taxa_conformidade": null,
+   "validar_procuradoria": true,
+   "nota_validacao": "Registrar a data de recebimento e o prazo da manifestação pedida no despacho (N-FIS-22, N-FIS-27).",
+   "casos": [
+    {
+     "caso": "processo",
+     "situacao": "sem evidência",
+     "detalhe": "Enviado em 2025-11-03; prazo vence em 2025-11-18 ou 2025-12-03 com prorrogação. O PDF termina no despacho de envio.",
+     "calculos": [
+      "calc.vencimento_procuradoria",
+      "calc.vencimento_procuradoria_prorrogado"
+     ],
+     "documentos": [
+      34
+     ]
+    }
+   ]
+  },
+  "R-FIS-15": {
+   "exigencia": "O pedido de arquivamento da concessionária é decidido em até 30 dias depois de concluída a instrução.",
+   "tipo": "prazo",
+   "normas": [
+    "N-FIS-29",
+    "N-FIS-22"
+   ],
+   "criticidade": "media",
+   "unidade_caso": "processo",
+   "n_casos": 1,
+   "contagem": {
+    "conforme": 0,
+    "não conforme": 0,
+    "sem evidência": 1,
+    "não aplicável": 0
+   },
+   "taxa_conformidade": null,
+   "validar_procuradoria": true,
+   "nota_validacao": "Dizer quem decide o pedido de arquivamento (câmara, SECEX ou Conselho-Diretor) e o prazo (N-FIS-29).",
+   "casos": [
+    {
+     "caso": "processo",
+     "situacao": "sem evidência",
+     "detalhe": "Pedido de arquivamento da concessionária citado no despacho, sem decisão nos autos; a instrução ainda não foi concluída (consulta à Procuradoria pendente).",
+     "calculos": [],
+     "documentos": [
+      34
+     ]
+    }
+   ]
+  },
+  "R-FIS-16": {
+   "exigencia": "Nenhuma penalidade é aplicada sem notificação de infração e ampla e prévia defesa.",
+   "tipo": "obrigacao",
+   "normas": [
+    "N-FIS-31",
+    "N-FIS-36",
+    "N-FIS-21",
+    "N-FIS-04"
+   ],
+   "criticidade": "alta",
+   "unidade_caso": "processo",
+   "n_casos": 1,
+   "contagem": {
+    "conforme": 0,
+    "não conforme": 0,
+    "sem evidência": 0,
+    "não aplicável": 1
+   },
+   "taxa_conformidade": null,
+   "validar_procuradoria": true,
+   "nota_validacao": "Se a agência quiser sancionar o descumprimento, dizer se o caminho é a notificação de infração da IN 128/2024 (N-FIS-36) em processo próprio.",
+   "casos": [
+    {
+     "caso": "processo",
+     "situacao": "não aplicável",
+     "detalhe": "Nenhuma notificação/auto de infração nos autos (páginas []); o parecer não propõe sanção, só 'providências administrativas cabíveis'.",
+     "calculos": [],
+     "documentos": [
+      32
+     ]
+    }
+   ]
+  },
+  "R-FIS-17": {
+   "exigencia": "O processo não fica paralisado mais de três anos sem ato.",
+   "tipo": "prazo",
+   "normas": [
+    "N-FIS-32"
+   ],
+   "criticidade": "baixa",
+   "unidade_caso": "processo",
+   "n_casos": 1,
+   "contagem": {
+    "conforme": 1,
+    "não conforme": 0,
+    "sem evidência": 0,
+    "não aplicável": 0
+   },
+   "taxa_conformidade": 100.0,
+   "validar_procuradoria": false,
+   "nota_validacao": "",
+   "interpretacao": "A regra é de processo sancionador; aplicada aqui como alerta, porque o parecer prevê providências em caso de descumprimento.",
+   "casos": [
+    {
+     "caso": "processo",
+     "situacao": "conforme",
+     "detalhe": "Maior intervalo sem peça: 2024-11-11 → 2025-07-08 (239 dc), abaixo de 3 anos.",
+     "calculos": [
+      "calc.maior_hiato_entre_pecas.dc",
+      "calc.maior_hiato_entre_pecas.du"
+     ],
+     "documentos": []
+    }
+   ]
+  },
+  "R-FIS-18": {
+   "exigencia": "A fiscalização programada é precedida de Aviso de Fiscalização com antecedência mínima.",
+   "tipo": "prazo",
+   "normas": [
+    "N-FIS-34",
+    "N-FIS-20"
+   ],
+   "criticidade": "baixa",
+   "unidade_caso": "vistoria",
+   "n_casos": 24,
+   "contagem": {
+    "conforme": 0,
+    "não conforme": 0,
+    "sem evidência": 1,
+    "não aplicável": 23
+   },
+   "taxa_conformidade": null,
+   "validar_procuradoria": true,
+   "nota_validacao": "Dizer se havia, antes da IN 128/2024 (N-FIS-34), regra de aviso prévio aplicável ao Bloco 1.",
+   "interpretacao": "Antes de 01/10/2024 não há regra de aviso transcrita para o Bloco 1 (a IN nº 1/2007 de P06 vale para CEG/CEG Rio); vistorias anteriores = não aplicável, com a antecedência medida quando há aviso.",
+   "casos": [
+    {
+     "caso": "RF 10/2024 (doc 1)",
+     "situacao": "não aplicável",
+     "detalhe": "Vistoria em 2024-01-18, antes da vigência (2024-10-01); nenhum aviso nos autos.",
+     "calculos": [],
+     "documentos": [
+      1
+     ]
+    },
+    {
+     "caso": "RF 11/2024 (doc 2)",
+     "situacao": "não aplicável",
+     "detalhe": "Vistoria em 2024-01-18, antes da vigência (2024-10-01); nenhum aviso nos autos.",
+     "calculos": [],
+     "documentos": [
+      2
+     ]
+    },
+    {
+     "caso": "RF 12/2024 (doc 3)",
+     "situacao": "não aplicável",
+     "detalhe": "Data da vistoria não legível, mas o relatório foi assinado em 2024-03-07, antes da vigência (2024-10-01).",
+     "calculos": [],
+     "documentos": [
+      3
+     ]
+    },
+    {
+     "caso": "RF 56/2024 (doc 6)",
+     "situacao": "não aplicável",
+     "detalhe": "Vistoria em 2024-04-04, antes da vigência (2024-10-01); nenhum aviso nos autos.",
+     "calculos": [],
+     "documentos": [
+      6
+     ]
+    },
+    {
+     "caso": "RF 52/2024 (doc 7)",
+     "situacao": "não aplicável",
+     "detalhe": "Vistoria em 2024-04-02, antes da vigência (2024-10-01); nenhum aviso nos autos.",
+     "calculos": [],
+     "documentos": [
+      7
+     ]
+    },
+    {
+     "caso": "RF 59/2024 (doc 8)",
+     "situacao": "não aplicável",
+     "detalhe": "Vistoria em 2024-04-04, antes da vigência (2024-10-01); nenhum aviso nos autos.",
+     "calculos": [],
+     "documentos": [
+      8
+     ]
+    },
+    {
+     "caso": "RF 70/2024 (doc 9)",
+     "situacao": "não aplicável",
+     "detalhe": "Vistoria em 2024-04-02, antes da vigência (2024-10-01); nenhum aviso nos autos.",
+     "calculos": [],
+     "documentos": [
+      9
+     ]
+    },
+    {
+     "caso": "RF 73/2024 (doc 10)",
+     "situacao": "não aplicável",
+     "detalhe": "Vistoria em 2024-04-10, antes da vigência (2024-10-01); nenhum aviso nos autos.",
+     "calculos": [],
+     "documentos": [
+      10
+     ]
+    },
+    {
+     "caso": "RF 65/2024 (doc 11)",
+     "situacao": "não aplicável",
+     "detalhe": "Vistoria em 2024-04-16, antes da vigência (2024-10-01); nenhum aviso nos autos.",
+     "calculos": [],
+     "documentos": [
+      11
+     ]
+    },
+    {
+     "caso": "RF 90/2024 (doc 12)",
+     "situacao": "não aplicável",
+     "detalhe": "Vistoria em 2024-04-10, antes da vigência (2024-10-01); nenhum aviso nos autos.",
+     "calculos": [],
+     "documentos": [
+      12
+     ]
+    },
+    {
+     "caso": "RF 159/2024 (doc 13)",
+     "situacao": "não aplicável",
+     "detalhe": "Vistoria em 2024-06-26, antes da vigência (2024-10-01); nenhum aviso nos autos.",
+     "calculos": [],
+     "documentos": [
+      13
+     ]
+    },
+    {
+     "caso": "RF 155/2024 (doc 16)",
+     "situacao": "não aplicável",
+     "detalhe": "Vistoria em 2024-07-16, antes da vigência (2024-10-01); nenhum aviso nos autos.",
+     "calculos": [],
+     "documentos": [
+      16
+     ]
+    },
+    {
+     "caso": "RF 156/2024 (doc 17)",
+     "situacao": "não aplicável",
+     "detalhe": "Vistoria em 2024-07-16, antes da vigência (2024-10-01); nenhum aviso nos autos.",
+     "calculos": [],
+     "documentos": [
+      17
+     ]
+    },
+    {
+     "caso": "RF 157/2024 (doc 18)",
+     "situacao": "não aplicável",
+     "detalhe": "Vistoria em 2024-07-16, antes da vigência (2024-10-01); nenhum aviso nos autos.",
+     "calculos": [],
+     "documentos": [
+      18
+     ]
+    },
+    {
+     "caso": "RF 158/2024 (doc 19)",
+     "situacao": "não aplicável",
+     "detalhe": "Vistoria em 2024-07-16, antes da vigência (2024-10-01); nenhum aviso nos autos.",
+     "calculos": [],
+     "documentos": [
+      19
+     ]
+    },
+    {
+     "caso": "RF 153/2024 (doc 22)",
+     "situacao": "não aplicável",
+     "detalhe": "Vistoria em 2024-07-16, antes da vigência (2024-10-01); nenhum aviso nos autos.",
+     "calculos": [],
+     "documentos": [
+      22
+     ]
+    },
+    {
+     "caso": "RF 259/2024 (doc 23)",
+     "situacao": "não aplicável",
+     "detalhe": "Vistoria em 2024-08-14, antes da vigência (2024-10-01); nenhum aviso nos autos.",
+     "calculos": [],
+     "documentos": [
+      23
+     ]
+    },
+    {
+     "caso": "RF 209/2024 (doc 24)",
+     "situacao": "não aplicável",
+     "detalhe": "Vistoria em 2024-08-14, antes da vigência (2024-10-01); nenhum aviso nos autos.",
+     "calculos": [],
+     "documentos": [
+      24
+     ]
+    },
+    {
+     "caso": "RF 212/2024 (doc 25)",
+     "situacao": "não aplicável",
+     "detalhe": "Vistoria em 2024-08-20, antes da vigência (2024-10-01); nenhum aviso nos autos.",
+     "calculos": [],
+     "documentos": [
+      25
+     ]
+    },
+    {
+     "caso": "RF 213/2024 (doc 26)",
+     "situacao": "não aplicável",
+     "detalhe": "Vistoria em 2024-08-20, antes da vigência (2024-10-01); nenhum aviso nos autos.",
+     "calculos": [],
+     "documentos": [
+      26
+     ]
+    },
+    {
+     "caso": "RF 214/2024 (doc 27)",
+     "situacao": "não aplicável",
+     "detalhe": "Vistoria em 2024-08-20, antes da vigência (2024-10-01); nenhum aviso nos autos.",
+     "calculos": [],
+     "documentos": [
+      27
+     ]
+    },
+    {
+     "caso": "RF 17/2024 (doc 28)",
+     "situacao": "não aplicável",
+     "detalhe": "Vistoria em 2024-03-06, antes da vigência (2024-10-01); nenhum aviso nos autos.",
+     "calculos": [],
+     "documentos": [
+      28
+     ]
+    },
+    {
+     "caso": "RF 227/2024 (doc 31)",
+     "situacao": "sem evidência",
+     "detalhe": "Data da vistoria não legível e relatório sem assinatura no PDF.",
+     "calculos": [],
+     "documentos": [
+      31
+     ]
+    },
+    {
+     "caso": "Ofício 757/2024 (doc 20)",
+     "situacao": "não aplicável",
+     "detalhe": "Aviso enviado em 2024-09-09 para vistorias a partir de 2024-09-10: 1 dc de antecedência (abaixo do mínimo de 2 dc que valeria após 2024-10-01). Ofício datado de 2024-09-06 e assinado em 2024-09-09 (3 dc). Os relatórios dessas vistorias não estão no PDF.",
+     "calculos": [
+      "calc.oficio757.aviso_ate_vistoria.dc",
+      "calc.oficio757.aviso_ate_vistoria.du",
+      "calc.oficio757.data_escrita_ate_assinatura.dc",
+      "calc.oficio757.data_escrita_ate_assinatura.du"
+     ],
+     "documentos": [
+      20,
+      21
+     ]
+    }
+   ]
+  }
+ },
+ "itens_procuradoria": {
+  "R-FIS-02": "Dizer se o cronograma do art. 2º (N-FIS-01) deve constar deste processo e se o aviso pontual o substitui.",
+  "R-FIS-03": "Estações de tratamento com relatório no PDF: 2 (ETA Magé (Sistema Roncador), ETE São Gonçalo). O parecer lista 42 relatórios; 19 não têm texto no PDF. Confirmar com a CASAN a lista completa de estações do Bloco 1 sujeitas à vistoria anual.",
+  "R-FIS-04": "Fixar o marco da 'lavratura' (1ª assinatura ou data escrita no relatório) e se o 'De acordo' equivale ao envio ao Gerente (N-FIS-35).",
+  "R-FIS-06": "Relatórios sem ofício de encaminhamento nos autos: [56, 52, 59, 70, 73, 65, 90, 155, 156, 157, 158, 153, 227]. Dizer se o prazo dado nesses relatórios corre sem notificação formal e se a falta impede cobrar o saneamento.",
+  "R-FIS-08": "Fixar a contagem do prazo de manifestação (dias corridos ou úteis, N-FIS-33) e o termo inicial (envio do e-mail ou leitura).",
+  "R-FIS-09": "Dizer se a conclusão agregada do parecer ('cumprimento apenas parcial') basta para caracterizar descumprimento ou se é preciso apurar por unidade.",
+  "R-FIS-11": "Dizer se o prazo de parecer técnico do Regimento (N-FIS-26) se aplica à análise anual das respostas e qual é o termo inicial.",
+  "R-FIS-12": "Dizer se o relatório que fixa prazo à concessionária é ato que exige motivação com fundamento jurídico (N-FIS-30) e se a falta de citação o invalida.",
+  "R-FIS-14": "Registrar a data de recebimento e o prazo da manifestação pedida no despacho (N-FIS-22, N-FIS-27).",
+  "R-FIS-15": "Dizer quem decide o pedido de arquivamento (câmara, SECEX ou Conselho-Diretor) e o prazo (N-FIS-29).",
+  "R-FIS-16": "Se a agência quiser sancionar o descumprimento, dizer se o caminho é a notificação de infração da IN 128/2024 (N-FIS-36) em processo próprio.",
+  "R-FIS-18": "Dizer se havia, antes da IN 128/2024 (N-FIS-34), regra de aviso prévio aplicável ao Bloco 1."
+ }
+}

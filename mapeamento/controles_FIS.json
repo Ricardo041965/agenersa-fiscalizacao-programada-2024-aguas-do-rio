@@ -1,0 +1,296 @@
+{
+ "codigo": "FIS",
+ "caso": "SEI-480002/001314/2024",
+ "observacao": "Estudo de caso de um processo anual, com um caso por relatório (9 relatórios no ciclo vistoria → e-mail; 21 nos demais). Linha de base: fato de fatos_FIS.json ou casos_FIS.json, ou fato da linha de base congelada calculado por scripts/simular_tobe_fis.py (ids 'lb.*' em resultado_tobe_FIS.json, com o carimbo de linha_base_FIS.json); para indicador de conformidade, a taxa de conformidade_FIS.json. Origem das metas: 'simulacao' (ref = caminho em resultado_tobe_FIS.json, valor = valor do caminho, cenário esperado), 'norma' (requisito de normas_FIS.json), 'benchmark' (caso de benchmark_FIS.json) ou 'proposto' (melhoria que a sustenta, a validar com a gestão). Medianas com 9 a 21 relatórios são instáveis: as metas simuladas são ordem de grandeza, e no cenário conservador ficam mais altas (valores em resultado_tobe_FIS.json). Atividades citadas em 'calculo' são do modelo TO-BE (modelo_tobe_FIS.json). Horas e custo não foram medidos: nenhum indicador de esforço tem meta numérica.",
+ "indicadores": [
+  {
+   "id": "I-FIS-01",
+   "nome": "Dias úteis da vistoria à 1ª assinatura do relatório (gargalo)",
+   "definicao": "Dias úteis (calendário RJ) entre a data da vistoria e a 1ª assinatura eletrônica do relatório. Mediana, q1, q3 e máximo dos relatórios assinados no trimestre; acompanhamento individual pelo painel.",
+   "calculo": {"tipo": "espera_antes", "atividades": ["t3", "t4"]},
+   "fonte_dados": "data da vistoria registrada na fila (fase 1) ou no checklist digital (fase 3); assinatura no SEI",
+   "frequencia": "contínua (painel); consolidado trimestral",
+   "linha_base": {"valor": 34, "unidade": "du", "fato": "casos.vistoria_1a_assinatura.mediana_du"},
+   "metas": [
+    {"fase": 1, "valor": 25.0, "unidade": "du", "origem": {"tipo": "simulacao", "ref": "fases.1.esperado.componentes.a2_elaborar_relatorio.mediana"}},
+    {"fase": 2, "valor": 18.8, "unidade": "du", "origem": {"tipo": "simulacao", "ref": "fases.2.esperado.componentes.a2_elaborar_relatorio.mediana"}},
+    {"fase": 3, "valor": 15.0, "unidade": "du", "origem": {"tipo": "simulacao", "ref": "fases.3.esperado.componentes.a2_elaborar_relatorio.mediana"}}
+   ],
+   "alerta": {"regra": "Relatório sem 1ª assinatura quando faltarem 5 du para o prazo interno da fase; relatório acima do prazo vai à reunião semanal.", "destinatario": "Elaborador do relatório e Gerente da CASAN"},
+   "melhorias": ["M-FIS-01", "M-FIS-07", "M-FIS-12", "M-FIS-15"],
+   "requisitos": ["R-FIS-03", "R-FIS-12"],
+   "responsavel": "Gerência da CASAN"
+  },
+  {
+   "id": "I-FIS-02",
+   "nome": "Ciclo do relatório: vistoria ao e-mail de envio à concessionária",
+   "definicao": "Dias úteis da vistoria ao e-mail que envia o ofício com o relatório. Mediana, q1 e q3 dos relatórios enviados no trimestre.",
+   "calculo": {"tipo": "lead", "atividades": ["t3", "t7"]},
+   "fonte_dados": "checklist ou fila (vistoria); e-mail do SEI juntado ao processo",
+   "frequencia": "trimestral",
+   "linha_base": {"valor": 62, "unidade": "du", "fato": "casos.vistoria_email.mediana_du"},
+   "metas": [
+    {"fase": 1, "valor": 28.0, "unidade": "du", "origem": {"tipo": "simulacao", "ref": "fases.1.esperado.vistoria_email.mediana"}},
+    {"fase": 2, "valor": 21.8, "unidade": "du", "origem": {"tipo": "simulacao", "ref": "fases.2.esperado.vistoria_email.mediana"}},
+    {"fase": 3, "valor": 17.0, "unidade": "du", "origem": {"tipo": "simulacao", "ref": "fases.3.esperado.vistoria_email.mediana"}}
+   ],
+   "alerta": {"regra": "Relatório aprovado sem e-mail de envio no dia útil seguinte ao 'De acordo'.", "destinatario": "Gerente da CASAN"},
+   "melhorias": ["M-FIS-01", "M-FIS-02", "M-FIS-03", "M-FIS-07", "M-FIS-13", "M-FIS-15"],
+   "requisitos": ["R-FIS-05", "R-FIS-06"],
+   "responsavel": "Gerência da CASAN"
+  },
+  {
+   "id": "I-FIS-03",
+   "nome": "Vistoria ao 'De acordo' do Gerente",
+   "definicao": "Dias úteis da vistoria ao 'De acordo' do Gerente no relatório. Mediana, q1 e q3 dos relatórios aprovados no trimestre (cobre os relatórios cujo ofício não está no processo).",
+   "calculo": {"tipo": "lead", "atividades": ["t3", "t6"]},
+   "fonte_dados": "checklist ou fila (vistoria); assinaturas no SEI",
+   "frequencia": "trimestral",
+   "linha_base": {"valor": 50, "unidade": "du", "fato": "casos.vistoria_aprovacao.mediana_du"},
+   "metas": [
+    {"fase": 1, "valor": 27.0, "unidade": "du", "origem": {"tipo": "simulacao", "ref": "fases.1.esperado.vistoria_aprovacao.mediana"}},
+    {"fase": 2, "valor": 20.8, "unidade": "du", "origem": {"tipo": "simulacao", "ref": "fases.2.esperado.vistoria_aprovacao.mediana"}},
+    {"fase": 3, "valor": 17.0, "unidade": "du", "origem": {"tipo": "simulacao", "ref": "fases.3.esperado.vistoria_aprovacao.mediana"}}
+   ],
+   "alerta": {"regra": "Relatório com mais de 3 du entre a última assinatura técnica e o 'De acordo'.", "destinatario": "Gerente da CASAN"},
+   "melhorias": ["M-FIS-01", "M-FIS-02", "M-FIS-07", "M-FIS-15"],
+   "requisitos": ["R-FIS-04"],
+   "responsavel": "Gerência da CASAN"
+  },
+  {
+   "id": "I-FIS-04",
+   "nome": "Relatórios com 'De acordo' em até 5 dias úteis da 1ª assinatura (R-FIS-04)",
+   "definicao": "Relatórios com intervalo da 1ª assinatura ao 'De acordo' ≤ 5 du ÷ relatórios aprovados no trimestre, em %.",
+   "calculo": {"tipo": "conformidade", "atividades": ["t4", "t6"], "requisito": "R-FIS-04"},
+   "fonte_dados": "assinaturas eletrônicas no SEI",
+   "frequencia": "trimestral",
+   "linha_base": {"valor": 100.0, "unidade": "%", "fonte": "conformidade_FIS.json: requisitos.R-FIS-04.taxa_conformidade (6 relatórios no período de vigência)",
+                  "contrafactual": {"valor": 54.5, "fato": "lb.R-FIS-04.pct", "nota": "regra aplicada a todos os relatórios do ano"}},
+   "metas": [
+    {"fase": 1, "valor": 100.0, "unidade": "%", "origem": {"tipo": "simulacao", "ref": "fases.1.esperado.conformidade_temporal.R-FIS-04.pct"}},
+    {"fase": 2, "valor": 100.0, "unidade": "%", "origem": {"tipo": "simulacao", "ref": "fases.2.esperado.conformidade_temporal.R-FIS-04.pct"}},
+    {"fase": 3, "valor": 100.0, "unidade": "%", "origem": {"tipo": "simulacao", "ref": "fases.3.esperado.conformidade_temporal.R-FIS-04.pct"}}
+   ],
+   "referencia_legal": "IN AGENERSA 128/2024, art. 32 (R-FIS-04): relatório ao Gerente em até 5 dias úteis da lavratura, desde 01/10/2024. No cenário conservador (teto de 10 du) a conformidade simulada fica em 54,5% em todas as fases (fases.<f>.conservador.conformidade_temporal.R-FIS-04.pct): a meta legal só se sustenta se a cadeia de assinaturas da M-FIS-02 for de fato adotada.",
+   "alerta": {"regra": "Relatório com 1ª assinatura há 4 du sem 'De acordo'.", "destinatario": "Gerente da CASAN"},
+   "melhorias": ["M-FIS-02", "M-FIS-12"],
+   "requisitos": ["R-FIS-04"],
+   "responsavel": "Gerente da CASAN"
+  },
+  {
+   "id": "I-FIS-05",
+   "nome": "Relatórios aprovados sem ofício de encaminhamento no processo",
+   "definicao": "Número de relatórios com 'De acordo' e sem ofício que os cite juntado ao processo, e a idade (du) de cada um desde o 'De acordo'. Fotografia semanal.",
+   "calculo": {"tipo": "estoque_idade", "atividades": ["t6", "t7"], "requisito": "R-FIS-06"},
+   "fonte_dados": "documentos do processo no SEI (relatórios e ofícios); rotina aprovado × oficiado (fase 3)",
+   "frequencia": "semanal",
+   "linha_base": {"valor": 12, "unidade": "relatórios", "fato": "casos.variante.sem_oficio_de_encaminhamento_nos_autos"},
+   "metas": [
+    {"fase": 1, "valor": 0, "unidade": "relatórios", "origem": {"tipo": "norma", "ref": "R-FIS-06"}},
+    {"fase": 2, "valor": 0, "unidade": "relatórios", "origem": {"tipo": "norma", "ref": "R-FIS-06"}},
+    {"fase": 3, "valor": 0, "unidade": "relatórios", "origem": {"tipo": "norma", "ref": "R-FIS-06"}}
+   ],
+   "referencia_legal": "Todo relatório com não conformidade é comunicado por ofício com comprovante de envio (R-FIS-06).",
+   "alerta": {"regra": "Relatório aprovado sem ofício há mais de 1 du.", "destinatario": "Gerente da CASAN"},
+   "melhorias": ["M-FIS-03", "M-FIS-13"],
+   "requisitos": ["R-FIS-05", "R-FIS-06"],
+   "responsavel": "Gerência da CASAN"
+  },
+  {
+   "id": "I-FIS-06",
+   "nome": "Dias úteis do 'De acordo' ao ofício",
+   "definicao": "Dias úteis entre o 'De acordo' do Gerente e a assinatura do ofício que cita o relatório. Mediana e máximo do trimestre.",
+   "calculo": {"tipo": "espera_antes", "atividades": ["t6", "t7"]},
+   "fonte_dados": "assinaturas no SEI",
+   "frequencia": "trimestral",
+   "linha_base": {"valor": 1, "unidade": "du", "fato": "casos.aprovacao_oficio.mediana_du"},
+   "metas": [
+    {"fase": 1, "valor": 1.0, "unidade": "du", "origem": {"tipo": "simulacao", "ref": "fases.1.esperado.componentes.a4_oficiar_concessionaria.mediana"}},
+    {"fase": 2, "valor": 1.0, "unidade": "du", "origem": {"tipo": "simulacao", "ref": "fases.2.esperado.componentes.a4_oficiar_concessionaria.mediana"}},
+    {"fase": 3, "valor": 0.0, "unidade": "du", "origem": {"tipo": "simulacao", "ref": "fases.3.esperado.componentes.a4_oficiar_concessionaria.mediana"}}
+   ],
+   "alerta": {"regra": "Igual ao I-FIS-05.", "destinatario": "Gerente da CASAN"},
+   "melhorias": ["M-FIS-03", "M-FIS-13"],
+   "requisitos": ["R-FIS-05", "R-FIS-07"],
+   "responsavel": "Gerência da CASAN"
+  },
+  {
+   "id": "I-FIS-07",
+   "nome": "Ciclo até a análise da resposta: vistoria ao parecer sobre o relatório",
+   "definicao": "Dias úteis da vistoria à análise técnica da resposta da concessionária sobre aquele relatório (nota técnica parcial no TO-BE; parecer anual no AS-IS). Mediana, q1 e q3 dos relatórios analisados no semestre. Inclui o prazo da concessionária, que não é reduzido.",
+   "calculo": {"tipo": "lead", "atividades": ["t3", "t8"]},
+   "fonte_dados": "checklist ou fila (vistoria); nota técnica parcial ou parecer no SEI",
+   "frequencia": "semestral",
+   "linha_base": {"valor": 256.0, "unidade": "du", "fato": "lb.ate_parecer.mediana_du", "fonte": "resultado_tobe_FIS.json (linha de base congelada)"},
+   "metas": [
+    {"fase": 1, "valor": 103.0, "unidade": "du", "origem": {"tipo": "simulacao", "ref": "fases.1.esperado.ate_parecer.mediana"}},
+    {"fase": 2, "valor": 76.8, "unidade": "du", "origem": {"tipo": "simulacao", "ref": "fases.2.esperado.ate_parecer.mediana"}},
+    {"fase": 3, "valor": 67.0, "unidade": "du", "origem": {"tipo": "simulacao", "ref": "fases.3.esperado.ate_parecer.mediana"}}
+   ],
+   "referencia_legal": "Entre o envio do ofício e o parecer decorre ao menos o prazo concedido (R-FIS-10): a simulação preserva 35 du por relatório (prazo lido como dias úteis + 5 du).",
+   "alerta": {"regra": "Relatório com prazo de resposta vencido há mais de 5 du sem análise registrada.", "destinatario": "Analista responsável e Gerente da CASAN"},
+   "melhorias": ["M-FIS-04", "M-FIS-08", "M-FIS-14"],
+   "requisitos": ["R-FIS-09", "R-FIS-10", "R-FIS-13"],
+   "responsavel": "Gerência da CASAN"
+  },
+  {
+   "id": "I-FIS-08",
+   "nome": "Dias úteis do fim do prazo protegido à análise da resposta",
+   "definicao": "Dias úteis entre o fim do prazo da concessionária (mais a margem) e a análise técnica da resposta do relatório. Mediana e máximo dos relatórios analisados no trimestre. Quando a resposta tiver data de protocolo (M-FIS-06), medir também da resposta à análise, para o R-FIS-11.",
+   "calculo": {"tipo": "espera_antes", "atividades": ["t8"], "requisito": "R-FIS-11"},
+   "fonte_dados": "e-mail do ofício, protocolo da resposta e nota técnica parcial no SEI; formulário eletrônico (fase 3)",
+   "frequencia": "trimestral",
+   "linha_base": {"valor": 162.0, "unidade": "du", "fato": "lb.componente.a6_agencia.mediana_du", "fonte": "resultado_tobe_FIS.json (linha de base congelada)"},
+   "metas": [
+    {"fase": 1, "valor": 40.0, "unidade": "du", "origem": {"tipo": "simulacao", "ref": "fases.1.esperado.componentes.a6_agencia.mediana"}},
+    {"fase": 2, "valor": 20.0, "unidade": "du", "origem": {"tipo": "simulacao", "ref": "fases.2.esperado.componentes.a6_agencia.mediana"}},
+    {"fase": 3, "valor": 15.0, "unidade": "du", "origem": {"tipo": "simulacao", "ref": "fases.3.esperado.componentes.a6_agencia.mediana"}}
+   ],
+   "referencia_legal": "Regimento, art. 27, III (R-FIS-11): parecer técnico em até 15 dias de instada; aplicação à análise das respostas a confirmar pela Procuradoria. Não simulável no AS-IS (datas das respostas fora dos autos).",
+   "alerta": {"regra": "Resposta recebida sem análise há mais de 10 du.", "destinatario": "Analista responsável e Gerente da CASAN"},
+   "melhorias": ["M-FIS-04", "M-FIS-06", "M-FIS-08", "M-FIS-12", "M-FIS-14"],
+   "requisitos": ["R-FIS-10", "R-FIS-11"],
+   "responsavel": "Gerência da CASAN"
+  },
+  {
+   "id": "I-FIS-09",
+   "nome": "Relatórios com fundamento normativo e descrição dos fatos (R-FIS-12)",
+   "definicao": "Relatórios que citam a base legal ou contratual e descrevem os fatos ÷ relatórios assinados no trimestre, em %.",
+   "calculo": {"tipo": "conformidade", "atividades": ["t4", "t5"], "requisito": "R-FIS-12"},
+   "fonte_dados": "texto do relatório (checagem de forma, fase 3; amostra manual nas fases 1 e 2)",
+   "frequencia": "trimestral",
+   "linha_base": {"valor": 86.4, "unidade": "%", "fonte": "conformidade_FIS.json: requisitos.R-FIS-12.taxa_conformidade (19 conformes, 3 não conformes)"},
+   "metas": [
+    {"fase": 1, "valor": 100, "unidade": "%", "origem": {"tipo": "norma", "ref": "R-FIS-12"}},
+    {"fase": 2, "valor": 100, "unidade": "%", "origem": {"tipo": "norma", "ref": "R-FIS-12"}},
+    {"fase": 3, "valor": 100, "unidade": "%", "origem": {"tipo": "norma", "ref": "R-FIS-12"}}
+   ],
+   "referencia_legal": "Lei 5.427/2009, art. 48, II (R-FIS-12); alcance sobre o relatório de fiscalização a confirmar pela Procuradoria.",
+   "alerta": {"regra": "Checagem de forma com pendência de fundamento: assinatura bloqueada (fase 3).", "destinatario": "Elaborador do relatório"},
+   "melhorias": ["M-FIS-05", "M-FIS-15"],
+   "requisitos": ["R-FIS-12"],
+   "responsavel": "Gerência da CASAN"
+  },
+  {
+   "id": "I-FIS-10",
+   "nome": "Relatórios assinados com defeito de forma",
+   "definicao": "Relatórios assinados sem data de vistoria, com datas internas divergentes, unidade ou município trocado ou trecho de modelo não ajustado ÷ relatórios assinados no trimestre. Indicador de qualidade, ao lado dos de prazo.",
+   "calculo": {"tipo": "laco", "atividades": ["t4", "t5"]},
+   "fonte_dados": "checagem de forma (fase 3); amostra mensal de 5 relatórios conferida pela gerência (fases 1 e 2)",
+   "frequencia": "mensal",
+   "linha_base": {"valor": 2, "unidade": "relatórios sem vistoria datada", "fato": "casos.sem_vistoria_datada", "nota": "os demais defeitos estão nas fichas, sem contagem citável; medir no 1º trimestre"},
+   "metas": [
+    {"fase": 1, "valor": 0, "unidade": "relatórios sem vistoria datada", "origem": {"tipo": "norma", "ref": "R-FIS-03"}},
+    {"fase": 3, "valor": "nenhum relatório assinado com pendência de forma (proposto)", "origem": {"tipo": "proposto", "ref": "M-FIS-15"}}
+   ],
+   "alerta": {"regra": "Pendência de forma apontada pela checagem.", "destinatario": "Elaborador do relatório"},
+   "melhorias": ["M-FIS-05", "M-FIS-15"],
+   "requisitos": ["R-FIS-03", "R-FIS-12"],
+   "responsavel": "Gerência da CASAN"
+  },
+  {
+   "id": "I-FIS-11",
+   "nome": "Ofícios com resposta da concessionária juntada e datada",
+   "definicao": "Ofícios de encaminhamento cuja resposta (ou registro de ausência de resposta no prazo) está juntada ao processo com data de protocolo ÷ ofícios com prazo vencido no trimestre, em %.",
+   "calculo": {"tipo": "conformidade", "atividades": ["t7", "t8"], "requisito": "R-FIS-08"},
+   "fonte_dados": "processo no SEI (protocolo da resposta); formulário eletrônico (fase 3)",
+   "frequencia": "trimestral",
+   "linha_base": {"valor": 0, "unidade": "ofícios com resposta nos autos", "fonte": "conformidade_FIS.json: requisitos.R-FIS-08 (3 ofícios, todos 'sem evidência')"},
+   "metas": [
+    {"fase": 1, "valor": 100, "unidade": "%", "origem": {"tipo": "norma", "ref": "R-FIS-08"}},
+    {"fase": 2, "valor": 100, "unidade": "%", "origem": {"tipo": "norma", "ref": "R-FIS-08"}},
+    {"fase": 3, "valor": 100, "unidade": "%", "origem": {"tipo": "norma", "ref": "R-FIS-08"}}
+   ],
+   "alerta": {"regra": "Prazo do ofício vencido sem resposta nem registro de ausência.", "destinatario": "Gerente da CASAN"},
+   "melhorias": ["M-FIS-06", "M-FIS-14"],
+   "requisitos": ["R-FIS-08", "R-FIS-09"],
+   "responsavel": "Gerência da CASAN, com a SECEX (protocolo)"
+  },
+  {
+   "id": "I-FIS-12",
+   "nome": "Não conformidades com estado registrado e sanadas no prazo",
+   "definicao": "(a) Não conformidades com estado registrado (sanada, em plano com data, pendente) ÷ não conformidades com prazo vencido; (b) sanadas ou em plano no prazo ÷ com prazo vencido; (c) reiteradas na mesma unidade em relação ao exercício anterior. Indicador de efetividade.",
+   "calculo": {"tipo": "conformidade", "atividades": ["t8", "t10"], "requisito": "R-FIS-09"},
+   "fonte_dados": "planilha-padrão por não conformidade (fase 2); painel (fase 3)",
+   "frequencia": "semestral; consolidado no parecer anual",
+   "linha_base": {"valor": 113, "unidade": "não conformidades nos relatórios do PDF, sem estado registrado por item", "fato": "contagem.nao_conformidades_total"},
+   "metas": [
+    {"fase": 2, "valor": "100% com estado registrado", "origem": {"tipo": "norma", "ref": "R-FIS-09"}},
+    {"fase": 3, "valor": "(b) e (c) medidos e publicados; referência externa de 95% de cumprimento tempestivo, teto de outro setor (proposto)", "origem": {"tipo": "benchmark", "ref": "B-fiscalizacao-14"}}
+   ],
+   "alerta": {"regra": "Não conformidade pendente após o prazo: aplica a regra de escalada (M-FIS-10).", "destinatario": "Gerente da CASAN"},
+   "melhorias": ["M-FIS-08", "M-FIS-10", "M-FIS-14", "M-FIS-17"],
+   "requisitos": ["R-FIS-09", "R-FIS-16"],
+   "responsavel": "Gerência da CASAN"
+  },
+  {
+   "id": "I-FIS-13",
+   "nome": "Cronograma e Aviso de Fiscalização",
+   "definicao": "(a) Cronograma anual juntado antes da 1ª vistoria (sim/não); (b) vistorias com aviso enviado ao menos 48 horas antes ÷ vistorias programadas do trimestre; (c) estações de tratamento do Bloco 1 vistoriadas no exercício ÷ estações do cadastro.",
+   "calculo": {"tipo": "conformidade", "atividades": ["t1", "t2"], "requisito": "R-FIS-18"},
+   "fonte_dados": "processo no SEI (cronograma, avisos, relatórios); cadastro de unidades",
+   "frequencia": "trimestral; (a) e (c) anual",
+   "linha_base": {"valor": 1, "unidade": "du de antecedência no único aviso nos autos", "fato": "of3.antecedencia_agendamento_du"},
+   "metas": [
+    {"fase": 2, "valor": "cronograma juntado; 100% dos avisos com 48 h ou mais", "origem": {"tipo": "norma", "ref": "R-FIS-18"}},
+    {"fase": 3, "valor": "100% das estações de tratamento vistoriadas no exercício", "origem": {"tipo": "norma", "ref": "R-FIS-03"}}
+   ],
+   "alerta": {"regra": "Vistoria marcada sem aviso enviado até 3 dias corridos antes; exercício chegando a outubro com estação sem vistoria.", "destinatario": "Gerente da CASAN"},
+   "melhorias": ["M-FIS-09", "M-FIS-16"],
+   "requisitos": ["R-FIS-02", "R-FIS-03", "R-FIS-18"],
+   "responsavel": "Gerência da CASAN"
+  },
+  {
+   "id": "I-FIS-14",
+   "nome": "Assinaturas por relatório e lotes de aprovação",
+   "definicao": "Mediana de assinaturas por relatório e número de dias distintos de 'De acordo' no trimestre (dias com 'De acordo' ÷ relatórios aprovados indica fluxo contínuo quando se aproxima de 1).",
+   "calculo": {"tipo": "laco", "atividades": ["t4", "t6"]},
+   "fonte_dados": "assinaturas eletrônicas no SEI",
+   "frequencia": "trimestral",
+   "linha_base": {"valor": 4.0, "unidade": "assinaturas", "fato": "casos.assinaturas.mediana"},
+   "metas": [
+    {"fase": 1, "valor": "3 papéis (elaborado, revisado, de acordo) (proposto)", "origem": {"tipo": "proposto", "ref": "M-FIS-02"}}
+   ],
+   "alerta": {"regra": "Relatório com mais de uma rodada de assinatura do mesmo papel.", "destinatario": "Gerente da CASAN"},
+   "melhorias": ["M-FIS-02"],
+   "requisitos": ["R-FIS-04", "R-FIS-05"],
+   "responsavel": "Gerência da CASAN"
+  },
+  {
+   "id": "I-FIS-15",
+   "nome": "Envios à Procuradoria por processo de fiscalização",
+   "definicao": "Envios à Procuradoria por processo anual de fiscalização e quantos trazem questão jurídica nova (não coberta pela tese-padrão); dias corridos do envio à manifestação.",
+   "calculo": {"tipo": "conformidade", "atividades": ["t14", "t15"], "requisito": "R-FIS-14"},
+   "fonte_dados": "processo no SEI",
+   "frequencia": "anual",
+   "linha_base": {"valor": 118, "unidade": "dc do parecer ao envio à Procuradoria", "fato": "intervalo.parecer_procuradoria"},
+   "metas": [
+    {"fase": 2, "valor": "manifestação da Procuradoria em até 15 dias, prorrogáveis por mais 15", "origem": {"tipo": "norma", "ref": "R-FIS-14"}}
+   ],
+   "alerta": {"regra": "Processo na Procuradoria há mais de 15 dias sem manifestação nem prorrogação.", "destinatario": "SECEX"},
+   "melhorias": ["M-FIS-11"],
+   "requisitos": ["R-FIS-13", "R-FIS-14", "R-FIS-15"],
+   "responsavel": "SECEX"
+  }
+ ],
+ "controles_internos": [
+  {"id": "C-FIS-01", "tipo": "preventivo", "controle": "Relatório só segue à assinatura com a lista de conferência de forma preenchida (fases 1 e 2) ou com a checagem automática sem pendência (fase 3).", "requisitos": ["R-FIS-03", "R-FIS-12"], "melhorias": ["M-FIS-05", "M-FIS-15"], "evidencia": "lista ou resultado da checagem juntado ao relatório", "responsavel": "Elaborador do relatório; Gerente da CASAN confere no 'De acordo'"},
+  {"id": "C-FIS-02", "tipo": "preventivo", "controle": "Ofício de encaminhamento só é assinado com prazo e unidade de contagem preenchidos e com a lista de relatórios conferida contra os aprovados.", "requisitos": ["R-FIS-05", "R-FIS-06", "R-FIS-07", "R-FIS-08"], "melhorias": ["M-FIS-03", "M-FIS-13"], "evidencia": "ofício no SEI", "responsavel": "Gerente da CASAN"},
+  {"id": "C-FIS-03", "tipo": "detectivo", "controle": "Conferência semanal aprovado × oficiado (manual na fase 1, rotina na fase 3); relatório aprovado sem ofício vira pendência na fila.", "requisitos": ["R-FIS-06"], "melhorias": ["M-FIS-03", "M-FIS-13"], "evidencia": "registro semanal da conferência", "responsavel": "Gerência da CASAN"},
+  {"id": "C-FIS-04", "tipo": "preventivo", "controle": "Nenhuma análise conclusiva de descumprimento antes do fim do prazo concedido no ofício; resposta antecipada pode ser analisada assim que chega.", "requisitos": ["R-FIS-07", "R-FIS-10"], "melhorias": ["M-FIS-04", "M-FIS-08", "M-FIS-14"], "evidencia": "data do e-mail do ofício e da nota técnica parcial", "responsavel": "Analista responsável e Gerente da CASAN"},
+  {"id": "C-FIS-05", "tipo": "detectivo", "controle": "Revisão semanal da fila de prazos (vistoria sem assinatura, revisão parada, prazo vencido sem análise, processo parado) pelo Gerente, com registro do que foi decidido.", "requisitos": ["R-FIS-04", "R-FIS-11", "R-FIS-17"], "melhorias": ["M-FIS-01", "M-FIS-04", "M-FIS-12"], "evidencia": "fila ou painel com data da revisão", "responsavel": "Gerente da CASAN"},
+  {"id": "C-FIS-06", "tipo": "preventivo", "controle": "Escalada que proponha penalidade passa por notificação de infração e defesa prévia em processo sancionatório próprio; a fiscalização não aplica penalidade.", "requisitos": ["R-FIS-16"], "melhorias": ["M-FIS-10"], "evidencia": "processo sancionatório instaurado", "responsavel": "Gerente da CASAN; Procuradoria no rito"},
+  {"id": "C-FIS-07", "tipo": "preventivo", "controle": "Cronograma juntado antes da 1ª vistoria do exercício e aviso por modelo com antecedência mínima antes de cada vistoria.", "requisitos": ["R-FIS-02", "R-FIS-18"], "melhorias": ["M-FIS-09"], "evidencia": "cronograma e avisos no processo", "responsavel": "Gerente da CASAN"},
+  {"id": "C-FIS-08", "tipo": "preventivo", "controle": "Envio à Procuradoria só depois do parecer técnico conclusivo e só com questão jurídica nova, delimitada no despacho.", "requisitos": ["R-FIS-13", "R-FIS-14"], "melhorias": ["M-FIS-11"], "evidencia": "despacho da SECEX", "responsavel": "SECEX"},
+  {"id": "C-FIS-09", "tipo": "preventivo", "controle": "Item só vai ao painel público depois do prazo de resposta e da validação da CASAN; item contestado aparece como 'em análise'.", "requisitos": ["R-FIS-09"], "melhorias": ["M-FIS-17"], "evidencia": "registro de validação no painel", "responsavel": "Gerência da CASAN"}
+ ],
+ "controles_qualidade_ia": [
+  {"id": "Q-FIS-01", "melhorias": ["M-FIS-15"], "verificacao": "Cada não conformidade da minuta é conferida contra as fotos e o checklist da vistoria; não conformidade sugerida a partir de relatório anterior só entra se constatada em campo; conclusão revista pelo Gerente.", "amostragem": "100% das minutas; amostra trimestral de 3 relatórios refeita sem a ferramenta por outro fiscal", "criterio_aceite": "Nenhuma não conformidade no relatório assinado sem foto ou item de checklist que a sustente; nenhuma pendência de forma.", "indicador": "taxa de correção da minuta (não conformidades incluídas, retiradas ou reescritas ÷ não conformidades da minuta) e taxa de não conformidade sugerida e não constatada", "meta": "nenhum relatório assinado com não conformidade sem evidência; taxa de correção a fixar após o 1º semestre (proposto)", "responsavel": "Gerência da CASAN"},
+  {"id": "Q-FIS-02", "melhorias": ["M-FIS-14"], "verificacao": "Cada campo extraído da resposta (providência, data, prazo, evidência) é conferido contra a página de origem antes do registro; o estado da não conformidade é decidido pelo analista.", "amostragem": "100% dos campos extraídos; amostra trimestral de 5 respostas reanalisada por segundo servidor sem a ferramenta", "criterio_aceite": "Nenhum prazo ou providência registrado diferente da peça de origem.", "indicador": "taxa de erro de extração (campos corrigidos ÷ extraídos)", "meta": "nenhum campo divergente registrado; taxa de erro a fixar após o 1º semestre (proposto)", "responsavel": "Gerência da CASAN"},
+  {"id": "Q-FIS-03", "melhorias": ["M-FIS-16"], "verificacao": "Ordem de risco revista pelo Gerente antes de virar cronograma; pesos e dados do modelo documentados; cobertura mínima legal conferida fora do modelo.", "amostragem": "anual (todo o cronograma); parte das vistorias escolhida ao acaso para medir o acerto", "criterio_aceite": "Cronograma cobre todas as estações de tratamento (R-FIS-03) e registra as alterações do Gerente com justificativa.", "indicador": "taxa de acerto (vistorias com não conformidade grave entre as unidades de maior risco ÷ vistorias nessas unidades), comparada com as escolhidas ao acaso", "meta": "acerto maior nas unidades de maior risco do que nas escolhidas ao acaso; referência externa de 61% a 66% (B-fiscalizacao-06) é teto de outro contexto", "responsavel": "Gerência da CASAN"},
+  {"id": "Q-FIS-04", "melhorias": ["M-FIS-12", "M-FIS-13"], "verificacao": "Regra de dias úteis e marcos do painel conferidos contra o SEI; lista de relatórios do ofício gerado conferida pelo elaborador antes da assinatura.", "amostragem": "trimestral, 5 relatórios ao acaso no painel; 100% dos ofícios gerados", "criterio_aceite": "Nenhuma divergência de marco ou de contagem no painel; nenhum ofício assinado com relatório faltante ou estranho.", "indicador": "divergências encontradas por conferência", "meta": "zero divergência no painel e nos ofícios (proposto)", "responsavel": "Gerência da CASAN, com a TI"},
+  {"id": "Q-FIS-05", "melhorias": ["M-FIS-17"], "verificacao": "Cada item novo do painel público é validado pela CASAN; item contestado marcado 'em análise'.", "amostragem": "100% dos itens novos", "criterio_aceite": "Nenhum item publicado sem validação ou antes do fim do prazo de resposta.", "indicador": "itens publicados e depois corrigidos", "meta": "nenhum item corrigido por erro da agência (proposto)", "responsavel": "Gerência da CASAN"}
+ ],
+ "auditoria_continua": ["A-FIS-01", "A-FIS-02", "A-FIS-03"],
+ "auditoria_continua_nota": "A-FIS-02 e A-FIS-03 já são marcados como automatizáveis em normas_FIS.json; A-FIS-01 passa a rodar automaticamente quando o cronograma for juntado ao processo (M-FIS-09). A-FIS-04 (fase jurídica) segue manual e semestral."
+}

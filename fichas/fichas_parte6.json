@@ -1,0 +1,177 @@
+[
+  {
+    "n": 1,
+    "sei": "87308946",
+    "tipo": "E-mail",
+    "numero": "",
+    "paginas": "200",
+    "data_documento": "11/11/2024",
+    "unidade_emissora": "CASAN",
+    "funcao_autor": "Assistente da CASAN (envio pelo sistema SEI da AGENERSA)",
+    "destinatario": "Concessionária Águas do Rio (setor regulatório)",
+    "acao_no_processo": "notificacao_concessionaria",
+    "resumo": "E-mail enviado pelo sistema SEI da AGENERSA em 11/11/2024, com assunto Relatório de Fiscalização, transmitindo à concessionária Águas do Rio o Ofício AGENERSA/CASAN nº 946/2024. O e-mail solicita análise e manifestação da concessionária no prazo de 30 dias. O ofício está anexado em arquivo HTML (Oficio___NA_87188346.html), cujo conteúdo não consta do texto extraído. O documento é a notificação formal ao regulado para responder ao relatório de fiscalização.",
+    "fiscalizacao": null,
+    "prazos": [
+      {
+        "trecho_literal": "no prazo de 30 (trinta) dias",
+        "quantidade": "30",
+        "unidade": "dias"
+      }
+    ],
+    "valores": [],
+    "normas_citadas": [],
+    "decisoes_ou_pedidos": [
+      "Análise e manifestação da concessionária sobre o Ofício AGENERSA/CASAN nº 946/2024 no prazo de 30 dias"
+    ],
+    "retrabalho_ou_problema": "",
+    "indicios_esforco": "Remessa de ofício com relatório de fiscalização anexo, exigindo resposta formal da concessionária dentro do prazo fixado."
+  },
+  {
+    "n": 2,
+    "sei": "91278977",
+    "tipo": "Relatório de Fiscalização",
+    "numero": "227/2024",
+    "paginas": "201-226",
+    "data_documento": "",
+    "unidade_emissora": "CASAN",
+    "funcao_autor": "Câmara Técnica de Saneamento (equipe técnica de fiscalização)",
+    "destinatario": "",
+    "acao_no_processo": "vistoria_relatorio",
+    "resumo": "Relatório de Fiscalização AGENERSA/CASAN nº 227/2024 (SEI 91278977), ocupando as páginas 201 a 226 do processo. No texto extraído dessas páginas consta somente o cabeçalho, sem corpo do relatório. Por isso não é possível identificar a instalação, a data da vistoria, as não conformidades nem os prazos. O documento aparece na lista de fiscalizações programadas de 2024 analisadas no Parecer 250/2025.",
+    "fiscalizacao": {
+      "instalacao": "",
+      "tipo_instalacao": "",
+      "concessionaria": "Concessionária Águas do Rio – Bloco 1",
+      "municipio_bairro": "",
+      "data_vistoria": "",
+      "nao_conformidades": [],
+      "prazo_para_sanar": "",
+      "elaborado_revisado_aprovado": ""
+    },
+    "prazos": [],
+    "valores": [],
+    "normas_citadas": [],
+    "decisoes_ou_pedidos": [],
+    "retrabalho_ou_problema": "Conteúdo das páginas 201 a 226 ausente no texto extraído; não é possível avaliar pendências.",
+    "indicios_esforco": "Relatório de 26 páginas no PDF, com vistoria e registro técnico de unidade do sistema de saneamento."
+  },
+  {
+    "n": 3,
+    "sei": "104033188",
+    "tipo": "Parecer técnico",
+    "numero": "250/2025",
+    "paginas": "227-231",
+    "data_documento": "08/07/2025",
+    "unidade_emissora": "CASAN",
+    "funcao_autor": "Especialista em Regulação (elaboração); Gerente da Câmara Técnica de Saneamento (de acordo)",
+    "destinatario": "Concessionária Águas do Rio – Bloco 1 (interessada)",
+    "acao_no_processo": "relatorio_consolidado",
+    "resumo": "Parecer técnico da CASAN de 08/07/2025 que consolida a análise das providências da concessionária Águas do Rio – Bloco 1 em resposta às fiscalizações programadas de 2024, em atendimento à Deliberação Nº 4216/2021. Abrange 42 relatórios de fiscalização de unidades (ETAs, ETEs, UTs e estações elevatórias), listados no campo fiscalizacao. Conclui pelo atendimento apenas parcial das recomendações, com pendências estruturais, operacionais e ambientais e prazos postergados por cronogramas ainda em execução, sem evidências conclusivas. Afirma que o atendimento formal, sem comprovação técnica e documental, não satisfaz os objetivos regulatórios e contratuais, e que alegações de ausência histórica de investimentos ou de carência contratual não eximem a concessionária do dever de diligência. Recomenda intensificar o cumprimento dos prazos, a comunicação com usuários e o monitoramento com laudos. Não propõe sanção, penalidade ou arquivamento; registra que a Agência adotará providências administrativas em caso de descumprimento.",
+    "fiscalizacao": {
+      "instalacao": "Relatório nº 10/2024 – EEAT Pça Paris-Glória (69710124); Relatório nº 11/2024 – EEAT Barão de Guaratiba (69712392); Relatório nº 12/2024 (69716140); Relatório nº 38/2024 – EEEB Forte de S.João (72642867); Relatório nº 33/2024 – EEEB Comida Árabe (72710417); Relatório nº 34/2024 – EEE Parque dos Patins (72711316); Relatório nº 53/2024 – EEB Marina da Glória (72838107); Relatório nº 54/2024 – EEEB Urca (72851141); Relatório nº 55/2024 – EEEB Hípica (72853692); Relatório nº 46/2024 – EEE 14 Jardim Botânico (72974318); Relatório nº 47/2024 – EEE 43 Caiçaras (72975320); Relatório nº 48/2024 – EEE 32 José Mariano (72980247); Relatório nº 56/2024 – EEE 34 Cantagalo (74334571); Relatório nº 52/2024 – EEE São Conrado (74336951); Relatório nº 59/2024 – EEE 30 CTS Cantagalo (74338948); Relatório nº 044/2024 – EEEB Praça do Índio (74871240); Relatório nº 045/2024 – EEE Saturnino de Brit (74873701); Relatório nº 051/2024 – CTS J. Mariano (74881165); Relatório nº 060/2024 – EEE Farme de Amoedo (74882333); Relatório nº 070/2024 – EEE Aquarela do Brasil (75824232); Relatório nº 073/2024 – EEE Parafuso (75824539); Relatório nº 065 – EEE Leblon (76104339); Relatório nº 090/2024 – EEE André Azevedo (76213730); Relatório nº 111/2024 – EEAT Jacuba (79573239); Relatório nº 123/2024 – EEAT Rio Vermelho (79573103); Relatório nº 135/2024 – ETA Rio Bonito (79575319); Relatório nº 134/2024 – EEAT Boa Esperança (79900134); Relatório nº 159/2024 – EEAT Ojuara (79901118); Relatório nº 155/2024 – EAT Canal (80655356); Relatório nº 156/2024 – EAT Mageense (80654568); Relatório nº 157/2024 – EAT Presídio I (80656194); Relatório nº 158/2024 – EAT Meu Boi (80656240); Relatório nº 153/2024 (82895573); Relatório nº 259/2024 (86162193); Relatório nº 209/2024 (86161531); Relatório nº 212/2024 (86827856); Relatório nº 213/2024 (86826650); Relatório nº 214/2024 (86826664); Relatório nº 017/2024 (87028948); Relatório nº 211/2024 (89901514); Relatório nº 229/2024 (91213447); Relatório nº 227/2024 (91278977)",
+      "tipo_instalacao": "vários",
+      "concessionaria": "Concessionária Águas do Rio – Bloco 1",
+      "municipio_bairro": "Estado do Rio de Janeiro (vários municípios e bairros; detalhamento não consta no trecho)",
+      "data_vistoria": "2024 (fiscalizações programadas de 2024)",
+      "nao_conformidades": [
+        "Cumprimento apenas parcial das recomendações técnicas em diversas unidades",
+        "Prazos das adequações postergados por cronogramas ainda em execução, sem evidência conclusiva de finalização",
+        "Pendências estruturais, de automação de processos, de regularização ambiental e de conformidade com normas técnicas",
+        "Guarda-corpos, sinalização de risco, automação/telemetria e descarte de resíduos sem cobertura total"
+      ],
+      "prazo_para_sanar": "",
+      "elaborado_revisado_aprovado": "Especialista em Regulação (elaboração); Gerente da Câmara Técnica de Saneamento (de acordo)"
+    },
+    "prazos": [],
+    "valores": [],
+    "normas_citadas": [
+      {
+        "norma": "Lei 11.445/2007",
+        "trecho_literal": "Leis nº 11.445/2007 e nº 14.026/2020"
+      },
+      {
+        "norma": "Lei 14.026/2020",
+        "trecho_literal": "Leis nº 11.445/2007 e nº 14.026/2020"
+      },
+      {
+        "norma": "Deliberação AGENERSA 4216/2021",
+        "trecho_literal": "Deliberação Nº 4216/2021"
+      },
+      {
+        "norma": "Contrato de Concessão",
+        "trecho_literal": "O Contrato de Concessão estabelece, de modo inequívoco, as obrigações de"
+      },
+      {
+        "norma": "Regulamento de Serviços",
+        "trecho_literal": "O Regulamento de Serviços disciplina os procedimentos para manutenção dos sistemas"
+      },
+      {
+        "norma": "Anexo IV – Caderno de Encargos",
+        "trecho_literal": "O Anexo IV detalha metas técnicas"
+      },
+      {
+        "norma": "Anexo III – Indicadores de Desempenho",
+        "trecho_literal": "Anexo III – Indicadores de Desempenho"
+      },
+      {
+        "norma": "Normas técnicas ABNT e ANA",
+        "trecho_literal": "normas técnicas da ABNT e ANA"
+      }
+    ],
+    "decisoes_ou_pedidos": [
+      "Intensificar os esforços para o atendimento integral e tempestivo das recomendações técnicas e normativas",
+      "Apresentar relatórios atualizados, laudos técnicos e registros documentais que comprovem a execução das medidas",
+      "Ampliar as ações de comunicação e transparência junto aos usuários",
+      "Manter monitoramento contínuo com emissão periódica de laudos e evidências de manutenção preventiva e corretiva",
+      "Agência manterá o acompanhamento e poderá adotar medidas corretivas e administrativas em caso de descumprimento; nenhuma sanção foi proposta"
+    ],
+    "retrabalho_ou_problema": "Cumprimento apenas parcial das recomendações; prazos postergados por cronogramas em execução sem evidências conclusivas; ações de guarda-corpos, sinalização de risco, automação/telemetria e descarte de resíduos em andamento sem cobertura total; atendimento formal sem comprovação técnica e documental do cumprimento integral.",
+    "indicios_esforco": "Análise de respostas, planos de ação, cronogramas, registros técnicos e fotos de 42 relatórios de fiscalização; enquadramento nos contratos, regulamento, anexos, leis federais e normas ABNT e ANA; reanálise das manifestações da concessionária; monitoramento intensificado previsto."
+  },
+  {
+    "n": 4,
+    "sei": "104117825",
+    "tipo": "Despacho",
+    "numero": "",
+    "paginas": "232",
+    "data_documento": "08/07/2025",
+    "unidade_emissora": "CASAN",
+    "funcao_autor": "Assistente (Câmara Técnica de Saneamento)",
+    "destinatario": "SECEX",
+    "acao_no_processo": "encaminhamento",
+    "resumo": "Despacho de encaminhamento da CASAN à SECEX, de 08/07/2025, mesma data do Parecer 250/2025. O texto apenas remete o parecer para prosseguimento da instrução, sem análise, sanção ou decisão própria.",
+    "fiscalizacao": null,
+    "prazos": [],
+    "valores": [],
+    "normas_citadas": [],
+    "decisoes_ou_pedidos": [
+      "Encaminhar o Parecer Técnico AGENERSA/CASAN nº 250/2025 à SECEX para prosseguimento da instrução"
+    ],
+    "retrabalho_ou_problema": "",
+    "indicios_esforco": "Ato de tramitação formal do parecer entre unidades da Agência."
+  },
+  {
+    "n": 5,
+    "sei": "117907053",
+    "tipo": "Despacho",
+    "numero": "",
+    "paginas": "233",
+    "data_documento": "03/11/2025",
+    "unidade_emissora": "SECEX",
+    "funcao_autor": "Assessora (SECEX)",
+    "destinatario": "Procuradoria",
+    "acao_no_processo": "encaminhamento",
+    "resumo": "Despacho de encaminhamento da SECEX à Procuradoria, de 03/11/2025, com o resultado das Fiscalizações Programadas de 2024 e as manifestações posteriores da concessionária Águas do Rio – Bloco 1. Resume o Parecer 250/2025, que concluiu pelo atendimento parcial das recomendações, e a nova manifestação da concessionária (ID 117463902), que reiterou gradualidade e carência contratual e questionou o escopo da fiscalização, restrito na sua tese aos indicadores de desempenho. A CASAN reiterou integralmente o parecer, afirmando que a fiscalização abrange todas as obrigações contratuais, legais e regulamentares. A concessionária solicitou o arquivamento do processo de fiscalização, pedido ainda não decidido. Não há proposta de sanção ou penalidade no despacho; o encaminhamento é para análise da adequação dos fundamentos jurídicos da fiscalização.",
+    "fiscalizacao": null,
+    "prazos": [],
+    "valores": [],
+    "normas_citadas": [],
+    "decisoes_ou_pedidos": [
+      "Pedido da concessionária de arquivamento do processo de fiscalização (não decidido)",
+      "Encaminhamento à Procuradoria para análise da adequação dos fundamentos jurídicos da fiscalização diante do questionamento da concessionária"
+    ],
+    "retrabalho_ou_problema": "Reiteração da mesma tese da concessionária após o parecer; questionamento do escopo da fiscalização (obrigações de resultado versus obrigações de meio); pedido de arquivamento pendente de análise jurídica.",
+    "indicios_esforco": "Reanálise pela CASAN após nova manifestação da concessionária e necessidade de parecer jurídico sobre o escopo da fiscalização."
+  }
+]

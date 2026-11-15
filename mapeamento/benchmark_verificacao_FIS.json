@@ -1,0 +1,448 @@
+{
+  "verificado_em": "2026-11-14",
+  "metodo": "Casos novos: (1) reabertura mecânica por script (curl; pdftotext para PDF; resumo reconstruído do OpenAlex) de verificado_em e da URL principal, com busca do trecho por comparação normalizada (sem acento, pontuação, espaço e caixa) e conferência do DOI no Crossref ou DataCite; (2) auditor independente (outro agente, que não fez a busca e não viu a aplicabilidade) reabriu as fontes e julgou doi_ok, metadados_ok, trecho_ok, resultado_ok, parametro_ok e camada_ok. Correções do auditor conferidas na fonte e aplicadas em benchmark_FIS.json. Casos reaproveitados: veredito da verificação independente do repositório (saida/fase3/benchmark/verificacao.json).",
+  "casos": {
+    "B-fiscalizacao-01": {
+      "origem": "reaproveitado",
+      "verificacao_original": {
+        "doi_ok": true,
+        "metadados_ok": true,
+        "trecho_ok": true,
+        "resultado_ok": true,
+        "camada_ok": true,
+        "parametro_ok": true,
+        "problemas": [
+          "Observação: caso duplicado de B-usuario-13 (mesmo artigo) em outra família."
+        ],
+        "correcao_sugerida": null,
+        "veredito": "ok",
+        "trecho_conferido_em": "página do artigo na Nature"
+      },
+      "veredito_final": "ok",
+      "observacao": "Resultado, métrica, fonte e parâmetro de ganho mantidos como verificados no repositório (correções já aplicadas em fiscalizacao.json); só atividades-alvo e aplicabilidade foram reescritas para o FIS, sem novo parâmetro. URL não reaberta nesta rodada."
+    },
+    "B-fiscalizacao-02": {
+      "origem": "reaproveitado",
+      "verificacao_original": {
+        "doi_ok": true,
+        "metadados_ok": true,
+        "trecho_ok": false,
+        "resultado_ok": false,
+        "camada_ok": true,
+        "parametro_ok": true,
+        "problemas": [
+          "O trecho não é literal: o resumo diz \"could have averted as much as twice as many injuries by targeting inspections to workplaces with the highest expected averted injuries\"; foram suprimidas palavras sem reticências (o sentido se mantém).",
+          "O resultado cita \"cerca de US$ 1 bilhão de valor social\"; o resumo diz \"up to $850 million in social value\"."
+        ],
+        "correcao_sugerida": "trecho: \"we find that OSHA could have averted as much as twice as many injuries by targeting inspections to workplaces with the highest expected averted injuries and nearly as many by targeting the highest expected level of injuries\"; resultado_reportado: trocar \"cerca de US$ 1 bilhão de valor social na década\" por \"até US$ 850 milhões de valor social na década\".",
+        "veredito": "corrigir",
+        "trecho_conferido_em": "resumo no Crossref"
+      },
+      "veredito_final": "corrigir",
+      "observacao": "Resultado, métrica, fonte e parâmetro de ganho mantidos como verificados no repositório (correções já aplicadas em fiscalizacao.json); só atividades-alvo e aplicabilidade foram reescritas para o FIS, sem novo parâmetro. URL não reaberta nesta rodada."
+    },
+    "B-fiscalizacao-03": {
+      "origem": "reaproveitado",
+      "verificacao_original": {
+        "doi_ok": true,
+        "metadados_ok": true,
+        "trecho_ok": true,
+        "resultado_ok": true,
+        "camada_ok": true,
+        "parametro_ok": true,
+        "problemas": [],
+        "correcao_sugerida": null,
+        "veredito": "ok",
+        "trecho_conferido_em": "resumo no Crossref"
+      },
+      "veredito_final": "ok",
+      "observacao": "Resultado, métrica, fonte e parâmetro de ganho mantidos como verificados no repositório (correções já aplicadas em fiscalizacao.json); só atividades-alvo e aplicabilidade foram reescritas para o FIS, sem novo parâmetro. URL não reaberta nesta rodada."
+    },
+    "B-fiscalizacao-04": {
+      "origem": "reaproveitado",
+      "verificacao_original": {
+        "doi_ok": null,
+        "metadados_ok": true,
+        "trecho_ok": true,
+        "resultado_ok": true,
+        "camada_ok": true,
+        "parametro_ok": true,
+        "problemas": [
+          "Sem DOI: URL/handle aberto e conferido como da fonte indicada (doi_ok = null)."
+        ],
+        "correcao_sugerida": null,
+        "veredito": "ok",
+        "trecho_conferido_em": "página oficial chicago.github.io"
+      },
+      "veredito_final": "ok",
+      "observacao": "Resultado, métrica, fonte e parâmetro de ganho mantidos como verificados no repositório (correções já aplicadas em fiscalizacao.json); só atividades-alvo e aplicabilidade foram reescritas para o FIS, sem novo parâmetro. URL não reaberta nesta rodada."
+    },
+    "B-fiscalizacao-06": {
+      "origem": "reaproveitado",
+      "verificacao_original": {
+        "doi_ok": true,
+        "metadados_ok": true,
+        "trecho_ok": true,
+        "resultado_ok": true,
+        "camada_ok": true,
+        "parametro_ok": true,
+        "problemas": [
+          "verificado_em (página HTML da OCDE) devolve 403 a acesso automatizado; o trecho foi confirmado literalmente no PDF oficial (p. 30), que abre."
+        ],
+        "correcao_sugerida": "fonte.verificado_em: \"https://www.oecd.org/content/dam/oecd/en/publications/reports/2021/09/data-driven-information-enabled-regulatory-delivery_bed351cb/8f99ec8c-en.pdf\"",
+        "veredito": "corrigir",
+        "trecho_conferido_em": "PDF oficial da OCDE (8f99ec8c-en.pdf), p. 30"
+      },
+      "veredito_final": "corrigir",
+      "observacao": "Resultado, métrica, fonte e parâmetro de ganho mantidos como verificados no repositório (correções já aplicadas em fiscalizacao.json); só atividades-alvo e aplicabilidade foram reescritas para o FIS, sem novo parâmetro. URL não reaberta nesta rodada."
+    },
+    "B-fiscalizacao-07": {
+      "origem": "reaproveitado",
+      "verificacao_original": {
+        "doi_ok": true,
+        "metadados_ok": true,
+        "trecho_ok": true,
+        "resultado_ok": true,
+        "camada_ok": true,
+        "parametro_ok": true,
+        "problemas": [],
+        "correcao_sugerida": null,
+        "veredito": "ok",
+        "trecho_conferido_em": "resumo no Crossref"
+      },
+      "veredito_final": "ok",
+      "observacao": "Resultado, métrica, fonte e parâmetro de ganho mantidos como verificados no repositório (correções já aplicadas em fiscalizacao.json); só atividades-alvo e aplicabilidade foram reescritas para o FIS, sem novo parâmetro. URL não reaberta nesta rodada."
+    },
+    "B-fiscalizacao-08": {
+      "origem": "reaproveitado",
+      "verificacao_original": {
+        "doi_ok": true,
+        "metadados_ok": true,
+        "trecho_ok": true,
+        "resultado_ok": true,
+        "camada_ok": true,
+        "parametro_ok": true,
+        "problemas": [],
+        "correcao_sugerida": null,
+        "veredito": "ok",
+        "trecho_conferido_em": "resumo no Crossref"
+      },
+      "veredito_final": "ok",
+      "observacao": "Resultado, métrica, fonte e parâmetro de ganho mantidos como verificados no repositório (correções já aplicadas em fiscalizacao.json); só atividades-alvo e aplicabilidade foram reescritas para o FIS, sem novo parâmetro. URL não reaberta nesta rodada."
+    },
+    "B-fiscalizacao-10": {
+      "origem": "reaproveitado",
+      "verificacao_original": {
+        "doi_ok": true,
+        "metadados_ok": true,
+        "trecho_ok": true,
+        "resultado_ok": true,
+        "camada_ok": true,
+        "parametro_ok": true,
+        "problemas": [],
+        "correcao_sugerida": null,
+        "veredito": "ok",
+        "trecho_conferido_em": "resumo no OpenAlex"
+      },
+      "veredito_final": "ok",
+      "observacao": "Resultado, métrica, fonte e parâmetro de ganho mantidos como verificados no repositório (correções já aplicadas em fiscalizacao.json); só atividades-alvo e aplicabilidade foram reescritas para o FIS, sem novo parâmetro. URL não reaberta nesta rodada."
+    },
+    "B-fiscalizacao-11": {
+      "origem": "reaproveitado",
+      "verificacao_original": {
+        "doi_ok": true,
+        "metadados_ok": true,
+        "trecho_ok": true,
+        "resultado_ok": true,
+        "camada_ok": true,
+        "parametro_ok": true,
+        "problemas": [],
+        "correcao_sugerida": null,
+        "veredito": "ok",
+        "trecho_conferido_em": "resumo no Crossref"
+      },
+      "veredito_final": "ok",
+      "observacao": "Resultado, métrica, fonte e parâmetro de ganho mantidos como verificados no repositório (correções já aplicadas em fiscalizacao.json); só atividades-alvo e aplicabilidade foram reescritas para o FIS, sem novo parâmetro. URL não reaberta nesta rodada."
+    },
+    "B-fiscalizacao-12": {
+      "origem": "reaproveitado",
+      "verificacao_original": {
+        "doi_ok": true,
+        "metadados_ok": true,
+        "trecho_ok": true,
+        "resultado_ok": true,
+        "camada_ok": true,
+        "parametro_ok": true,
+        "problemas": [],
+        "correcao_sugerida": null,
+        "veredito": "ok",
+        "trecho_conferido_em": "resumo no Crossref"
+      },
+      "veredito_final": "ok",
+      "observacao": "Resultado, métrica, fonte e parâmetro de ganho mantidos como verificados no repositório (correções já aplicadas em fiscalizacao.json); só atividades-alvo e aplicabilidade foram reescritas para o FIS, sem novo parâmetro. URL não reaberta nesta rodada."
+    },
+    "B-fiscalizacao-13": {
+      "origem": "reaproveitado",
+      "verificacao_original": {
+        "doi_ok": true,
+        "metadados_ok": true,
+        "trecho_ok": true,
+        "resultado_ok": true,
+        "camada_ok": true,
+        "parametro_ok": true,
+        "problemas": [],
+        "correcao_sugerida": null,
+        "veredito": "ok",
+        "trecho_conferido_em": "resumo em scholars.duke.edu"
+      },
+      "veredito_final": "ok",
+      "observacao": "Resultado, métrica, fonte e parâmetro de ganho mantidos como verificados no repositório (correções já aplicadas em fiscalizacao.json); só atividades-alvo e aplicabilidade foram reescritas para o FIS, sem novo parâmetro. URL não reaberta nesta rodada."
+    },
+    "B-fiscalizacao-14": {
+      "origem": "reaproveitado",
+      "verificacao_original": {
+        "doi_ok": null,
+        "metadados_ok": true,
+        "trecho_ok": true,
+        "resultado_ok": true,
+        "camada_ok": true,
+        "parametro_ok": true,
+        "problemas": [
+          "Sem DOI: URL/handle aberto e conferido como da fonte indicada (doi_ok = null)."
+        ],
+        "correcao_sugerida": null,
+        "veredito": "ok",
+        "trecho_conferido_em": "PDF oficial em gov.br/casacivil"
+      },
+      "veredito_final": "ok",
+      "observacao": "Resultado, métrica, fonte e parâmetro de ganho mantidos como verificados no repositório (correções já aplicadas em fiscalizacao.json); só atividades-alvo e aplicabilidade foram reescritas para o FIS, sem novo parâmetro. URL não reaberta nesta rodada."
+    },
+    "B-FIS-01": {
+      "origem": "novo",
+      "reabertura_mecanica": {
+        "url_verificacao": "https://www.revistadae.com.br/artigos/artigo_edicao_246_n_2242.pdf",
+        "http": "200",
+        "chars_lidos": 33648,
+        "trecho_ok": true,
+        "palavras_trecho": 22,
+        "doi_registro": "crossref",
+        "doi_ok": true,
+        "metadados_ok": true,
+        "titulo_registro": "Análise comparativa entre a fiscalização remota e presencial dos sistemas de abastecimento de água e de esgotamento sanitário de Minas Gerais: uma análise dos impactos da pandemia de covid-19",
+        "ano_registro": 2024,
+        "url_principal_http": "200",
+        "url_principal_contem_trecho": true
+      },
+      "auditor_independente": {
+        "doi_ok": true,
+        "metadados_ok": true,
+        "trecho_ok": true,
+        "resultado_ok": false,
+        "parametro_ok": false,
+        "camada_ok": true,
+        "problemas": [
+          "Trecho confere literalmente no PDF da Revista DAE (texto extraído do PDF salvo): '...redução no tempo médio de atendimento às demandas na fiscalização presencial (135,6 dias), quando comparado à fiscalização remota (75,9 dias)'.",
+          "Números 135,6, 75,9, 44%, 91 e 94 relatórios conferem com a fonte.",
+          "A fonte diz 'Provavelmente essa redução se deve' à visão mais completa das unidades na fiscalização presencial; o caso escreve 'o que os autores atribuem', retirando a ressalva 'provavelmente'.",
+          "parametro_ganho traz 'Teto' e 'aplicável só à parte documental ou de retorno'. A fonte não define teto nem limita a aplicação; a redução média de 44% é de um estudo com comparação antes e depois, sem grupo de controle."
+        ],
+        "correcao_sugerida": "resultado_reportado: \"O tempo médio de atendimento às demandas caiu de 135,6 dias na fiscalização presencial para 75,9 dias na remota (redução média de 44%), com número semelhante de relatórios (91 e 94). Em contrapartida, as não conformidades sobre unidades operacionais caíram de 46% para 19% do total nos relatórios de água, o que os autores consideram provavelmente explicado pela visão mais completa dessas unidades na fiscalização presencial.\" | parametro_ganho: \"Redução média de cerca de 44% no tempo entre a demanda e o envio do relatório em uma fiscalização remota de MG (2020 frente a 2019), sem grupo de controle; não é um teto. Não substitui a vistoria presencial, pois o estudo aponta perda de achados em unidades operacionais.\"",
+        "veredito": "corrigir",
+        "trecho_conferido_em": "https://www.revistadae.com.br/artigos/artigo_edicao_246_n_2242.pdf (texto extraído do PDF salvo pelo WebFetch via pdftotext); Crossref https://api.crossref.org/works/10.36659/dae.2024.058"
+      },
+      "veredito_final": "corrigir",
+      "correcoes_aplicadas": true
+    },
+    "B-FIS-02": {
+      "origem": "novo",
+      "reabertura_mecanica": {
+        "url_verificacao": "https://api.openalex.org/works/doi:10.58088/y7dz-t902",
+        "http": "200",
+        "chars_lidos": 2161,
+        "trecho_ok": true,
+        "palavras_trecho": 26,
+        "doi_registro": "datacite",
+        "doi_ok": true,
+        "metadados_ok": true,
+        "titulo_registro": "Application of Lean philosophy to routine inspection of bridges",
+        "ano_registro": 2017,
+        "url_principal_http": "200",
+        "url_principal_contem_trecho": true
+      },
+      "auditor_independente": {
+        "doi_ok": true,
+        "metadados_ok": true,
+        "trecho_ok": true,
+        "resultado_ok": true,
+        "parametro_ok": true,
+        "camada_ok": true,
+        "problemas": [
+          "DOI 10.58088/y7dz-t902 não existe no Crossref; confere no DataCite (título, autor Masoud Emal, ano 2017).",
+          "Trecho '...only 42% of total time spent on routine inspection of bridges was found to add value to the final output...' confere no resumo do OpenAlex (W2794542031).",
+          "A fonte diz 'mobilization/demobilization'; o caso traduz como 'deslocamento'. Equivalência razoável; não altera o resultado."
+        ],
+        "correcao_sugerida": null,
+        "veredito": "ok",
+        "trecho_conferido_em": "https://api.openalex.org/works/doi:10.58088/y7dz-t902; DataCite https://api.datacite.org/dois/10.58088/y7dz-t902"
+      },
+      "veredito_final": "ok",
+      "correcoes_aplicadas": false
+    },
+    "B-FIS-03": {
+      "origem": "novo",
+      "reabertura_mecanica": {
+        "url_verificacao": "https://api.openalex.org/works/W850999971",
+        "http": "200",
+        "chars_lidos": 1644,
+        "trecho_ok": true,
+        "palavras_trecho": 20,
+        "doi_ok": null,
+        "url_principal_http": "200",
+        "url_principal_contem_trecho": false
+      },
+      "auditor_independente": {
+        "doi_ok": null,
+        "metadados_ok": true,
+        "trecho_ok": true,
+        "resultado_ok": false,
+        "parametro_ok": true,
+        "camada_ok": true,
+        "problemas": [
+          "Trecho confere no resumo do OpenAlex (W850999971): 'Results indicate a significant negative effect on compliance from the first system and a significant positive effect from the second.'",
+          "Título, autor e ano (2011) conferem com o OpenAlex. Sem DOI; o campo fonte.doi deve ser null, não string vazia.",
+          "O caso afirma que o relatório eletrônico 'ajuda' o regulador e 'dá dados mais completos'; o resumo diz 'may' e 'suggest'. Causalidade e alcance mais fortes que a fonte.",
+          "'software' não consta do trecho; a fonte diz apenas 'first system'."
+        ],
+        "correcao_sugerida": "resultado_reportado: \"O primeiro sistema de relatório eletrônico (software) teve efeito negativo significativo sobre a conformidade e o sistema via web teve efeito positivo significativo; o autor sugere que o relatório eletrônico pode ajudar o regulador a identificar violações com mais precisão e fornecer dados mais completos à agência e ao público.\" | fonte.doi: null",
+        "veredito": "corrigir",
+        "trecho_conferido_em": "https://api.openalex.org/works/W850999971"
+      },
+      "veredito_final": "corrigir",
+      "correcoes_aplicadas": true
+    },
+    "B-FIS-04": {
+      "origem": "novo",
+      "reabertura_mecanica": {
+        "url_verificacao": "https://api.openalex.org/works/doi:10.1021/es300372h",
+        "http": "200",
+        "chars_lidos": 1379,
+        "trecho_ok": true,
+        "palavras_trecho": 25,
+        "doi_registro": "crossref",
+        "doi_ok": true,
+        "metadados_ok": true,
+        "titulo_registro": "Benefits of Water Safety Plans: Microbiology, Compliance, and Public Health",
+        "ano_registro": 2012,
+        "url_principal_http": "403",
+        "url_principal_contem_trecho": false
+      },
+      "auditor_independente": {
+        "doi_ok": true,
+        "metadados_ok": true,
+        "trecho_ok": true,
+        "resultado_ok": true,
+        "parametro_ok": true,
+        "camada_ok": true,
+        "problemas": [
+          "Crossref confirma título, cinco autores (Gunnarsdottir, Gardarsson, Elliott, Sigmundsdottir, Bartram), 2012 e Environmental Science & Technology.",
+          "Trecho '...noncompliance was also significantly reduced (p < 0.001 in both cases). A significant decrease in incidence of diarrhea was detected where a WSP was implemented' confere no resumo do OpenAlex.",
+          "14% menos probabilidade de casos clínicos de diarreia consta do resumo. p < 0,001 vale para não conformidade e para HPC; o caso aplica corretamente.",
+          "Limitação já declarada no caso: antes e depois sem aleatorização."
+        ],
+        "correcao_sugerida": null,
+        "veredito": "ok",
+        "trecho_conferido_em": "https://api.openalex.org/works/doi:10.1021/es300372h; Crossref https://api.crossref.org/works/10.1021/es300372h"
+      },
+      "veredito_final": "ok",
+      "correcoes_aplicadas": false
+    },
+    "B-FIS-05": {
+      "origem": "novo",
+      "reabertura_mecanica": {
+        "url_verificacao": "https://api.openalex.org/works/doi:10.1007/s11149-009-9112-5",
+        "http": "200",
+        "chars_lidos": 1073,
+        "trecho_ok": true,
+        "palavras_trecho": 25,
+        "doi_registro": "crossref",
+        "doi_ok": true,
+        "metadados_ok": true,
+        "titulo_registro": "Is a little sunshine all we need? On the impact of sunshine regulation on profits, productivity and prices in the Dutch drinking water sector",
+        "ano_registro": 2009,
+        "url_principal_http": "200",
+        "url_principal_contem_trecho": true
+      },
+      "auditor_independente": {
+        "doi_ok": true,
+        "metadados_ok": true,
+        "trecho_ok": true,
+        "resultado_ok": false,
+        "parametro_ok": true,
+        "camada_ok": true,
+        "problemas": [
+          "Crossref confirma título, autores De Witte e Saal, 2009 e Journal of Regulatory Economics. Trecho confere no resumo do OpenAlex.",
+          "A fonte diz que a publicação 'may not have the potential to fully align' preços e custos no longo prazo. O caso escreve 'indicam que não basta', afirmação mais forte que a fonte.",
+          "O resumo não traz números; o caso não tem números, o que está correto."
+        ],
+        "correcao_sugerida": "resultado_reportado: \"A publicação comparada do desempenho foi eficaz para elevar a produtividade das empresas públicas de água e trouxe redução moderada das tarifas; porém, os lucros econômicos persistentes sugerem que ela pode não ser suficiente, sozinha, para alinhar plenamente preços e custos no longo prazo.\"",
+        "veredito": "corrigir",
+        "trecho_conferido_em": "https://api.openalex.org/works/doi:10.1007/s11149-009-9112-5; Crossref https://api.crossref.org/works/10.1007/s11149-009-9112-5"
+      },
+      "veredito_final": "corrigir",
+      "correcoes_aplicadas": true
+    },
+    "B-FIS-06": {
+      "origem": "novo",
+      "reabertura_mecanica": {
+        "url_verificacao": "https://www.gov.uk/government/publications/water-and-sewerage-companies-in-england-environmental-performance-report-2022/water-and-sewerage-companies-in-england-environmental-performance-report-2022",
+        "http": "200",
+        "chars_lidos": 66625,
+        "trecho_ok": true,
+        "palavras_trecho": 28,
+        "doi_ok": null
+      },
+      "auditor_independente": {
+        "doi_ok": null,
+        "metadados_ok": true,
+        "trecho_ok": true,
+        "resultado_ok": false,
+        "parametro_ok": true,
+        "camada_ok": true,
+        "problemas": [
+          "Trecho 'We have seen that the EPA can motivate water companies to achieve better performance – both self-reporting and WTW compliance were at their highest levels ever in 2022.' confere na página gov.uk (lida via curl).",
+          "82% autonotificados (melhor desde 2011) e 48% dos incidentes graves conferem com a fonte. Sem DOI; fonte.doi deve ser null.",
+          "O caso afirma que 'o total de incidentes de esgoto continuou alto'. A fonte diz que o total de incidentes de poluição de esgoto e de abastecimento de água subiu de 1.883 (2021) para 2.026 (2022). Não é só esgoto.",
+          "A limitação diz que 'relatórios posteriores mostram piora'. Essa piora é de 2021 para 2022, dentro do próprio relatório; não há relatório posterior consultado. Afirmação não sustentada pela fonte."
+        ],
+        "correcao_sugerida": "resultado_reportado: \"Em 2022 a autonotificação de incidentes de poluição pelas empresas chegou a 82%, a melhor desde o início da avaliação em 2011, e a conformidade das estações de tratamento de água (WTW) atingiu o maior nível já registrado; mas só 48% dos incidentes graves foram autonotificados e o total de incidentes de poluição de esgoto e abastecimento subiu de 1.883 em 2021 para 2.026 em 2022.\" | limitacoes: \"Relato do próprio regulador. O total de incidentes de poluição subiu de 1.883 (2021) para 2.026 (2022), e a autonotificação de incidentes graves (48%) segue baixa, o que exige conferência independente.\" | fonte.doi: null",
+        "veredito": "corrigir",
+        "trecho_conferido_em": "https://www.gov.uk/government/publications/water-and-sewerage-companies-in-england-environmental-performance-report-2022/water-and-sewerage-companies-in-england-environmental-performance-report-2022"
+      },
+      "veredito_final": "corrigir",
+      "correcoes_aplicadas": true
+    }
+  },
+  "resumo": {
+    "casos_avaliados": 18,
+    "reaproveitados": 12,
+    "novos": 6,
+    "novos_ok": 2,
+    "novos_corrigidos": 4,
+    "excluidos": 0,
+    "trechos_achados_reabertura": 6,
+    "cientificos": 14,
+    "oficiais": 4
+  },
+  "excluidos_antes_da_inclusao": [
+    "ERSAR, indicador de água segura: página oficial não abriu (404); números só em notícias.",
+    "DWI, programas de melhoria com marcos: páginas abertas sem resultado medido.",
+    "NBER WP 35525 (relatório online com auditoria automática): working paper, fora das camadas."
+  ],
+  "observacoes_gerais": [
+    "B-FIS-03: o repositório da Georgetown (handle) exige verificação de navegador (Cloudflare); o trecho foi lido e reconferido no registro do OpenAlex, como admite a especificação.",
+    "B-FIS-04: a URL do DOI (ACS) devolveu 403 a acesso automatizado; trecho conferido no resumo do OpenAlex e metadados no Crossref.",
+    "B-FIS-02: DOI registrado no DataCite, não no Crossref.",
+    "O auditor sugeriu doi null nos casos sem DOI; mantido \"\" por coerência com o formato do repositório.",
+    "Na B-FIS-06, \"incidentes de esgoto\" foi trocado pelo total de esgoto e abastecimento, conferido na página (1.883 em 2021; 2.026 em 2022); a afirmação sobre relatórios posteriores foi retirada."
+  ]
+}

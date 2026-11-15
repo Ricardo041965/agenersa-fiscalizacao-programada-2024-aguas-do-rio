@@ -1,0 +1,290 @@
+[
+  {
+    "n": 1,
+    "sei": "68285969",
+    "tipo": "Deliberação",
+    "numero": "4216/2021",
+    "paginas": "1-1",
+    "data_documento": "28/04/2021",
+    "unidade_emissora": "AGENERSA",
+    "funcao_autor": "Conselho-Diretor da AGENERSA (Conselheiro-Presidente e Conselheiros)",
+    "destinatario": "Concessionária Águas de Juturnaíba (CAJ)",
+    "acao_no_processo": "decisao",
+    "resumo": "Deliberação do Conselho-Diretor da AGENERSA sobre o encaminhamento dos resultados de análise de amostras coletadas pela Vigilância Sanitária Municipal na área da CAJ. O Conselho considerou que nenhuma falha na prestação do serviço pode ser imputada à concessionária. Determinou a instauração de processo regulatório específico, por concessionária, para cronograma e realização de vistorias anuais nas estações de tratamento. A página 1 é um recorte do Diário Oficial que também traz despachos, um ato e as Deliberações 4217 a 4223, sem número SEI próprio neste trecho.",
+    "fiscalizacao": null,
+    "prazos": [],
+    "valores": [],
+    "normas_citadas": [],
+    "decisoes_ou_pedidos": [
+      "Considerar que nenhuma falha na prestação do serviço pode ser imputada à Concessionária Águas de Juturnaíba",
+      "Determinar a instauração de processo regulatório específico, por Concessionária, para elaboração de cronograma e realização de vistorias anuais nas Estações de Tratamento das Concessionárias de Saneamento reguladas pela AGENERSA"
+    ],
+    "retrabalho_ou_problema": "Página 1 é recorte do Diário Oficial com vários atos (Deliberações 4217 a 4223, despachos e ato de exoneração) que não possuem número SEI identificado neste trecho e não foram fichados separadamente.",
+    "indicios_esforco": ""
+  },
+  {
+    "n": 2,
+    "sei": "69710124",
+    "tipo": "Relatório de Fiscalização",
+    "numero": "10/2024",
+    "paginas": "2-12",
+    "data_documento": "05/03/2024",
+    "unidade_emissora": "AGENERSA/CASAN",
+    "funcao_autor": "Especialista em Regulação / CASAN (equipe de fiscalização)",
+    "destinatario": "Processo SEI-480002/001314/2024 (encaminhado à Concessionária pelo Ofício nº 349/2024)",
+    "acao_no_processo": "vistoria_relatorio",
+    "resumo": "Relatório de vistoria operacional, realizada em 18/01/2024, da estação elevatória de água da Praça Paris (Glória, Rio de Janeiro), operada pela Águas do Rio - Bloco 1. A motobomba estava em funcionamento e o abrigo subterrâneo não tinha ventilação nem iluminação, além de estar aberto e acessível a pessoas não autorizadas. Segundo o relatório, a maioria dos itens estava conforme as boas práticas, com cinco não conformidades. Recomendou-se que fossem sanadas, sem prazo fixado.",
+    "fiscalizacao": {
+      "instalacao": "EEAT Praça Paris - Glória (estação elevatória de água)",
+      "tipo_instalacao": "EEAT",
+      "concessionaria": "Águas do Rio - Bloco 1",
+      "municipio_bairro": "Praça Paris, próximo à Rua Teixeira de Freitas - Glória, Rio de Janeiro/RJ",
+      "data_vistoria": "18/01/2024",
+      "nao_conformidades": [
+        "não há identificação da estação elevatória",
+        "local aberto e de fácil acesso a pessoas não autorizadas",
+        "falta de ventilação (natural e artificial) no interior do abrigo da motobomba",
+        "falta de iluminação (natural e artificial) no interior do abrigo da motobomba",
+        "falta de proteção das instalações elétricas no abrigo da motobomba"
+      ],
+      "prazo_para_sanar": "",
+      "elaborado_revisado_aprovado": "Elaborado: Especialistas em Regulação/CASAN (3); Revisado: Engenheiros/CASAN (2); De acordo: Gerente da Câmara de Saneamento"
+    },
+    "prazos": [],
+    "valores": [],
+    "normas_citadas": [
+      {
+        "norma": "Decreto nº 48.209/2022 (assinatura eletrônica SEI)",
+        "trecho_literal": "e 29º do Decreto nº 48.209, de 19 de setembro de 2022"
+      }
+    ],
+    "decisoes_ou_pedidos": [
+      "Recomendar que as não conformidades observadas sejam sanadas, visando o bom andamento dos serviços"
+    ],
+    "retrabalho_ou_problema": "Recomendação sem prazo fixado. Datas internas divergentes: vistoria em 18/01/2024, conclusão 'Em 23/01/2024', cabeçalho 'Rio de Janeiro, 05 março de 2024' e assinaturas de 07/03 a 29/04/2024.",
+    "indicios_esforco": "Vistoria in loco com cinco representantes da Concessionária e cinco da AGENERSA/CASAN; relatório fotográfico com fotos numeradas até 11 citadas no texto; checklist anexo (Estação Elevatória - Água) com itens de conservação, operação e manutenção; revisão por dois engenheiros e aprovação do gerente."
+  },
+  {
+    "n": 3,
+    "sei": "69712392",
+    "tipo": "Relatório de Fiscalização",
+    "numero": "11/2024",
+    "paginas": "13-18",
+    "data_documento": "05/03/2024",
+    "unidade_emissora": "AGENERSA/CASAN",
+    "funcao_autor": "Especialista em Regulação / CASAN (equipe de fiscalização)",
+    "destinatario": "Processo SEI-480002/001314/2024 (encaminhado à Concessionária pelo Ofício nº 349/2024)",
+    "acao_no_processo": "vistoria_relatorio",
+    "resumo": "Relatório de rotina da Estação Elevatória de Água Tratada Barão de Guaratiba (Catete, Rio de Janeiro), operada pela Águas do Rio - Bloco 1, vistoriada em 18/01/2024. A bomba estava em funcionamento automatizado, com pressões medidas de 4,1 mca de retaguarda e 89,1 mca de recalque. Ventilação, iluminação e abrigo foram considerados adequados. Foram apontadas duas não conformidades, sem prazo fixado para saná-las.",
+    "fiscalizacao": {
+      "instalacao": "Estação Elevatória de Água Tratada Barão de Guaratiba (EEAT Barão de Guaratiba)",
+      "tipo_instalacao": "EEAT",
+      "concessionaria": "Águas do Rio - Bloco 1",
+      "municipio_bairro": "Rua Barão de Guaratiba, nº 20, Catete, Rio de Janeiro/RJ",
+      "data_vistoria": "18/01/2024",
+      "nao_conformidades": [
+        "não há identificação da estação elevatória",
+        "não há motobomba reserva"
+      ],
+      "prazo_para_sanar": "",
+      "elaborado_revisado_aprovado": "Elaborado: Especialistas em Regulação/CASAN (3); Revisado: Engenheiros/CASAN (2); De acordo: Gerente da Câmara de Saneamento"
+    },
+    "prazos": [],
+    "valores": [],
+    "normas_citadas": [
+      {
+        "norma": "Decreto nº 48.209/2022 (assinatura eletrônica SEI)",
+        "trecho_literal": "com fundamento nos art. 28º e 29º do Decreto nº 48.209,"
+      }
+    ],
+    "decisoes_ou_pedidos": [
+      "Recomendar que as não conformidades observadas sejam sanadas, visando o bom andamento dos serviços"
+    ],
+    "retrabalho_ou_problema": "Recomendação sem prazo fixado. O texto cita 'anexo do relatório' com a lista de itens vistoriados, mas o anexo não consta do trecho extraído. Datas internas divergentes, como no Relatório 10/2024.",
+    "indicios_esforco": "Vistoria in loco com cinco representantes da Concessionária e cinco da AGENERSA/CASAN; medições de pressão em campo; relatório fotográfico (fotos 3 a 6 citadas no texto); revisão por dois engenheiros e aprovação do gerente."
+  },
+  {
+    "n": 4,
+    "sei": "69716140",
+    "tipo": "Relatório de Fiscalização",
+    "numero": "12/2024",
+    "paginas": "19-27",
+    "data_documento": "05/03/2024",
+    "unidade_emissora": "AGENERSA/CASAN",
+    "funcao_autor": "Especialista em Regulação / CASAN (equipe de fiscalização)",
+    "destinatario": "Processo SEI-480002/001314/2024 (encaminhado à Concessionária pelo Ofício nº 349/2024)",
+    "acao_no_processo": "vistoria_relatorio",
+    "resumo": "Relatório de fiscalização da estação elevatória de água que abastece a Cisterna do Aterro e parte da Glória, operada pela Águas do Rio - Bloco 1. A estação tinha apenas uma motobomba, em funcionamento durante a vistoria, com pressões medidas de 0,8 mca e 24,4 mca. O abrigo subterrâneo tinha ventilação, iluminação e painel adequados, mas parte da tampa estava corroída. Foram apontadas quatro não conformidades, e o conjunto reserva estava em manutenção. Recomendou-se instalar bomba reserva e inspecionar e substituir tampas danificadas, sem prazo fixado.",
+    "fiscalizacao": {
+      "instalacao": "EEAT Cisterna do Aterro (estação elevatória de água)",
+      "tipo_instalacao": "EEAT",
+      "concessionaria": "Águas do Rio - Bloco 1",
+      "municipio_bairro": "Rio de Janeiro/RJ (área de abrangência: parte da Glória e orla da Praia do Flamengo; endereço não consta no trecho)",
+      "data_vistoria": "",
+      "nao_conformidades": [
+        "não há identificação da estação elevatória",
+        "não há motobomba reserva",
+        "o acesso ao local não é restrito",
+        "sinais de vazamento de água na EEAT"
+      ],
+      "prazo_para_sanar": "",
+      "elaborado_revisado_aprovado": "Elaborado: Especialistas em Regulação/CASAN (3); Engenheiros/CASAN (2) constam sob 'De acordo'; De acordo: Gerente da Câmara de Saneamento. Bloco 'Revisado' sem indicação clara."
+    },
+    "prazos": [],
+    "valores": [],
+    "normas_citadas": [
+      {
+        "norma": "Decreto nº 48.209/2022 (assinatura eletrônica SEI)",
+        "trecho_literal": "com fundamento nos art. 28º e 29º do Decreto nº 48.209, de 19 de setembro"
+      }
+    ],
+    "decisoes_ou_pedidos": [
+      "Recomendar que as não conformidades observadas sejam sanadas",
+      "Realizar inspeções regulares na tampa da estação elevatória e manter registros detalhados das inspeções e intervenções",
+      "Substituir qualquer tampa danificada imediatamente",
+      "Instalar uma bomba reserva na estação elevatória",
+      "Realizar testes regulares da motobomba reserva"
+    ],
+    "retrabalho_ou_problema": "Reiteração: ausência de identificação e de motobomba reserva também aparece nos Relatórios 10/2024 e 11/2024; a reserva foi informada como em manutenção, sem prazo. Sem data de vistoria no cabeçalho; 'Em 22/01/2024' na conclusão. O anexo citado no texto não consta do trecho extraído.",
+    "indicios_esforco": "Vistoria in loco com representantes da Concessionária e da AGENERSA/CASAN; medições de pressão; identificação de fabricante, modelo e tipo; relatório fotográfico de cerca de cinco páginas (pp. 20-25) com fotos citadas de 1 a 13; revisão por engenheiros e aprovação do gerente."
+  },
+  {
+    "n": 5,
+    "sei": "74141761",
+    "tipo": "Ofício",
+    "numero": "349/2024",
+    "paginas": "28-29",
+    "data_documento": "08/05/2024",
+    "unidade_emissora": "AGENERSA/CASAN",
+    "funcao_autor": "Gerente da Câmara de Saneamento",
+    "destinatario": "Diretor Presidente da Concessionária Águas do Rio - Bloco 1",
+    "acao_no_processo": "notificacao_concessionaria",
+    "resumo": "Ofício que encaminha à Concessionária Águas do Rio - Bloco 1 doze relatórios de fiscalização e solicita manifestação sobre as orientações e recomendações técnicas apontadas. O prazo para manifestação é de 30 dias. O envio foi feito por e-mail em 08/05/2024. Neste trecho estão presentes apenas os Relatórios 10/2024, 11/2024 e 12/2024.",
+    "fiscalizacao": null,
+    "prazos": [
+      {
+        "trecho_literal": "no prazo de 30 (trinta) dias, manifestação da Concessionária acerca das orientações e",
+        "quantidade": "30",
+        "unidade": "dias"
+      }
+    ],
+    "valores": [],
+    "normas_citadas": [
+      {
+        "norma": "Decreto nº 48.209/2022 (assinatura eletrônica SEI)",
+        "trecho_literal": "com fundamento nos art. 28º e 29º do Decreto nº 48.209, de 19 de"
+      }
+    ],
+    "decisoes_ou_pedidos": [
+      "Encaminhar à Concessionária os Relatórios de Fiscalização nº 10/2024, 11/2024, 12/2024, 38/2024, 33/2024, 34/2024, 53/2024, 54/2024, 55/2024, 46/2024, 47/2024 e 48/2024",
+      "Solicitar manifestação da Concessionária, no prazo de 30 dias, sobre as orientações e recomendações técnicas dos relatórios"
+    ],
+    "retrabalho_ou_problema": "Relatório 56/2024 (SEI 74334571) não consta da lista de relatórios encaminhados por este ofício. Apenas 10/2024 a 12/2024 aparecem neste trecho.",
+    "indicios_esforco": "Lote de doze relatórios de fiscalização encaminhado de uma só vez, com envio por e-mail e assinatura eletrônica do gerente."
+  },
+  {
+    "n": 6,
+    "sei": "74179603",
+    "tipo": "E-mail",
+    "numero": "",
+    "paginas": "30-30",
+    "data_documento": "08/05/2024",
+    "unidade_emissora": "AGENERSA/CASAN",
+    "funcao_autor": "Assistente/CASAN",
+    "destinatario": "Concessionária Águas do Rio (setores de documentação e regulatório)",
+    "acao_no_processo": "encaminhamento",
+    "resumo": "E-mail enviado pelo sistema SEI à Concessionária Águas do Rio com o Ofício AGENERSA/CASAN nº 349/2024, para análise e manifestação no prazo de 30 dias. Assunto: Relatório de Fiscalização. O ofício foi anexado em formato HTML.",
+    "fiscalizacao": null,
+    "prazos": [
+      {
+        "trecho_literal": "para análise e manifestação no prazo de 30 (trinta) dias.",
+        "quantidade": "30",
+        "unidade": "dias"
+      }
+    ],
+    "valores": [],
+    "normas_citadas": [],
+    "decisoes_ou_pedidos": [
+      "Concessionária deve analisar e se manifestar sobre o Ofício nº 349/2024 em 30 dias"
+    ],
+    "retrabalho_ou_problema": "",
+    "indicios_esforco": ""
+  },
+  {
+    "n": 7,
+    "sei": "74334571",
+    "tipo": "Relatório de Fiscalização",
+    "numero": "56/2024",
+    "paginas": "31-38",
+    "data_documento": "10/05/2024",
+    "unidade_emissora": "AGENERSA/CASAN",
+    "funcao_autor": "Especialista em Regulação / CASAN (equipe de fiscalização)",
+    "destinatario": "Processo SEI-480002/001314/2024 (sem encaminhamento à Concessionária identificado neste trecho)",
+    "acao_no_processo": "vistoria_relatorio",
+    "resumo": "Relatório de fiscalização periódica, realizada em 04/04/2024, da EEE 34 - Cantagalo (Lagoa, Rio de Janeiro), do Sistema de Esgotamento Sanitário Zona Sul operado pela Águas do Rio - Bloco 1. Uma das três motobombas estava em funcionamento, com vazamento e corrosão na tubulação de recalque. Foram constatados infiltrações no poço e na laje, tubulação apoiada por tábua, ausência de reserva, de gradeamento, de registros de manutenção e de licença ambiental. Concluiu-se que a concessionária deve sanar as não conformidades no prazo de 30 dias e detalhar o histórico de manutenções.",
+    "fiscalizacao": {
+      "instalacao": "EEE 34 - Cantagalo (Estação Elevatória de Esgoto Cantagalo)",
+      "tipo_instalacao": "EEE",
+      "concessionaria": "Águas do Rio - Bloco 1",
+      "municipio_bairro": "Av. Epitácio Pessoa, 2350 - Lagoa, Rio de Janeiro/RJ",
+      "data_vistoria": "04/04/2024",
+      "nao_conformidades": [
+        "estação sem gradeamento",
+        "ausência de conjunto motobomba de reserva",
+        "bomba em funcionamento apresentava vazamento",
+        "sinais de corrosão em uma união da tubulação de recalque",
+        "tubulação de recalque apoiada de forma improvisada por tábua de madeira",
+        "sinais de infiltração de água no teto do poço das bombas",
+        "sinais de infiltração considerável na laje da sala de painéis, com ponto de desplacamento",
+        "ausência de registro in loco das manutenções realizadas",
+        "ausência de cópia de documento de licença ambiental"
+      ],
+      "prazo_para_sanar": "no prazo de 30 (trinta) dias",
+      "elaborado_revisado_aprovado": "Elaborado: Especialistas em Regulação/CASAN (2); Revisado: Engenheiro/CASAN (na assinatura consta como Assessor); De acordo: Gerente da Câmara de Saneamento"
+    },
+    "prazos": [
+      {
+        "trecho_literal": "no prazo de 30 (trinta) dias",
+        "quantidade": "30",
+        "unidade": "dias"
+      }
+    ],
+    "valores": [],
+    "normas_citadas": [
+      {
+        "norma": "Lei nº 11.445/2007 (saneamento básico)",
+        "trecho_literal": "a Lei Federal nº 11.445/2007 e o Decreto Federal nº 7.217/2010"
+      },
+      {
+        "norma": "Decreto nº 7.217/2010",
+        "trecho_literal": "o Decreto Federal nº 7.217/2010"
+      },
+      {
+        "norma": "Resoluções do CONAMA",
+        "trecho_literal": "em cumprimento às Resoluções do CONAMA"
+      },
+      {
+        "norma": "ABNT (normas técnicas)",
+        "trecho_literal": "normas técnicas da ABNT"
+      },
+      {
+        "norma": "Portarias do Ministério da Saúde",
+        "trecho_literal": "Portarias do Ministério da Saúde"
+      },
+      {
+        "norma": "Contrato de Concessão",
+        "trecho_literal": "Contrato de Concessão."
+      },
+      {
+        "norma": "Decreto nº 48.209/2022 (assinatura eletrônica SEI)",
+        "trecho_literal": "com fundamento nos art. 28º e 29º do Decreto nº 48.209, de 19 de setembro de 2022"
+      }
+    ],
+    "decisoes_ou_pedidos": [
+      "Concessionária deverá sanar as não conformidades constatadas no prazo de 30 dias",
+      "Concessionária deverá detalhar o histórico de manutenções na estação"
+    ],
+    "retrabalho_ou_problema": "Datas divergentes: vistoria em 04/04/2024, conclusão 'Em 23/04/2024' e assinaturas de 10/05/2024 a 24/05/2024. Relatório não consta da lista do Ofício nº 349/2024 de 08/05/2024. Ausência de registro de manutenções e de licença ambiental já na vistoria.",
+    "indicios_esforco": "Vistoria in loco com operador da Concessionária; descrição técnica com vazão (76 L/s) e pressão (2,7 mca); 13 fotos numeradas em cinco páginas (pp. 33-37); checklist anexo completo (Estação Elevatória - Esgoto); revisão por engenheiro e aprovação do gerente."
+  }
+]

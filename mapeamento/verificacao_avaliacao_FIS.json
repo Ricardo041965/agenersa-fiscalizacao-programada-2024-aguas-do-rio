@@ -1,0 +1,1316 @@
+{
+ "codigo": "FIS",
+ "objeto": "mapeamento/avaliacao_FIS.json — blocos de conclusão: sintese, leitura_metricas, gargalo, variabilidade, desperdicios, vsm.etapas, riscos e ganho_esperado das oportunidades",
+ "metodo": "Verificação independente (agente separado, sem acesso ao raciocínio da avaliação), afirmação atômica por afirmação, contra fatos_FIS.json, fatos e casos de casos_FIS.json, fichas/, modelo_FIS.json, vinculos_FIS.json e evidencias_FIS.md; listas de RF conferidas relatório a relatório. Depois, correção da avaliação e nova validação por scripts/validar_avaliacao_fis.py (todo número tem que bater com o fato citado ao lado).",
+ "resumo": {
+  "afirmacoes": 83,
+  "inicial": {
+   "sustentada": 58,
+   "imprecisa": 24,
+   "sem_lastro": 1,
+   "com_posse_ou_espera_atribuida_a_unidade": 9
+  },
+  "numeros_conferidos_verificador": 89,
+  "numeros_com_valor_errado": 0,
+  "numeros_com_descricao_trocada": 1,
+  "final": {
+   "sustentada": 83,
+   "imprecisa": 0,
+   "sem_lastro": 0
+  },
+  "alucinacao_em_numeros": 0,
+  "validador_final": "scripts/validar_avaliacao_fis.py: 0 problema(s)"
+ },
+ "ressalvas": [
+  "contagem.relatorios_no_pdf é descrito como 'com texto no PDF', mas um dos relatórios (RF 227) só tem cabeçalho; a avaliação o usa como relatórios no PDF, sem dizer 'com texto'.",
+  "Tempos que misturam redação, fila e espera de terceiros (vistoria → 1ª assinatura; último ofício → parecer; parecer → Procuradoria) estão declarados como não separáveis: não há trilha de andamentos do SEI.",
+  "Afirmações qualitativas tiradas das fichas (datas divergentes, texto de modelo, nomes divergentes) dependem da extração das fichas, conferida pelo verificador nas próprias fichas, não no PDF."
+ ],
+ "afirmacoes": [
+  {
+   "id": "sintese.1",
+   "bloco": "sintese",
+   "afirmacao": "Estudo de caso de um único processo; cada um dos 23 relatórios do PDF é um caso; os autos exportados são um recorte (23 relatórios no PDF contra 42 listados no parecer anual).",
+   "fatos": [
+    "casos.total",
+    "contagem.relatorios_no_pdf",
+    "contagem.relatorios_citados_parecer"
+   ],
+   "fontes": [
+    "fatos: casos.total=23; contagem.relatorios_no_pdf=23; contagem.relatorios_citados_parecer=42",
+    "fichas: Parecer 250/2025 (SEI 104033188) lista 42 relatórios"
+   ],
+   "nota": "Números exatos. Ressalva de rótulo no fato: contagem.relatorios_no_pdf descreve \"com texto no PDF\", mas inclui o RF 227 (SEI 91278977), que só tem cabeçalho (22 relatórios têm texto). A frase \"23 relatórios no PDF\" está correta se lida como 23 documentos de relatório.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "sintese.2",
+   "bloco": "sintese",
+   "afirmacao": "Entre a vistoria e a 1ª assinatura está a maior parte do tempo: mediana de 34 du, bem acima da revisão até o \"De acordo\" (4,5 du) e do \"De acordo\" ao ofício (1 du entre os relatórios oficiados).",
+   "fatos": [
+    "casos.vistoria_1a_assinatura.mediana_du",
+    "casos.revisao_aprovacao.mediana_du",
+    "casos.aprovacao_oficio.mediana_du"
+   ],
+   "fontes": [
+    "fatos: 34 du (n=21), 4,5 du (n=22), 1 du (n=10, oficiados)"
+   ],
+   "nota": "Valores e unidade (du) exatos; medianas de populações diferentes (21, 22 e 10 relatórios), por isso a comparação é só de ordem de grandeza. \"O tempo se concentra\" vale para o intervalo medido (vistoria → 1ª assinatura mistura redação e espera), não para o prazo total.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "sintese.3",
+   "bloco": "sintese",
+   "afirmacao": "O fluxo funciona em 7 dias distintos de \"De acordo\" (lotes).",
+   "fatos": [
+    "lotes.aprovacao.n"
+   ],
+   "fontes": [
+    "fatos: lotes.aprovacao.n=7; casos_FIS.json lotes_aprovacao (7 datas)"
+   ],
+   "nota": "Confere: 7 datas (29/04, 24/05, 10/06, 06/08, 17/09, 24/09, 08/11/2024).",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "sintese.4",
+   "bloco": "sintese",
+   "afirmacao": "A cadeia de assinaturas é não padronizada: 8 cadeias distintas.",
+   "fatos": [
+    "casos.cadeias_distintas"
+   ],
+   "fontes": [
+    "fatos: casos.cadeias_distintas=8; casos_FIS.json cadeias_assinatura (8 cadeias em 22 relatórios)"
+   ],
+   "nota": "Número exato. Três cadeias cobrem 15 dos 22 relatórios (6+5+4), então \"não padronizada\" é aceitável, mas \"muda a cada relatório\" seria exagero.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "sintese.5",
+   "bloco": "sintese",
+   "afirmacao": "Depois do envio, a análise das respostas é feita uma vez por ano, num parecer consolidado.",
+   "fatos": [],
+   "fontes": [
+    "fichas: Parecer 250/2025 (SEI 104033188) consolida 42 relatórios de 2024",
+    "evidencias_FIS.md: pergunta de validação 6 (\"analisadas relatório a relatório ou só no parecer anual?\") fica em aberto"
+   ],
+   "nota": "Só existe um parecer nos autos (para 2024). \"É feita uma vez por ano\" generaliza uma prática a partir de um único parecer e contradiz a própria frase \"nada aqui é padrão da agência\". Corrigir: \"no recorte, a análise consta de um único parecer consolidado de 2025 sobre as fiscalizações de 2024; se há análise individual das respostas fora dos autos não se sabe\".",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "imprecisa",
+   "correcao_aplicada": "Trocado por: o recorte tem um único parecer consolidado sobre as respostas do ano (sem afirmar periodicidade).",
+   "veredito_final": "sustentada após correção"
+  },
+  {
+   "id": "sintese.6",
+   "bloco": "sintese",
+   "afirmacao": "O parecer saiu 159 du depois do último ofício.",
+   "fatos": [
+    "intervalo.ultimo_oficio_parecer_du"
+   ],
+   "fontes": [
+    "fatos: 159 du (marco.ultimo_oficio 11/11/2024 → marco.parecer 08/07/2025, calendário RJ hipótese)"
+   ],
+   "nota": "Número exato, unidade du correta (recontagem aproximada com feriados do RJ dá 159). Só vale para o último ofício; para os ofícios de maio e agosto o intervalo é bem maior.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "sintese.7",
+   "bloco": "sintese",
+   "afirmacao": "Esse tempo mistura o prazo da concessionária e fila não separável.",
+   "fatos": [
+    "intervalo.ultimo_oficio_parecer_du"
+   ],
+   "fontes": [
+    "casos_FIS.json observacao: espera de terceiros não medida, sem andamentos do SEI",
+    "modelo_FIS.json fontes: respostas fora do PDF"
+   ],
+   "nota": "Qualitativo e cauteloso; sem trilha de andamentos não há separação possível. Não conclui sobre posse.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "sintese.8",
+   "bloco": "sintese",
+   "afirmacao": "Defeitos de forma recorrentes nos relatórios: datas internas divergentes, texto de modelo de outro município ou sistema, unidade com nome trocado.",
+   "fatos": [],
+   "fontes": [
+    "fichas: RF 010, 011, 056, 052, 059, 070, 073, 065, 212, 213, 214, 017, 259 (datas); RF 212, 213, 214 (município Pomerode); RF 017 (sistema de abastecimento); RF 090 (nome)"
+   ],
+   "nota": "Datas divergentes (13 relatórios) e texto de modelo (4) têm lastro. \"Unidade com nome trocado\" é só o RF 090, e a ficha diz apenas que o nome \"diverge\" entre cabeçalho (EEE 16 / André Azevedo) e texto (Hipica), tratado no resumo como \"citada também como Hipica\", ou seja, possível apelido. Corrigir para \"nome da unidade divergente entre cabeçalho e texto (RF 090)\" e não chamar de recorrente.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "imprecisa",
+   "correcao_aplicada": "'Unidade com nome trocado' → 'nome da unidade divergente entre cabeçalho e texto'; 'sem ofício nos autos' → 'sem ofício de encaminhamento nos autos exportados'.",
+   "veredito_final": "sustentada após correção"
+  },
+  {
+   "id": "sintese.9",
+   "bloco": "sintese",
+   "afirmacao": "Relatórios aprovados sem ofício nos autos são um dos principais riscos de controle.",
+   "fatos": [
+    "casos.variante.sem_oficio_de_encaminhamento_nos_autos"
+   ],
+   "fontes": [
+    "fatos: 12 relatórios sem ofício nos autos",
+    "evidencias_FIS.md: \"ou o encaminhamento ocorreu em peça não exportada, ou não ocorreu\""
+   ],
+   "nota": "Fato existe (12 relatórios aprovados sem ofício nos autos); \"principais\" é juízo de prioridade sem fonte, mas aceitável como avaliação. A fonte deixa claro que pode ser só peça não exportada.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "leitura.1",
+   "bloco": "leitura_metricas",
+   "afirmacao": "Ciclo da vistoria ao e-mail: mediana de 62 du entre os 9 relatórios com os dois marcos, de 31 a 173 du.",
+   "fatos": [
+    "casos.vistoria_email.mediana_du",
+    "casos.vistoria_email.n",
+    "casos.vistoria_email.min_du",
+    "casos.vistoria_email.max_du"
+   ],
+   "fontes": [
+    "fatos: 62, 9, 31, 173 (du)"
+   ],
+   "nota": "Tudo exato. Os 9 são os relatórios oficiados com data de vistoria (RF 012 não tem vistoria no cabeçalho).",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "leitura.2",
+   "bloco": "leitura_metricas",
+   "afirmacao": "Desse ciclo, o trecho vistoria → 1ª assinatura tem mediana de 34 du entre os relatórios.",
+   "fatos": [
+    "casos.vistoria_1a_assinatura.mediana_du",
+    "casos.vistoria_email.mediana_du"
+   ],
+   "fontes": [
+    "fatos: 34 du (n=21) e 62 du (n=9)",
+    "casos_FIS.json casos: vistoria→1ª assinatura dos 9 oficiados = 33, 33, 27, 59, 59, 55, 55, 55, 171 du"
+   ],
+   "nota": "Número do fato exato, mas \"desse ciclo\" mistura populações: 34 du é a mediana de 21 relatórios; nos 9 do ciclo de 62 du a mediana do mesmo trecho é 55 du (cálculo a partir de casos). Corrigir: \"o trecho vistoria → 1ª assinatura (mediana de 34 du entre 21 relatórios; 55 du entre os 9 oficiados)\" ou apenas retirar \"desse ciclo\".",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "imprecisa",
+   "correcao_aplicada": "Retirado 'desse ciclo'; a frase diz que a mediana de 34 du é de todos os relatórios com vistoria datada, não só dos oficiados.",
+   "veredito_final": "sustentada após correção"
+  },
+  {
+   "id": "leitura.3",
+   "bloco": "leitura_metricas",
+   "afirmacao": "O texto recebe a data do cabeçalho perto da 1ª assinatura (mediana de 1 du).",
+   "fatos": [
+    "casos.redacao_1a_assinatura.mediana_du"
+   ],
+   "fontes": [
+    "fatos: valor 1 du, n=22, \"data escrita no relatório → 1ª assinatura\""
+   ],
+   "nota": "Número exato. Coincide com data_documento das fichas.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "leitura.4",
+   "bloco": "leitura_metricas",
+   "afirmacao": "A revisão até o \"De acordo\" tem mediana de 4,5 du entre os relatórios.",
+   "fatos": [
+    "casos.revisao_aprovacao.mediana_du"
+   ],
+   "fontes": [
+    "fatos: 4,5 du, n=22"
+   ],
+   "nota": "Exato.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "leitura.5",
+   "bloco": "leitura_metricas",
+   "afirmacao": "Dentro da revisão, a espera só pela assinatura do Gerente depois da última assinatura técnica tem mediana de 2 du.",
+   "fatos": [
+    "casos.ultima_tecnica_aprovacao.mediana_du"
+   ],
+   "fontes": [
+    "fatos: 2 du; definição \"última assinatura antes do Gerente → De acordo\""
+   ],
+   "nota": "Número exato. O fato mede o intervalo entre a última assinatura técnica e o \"De acordo\"; chamá-lo de \"espera pelo Gerente\" atribui o tempo a uma unidade/pessoa, o que exigiria trilha de andamentos (que não existe). Corrigir: \"intervalo entre a última assinatura técnica e o De acordo, sem saber com quem o documento estava\".",
+   "apoia_posse_unidade": true,
+   "veredito_inicial": "imprecisa",
+   "correcao_aplicada": "Reescrito sem atribuir espera ao Gerente: 'intervalo entre a última assinatura técnica e o \"De acordo\"' (definição do fato).",
+   "veredito_final": "sustentada após correção"
+  },
+  {
+   "id": "leitura.6",
+   "bloco": "leitura_metricas",
+   "afirmacao": "O ofício sai com mediana de 1 du e o e-mail com mediana de 0 du, entre os relatórios oficiados.",
+   "fatos": [
+    "casos.aprovacao_oficio.mediana_du",
+    "casos.oficio_email.mediana_du"
+   ],
+   "fontes": [
+    "fatos: 1 du e 0 du, n=10 (oficiados)"
+   ],
+   "nota": "Exatos; população correta (10 oficiados).",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "leitura.7",
+   "bloco": "leitura_metricas",
+   "afirmacao": "Passagens: mediana de 4 assinaturas por relatório em mediana de 3 dias distintos por relatório.",
+   "fatos": [
+    "casos.assinaturas.mediana",
+    "casos.dias_com_assinatura.mediana"
+   ],
+   "fontes": [
+    "fatos: 4 assinaturas (22 assinados), 3 dias com assinatura"
+   ],
+   "nota": "Números exatos. O termo \"passagens\" sugere trocas de mãos; os fatos medem assinaturas e dias com assinatura, não transferências entre unidades. Preferir \"assinaturas\".",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "leitura.8",
+   "bloco": "leitura_metricas",
+   "afirmacao": "O último ofício só foi seguido pelo parecer anual 159 du depois, tempo de terceiros e de fila indeterminado (respostas fora dos autos).",
+   "fatos": [
+    "intervalo.ultimo_oficio_parecer_du"
+   ],
+   "fontes": [
+    "fatos: 159 du",
+    "modelo_FIS.json fontes: respostas fora do PDF"
+   ],
+   "nota": "Exato e bem qualificado. \"Parecer anual\" é nome do modelo (escopo 2024), ver sintese.5.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "leitura.9",
+   "bloco": "leitura_metricas",
+   "afirmacao": "O parecer chegou à Procuradoria 118 dias corridos depois.",
+   "fatos": [
+    "intervalo.parecer_procuradoria"
+   ],
+   "fontes": [
+    "fatos: 118 dc (parecer 08/07/2025 → despacho SECEX 03/11/2025)",
+    "fichas: Despacho 117907053 (SECEX → Procuradoria, 03/11/2025)"
+   ],
+   "nota": "Exato, unidade dc correta (recontagem: 118). Rigorosamente, 118 dc é o intervalo até o envio (despacho), não a chegada.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "leitura.10",
+   "bloco": "leitura_metricas",
+   "afirmacao": "Sem horas de trabalho medidas, a eficiência do ciclo (PCE) não pode ser calculada.",
+   "fatos": [],
+   "fontes": [
+    "casos_FIS.json observacao: posse, horas e espera de terceiros ficam nulas"
+   ],
+   "nota": "Coerente com as fontes.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "gargalo.onde.1",
+   "bloco": "gargalo",
+   "afirmacao": "Gargalo declarado (hipótese a validar): a passagem da vistoria à 1ª assinatura (t2), isto é, a produção e a colocação em assinatura do relatório pela equipe da CASAN.",
+   "fatos": [
+    "casos.vistoria_1a_assinatura.mediana_du"
+   ],
+   "fontes": [
+    "modelo_FIS.json t2 (raia CASAN)",
+    "evidencias_FIS.md"
+   ],
+   "nota": "Sustentada como hipótese declarada: é o maior intervalo medido do ciclo interno. Atenção: o intervalo mistura redação e fila e não se reparte (casos observacao); atribuir à \"produção pela equipe\" é a hipótese, não achado.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "gargalo.onde.2",
+   "bloco": "gargalo",
+   "afirmacao": "É a restrição do ciclo interno e define o ritmo dos lotes de aprovação e dos ofícios.",
+   "fatos": [
+    "casos.vistoria_1a_assinatura.mediana_du",
+    "lotes.aprovacao.n"
+   ],
+   "fontes": [
+    "casos_FIS.json casos e lotes_aprovacao",
+    "evidencias_FIS.md linha da tabela De acordo: \"Maiores esperas nos lotes RF 010–012 e RF 155–158\""
+   ],
+   "nota": "A primeira metade cabe como hipótese; \"define o ritmo dos lotes e dos ofícios\" não tem lastro causal. As maiores esperas dentro da CASAN dos lotes RF 010–012 (35 du) e RF 155–158 (32 du) estão na revisão até o De acordo, e a decisão de juntar relatórios em ofício é dita \"implícita\" em evidencias. Corrigir para \"hipótese: o intervalo pode condicionar a formação dos lotes\".",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "imprecisa",
+   "correcao_aplicada": "Causalidade sobre o ritmo dos lotes rebaixada a hipótese; citada a concentração das maiores esperas dos lotes RF 010–012 e RF 155–158 na revisão.",
+   "veredito_final": "sustentada após correção"
+  },
+  {
+   "id": "gargalo.onde.3",
+   "bloco": "gargalo",
+   "afirmacao": "Restrição secundária: a análise anual consolidada das respostas (t5), que só ocorre uma vez por ano para todos os relatórios.",
+   "fatos": [
+    "intervalo.ultimo_oficio_parecer_du"
+   ],
+   "fontes": [
+    "fichas: Parecer 250/2025",
+    "evidencias_FIS.md pergunta 6"
+   ],
+   "nota": "Mesma generalização de sintese.5: um único parecer não prova periodicidade nem que não haja análise individual fora dos autos. Corrigir: \"no recorte há um único parecer consolidado, emitido em 08/07/2025\". Nota de coerência: o intervalo da \"secundária\" (159 du) é maior que o da \"primária\" (34 du); o texto deveria explicar que o t5 inclui tempo de terceiros.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "imprecisa",
+   "correcao_aplicada": "Trocado por: um único parecer no recorte; explicado por que a restrição secundária, com intervalo maior, não é o gargalo principal (um só caso, inclui prazo da concessionária).",
+   "veredito_final": "sustentada após correção"
+  },
+  {
+   "id": "gargalo.evid.1",
+   "bloco": "gargalo",
+   "afirmacao": "Vistoria → 1ª assinatura: mediana de 34 du (n de 21 relatórios), de 18 a 171 du, contra mediana de 4,5 du da 1ª assinatura ao De acordo e de 1 du do De acordo ao ofício (oficiados).",
+   "fatos": [
+    "casos.vistoria_1a_assinatura.mediana_du",
+    "casos.vistoria_1a_assinatura.n",
+    "casos.vistoria_1a_assinatura.min_du",
+    "casos.vistoria_1a_assinatura.max_du",
+    "casos.revisao_aprovacao.mediana_du",
+    "casos.aprovacao_oficio.mediana_du"
+   ],
+   "fontes": [
+    "fatos: 34, 21, 18, 171, 4,5, 1"
+   ],
+   "nota": "Todos exatos, unidade du correta.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "gargalo.evid.2",
+   "bloco": "gargalo",
+   "afirmacao": "O caso extremo é o RF 017 (doc 28): 247 dias corridos da vistoria ao \"De acordo\".",
+   "fatos": [
+    "rel17.vistoria_aprov_dc"
+   ],
+   "fontes": [
+    "fatos: rel17.vistoria_aprov_dc=247 dc",
+    "fichas: RF 017 (SEI 87028948): vistoria 06/03/2024, De acordo 08/11/2024; casos: doc_n 28"
+   ],
+   "nota": "Exato (recontagem: 247 dc). RF 017 é também o máximo de 171 du até a 1ª assinatura. Mistura de dc e du no mesmo parágrafo está rotulada.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "gargalo.evid.3",
+   "bloco": "gargalo",
+   "afirmacao": "O intervalo mistura redação e fila e não se reparte por unidade nem por pessoa (sem andamentos do SEI).",
+   "fatos": [],
+   "fontes": [
+    "casos_FIS.json observacao"
+   ],
+   "nota": "Reconhece a limitação; não conclui posse.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "gargalo.evid.4",
+   "bloco": "gargalo",
+   "afirmacao": "Na restrição secundária, o parecer saiu 159 du depois do último ofício, período que inclui o prazo de 30 dias dado à concessionária e tempo indeterminado.",
+   "fatos": [
+    "intervalo.ultimo_oficio_parecer_du",
+    "oficios.prazo_resposta_unico"
+   ],
+   "fontes": [
+    "fatos: 159 du; 30 dias (todos os ofícios de encaminhamento; não diz úteis ou corridos)",
+    "fichas: Ofício 946 (SEI 87188346)"
+   ],
+   "nota": "Exatos. Corretamente não converte o prazo para du.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "variab.1",
+   "bloco": "variabilidade",
+   "afirmacao": "Vistoria → 1ª assinatura vai de 18 a 171 du e a revisão até o \"De acordo\" de 1 a 35 du.",
+   "fatos": [
+    "casos.vistoria_1a_assinatura.min_du",
+    "casos.vistoria_1a_assinatura.max_du",
+    "casos.revisao_aprovacao.min_du",
+    "casos.revisao_aprovacao.max_du"
+   ],
+   "fontes": [
+    "fatos: 18, 171, 1, 35"
+   ],
+   "nota": "Exatos.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "variab.2",
+   "bloco": "variabilidade",
+   "afirmacao": "Relatórios do mesmo lote compartilham a data do \"De acordo\" (mediana de 3 por lote, máximo de 6).",
+   "fatos": [
+    "lotes.aprovacao.tamanho_mediana",
+    "lotes.aprovacao.tamanho_max"
+   ],
+   "fontes": [
+    "fatos: 3 e 6; lotes_aprovacao (1,1,3,3,4,4,6)"
+   ],
+   "nota": "Exatos; a afirmação é quase tautológica (lote é definido pela data do De acordo).",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "variab.3",
+   "bloco": "variabilidade",
+   "afirmacao": "A dispersão acompanha os lotes, de modo que o tempo de um relatório depende de quando o lote fecha, não do relatório.",
+   "fatos": [
+    "lotes.aprovacao.tamanho_mediana"
+   ],
+   "fontes": [
+    "casos_FIS.json casos: RF 155–158 (mesma vistoria 16/07, mesma data de texto e de 1ª assinatura 09/08); RF 212–214 (vistoria 20/08); lote de 08/11 reúne RF 017 (171 du até a 1ª assinatura) e RF 212–214 (55 du)"
+   ],
+   "nota": "Causalidade sem lastro. Relatórios do mesmo lote compartilham também vistoria, data do texto e 1ª assinatura (mesma campanha), então a semelhança pode vir da produção conjunta, não do fechamento do lote. E o lote de 08/11 mistura relatórios de 55 a 171 du, ou seja, a dispersão não segue o lote. Corrigir para \"relatórios do mesmo lote costumam ter a mesma data de De acordo; não se sabe se o lote foi esperado\".",
+   "apoia_posse_unidade": true,
+   "veredito_inicial": "imprecisa",
+   "correcao_aplicada": "Rebaixado a hipótese; registrado que relatórios do mesmo lote também compartilham, em geral, vistoria e 1ª assinatura.",
+   "veredito_final": "sustentada após correção"
+  },
+  {
+   "id": "variab.4",
+   "bloco": "variabilidade",
+   "afirmacao": "O lote de RF 155 a RF 158 esperou pelo Gerente até 20 du depois da última assinatura técnica.",
+   "fatos": [
+    "casos.ultima_tecnica_aprovacao.max_du"
+   ],
+   "fontes": [
+    "fatos: máx 20 du",
+    "casos: RF 155, 156, 157, 158 com ultima_tecnica_aprovacao = 20 du; nenhum outro relatório passa de 4 du"
+   ],
+   "nota": "Número e lote exatos (os quatro relatórios têm 20 du, único caso acima de 4 du). \"Esperou pelo Gerente\" atribui o intervalo ao Gerente; sem andamentos, só se sabe o tempo entre a última assinatura técnica e o De acordo. Corrigir: \"20 du entre a última assinatura técnica e o De acordo\".",
+   "apoia_posse_unidade": true,
+   "veredito_inicial": "imprecisa",
+   "correcao_aplicada": "Reescrito como intervalo da última assinatura técnica ao \"De acordo\", sem atribuir a espera.",
+   "veredito_final": "sustentada após correção"
+  },
+  {
+   "id": "variab.5",
+   "bloco": "variabilidade",
+   "afirmacao": "O RF 017 ficou meses sem assinatura (247 dias corridos).",
+   "fatos": [
+    "rel17.vistoria_aprov_dc"
+   ],
+   "fontes": [
+    "fatos: rel17 247 dc = vistoria → De acordo",
+    "casos: RF 017 vistoria 06/03/2024, texto e 1ª assinatura 07/11/2024, De acordo 08/11/2024; vistoria → 1ª assinatura = 246 dc / 171 du"
+   ],
+   "nota": "O fato de 247 dc mede vistoria → De acordo, não \"tempo sem assinatura\" (vistoria → 1ª assinatura = 246 dc, 171 du). \"Ficou sem assinatura\" sugere relatório parado; o intervalo inclui o trabalho de redação e a data do texto é 07/11. Corrigir: \"o RF 017 levou 171 du (246 dc) da vistoria à 1ª assinatura (247 dc até o De acordo)\".",
+   "apoia_posse_unidade": true,
+   "veredito_inicial": "imprecisa",
+   "correcao_aplicada": "Trocado o fato: RF 017 teve a 1ª assinatura 171 du depois da vistoria (casos.vistoria_1a_assinatura.max_du); retirado rel17.vistoria_aprov_dc da variabilidade.",
+   "veredito_final": "sustentada após correção"
+  },
+  {
+   "id": "variab.6",
+   "bloco": "variabilidade",
+   "afirmacao": "A cadeia de assinaturas muda de relatório para relatório (8 cadeias distintas).",
+   "fatos": [
+    "casos.cadeias_distintas"
+   ],
+   "fontes": [
+    "casos_FIS.json cadeias_assinatura: 6, 5, 4, 3, 1, 1, 1, 1"
+   ],
+   "nota": "8 exato, mas \"muda de relatório para relatório\" exagera: 15 dos 22 relatórios seguem três cadeias. E listar a cadeia entre \"causas visíveis\" da dispersão não tem lastro (nenhuma fonte liga cadeia a tempo). Corrigir: \"há 8 cadeias distintas; 3 delas cobrem 15 relatórios; relação com o tempo não testada\".",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "imprecisa",
+   "correcao_aplicada": "Reescrito: a ordem dos cargos nas assinaturas não é fixa, sem relação demonstrada com o tempo.",
+   "veredito_final": "sustentada após correção"
+  },
+  {
+   "id": "variab.7",
+   "bloco": "variabilidade",
+   "afirmacao": "Com poucos relatórios por lote, estes números são ordem de grandeza.",
+   "fatos": [],
+   "fontes": [
+    "evidencias_FIS.md: \"medianas são ordem de grandeza, não padrão\""
+   ],
+   "nota": "Coerente com as fontes.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "desp0.1",
+   "bloco": "desperdicios[0]",
+   "afirmacao": "Espera: relatório pronto ou quase pronto aguardando assinatura.",
+   "fatos": [],
+   "fontes": [
+    "fichas: RF 010, 056, 052, 059, 070, 073, 065, 212, 213, 214, 017 (data de conclusão anterior)"
+   ],
+   "nota": "É hipótese, não constatação: a vsm a trata como \"hipótese a confirmar\". O cabeçalho do documento tem data próxima da 1ª assinatura (mediana 1 du), o que também é compatível com redação tardia. Corrigir para \"possível relatório pronto aguardando assinatura\".",
+   "apoia_posse_unidade": true,
+   "veredito_inicial": "imprecisa",
+   "correcao_aplicada": "Marcado como hipótese ('possível relatório pronto ... (hipótese)').",
+   "veredito_final": "sustentada após correção"
+  },
+  {
+   "id": "desp0.2",
+   "bloco": "desperdicios[0]",
+   "afirmacao": "Vistoria → 1ª assinatura com mediana de 34 du e data do cabeçalho a mediana de 1 du da 1ª assinatura.",
+   "fatos": [
+    "casos.vistoria_1a_assinatura.mediana_du",
+    "casos.redacao_1a_assinatura.mediana_du"
+   ],
+   "fontes": [
+    "fatos: 34 du; 1 du"
+   ],
+   "nota": "Exatos.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "desp0.3",
+   "bloco": "desperdicios[0]",
+   "afirmacao": "A conclusão de vários textos traz data anterior (RF 010, 056, 052, 059, 070, 073, 065, 212, 213, 214 e 017).",
+   "fatos": [],
+   "fontes": [
+    "fichas: RF 010 (conclusão 23/01, 1ª assinatura 07/03); 056 (23/04 vs 10/05); 052 (24/04 vs 10/05); 059 (07/05 vs 10/05); 070 (18/04 vs 04/06); 073 (10/05 vs 03/06); 065 (09/05 vs 06/06); 212 (10/10 vs 06/11); 213 (29/08 vs 06/11); 214 (11/10 vs 06/11); 017 (16/10 vs 07/11)"
+   ],
+   "nota": "Cada um dos 11 relatórios confere. No RF 059 a diferença é de só 3 dias.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "desp0.4",
+   "bloco": "desperdicios[0]",
+   "afirmacao": "Quanto é fila e quanto é redação, a medir.",
+   "fatos": [],
+   "fontes": [
+    "casos_FIS.json observacao"
+   ],
+   "nota": "Ressalva correta.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "desp1.1",
+   "bloco": "desperdicios[1]",
+   "afirmacao": "Estoque: 7 dias distintos de \"De acordo\", mediana de 3 relatórios por lote e máximo de 6, e só 3 ofícios de encaminhamento nos autos.",
+   "fatos": [
+    "lotes.aprovacao.n",
+    "lotes.aprovacao.tamanho_mediana",
+    "lotes.aprovacao.tamanho_max",
+    "oficios.encaminhamento"
+   ],
+   "fontes": [
+    "fatos: 7, 3, 6, 3",
+    "fichas: Ofícios 349, 682, 946"
+   ],
+   "nota": "Exatos.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "desp1.2",
+   "bloco": "desperdicios[1]",
+   "afirmacao": "Relatórios aprovados ficam em estoque até o lote seguinte.",
+   "fatos": [
+    "casos.aprovacao_oficio.mediana_du"
+   ],
+   "fontes": [
+    "casos: De acordo → ofício = 1 a 6 du nos 10 oficiados (RF 010–012: 9 dc; RF 159: 2 dc; RF 259/209/212–214/017: 3 dc)",
+    "evidencias_FIS.md: relatórios sem ofício nos autos podem ter sido encaminhados em peça não exportada"
+   ],
+   "nota": "Para os 10 oficiados o ofício sai em 1 a 6 du após o De acordo, sem espera até \"o lote seguinte\". Para os 12 sem ofício nos autos não há como saber se ficaram retidos. \"Ficam em estoque\" afirma permanência sem trilha de andamentos. Corrigir: \"o encaminhamento em lote pode reter relatórios aprovados; nos oficiados a espera foi de 1 a 6 du; nos demais não há dados\".",
+   "apoia_posse_unidade": true,
+   "veredito_inicial": "imprecisa",
+   "correcao_aplicada": "'Ficam em estoque' → 'o trabalho em lote pode reter relatórios aprovados até o ofício seguinte'.",
+   "veredito_final": "sustentada após correção"
+  },
+  {
+   "id": "desp1.3",
+   "bloco": "desperdicios[1]",
+   "afirmacao": "O lote de RF 155 a RF 158 recebeu o \"De acordo\" depois do Ofício 682 e não aparece em nenhum ofício dos autos.",
+   "fatos": [],
+   "fontes": [
+    "casos: RF 155–158 De acordo em 24/09/2024; Ofício 682 assinado em 07/08/2024 cita RF 111, 123, 134, 135, 159; Ofício 349 cita 10, 11, 12, 33, 34, 38, 46, 47, 48, 53, 54, 55; Ofício 946 (11/11/2024) cita 17, 209, 212, 213, 214, 259; Ofício 757 é de agendamento",
+    "evidencias_FIS.md: \"Os RF 155–158 receberam o De acordo depois do Ofício 682\""
+   ],
+   "nota": "Confere nas listas dos três ofícios de encaminhamento. O texto já diz \"nos autos\"; manter a ressalva de que pode estar em ofício não exportado.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "desp2.1",
+   "bloco": "desperdicios[2]",
+   "afirmacao": "Datas internas divergentes entre vistoria, conclusão, cabeçalho e assinaturas (RF 010, 011, 056, 052, 059, 070, 073, 065, 212, 213, 214, 017, 259).",
+   "fatos": [],
+   "fontes": [
+    "fichas: RF 010, 056, 052, 059, 070, 073, 065, 212, 213, 214, 017 (conclusão x assinatura); RF 011 (\"datas internas divergentes, como no Relatório 10/2024\"); RF 259 (\"inconsistência de datação\": vistoria 14/08, concretagem 05/09)"
+   ],
+   "nota": "Os 13 relatórios têm a divergência registrada na ficha. O RF 012 (conclusão 22/01 sem data de vistoria) também aparece, mas fora da lista; omissão sem prejuízo.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "desp2.2",
+   "bloco": "desperdicios[2]",
+   "afirmacao": "Texto de modelo citando outro município (RF 212, 213, 214) ou outro sistema (RF 017).",
+   "fatos": [],
+   "fontes": [
+    "fichas: RF 212, 213, 214 (\"município de Pomerode\"); RF 017 (título trata de Sistema de Distribuição de Água, objeto é a ETE)"
+   ],
+   "nota": "Confere nos quatro relatórios.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "desp2.3",
+   "bloco": "desperdicios[2]",
+   "afirmacao": "Unidade com nome trocado (RF 090).",
+   "fatos": [],
+   "fontes": [
+    "fichas: RF 090 (SEI 76213730): nome diverge entre cabeçalho (EEE 16 / André Azevedo) e texto (Hipica)"
+   ],
+   "nota": "A ficha registra divergência de nome, com \"Hipica\" como designação alternativa; \"trocado\" afirma erro. Corrigir para \"nome da unidade divergente entre cabeçalho e texto\".",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "imprecisa",
+   "correcao_aplicada": "'Nome trocado' → 'nome da unidade divergente entre cabeçalho e texto'.",
+   "veredito_final": "sustentada após correção"
+  },
+  {
+   "id": "desp2.4",
+   "bloco": "desperdicios[2]",
+   "afirmacao": "Resposta que cita outra estação (RF 065).",
+   "fatos": [],
+   "fontes": [
+    "fichas: RF 065 (SEI 76104339): resposta sobre o destino do material retido cita a EEE André Azevedo"
+   ],
+   "nota": "Confere.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "desp2.5",
+   "bloco": "desperdicios[2]",
+   "afirmacao": "RF 209 e RF 259 tratam da mesma vistoria com fases de obra diferentes.",
+   "fatos": [],
+   "fontes": [
+    "fichas: RF 209 (SEI 86161531) e RF 259 (SEI 86162193), vistoria de 14/08/2024, fases diferentes"
+   ],
+   "nota": "Confere nas duas fichas e em evidencias_FIS.md (\"possível duplicidade\").",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "desp2.6",
+   "bloco": "desperdicios[2]",
+   "afirmacao": "Esses defeitos fragilizam a prova e alimentam a contestação da concessionária.",
+   "fatos": [],
+   "fontes": [
+    "fichas: Despacho SECEX 117907053 (contestação trata de escopo da fiscalização, não de defeitos dos relatórios)"
+   ],
+   "nota": "Nenhuma fonte mostra a concessionária usando os defeitos de forma; a contestação registrada versa sobre escopo (indicadores de desempenho). Corrigir: \"podem fragilizar a prova e ser explorados em contestação\".",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "imprecisa",
+   "correcao_aplicada": "'Alimentam a contestação' → 'podem fragilizar a prova numa contestação'.",
+   "veredito_final": "sustentada após correção"
+  },
+  {
+   "id": "desp3.1",
+   "bloco": "desperdicios[3]",
+   "afirmacao": "12 relatórios sem ofício de encaminhamento nos autos contra 10 com ofício.",
+   "fatos": [
+    "casos.variante.sem_oficio_de_encaminhamento_nos_autos",
+    "casos.variante.com_oficio_de_encaminhamento_nos_autos"
+   ],
+   "fontes": [
+    "fatos: 12 e 10",
+    "casos: 10 com ofício (RF 010–012, 159, 259, 209, 212–214, 017); 12 sem (RF 056, 052, 059, 070, 073, 065, 090, 155–158, 153)"
+   ],
+   "nota": "Exatos; mais o RF 227 sem texto (23 no total).",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "desp3.2",
+   "bloco": "desperdicios[3]",
+   "afirmacao": "O controle de encaminhamento é \"falho ou não rastreável\".",
+   "fatos": [],
+   "fontes": [
+    "evidencias_FIS.md: \"ou o encaminhamento ocorreu em peça não exportada, ou não ocorreu\""
+   ],
+   "nota": "Os dados só mostram ausência do ofício nos autos exportados; \"falho\" não está estabelecido. Mantém-se \"não rastreável nos autos\". Também a categoria \"Defeitos/retrabalho\" e a severidade alta ficam sem mais evidência do que isso.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "imprecisa",
+   "correcao_aplicada": "'Falho ou não rastreável' → 'não rastreável nos autos exportados'.",
+   "veredito_final": "sustentada após correção"
+  },
+  {
+   "id": "desp3.3",
+   "bloco": "desperdicios[3]",
+   "afirmacao": "Ofício 349 cita 12 relatórios, 3 com texto no PDF; Ofício 682 cita 5, com 1 no PDF.",
+   "fatos": [
+    "of1.relatorios_citados",
+    "of1.relatorios_no_pdf",
+    "of2.relatorios_citados",
+    "of2.relatorios_no_pdf"
+   ],
+   "fontes": [
+    "fatos: 12, 3, 5, 1",
+    "fichas: Ofício 349 (SEI 74141761), Ofício 682 (SEI 80501066)"
+   ],
+   "nota": "Exatos (no PDF: RF 010, 011, 012 e RF 159).",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "desp3.4",
+   "bloco": "desperdicios[3]",
+   "afirmacao": "Um relatório (RF 227) está no PDF sem texto nem assinatura.",
+   "fatos": [
+    "casos.variante.sem_texto_nem_assinatura_no_pdf"
+   ],
+   "fontes": [
+    "fatos: 1",
+    "fichas: RF 227 (SEI 91278977), só cabeçalho nas páginas 201-226"
+   ],
+   "nota": "Confere.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "desp4.1",
+   "bloco": "desperdicios[4]",
+   "afirmacao": "Mediana de 4 assinaturas por relatório, máximo de 6, em 8 cadeias distintas de cargos.",
+   "fatos": [
+    "casos.assinaturas.mediana",
+    "casos.assinaturas.max",
+    "casos.cadeias_distintas"
+   ],
+   "fontes": [
+    "fatos: 4, 6, 8"
+   ],
+   "nota": "Exatos.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "desp4.2",
+   "bloco": "desperdicios[4]",
+   "afirmacao": "Especialista, Assistente ou Assessor ora elaborando, ora revisando.",
+   "fatos": [],
+   "fontes": [
+    "casos: cadeias (primeiro signatário Assistente, Especialista ou Assessor)",
+    "fichas: \"Elaborado: Engenheiros/Especialistas; Revisado: Engenheiro\" mesmo quando a cadeia SEI começa por Assistente"
+   ],
+   "nota": "Os cargos das assinaturas e as funções descritas nas fichas não coincidem (fichas citam Engenheiro e Especialista como elaboradores e revisor). Dizer que Assistente ou Assessor \"elabora\" é inferência da ordem das assinaturas. Corrigir: \"a ordem dos cargos nas assinaturas varia entre os relatórios\".",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "imprecisa",
+   "correcao_aplicada": "Reescrito: 'a ordem dos cargos nas assinaturas varia entre relatórios'.",
+   "veredito_final": "sustentada após correção"
+  },
+  {
+   "id": "desp4.3",
+   "bloco": "desperdicios[4]",
+   "afirmacao": "Não se sabe o que cada assinatura acrescenta (revisão técnica, formal ou ciência).",
+   "fatos": [],
+   "fontes": [
+    "modelo_FIS.json perguntas_validacao (2)"
+   ],
+   "nota": "Ressalva correta; é pergunta em aberto.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "desp5.1",
+   "bloco": "desperdicios[5]",
+   "afirmacao": "Do último ofício ao parecer passaram 159 du, e o prazo dado à concessionária é de 30 dias.",
+   "fatos": [
+    "intervalo.ultimo_oficio_parecer_du",
+    "oficios.prazo_resposta_unico"
+   ],
+   "fontes": [
+    "fatos: 159 du; 30 dias"
+   ],
+   "nota": "Números exatos. O \"embora\" sugere que o parecer deveria sair em 30 dias, mas o prazo é de resposta da concessionária, não de análise; reescrever sem o contraste.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "desp5.2",
+   "bloco": "desperdicios[5]",
+   "afirmacao": "Respostas e cronogramas ficam sem análise caso a caso nos autos.",
+   "fatos": [],
+   "fontes": [
+    "fichas: Parecer 250/2025 (analisa respostas, planos de ação e cronogramas de 42 relatórios)",
+    "evidencias_FIS.md pergunta 6 (em aberto)"
+   ],
+   "nota": "Nada sustenta. O parecer declara ter analisado respostas, planos e cronogramas dos 42 relatórios; as respostas estão fora dos autos, então não se pode afirmar que não houve análise individual. Retirar ou trocar por \"as respostas não constam dos autos exportados\".",
+   "apoia_posse_unidade": true,
+   "veredito_inicial": "sem lastro",
+   "correcao_aplicada": "Retirada a afirmação; trocada por: respostas e cronogramas não constam dos autos exportados e só aparecem analisados no parecer consolidado. 'Embora o prazo' → 'período que inclui o prazo de resposta'.",
+   "veredito_final": "sustentada após correção"
+  },
+  {
+   "id": "desp5.3",
+   "bloco": "desperdicios[5]",
+   "afirmacao": "O parecer conclui por atendimento parcial com prazos postergados.",
+   "fatos": [],
+   "fontes": [
+    "fichas: Parecer 250/2025 (SEI 104033188)"
+   ],
+   "nota": "Confere.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "desp5.4",
+   "bloco": "desperdicios[5]",
+   "afirmacao": "Separar tempo de terceiros de fila não é possível (respostas fora dos autos).",
+   "fatos": [],
+   "fontes": [
+    "casos_FIS.json observacao"
+   ],
+   "nota": "Confere.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "desp6.1",
+   "bloco": "desperdicios[6]",
+   "afirmacao": "Especialistas em Regulação aparecem como signatários ao lado de Assistentes e Assessores em cadeias que se alternam (8 cadeias).",
+   "fatos": [
+    "casos.cadeias_distintas"
+   ],
+   "fontes": [
+    "casos_FIS.json cadeias_assinatura"
+   ],
+   "nota": "Confere.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "desp6.2",
+   "bloco": "desperdicios[6]",
+   "afirmacao": "A redação de partes repetitivas (identificação, checklist, recomendações-padrão como falta de identificação e de motobomba reserva reiteradas nas fichas do RF 010, 011 e 012) consome tempo técnico que poderia ir à análise.",
+   "fatos": [],
+   "fontes": [
+    "fichas: RF 012 (SEI 69716140): \"Reiteração: ausência de identificação e de motobomba reserva também aparece nos Relatórios 10/2024 e 11/2024\""
+   ],
+   "nota": "A ficha trata da reiteração de não conformidades nas unidades, achado de campo, não de texto-padrão copiado. Que isso consuma tempo técnico é hipótese sem medição (o próprio texto diz \"horas a medir\"). Corrigir: \"partes repetitivas do relatório (identificação, checklist) podem consumir tempo técnico; horas a medir\".",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "imprecisa",
+   "correcao_aplicada": "Reformulado como hipótese e como recomendações semelhantes para não conformidades reiteradas.",
+   "veredito_final": "sustentada após correção"
+  },
+  {
+   "id": "vsm0.1",
+   "bloco": "vsm.etapas[0]",
+   "afirmacao": "Um dia de campo por unidade; o trabalho é a constatação técnica com fotos e checklist.",
+   "fatos": [],
+   "fontes": [
+    "fichas: data_vistoria única por relatório; RF 153 \"sem checklist\"; RF 259, 209 e 017 não citam checklist; RF 012 sem data de vistoria"
+   ],
+   "nota": "Um dia por unidade é compatível com a data única das fichas, e fotos aparecem em quase todas. Mas \"com fotos e checklist\" não vale para todos (RF 153 sem checklist; os de acompanhamento de obra RF 259/209 e o RF 017 não citam checklist). Corrigir para \"na maioria\".",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "imprecisa",
+   "correcao_aplicada": "'Um dia de campo' → 'vistoria registrada numa única data por relatório'; 'checklist' → 'na maioria dos relatórios, checklist anexo'.",
+   "veredito_final": "sustentada após correção"
+  },
+  {
+   "id": "vsm1.1",
+   "bloco": "vsm.etapas[1]",
+   "afirmacao": "Mediana de 34 du, máximo de 171 du.",
+   "fatos": [
+    "casos.vistoria_1a_assinatura.mediana_du",
+    "casos.vistoria_1a_assinatura.max_du"
+   ],
+   "fontes": [
+    "fatos: 34, 171"
+   ],
+   "nota": "Exatos.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "vsm1.2",
+   "bloco": "vsm.etapas[1]",
+   "afirmacao": "Em vários relatórios a conclusão do texto traz data bem anterior à 1ª assinatura (RF 010, 056, 052, 070, 073, 065, 212, 213, 214 e 017), indício de texto pronto esperando assinatura, hipótese a confirmar.",
+   "fatos": [],
+   "fontes": [
+    "fichas: mesmas datas de desp0.3; diferenças de 16 a 69 dias (RF 010: 23/01 x 07/03; 213: 29/08 x 06/11)"
+   ],
+   "nota": "Os 10 relatórios conferem e \"bem anterior\" é correto (16 a 69 dias; o RF 059, com 3 dias, ficou de fora). A frase já declara hipótese. Contraleitura: a data do cabeçalho é próxima da 1ª assinatura.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "vsm2.1",
+   "bloco": "vsm.etapas[2]",
+   "afirmacao": "Mediana de 4,5 du, máximo de 35 du até o De acordo; espera pelo Gerente após a última assinatura técnica com mediana de 2 du e máximo de 20 du.",
+   "fatos": [
+    "casos.revisao_aprovacao.mediana_du",
+    "casos.revisao_aprovacao.max_du",
+    "casos.ultima_tecnica_aprovacao.mediana_du",
+    "casos.ultima_tecnica_aprovacao.max_du"
+   ],
+   "fontes": [
+    "fatos: 4,5; 35; 2; 20"
+   ],
+   "nota": "Os quatro números são exatos. \"Espera pelo Gerente\" atribui tempo a uma pessoa/unidade sem trilha de andamentos; corrigir para \"intervalo entre a última assinatura técnica e o De acordo\". A classificação da etapa como \"necessária sem valor\" também não tem lastro: modelo_FIS.json deixa em aberto se o De acordo é revisão com devolução ou só ciência.",
+   "apoia_posse_unidade": true,
+   "veredito_inicial": "imprecisa",
+   "correcao_aplicada": "Classificação trocada para 'controle (revisão ou ciência, a confirmar)'; intervalo descrito sem atribuir espera ao Gerente.",
+   "veredito_final": "sustentada após correção"
+  },
+  {
+   "id": "vsm3.1",
+   "bloco": "vsm.etapas[3]",
+   "afirmacao": "Mediana de 1 du até o ofício e 0 du até o e-mail, entre os relatórios oficiados.",
+   "fatos": [
+    "casos.aprovacao_oficio.mediana_du",
+    "casos.oficio_email.mediana_du"
+   ],
+   "fontes": [
+    "fatos: 1 e 0 du, n=10"
+   ],
+   "nota": "Exatos.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "vsm4.1",
+   "bloco": "vsm.etapas[4]",
+   "afirmacao": "159 du do último ofício ao parecer, com prazo de resposta de 30 dias nos ofícios; respostas da concessionária fora dos autos.",
+   "fatos": [
+    "intervalo.ultimo_oficio_parecer_du",
+    "oficios.prazo_resposta_unico"
+   ],
+   "fontes": [
+    "fatos: 159 du; 30 dias",
+    "modelo_FIS.json fontes"
+   ],
+   "nota": "Exatos.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "vsm5.1",
+   "bloco": "vsm.etapas[5]",
+   "afirmacao": "118 dias corridos do parecer à Procuradoria; manifestação da concessionária e reiteração da CASAN não estão no PDF.",
+   "fatos": [
+    "intervalo.parecer_procuradoria"
+   ],
+   "fontes": [
+    "fatos: 118 dc",
+    "fichas: Despacho SECEX 117907053 (cita manifestação e reiteração)",
+    "modelo_FIS.json fontes"
+   ],
+   "nota": "Confere. Nota: parte dos 118 dc é tramitação interna da SECEX (t6, t8), não só \"espera de terceiros\"; o texto já diz \"não separável\".",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "risco0.1",
+   "bloco": "riscos[0]",
+   "afirmacao": "Risco: relatório aprovado e não notificado à concessionária, o que impede cobrar o prazo de resposta.",
+   "fatos": [],
+   "fontes": [
+    "evidencias_FIS.md: \"ou o encaminhamento ocorreu em peça não exportada, ou não ocorreu\""
+   ],
+   "nota": "A evidência só mostra ausência de ofício nos autos exportados; \"não notificado\" é possibilidade, não achado. Corrigir: \"relatório aprovado sem notificação comprovada nos autos\".",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "imprecisa",
+   "correcao_aplicada": "'Não notificado' → 'sem notificação comprovada nos autos'; 'impede' → 'dificulta'.",
+   "veredito_final": "sustentada após correção"
+  },
+  {
+   "id": "risco0.2",
+   "bloco": "riscos[0]",
+   "afirmacao": "12 relatórios sem ofício de encaminhamento nos autos.",
+   "fatos": [
+    "casos.variante.sem_oficio_de_encaminhamento_nos_autos"
+   ],
+   "fontes": [
+    "fatos: 12"
+   ],
+   "nota": "Exato.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "risco1.1",
+   "bloco": "riscos[1]",
+   "afirmacao": "Prova fragilizada por defeitos de forma, explorável na contestação; datas internas divergentes, texto de modelo de outro município (RF 212, 213, 214) e de outro sistema (RF 017).",
+   "fatos": [],
+   "fontes": [
+    "fichas: RF 212, 213, 214, 017 e demais do desp2.1"
+   ],
+   "nota": "Os defeitos listados conferem; \"explorável\" é risco potencial, aceitável como risco.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "risco2.1",
+   "bloco": "riscos[2]",
+   "afirmacao": "Constatação desatualizada quando o relatório sai muito depois da vistoria: vistoria → 1ª assinatura de até 171 du, no RF 017.",
+   "fatos": [
+    "casos.vistoria_1a_assinatura.max_du"
+   ],
+   "fontes": [
+    "fatos: 171 du",
+    "casos: RF 017 = 171 du"
+   ],
+   "nota": "Exato; o máximo é mesmo do RF 017.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "risco3.1",
+   "bloco": "riscos[3]",
+   "afirmacao": "Prazo único de 30 dias nos ofícios, sem dizer se úteis ou corridos.",
+   "fatos": [
+    "oficios.prazo_resposta_unico"
+   ],
+   "fontes": [
+    "fatos: 30 dias, \"não diz se úteis ou corridos\"",
+    "fichas: Ofícios 349, 682, 946"
+   ],
+   "nota": "Exato.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "risco3.2",
+   "bloco": "riscos[3]",
+   "afirmacao": "Prazo de resposta sem acompanhamento; análise só no parecer anual.",
+   "fatos": [],
+   "fontes": [
+    "evidencias_FIS.md pergunta 6 (em aberto)",
+    "fichas: Parecer 250/2025"
+   ],
+   "nota": "Só se sabe que o recorte tem um parecer consolidado; acompanhamento de prazo pode existir fora dos autos. Corrigir: \"não há registro nos autos exportados de acompanhamento do prazo\".",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "imprecisa",
+   "correcao_aplicada": "'Sem acompanhamento' → 'sem acompanhamento registrado nos autos exportados'; 'análise só no parecer anual' → 'no recorte, a análise só aparece no parecer consolidado'.",
+   "veredito_final": "sustentada após correção"
+  },
+  {
+   "id": "risco4.1",
+   "bloco": "riscos[4]",
+   "afirmacao": "Despacho à Procuradoria (doc 34) registra a tese da concessionária de que a fiscalização se limitaria aos indicadores de desempenho; pedido de arquivamento pendente.",
+   "fatos": [],
+   "fontes": [
+    "fichas: Despacho 117907053 (doc 34, 03/11/2025)"
+   ],
+   "nota": "Confere, inclusive o pedido de arquivamento \"ainda não decidido\".",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "risco5.1",
+   "bloco": "riscos[5]",
+   "afirmacao": "23 relatórios no PDF contra 42 no parecer.",
+   "fatos": [
+    "contagem.relatorios_no_pdf",
+    "contagem.relatorios_citados_parecer"
+   ],
+   "fontes": [
+    "fatos: 23 e 42"
+   ],
+   "nota": "Exatos (ver ressalva sobre RF 227 em sintese.1).",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "risco5.2",
+   "bloco": "riscos[5]",
+   "afirmacao": "Respostas, ciência do parecer, manifestação e reiteração estão fora dos autos.",
+   "fatos": [],
+   "fontes": [
+    "modelo_FIS.json fontes: respostas, ciência, manifestação e reiteração \"inferidos\"; fichas: Despacho 117907053 cita manifestação e reiteração"
+   ],
+   "nota": "Respostas, manifestação e reiteração são citadas no despacho final e não estão no PDF. A \"ciência do parecer\" é inferida pelo modelo (nenhuma ficha a menciona), então não se pode dizer que exista e esteja fora. Corrigir: \"ciência do parecer, se houve, não consta\".",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "imprecisa",
+   "correcao_aplicada": "Ciência do parecer: 'se houve, não consta'.",
+   "veredito_final": "sustentada após correção"
+  },
+  {
+   "id": "opo0.1",
+   "bloco": "oportunidades[0].ganho_esperado",
+   "afirmacao": "Mediana de 34 du da vistoria à 1ª assinatura e máximo de 171 du; reduz espera, não trabalho; quanto, a medir.",
+   "fatos": [
+    "casos.vistoria_1a_assinatura.mediana_du",
+    "casos.vistoria_1a_assinatura.max_du"
+   ],
+   "fontes": [
+    "fatos: 34, 171"
+   ],
+   "nota": "Exatos; ganho não quantificado.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "opo1.1",
+   "bloco": "oportunidades[1].ganho_esperado",
+   "afirmacao": "7 lotes de aprovação no ano, 8 cadeias distintas.",
+   "fatos": [
+    "lotes.aprovacao.n",
+    "casos.cadeias_distintas"
+   ],
+   "fontes": [
+    "fatos: 7, 8"
+   ],
+   "nota": "Exatos.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "opo1.2",
+   "bloco": "oportunidades[1].ganho_esperado",
+   "afirmacao": "Espera pelo Gerente com máximo de 20 du.",
+   "fatos": [
+    "casos.ultima_tecnica_aprovacao.max_du"
+   ],
+   "fontes": [
+    "fatos: 20 du"
+   ],
+   "nota": "Número exato, mas é o intervalo entre a última assinatura técnica e o De acordo; atribuí-lo ao Gerente é inferência de posse.",
+   "apoia_posse_unidade": true,
+   "veredito_inicial": "imprecisa",
+   "correcao_aplicada": "Reescrito como intervalo da última assinatura técnica ao \"De acordo\".",
+   "veredito_final": "sustentada após correção"
+  },
+  {
+   "id": "opo2.1",
+   "bloco": "oportunidades[2].ganho_esperado",
+   "afirmacao": "12 relatórios sem ofício nos autos; Ofício 349 com 12 citados e 3 no PDF; reduz risco, não tempo.",
+   "fatos": [
+    "casos.variante.sem_oficio_de_encaminhamento_nos_autos",
+    "of1.relatorios_citados",
+    "of1.relatorios_no_pdf"
+   ],
+   "fontes": [
+    "fatos: 12, 12, 3"
+   ],
+   "nota": "Exatos.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "opo3.1",
+   "bloco": "oportunidades[3].ganho_esperado",
+   "afirmacao": "Reduz defeitos de forma (datas divergentes, texto de outro município, unidade trocada); relatórios com mediana de 5 não conformidades.",
+   "fatos": [
+    "casos.nao_conformidades.mediana"
+   ],
+   "fontes": [
+    "fatos: mediana 5 (22 relatórios; fichas)",
+    "fichas: não conformidades são constatações técnicas nas instalações"
+   ],
+   "nota": "O 5 é exato, mas as não conformidades são achados de campo nas unidades, não defeitos do relatório; a mediana não mede o problema de forma que a minuta assistida atacaria. Corrigir: retirar o dado ou rotulá-lo como volume de itens a transcrever.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "imprecisa",
+   "correcao_aplicada": "Mediana de não conformidades reapresentada como conteúdo de campo que a minuta estrutura, não como defeito de forma; 'unidade trocada' → 'nome de unidade divergente'.",
+   "veredito_final": "sustentada após correção"
+  },
+  {
+   "id": "opo3.2",
+   "bloco": "oportunidades[3].ganho_esperado",
+   "afirmacao": "O efeito na espera depende de quanto do trecho de 34 du é redação: a medir.",
+   "fatos": [
+    "casos.vistoria_1a_assinatura.mediana_du"
+   ],
+   "fontes": [
+    "fatos: 34 du"
+   ],
+   "nota": "Exato e cauteloso.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "opo4.1",
+   "bloco": "oportunidades[4].ganho_esperado",
+   "afirmacao": "159 du do último ofício ao parecer, com prazo de 30 dias nos ofícios; quanto, a medir.",
+   "fatos": [
+    "intervalo.ultimo_oficio_parecer_du",
+    "oficios.prazo_resposta_unico"
+   ],
+   "fontes": [
+    "fatos: 159 du; 30 dias"
+   ],
+   "nota": "Exatos.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  },
+  {
+   "id": "opo5.1",
+   "bloco": "oportunidades[5].ganho_esperado",
+   "afirmacao": "O trecho parecer → Procuradoria somou 118 dias corridos, mas a parte de espera não é separável.",
+   "fatos": [
+    "intervalo.parecer_procuradoria"
+   ],
+   "fontes": [
+    "fatos: 118 dc"
+   ],
+   "nota": "Exato.",
+   "apoia_posse_unidade": false,
+   "veredito_inicial": "sustentada",
+   "veredito_final": "sustentada"
+  }
+ ]
+}

@@ -1,0 +1,251 @@
+[
+  {
+    "n": 1,
+    "sei": "76104339",
+    "tipo": "Relatório de Fiscalização",
+    "numero": "065/2024",
+    "paginas": "76-87",
+    "data_documento": "05/06/2024",
+    "unidade_emissora": "AGENERSA/CASAN",
+    "funcao_autor": "Especialistas em Regulação (equipe de fiscalização)",
+    "destinatario": "",
+    "acao_no_processo": "vistoria_relatorio",
+    "resumo": "Relatório de fiscalização periódica, com objetivo de verificar a operação dos equipamentos, da Estação Elevatória de Esgoto Leblon (EEE 51), operada pela concessionária Águas do Rio no Bloco 1, com vistoria em 16/04/2024. Segundo o texto, a maioria dos itens estava de acordo com as boas práticas, mas foram registradas oito não conformidades. A concessionária foi recomendada a saná-las e a enviar histórico de manutenções, plano de contingência para inundação, comprovação da destinação dos resíduos, procedimentos para falta de energia e as características faltantes da Tabela 1.",
+    "fiscalizacao": {
+      "instalacao": "EEE Leblon (EEE 51)",
+      "tipo_instalacao": "EEE",
+      "concessionaria": "Águas do Rio",
+      "municipio_bairro": "Av. Niemeyer, 1, Vidigal (EEE 51 Leblon)",
+      "data_vistoria": "16/04/2024",
+      "nao_conformidades": [
+        "Falta de registros in loco de manutenções realizadas",
+        "Ausência de cópia de documento de licença ambiental",
+        "Resíduos e vegetação na caixa de uma das válvulas (foto 3)",
+        "Caçambas do gradeamento danificadas (foto 5)",
+        "Acúmulo de bens inservíveis em local inadequado, área propícia a vetores (foto 9)",
+        "Dois conjuntos motobomba inoperantes",
+        "Vazamento na tubulação (foto 18)",
+        "Infiltração em parede da sala de bombas (foto 19)"
+      ],
+      "prazo_para_sanar": "",
+      "elaborado_revisado_aprovado": "Elaborado: Especialistas em Regulação (3); Revisado: Engenheiro; De acordo: Gerente da Câmara de Saneamento"
+    },
+    "prazos": [],
+    "valores": [],
+    "normas_citadas": [
+      {"norma": "Lei Federal 11.445/2007 (saneamento básico)", "trecho_literal": "a Lei Federal nº 11.445/2007"},
+      {"norma": "Decreto Federal 7.217/2010", "trecho_literal": "o Decreto Federal nº 7.217/2010"},
+      {"norma": "Resoluções do CONAMA", "trecho_literal": "Resoluções do CONAMA"},
+      {"norma": "ABNT (normas técnicas)", "trecho_literal": "bem como normas técnicas da ABNT"},
+      {"norma": "Portarias do Ministério da Saúde e da Vigilância Sanitária", "trecho_literal": "Portarias do Ministério da Saúde e da Vigilância Sanitária"},
+      {"norma": "Contrato de Concessão", "trecho_literal": "nos termos do Contrato"},
+      {"norma": "Decreto Estadual nº 48.209/2022 (assinatura eletrônica SEI)", "trecho_literal": "Decreto nº 48.209, de 19 de setembro de 2022"}
+    ],
+    "decisoes_ou_pedidos": [
+      "Recomendação para a concessionária sanar as não conformidades constatadas",
+      "Enviar o histórico de manutenções realizadas na unidade",
+      "Enviar o plano de contingência em caso de inundação",
+      "Comprovar a destinação ambientalmente adequada dos resíduos sólidos da estação",
+      "Detalhar os procedimentos adotados em caso de interrupção do fornecimento de energia elétrica",
+      "Informar as características da EEE faltantes na Tabela 1"
+    ],
+    "retrabalho_ou_problema": "Data 'Em 09/05/2024' anterior à data do documento (05/06/2024) e às assinaturas (06/06 a 10/06/2024). Resposta sobre o destino do material retido cita outra unidade (EEE André Azevedo), indício de texto reaproveitado. Vários itens do anexo indicam registros fora da unidade; a Tabela 1 traz 'Não informado' para bombas reserva, vazão média e volume útil.",
+    "indicios_esforco": "Vistoria in loco com registro fotográfico (Fotos 1 a 19), checklist anexo de conservação, limpeza, operação e manutenção, medições de características técnicas, elaboração por três especialistas com revisão de engenheiro e aprovação do gerente."
+  },
+  {
+    "n": 2,
+    "sei": "76213730",
+    "tipo": "Relatório de Fiscalização",
+    "numero": "090/2024",
+    "paginas": "88-100",
+    "data_documento": "06/06/2024",
+    "unidade_emissora": "AGENERSA/CASAN",
+    "funcao_autor": "Especialistas em Regulação e Engenheiro (equipe de fiscalização)",
+    "destinatario": "",
+    "acao_no_processo": "vistoria_relatorio",
+    "resumo": "Primeira fiscalização programada do Bloco 1 à Estação Elevatória de Esgoto André Azevedo (EEE 16, citada também como Hipica), em Copacabana, realizada em 10/04/2024 com a unidade em operação automatizada. O relatório descreve gradeamento, poço de sucção, sala de bombas, inversores e telemetria, e registra um conjunto motobomba com aparente vazamento, extintor ausente em um dos locais previstos e quadros de comando sem advertência de risco elétrico. Recomendou que a concessionária sane as não conformidades e apresente o histórico de manutenções da estação.",
+    "fiscalizacao": {
+      "instalacao": "EEE 16 / André Azevedo (Hipica)",
+      "tipo_instalacao": "EEE",
+      "concessionaria": "Águas do Rio",
+      "municipio_bairro": "Rua Francisco Sá, 86 - Copacabana, Rio de Janeiro - RJ",
+      "data_vistoria": "10/04/2024",
+      "nao_conformidades": [
+        "Conjunto motobomba com aparente vazamento (Foto 17)",
+        "Extintor ausente em um dos dois locais previstos no hall de operação (Foto 10)",
+        "Quadros de comando sem advertência de risco elétrico (Foto 13)",
+        "Registros de manutenções não informados no anexo"
+      ],
+      "prazo_para_sanar": "",
+      "elaborado_revisado_aprovado": "Elaborado: Especialistas em Regulação (2) e Engenheiro (1); Revisado: Engenheiro; De acordo: Gerente da Câmara de Saneamento"
+    },
+    "prazos": [],
+    "valores": [],
+    "normas_citadas": [
+      {"norma": "Lei Federal 11.445/2007 (saneamento básico)", "trecho_literal": "a Lei Federal nº 11.445/2007"},
+      {"norma": "Decreto Federal 7.217/2010", "trecho_literal": "o Decreto Federal nº 7.217/2010"},
+      {"norma": "Resoluções do CONAMA", "trecho_literal": "às Resoluções do CONAMA"},
+      {"norma": "ABNT (normas técnicas)", "trecho_literal": "bem como normativas técnicas da ABNT"},
+      {"norma": "Portarias do Ministério da Saúde e da Vigilância Sanitária", "trecho_literal": "Portarias do Ministério da Saúde e da Vigilância Sanitária"},
+      {"norma": "Contrato de Concessão", "trecho_literal": "artigos do Contrato de Concessão"},
+      {"norma": "Decreto Estadual nº 48.209/2022 (assinatura eletrônica SEI)", "trecho_literal": "Decreto nº 48.209, de 19 de setembro de 2022"}
+    ],
+    "decisoes_ou_pedidos": [
+      "A concessionária deverá sanar as não conformidades constatadas pela equipe da AGENERSA",
+      "Solicitar à concessionária o histórico de manutenções da estação elevatória"
+    ],
+    "retrabalho_ou_problema": "Registros de manutenções marcados como 'Não informado' no anexo, com recomendação de envio posterior do histórico. Nome da unidade diverge entre o cabeçalho (EEE 16 / André Azevedo) e o texto (Hipica).",
+    "indicios_esforco": "Vistoria in loco com registro fotográfico (Fotos 1 a 19), descrição técnica detalhada (dimensões do poço e da sala de bombas, vazão, número de conjuntos), checklist anexo, elaboração por equipe com revisão de engenheiro e aprovação do gerente."
+  },
+  {
+    "n": 3,
+    "sei": "79901118",
+    "tipo": "Relatório de Fiscalização",
+    "numero": "159/2024",
+    "paginas": "101-106",
+    "data_documento": "30/07/2024",
+    "unidade_emissora": "AGENERSA/CASAN",
+    "funcao_autor": "Especialistas em Regulação e Engenheiro (equipe de fiscalização)",
+    "destinatario": "",
+    "acao_no_processo": "vistoria_relatorio",
+    "resumo": "Relatório de vistoria da operação da Estação Elevatória de Água Tratada (EEAT) Ojuara, em Cidade Nova, Rio Bonito/RJ, realizada em 26/06/2024 para verificar manutenção e operação. A unidade é um booster com conjunto motobomba de 7,5 CV, sem reserva, em abrigo subterrâneo lacrado, o que impediu avaliar o interior e o estado da bomba. Foram registradas três não conformidades (sinalização de risco elétrico, registros de manutenção e iluminação artificial), com recomendação para saná-las.",
+    "fiscalizacao": {
+      "instalacao": "EEAT Ojuara",
+      "tipo_instalacao": "EEAT",
+      "concessionaria": "Águas do Rio",
+      "municipio_bairro": "Rua Major Ferreira, 13 - Cidade Nova – Rio Bonito/RJ",
+      "data_vistoria": "26/06/2024",
+      "nao_conformidades": [
+        "Painel de automação sem sinalização de risco de choque elétrico",
+        "Falta de registros de manutenção in loco",
+        "Falta de iluminação artificial próxima ao painel"
+      ],
+      "prazo_para_sanar": "",
+      "elaborado_revisado_aprovado": "Elaborado: Especialistas em Regulação (2) e Engenheiro (1); Revisado: Engenheiro; De acordo: Gerente da Câmara de Saneamento"
+    },
+    "prazos": [],
+    "valores": [],
+    "normas_citadas": [
+      {"norma": "Lei Federal 11.445/2007 (saneamento básico)", "trecho_literal": "a Lei Federal nº 11.445/2007"},
+      {"norma": "Decreto Federal 7.217/2010", "trecho_literal": "o Decreto Federal nº 7.217/2010"},
+      {"norma": "Resoluções do CONAMA", "trecho_literal": "Resoluções do CONAMA"},
+      {"norma": "ABNT (normas técnicas)", "trecho_literal": "as normas técnicas da ABNT"},
+      {"norma": "Portarias do Ministério da Saúde e da Vigilância Sanitária", "trecho_literal": "as Portarias do Ministério da Saúde e Vigilância Sanitária"},
+      {"norma": "Contrato de Concessão", "trecho_literal": "do Contrato de Concessão"},
+      {"norma": "Decreto Estadual nº 48.209/2022 (assinatura eletrônica SEI)", "trecho_literal": "Decreto nº 48.209, de 19 de setembro de 2022"}
+    ],
+    "decisoes_ou_pedidos": [
+      "Sanar as não conformidades observadas",
+      "Providenciar sinalização de risco de choque elétrico no painel de automação",
+      "Providenciar registros in loco de manutenções realizadas",
+      "Providenciar iluminação artificial adequada"
+    ],
+    "retrabalho_ou_problema": "Abrigo subterrâneo totalmente lacrado, sem equipamento para abrir a tampa: não foi possível ver o interior, a bomba, iluminação natural e artificial, nem o estado de conservação do conjunto. No anexo, vários itens estão como 'Não foi possível fiscalizar' ou 'Não foi possível avaliar'.",
+    "indicios_esforco": "Vistoria in loco com registro fotográfico (Fotos 1 a 4), checklist anexo de conservação, operação e manutenção, elaboração por especialistas e engenheiro, revisão de engenheiro e aprovação do gerente."
+  },
+  {
+    "n": 4,
+    "sei": "80501066",
+    "tipo": "Ofício",
+    "numero": "682",
+    "paginas": "108-109",
+    "data_documento": "07/08/2024",
+    "unidade_emissora": "AGENERSA/CASAN",
+    "funcao_autor": "Gerente da Câmara de Saneamento",
+    "destinatario": "Diretor Presidente da Concessionária Águas do Rio - Bloco 1",
+    "acao_no_processo": "notificacao_concessionaria",
+    "resumo": "Ofício que encaminha à concessionária Águas do Rio cinco relatórios de fiscalização (nº 111, 123, 135, 134 e 159/2024, este último incluído nesta parte) e solicita manifestação sobre as orientações e recomendações técnicas neles apontadas. O prazo solicitado é de 30 dias. Assinado eletronicamente em 07/08/2024 e enviado por e-mail à concessionária em 08/08/2024 (SEI 80626379).",
+    "fiscalizacao": null,
+    "prazos": [
+      {"trecho_literal": "no prazo de 30 (trinta) dias", "quantidade": "30", "unidade": "dias"}
+    ],
+    "valores": [],
+    "normas_citadas": [
+      {"norma": "Decreto Estadual nº 48.209/2022 (assinatura eletrônica SEI)", "trecho_literal": "Decreto nº 48.209, de 19 de setembro de 2022"}
+    ],
+    "decisoes_ou_pedidos": [
+      "Solicitar manifestação da concessionária, no prazo de 30 dias, sobre as orientações e recomendações técnicas dos relatórios 111, 123, 135, 134 e 159/2024"
+    ],
+    "retrabalho_ou_problema": "",
+    "indicios_esforco": "Consolidação de cinco relatórios técnicos no mesmo expediente, com solicitação de manifestação formal dentro de prazo."
+  },
+  {
+    "n": 5,
+    "sei": "80626379",
+    "tipo": "E-mail",
+    "numero": "",
+    "paginas": "110",
+    "data_documento": "08/08/2024",
+    "unidade_emissora": "AGENERSA/CASAN",
+    "funcao_autor": "Assistente / CASAN",
+    "destinatario": "Concessionária Águas do Rio (setor regulatório)",
+    "acao_no_processo": "encaminhamento",
+    "resumo": "E-mail enviado pelo sistema SEI à concessionária Águas do Rio encaminhando o Ofício AGENERSA/CASAN nº 682 (SEI 80501066) para manifestação, com o ofício em anexo. Enviado em 08/08/2024, um dia após a assinatura do ofício.",
+    "fiscalizacao": null,
+    "prazos": [],
+    "valores": [],
+    "normas_citadas": [],
+    "decisoes_ou_pedidos": [
+      "Encaminhamento do Ofício 682 à concessionária para manifestação"
+    ],
+    "retrabalho_ou_problema": "",
+    "indicios_esforco": "Remessa eletrônica com anexo do ofício."
+  },
+  {
+    "n": 6,
+    "sei": "80655356",
+    "tipo": "Relatório de Fiscalização",
+    "numero": "155/2024",
+    "paginas": "111-117",
+    "data_documento": "09/08/2024",
+    "unidade_emissora": "AGENERSA/CASAN",
+    "funcao_autor": "Engenheiros (equipe de fiscalização)",
+    "destinatario": "",
+    "acao_no_processo": "vistoria_relatorio",
+    "resumo": "Relatório de fiscalização periódica da operação e manutenção da Estação Elevatória de Água Tratada 791 - Canal, em Magé/RJ, vistoriada em 16/07/2024 com o equipamento em operação e pressão de recalque de 20 mca. Registrou não conformidades de conservação do abrigo, identificação, conservação e proteção do conjunto motobomba e do painel elétrico, ausência de dispositivo antigolpe e de iluminação, e registros de manutenção fora da unidade. Recomendou saná-las no prazo de 30 dias e concluiu que a elevatória supre a função de pressão para a área de influência.",
+    "fiscalizacao": {
+      "instalacao": "EEAT 791 - Canal",
+      "tipo_instalacao": "EEAT",
+      "concessionaria": "Águas do Rio",
+      "municipio_bairro": "Av. Duque de Caxias nº 42, bairro Centro, Magé, RJ",
+      "data_vistoria": "16/07/2024",
+      "nao_conformidades": [
+        "Abrigo da estação elevatória mal conservado",
+        "Falta de identificação na estação elevatória",
+        "Falta de conservação no conjunto motobomba",
+        "Inexistência de espaço interno para trabalhos no conjunto motobomba",
+        "Não há dispositivo de proteção antigolpe",
+        "Registros de manutenção não mantidos no local",
+        "Não há iluminação natural nem artificial suficiente no abrigo",
+        "Equipamentos elétricos não adequadamente protegidos",
+        "Disjuntor solto no painel elétrico (foto 6)"
+      ],
+      "prazo_para_sanar": "no prazo de 30 (trinta) dias",
+      "elaborado_revisado_aprovado": "Elaborado: Engenheiros (2); Revisado: Engenheiro; De acordo: Gerente da Câmara de Saneamento"
+    },
+    "prazos": [
+      {"trecho_literal": "no prazo de 30 (trinta) dias", "quantidade": "30", "unidade": "dias"}
+    ],
+    "valores": [],
+    "normas_citadas": [
+      {"norma": "Lei Federal 11.445/2007 (saneamento básico)", "trecho_literal": "a Lei Federal nº 11.445/2007"},
+      {"norma": "Decreto Federal 7.217/2010", "trecho_literal": "o Decreto Federal nº 7.217/2010"},
+      {"norma": "Resoluções do CONAMA", "trecho_literal": "Resoluções do CONAMA"},
+      {"norma": "ABNT (normas técnicas)", "trecho_literal": "da ABNT"},
+      {"norma": "Portarias do Ministério da Saúde e da Vigilância Sanitária", "trecho_literal": "bem como as Portarias do Ministério da Saúde e Vigilância Sanitária"},
+      {"norma": "Contrato de Concessão", "trecho_literal": "nos termos do Contrato"},
+      {"norma": "Decreto Estadual nº 48.209/2022 (assinatura eletrônica SEI)", "trecho_literal": "Decreto nº 48.209, de 19 de setembro de 2022"}
+    ],
+    "decisoes_ou_pedidos": [
+      "Reparo no abrigo da estação elevatória",
+      "Identificação da unidade",
+      "Manutenção no conjunto motobomba",
+      "Instalação de dispositivo de proteção antigolpe",
+      "Registros de manutenção do equipamento disponíveis no local",
+      "Instalação de iluminação artificial na unidade",
+      "Proteção dos equipamentos elétricos"
+    ],
+    "retrabalho_ou_problema": "Pressão de sucção não medida por falta de ponto disponível. Conjunto motobomba reserva e registros de manutenção ficam no Setor de Eletromecânica, fora da unidade. Itens de reparo do abrigo e de manutenção do conjunto motobomba seguem pendentes na data do relatório.",
+    "indicios_esforco": "Vistoria in loco com medição de pressão de recalque, registro fotográfico (Fotos 1 a 7), inspeção do abrigo e do painel elétrico, checklist anexo, informações do supervisor de operações da concessionária, elaboração por dois engenheiros com revisão e aprovação do gerente."
+  }
+]

@@ -1,0 +1,346 @@
+[
+ {
+  "n": 1,
+  "sei": "80654568",
+  "tipo": "Relatório de Fiscalização",
+  "numero": "156/2024",
+  "paginas": "118-125",
+  "data_documento": "09/08/2024",
+  "unidade_emissora": "CASAN",
+  "funcao_autor": "Engenheiro / CASAN (elaboração e revisão); Gerente da Câmara de Saneamento (de acordo)",
+  "destinatario": "Concessionária Águas do Rio (recomendações e exigências)",
+  "acao_no_processo": "vistoria_relatorio",
+  "resumo": "Relatório de vistoria programada realizada em 16/07/2024 na EEAT 790 - Mageense, em Magé/RJ, da Concessionária Águas do Rio (Bloco 1), para verificar condições de operação e manutenção. A bomba centrífuga de 7,5 CV estava em operação, com pressão de retaguarda de 2 mca e de recalque de 12 mca. Foram constatadas seis não conformidades, com recomendação de saná-las em 30 dias. A conclusão técnica é que a elevatória supre a função de pressão manométrica para a área de influência, com ressalvas de conservação e segurança.",
+  "fiscalizacao": {
+   "instalacao": "EEAT 790 - Mageense",
+   "tipo_instalacao": "EEAT",
+   "concessionaria": "Águas do Rio",
+   "municipio_bairro": "Flexeiras, Magé/RJ",
+   "data_vistoria": "16/07/2024",
+   "nao_conformidades": [
+    "Falta de identificação na estação elevatória",
+    "Registros de manutenção não mantidos no local",
+    "Existência de vazamentos na EEAT",
+    "Não há dispositivo de proteção antigolpe",
+    "Manômetros do abrigo fora de operação",
+    "Abrigo sem sinalização do risco de choque elétrico"
+   ],
+   "prazo_para_sanar": "no prazo de 30 (trinta) dias",
+   "elaborado_revisado_aprovado": "Engenheiro / CASAN (elaboração, dois engenheiros); Engenheiro / CASAN (revisão); Gerente da Câmara de Saneamento (de acordo)"
+  },
+  "prazos": [
+   {"trecho_literal": "no prazo de 30 (trinta) dias", "quantidade": "30", "unidade": "dias"}
+  ],
+  "valores": [
+   {"descricao": "Potência do conjunto motobomba", "valor_literal": "7,5 CV"},
+   {"descricao": "Pressão manométrica de retaguarda em operação", "valor_literal": "2 mca"},
+   {"descricao": "Pressão manométrica de recalque em operação", "valor_literal": "12 mca"}
+  ],
+  "normas_citadas": [
+   {"norma": "Lei 11.445/2007", "trecho_literal": "Lei Federal nº 11.445/2007"},
+   {"norma": "Decreto 7.217/2010", "trecho_literal": "Decreto Federal nº 7.217/2010"},
+   {"norma": "Resoluções CONAMA", "trecho_literal": "Resoluções do CONAMA"},
+   {"norma": "Portarias do Ministério da Saúde", "trecho_literal": "Portarias do Ministério da Saúde e Vigilância Sanitária"},
+   {"norma": "Decreto 48.209/2022 (assinatura eletrônica)", "trecho_literal": "Decreto nº 48.209, de 19 de setembro de 2022"}
+  ],
+  "decisoes_ou_pedidos": [
+   "Providenciar a identificação da estação elevatória",
+   "Manter no local os registros de manutenção do equipamento",
+   "Reparar os vazamentos na EEAT",
+   "Instalar dispositivo de proteção antigolpe",
+   "Colocar em operação os dois manômetros do abrigo",
+   "Sinalizar o risco de choque elétrico no abrigo"
+  ],
+  "retrabalho_ou_problema": "Não há conjunto motobomba reserva exclusivo para a unidade; os conjuntos e os registros de manutenção ficam no Setor de Eletromecânica, e não no local; manômetros fora de operação; transferência futura da EEAT para abrigo de alvenaria, sem data informada.",
+  "indicios_esforco": "Vistoria in loco com fotos 1 a 7 (localização, abrigo, motobomba, tubulações, painel, manômetros); anexo com checklist de 17 itens; revisão e De acordo em cadeia (dois engenheiros, revisor e gerente)."
+ },
+ {
+  "n": 2,
+  "sei": "80656194",
+  "tipo": "Relatório de Fiscalização",
+  "numero": "157/2024",
+  "paginas": "126-130",
+  "data_documento": "09/08/2024",
+  "unidade_emissora": "CASAN",
+  "funcao_autor": "Engenheiro / CASAN (elaboração e revisão); Gerente da Câmara de Saneamento (de acordo)",
+  "destinatario": "Concessionária Águas do Rio (recomendações e exigências)",
+  "acao_no_processo": "vistoria_relatorio",
+  "resumo": "Relatório de vistoria programada realizada em 16/07/2024 na EEAT 792 - Presídio I, em Magé/RJ, da Concessionária Águas do Rio (Bloco 1), para verificar condições de operação e manutenção. A elevatória é abastecida pelo Sistema Santo Aleixo e está em abrigo subterrâneo sem identificação; os painéis elétrico e da motobomba não puderam ser abertos, pois a chave fica no Setor de Eletromecânica. Foram constatadas seis não conformidades, com recomendação de saná-las em 30 dias. A conclusão técnica é que a elevatória supre a função de pressão manométrica.",
+  "fiscalizacao": {
+   "instalacao": "EEAT 792 - Presídio I",
+   "tipo_instalacao": "EEAT",
+   "concessionaria": "Águas do Rio",
+   "municipio_bairro": "Figueira, Magé/RJ",
+   "data_vistoria": "16/07/2024",
+   "nao_conformidades": [
+    "Falta de identificação na estação elevatória",
+    "Abrigo da elevatória não é restrito",
+    "EEAT não permite livre circulação de operadores nem facilidade para manutenção",
+    "Abrigo subterrâneo sem iluminação (artificial e natural) e sem livre circulação de ar",
+    "Existência de vazamento",
+    "Falta de registros de manutenção in loco"
+   ],
+   "prazo_para_sanar": "no prazo de 30 (trinta) dias",
+   "elaborado_revisado_aprovado": "Engenheiro / CASAN (elaboração, dois engenheiros); Engenheiro / CASAN (revisão); Gerente da Câmara de Saneamento (de acordo)"
+  },
+  "prazos": [
+   {"trecho_literal": "no prazo de 30 (trinta) dias", "quantidade": "30", "unidade": "dias"}
+  ],
+  "valores": [
+   {"descricao": "Pressão manométrica média de recalque (informada)", "valor_literal": "20 mca"},
+   {"descricao": "Pressão manométrica média de retaguarda (informada)", "valor_literal": "6 mca"},
+   {"descricao": "Tubulação de retaguarda", "valor_literal": "150 mm"},
+   {"descricao": "Tubulação de recalque", "valor_literal": "100 mm"},
+   {"descricao": "Potência do motor", "valor_literal": "7,5 CV"}
+  ],
+  "normas_citadas": [
+   {"norma": "Lei 11.445/2007", "trecho_literal": "Lei Federal nº 11.445/2007"},
+   {"norma": "Decreto 7.217/2010", "trecho_literal": "Decreto Federal nº 7.217/2010"},
+   {"norma": "Resoluções CONAMA", "trecho_literal": "Resoluções do CONAMA"},
+   {"norma": "Portarias do Ministério da Saúde", "trecho_literal": "Portarias do Ministério da Saúde e Vigilância Sanitária"},
+   {"norma": "Decreto 48.209/2022 (assinatura eletrônica)", "trecho_literal": "Decreto nº 48.209, de 19 de setembro de 2022"}
+  ],
+  "decisoes_ou_pedidos": [
+   "Providenciar a identificação da unidade",
+   "Restringir a entrada no abrigo da elevatória a pessoas autorizadas",
+   "Manter registros in loco das manutenções realizadas",
+   "Reparar o vazamento"
+  ],
+  "retrabalho_ou_problema": "Chave do painel mantida no Setor de Eletromecânica, impedindo a abertura dos painéis na vistoria (equipamentos elétricos não verificados); registros de manutenção no Setor de Eletromecânica; não há conjunto motobomba reserva exclusivo.",
+  "indicios_esforco": "Vistoria in loco com fotos 1 a 3 (localização, abrigo do painel, motobomba); anexo com checklist de 17 itens, com um item não verificado; revisão e De acordo em cadeia."
+ },
+ {
+  "n": 3,
+  "sei": "80656240",
+  "tipo": "Relatório de Fiscalização",
+  "numero": "158/2024",
+  "paginas": "131-137",
+  "data_documento": "09/08/2024",
+  "unidade_emissora": "CASAN",
+  "funcao_autor": "Engenheiro / CASAN (elaboração e revisão); Gerente da Câmara de Saneamento (de acordo)",
+  "destinatario": "Concessionária Águas do Rio (recomendações e exigências)",
+  "acao_no_processo": "vistoria_relatorio",
+  "resumo": "Relatório de vistoria programada realizada em 16/07/2024 na EEAT 794 - Meu Boi, no bairro do Saco, em Magé/RJ, da Concessionária Águas do Rio (Bloco 1). A estação está em abrigo subterrâneo de aço sem identificação, com tampa presa por um parafuso, e o painel elétrico do abrigo de alvenaria está oxidado, sem tampa e com fios aparentes, o que o relatório classifica como perigo a pedestres. A bomba estava fora de operação, com água no poço e fiação fora dos padrões normativos. Foram constatadas nove não conformidades, com recomendação de saná-las em 30 dias e reparo urgente do abrigo.",
+  "fiscalizacao": {
+   "instalacao": "EEAT 794 - Meu Boi",
+   "tipo_instalacao": "EEAT",
+   "concessionaria": "Águas do Rio",
+   "municipio_bairro": "Saco, Magé/RJ",
+   "data_vistoria": "16/07/2024",
+   "nao_conformidades": [
+    "Abrigo de alvenaria mal conservado",
+    "Falta de identificação e sinalização no abrigo de alvenaria",
+    "Fiação no interior do abrigo fora dos padrões normativos e sem proteção",
+    "Espaço interno reduzido para manutenção do conjunto motobomba",
+    "Não há iluminação natural nem artificial no abrigo",
+    "Acesso à elevatória não é restrito",
+    "Painel elétrico oxidado, sem tampa e com fios aparentes",
+    "Não há livre circulação de ar",
+    "Conjunto motobomba não está bem conservado"
+   ],
+   "prazo_para_sanar": "no prazo de 30 (trinta) dias",
+   "elaborado_revisado_aprovado": "Engenheiro / CASAN (elaboração, dois engenheiros); Engenheiro / CASAN (revisão); Gerente da Câmara de Saneamento (de acordo)"
+  },
+  "prazos": [
+   {"trecho_literal": "no prazo de 30 (trinta) dias", "quantidade": "30", "unidade": "dias"}
+  ],
+  "valores": [
+   {"descricao": "Pressão manométrica média de retaguarda (informada)", "valor_literal": "5 mca"},
+   {"descricao": "Pressão manométrica média de recalque (informada)", "valor_literal": "15 mca"},
+   {"descricao": "Tubulação de retaguarda", "valor_literal": "DN 200 mm"},
+   {"descricao": "Tubulação de recalque", "valor_literal": "DN 150 mm"},
+   {"descricao": "Potência do equipamento", "valor_literal": "7,5 CV"}
+  ],
+  "normas_citadas": [
+   {"norma": "Lei 11.445/2007", "trecho_literal": "Lei Federal nº 11.445/2007"},
+   {"norma": "Decreto 7.217/2010", "trecho_literal": "Decreto Federal nº 7.217/2010"},
+   {"norma": "Resoluções CONAMA", "trecho_literal": "Resoluções do CONAMA"},
+   {"norma": "Portarias do Ministério da Saúde", "trecho_literal": "Portarias do Ministério da Saúde e Vigilância Sanitária"},
+   {"norma": "ABNT (sinalização de risco de choque elétrico)", "trecho_literal": "sinalização de risco de choque elétrico conforme determina ABNT"},
+   {"norma": "Decreto 48.209/2022 (assinatura eletrônica)", "trecho_literal": "Decreto nº 48.209, de 19 de setembro de 2022"}
+  ],
+  "decisoes_ou_pedidos": [
+   "Reparo urgente no abrigo da estação elevatória",
+   "Identificação da unidade",
+   "Sinalização de risco de choque elétrico conforme ABNT",
+   "Instalação de conduítes para as fiações",
+   "Restrição do acesso à elevatória",
+   "Substituição da caixa de ferro do painel elétrico",
+   "Manutenção no conjunto motobomba",
+   "Manter no local os registros de manutenção do equipamento"
+  ],
+  "retrabalho_ou_problema": "O relatório afirma que a concessionária não vem realizando, de forma constante, a conservação, o bom estado de operação e a manutenção da EEAT 794; operação intermitente (dois períodos de 12 horas por semana); chave do painel e registros de manutenção no Setor de Eletromecânica; não há conjunto motobomba reserva exclusivo.",
+  "indicios_esforco": "Vistoria in loco com fotos 1 a 6 (frente, abrigos, painel elétrico, motobomba, poço com água, fiação); inspeção interna do poço; anexo com checklist de 17 itens; revisão e De acordo em cadeia."
+ },
+ {
+  "n": 4,
+  "sei": "82718456",
+  "tipo": "Ofício",
+  "numero": "757/2024",
+  "paginas": "138-139",
+  "data_documento": "06/09/2024",
+  "unidade_emissora": "CASAN",
+  "funcao_autor": "Gerente da Câmara de Saneamento",
+  "destinatario": "Diretor Presidente da Concessionária Águas do Rio - Bloco 1",
+  "acao_no_processo": "programacao",
+  "resumo": "Ofício da CASAN à Concessionária Águas do Rio (Bloco 1) solicitando o agendamento de vistoria técnica em 26 unidades dos municípios de Cambuci (11) e Miracema (15), entre estações elevatórias de água bruta e tratada, ETAs, estações de reservação e poços de captação subterrânea. As datas indicadas para as vistorias são 10/09/2024, 11/09/2024 e 12/09/2024. O ofício foi assinado em 09/09/2024 e encaminhado à concessionária por e-mail (documento 82834832).",
+  "fiscalizacao": null,
+  "prazos": [],
+  "valores": [],
+  "normas_citadas": [
+   {"norma": "Decreto 48.209/2022 (assinatura eletrônica)", "trecho_literal": "Decreto nº 48.209, de 19 de setembro de 2022"}
+  ],
+  "decisoes_ou_pedidos": [
+   "Agendar vistoria técnica nas 26 unidades listadas (Cambuci e Miracema)",
+   "Realizar as vistorias em 10/09/2024, 11/09/2024 e 12/09/2024"
+  ],
+  "retrabalho_ou_problema": "",
+  "indicios_esforco": "Lista de 26 unidades identificadas por código de ativo, com programação de três dias de vistoria."
+ },
+ {
+  "n": 5,
+  "sei": "82834832",
+  "tipo": "E-mail",
+  "numero": "",
+  "paginas": "140-140",
+  "data_documento": "09/09/2024",
+  "unidade_emissora": "CASAN",
+  "funcao_autor": "Assistente / CASAN",
+  "destinatario": "Área regulatória da Concessionária Águas do Rio",
+  "acao_no_processo": "encaminhamento",
+  "resumo": "E-mail enviado pelo sistema SEI em 09/09/2024, às 14:42, encaminhando à área regulatória da Concessionária Águas do Rio, para conhecimento, o Ofício AGENERSA/CASAN nº 757/2024 (vistoria técnica). O arquivo do ofício segue anexo ao e-mail. Não há prazo, valor ou pedido adicional além do conhecimento do ofício.",
+  "fiscalizacao": null,
+  "prazos": [],
+  "valores": [],
+  "normas_citadas": [],
+  "decisoes_ou_pedidos": [],
+  "retrabalho_ou_problema": "",
+  "indicios_esforco": ""
+ },
+ {
+  "n": 6,
+  "sei": "82895573",
+  "tipo": "Relatório de Fiscalização",
+  "numero": "153/2024",
+  "paginas": "141-147",
+  "data_documento": "10/09/2024",
+  "unidade_emissora": "CASAN",
+  "funcao_autor": "Engenheiro / CASAN (elaboração e revisão); Gerente da Câmara de Saneamento (de acordo)",
+  "destinatario": "Concessionária Águas do Rio (recomendações e exigências)",
+  "acao_no_processo": "vistoria_relatorio",
+  "resumo": "Relatório de fiscalização programada da ETA Magé, do Sistema Roncador, em Boa Esperança/Magé, operada pela Concessionária Águas do Rio, com vistoria em 16/07/2024. A estação, toda metálica e em bom estado de conservação, operava com dois dos quatro módulos, com vazão de 115 l/s no dia da vistoria e média de 160 l/s. A centrífuga do lodo nunca foi utilizada desde a Concessão, e o lodo dos decantadores é descartado na galeria de águas pluviais, que deságua em rio próximo, causando poluição ambiental. A fiscalização solicitou solução definitiva com cronograma no prazo de 30 dias.",
+  "fiscalizacao": {
+   "instalacao": "ETA Magé (Sistema Roncador)",
+   "tipo_instalacao": "ETA",
+   "concessionaria": "Águas do Rio",
+   "municipio_bairro": "Boa Esperança, Magé/RJ",
+   "data_vistoria": "16/07/2024",
+   "nao_conformidades": [
+    "Descarte de lodo na GAP (galeria de águas pluviais), apesar de centrífuga nunca utilizada desde a Concessão",
+    "Vazão média de 160 l/s não atende a 70% da população de Magé, segundo informado pela Concessionária"
+   ],
+   "prazo_para_sanar": "no prazo de 30 (trinta) dias",
+   "elaborado_revisado_aprovado": "Engenheiro / CASAN (elaboração, dois engenheiros); Engenheiro / CASAN (revisão); Gerente da Câmara de Saneamento (de acordo)"
+  },
+  "prazos": [
+   {"trecho_literal": "no prazo de 30 (trinta) dias", "quantidade": "30", "unidade": "dias"}
+  ],
+  "valores": [
+   {"descricao": "Vazão de projeto (EEAB e ETA)", "valor_literal": "330 l/s"},
+   {"descricao": "Vazão média de operação informada", "valor_literal": "160 l/s"},
+   {"descricao": "Vazão no dia da vistoria", "valor_literal": "115 l/s"},
+   {"descricao": "Adição de hipoclorito (tabela técnica)", "valor_literal": "2,0 mg/l"}
+  ],
+  "normas_citadas": [
+   {"norma": "Lei 11.445/2007", "trecho_literal": "Federal nº 11.445/2007"},
+   {"norma": "Decreto 7.217/2010", "trecho_literal": "Decreto Federal nº 7.217/2010"},
+   {"norma": "Resoluções CONAMA", "trecho_literal": "Resoluções do CONAMA"},
+   {"norma": "Portarias do Ministério da Saúde", "trecho_literal": "Portarias do Ministério da Saúde e da Vigilância Sanitária"},
+   {"norma": "Contrato de Concessão (Bloco 1)", "trecho_literal": "Contrato de Concessão"},
+   {"norma": "Decreto 48.209/2022 (assinatura eletrônica)", "trecho_literal": "Decreto nº 48.209, de 19 de setembro de 2022"}
+  ],
+  "decisoes_ou_pedidos": [
+   "Apresentar, no prazo de 30 dias, solução definitiva com respectivo cronograma para eliminar o lançamento do lodo dos decantadores na galeria de águas pluviais"
+  ],
+  "retrabalho_ou_problema": "Centrífuga inoperante desde o início da Concessão, sem justificativa, segundo os técnicos da concessionária; lodo lançado na GAP e no corpo receptor próximo; projeto de incorporação da centrífuga mencionado sem data.",
+  "indicios_esforco": "Vistoria in loco com fotos 1 a 16 (reservatório de água bruta, mistura rápida, floculadores, decantadores, filtros, centrífuga); tabela técnica da estação; revisão e De acordo em cadeia; sem checklist."
+ },
+ {
+  "n": 7,
+  "sei": "86162193",
+  "tipo": "Relatório de Fiscalização",
+  "numero": "259/2024",
+  "paginas": "148-154",
+  "data_documento": "24/10/2024",
+  "unidade_emissora": "CASAN",
+  "funcao_autor": "Engenheiro / CASAN (elaboração e revisão); Gerente da Câmara de Saneamento (de acordo)",
+  "destinatario": "Concessionária Águas do Rio (acompanhamento da obra)",
+  "acao_no_processo": "vistoria_relatorio",
+  "resumo": "Relatório de vistoria periódica sobre o andamento e a qualidade da obra de reforma da EEE Parafuso, em Copacabana, Rio de Janeiro, do Sistema de Esgotamento Sanitário da Zona Sul, com vistoria informada em 14/08/2024. Na descrição, a obra estava na fase de cura do concreto das paredes, com concretagem concluída em 05/09/2024, e aguardava a recolocação do parafuso reformado e do conjunto motobomba. O representante da concessionária previu término para o final do ano, prazo que a fiscalização considera não cumprível. Não foram verificadas não conformidades na fase atual; a recomendação é informar a conclusão do reparo do parafuso e do conjunto motobomba do poço 1 para acompanhamento.",
+  "fiscalizacao": {
+   "instalacao": "EEE Parafuso (obra de reforma)",
+   "tipo_instalacao": "EEE",
+   "concessionaria": "Águas do Rio",
+   "municipio_bairro": "Copacabana, Rio de Janeiro/RJ",
+   "data_vistoria": "14/08/2024",
+   "nao_conformidades": [],
+   "prazo_para_sanar": "",
+   "elaborado_revisado_aprovado": "Engenheiro / CASAN (elaboração e revisão); Gerente da Câmara de Saneamento (de acordo)"
+  },
+  "prazos": [
+   {"trecho_literal": "para o final do ano", "quantidade": "", "unidade": "data"}
+  ],
+  "valores": [],
+  "normas_citadas": [
+   {"norma": "Lei 11.445/2007", "trecho_literal": "Federal nº 11.445/2007 e o Decreto Federal nº 7.217/2010"},
+   {"norma": "Resoluções CONAMA", "trecho_literal": "Resoluções do CONAMA"},
+   {"norma": "Portarias do Ministério da Saúde", "trecho_literal": "Portarias do Ministério da Saúde e da Vigilância Sanitária"},
+   {"norma": "Contrato de Concessão (Bloco 1)", "trecho_literal": "Concessão dos Serviços Públicos de Fornecimento de Água e Esgotamento Sanitário nos Municípios do Bloco 1"},
+   {"norma": "Decreto 48.209/2022 (assinatura eletrônica)", "trecho_literal": "Decreto nº 48.209, de 19 de setembro de 2022"}
+  ],
+  "decisoes_ou_pedidos": [
+   "Informar quando o reparo do parafuso e do conjunto motobomba do poço 1 estiver concluído, para acompanhamento da montagem pela AGENERSA"
+  ],
+  "retrabalho_ou_problema": "Cronograma de obra considerado improvável pela fiscalização após quatro meses de obra; o representante não soube informar prazo de chegada e montagem dos equipamentos. Inconsistência de datação: a vistoria de 14/08/2024 é descrita com concretagem concluída em 05/09/2024. A mesma vistoria aparece no relatório 209/2024 com fase de obra diferente (demolição do recobrimento).",
+  "indicios_esforco": "Vistoria in loco com 10 fotos (localização, trajeto do esgoto, poço 4 após concretagem, paredes, reparo da base do acoplamento, instalações de apoio); acompanhamento de fase de obra; revisão e De acordo em cadeia."
+ },
+ {
+  "n": 8,
+  "sei": "86161531",
+  "tipo": "Relatório de Fiscalização",
+  "numero": "209/2024",
+  "paginas": "155-160",
+  "data_documento": "24/10/2024",
+  "unidade_emissora": "CASAN",
+  "funcao_autor": "Engenheiro / CASAN (elaboração e revisão); Gerente da Câmara de Saneamento (de acordo)",
+  "destinatario": "Concessionária Águas do Rio (acompanhamento da obra)",
+  "acao_no_processo": "vistoria_relatorio",
+  "resumo": "Relatório de vistoria periódica sobre o andamento e a qualidade da reforma da EEE Parafuso, em Copacabana, com vistoria informada em 14/08/2024. Na fase relatada, foram colocadas comportas metálicas para isolar o poço 4, retirados o parafuso, o conjunto motobomba e o acoplamento para reparo fora do canteiro, e demolido o recobrimento de concreto das paredes para nova armadura. O canteiro está limpo e organizado, e a fiscalização considera que o prazo informado (final do ano) não será cumprido. Não foram verificadas não conformidades nesta fase; recomenda-se avaliar reforço estrutural nos demais poços dos parafusos, pois a armadura do primeiro poço está íntegra.",
+  "fiscalizacao": {
+   "instalacao": "EEE Parafuso (obra de reforma)",
+   "tipo_instalacao": "EEE",
+   "concessionaria": "Águas do Rio",
+   "municipio_bairro": "Copacabana, Rio de Janeiro/RJ",
+   "data_vistoria": "14/08/2024",
+   "nao_conformidades": [],
+   "prazo_para_sanar": "",
+   "elaborado_revisado_aprovado": "Engenheiro / CASAN (elaboração e revisão); Gerente da Câmara de Saneamento (de acordo)"
+  },
+  "prazos": [
+   {"trecho_literal": "para o final do ano", "quantidade": "", "unidade": "data"}
+  ],
+  "valores": [],
+  "normas_citadas": [
+   {"norma": "Lei 11.445/2007", "trecho_literal": "Federal nº 11.445/2007 e o Decreto Federal nº 7.217/2010"},
+   {"norma": "Resoluções CONAMA", "trecho_literal": "Resoluções do CONAMA"},
+   {"norma": "Portarias do Ministério da Saúde", "trecho_literal": "Portarias do Ministério da Saúde e da Vigilância Sanitária"},
+   {"norma": "Contrato de Concessão (Bloco 1)", "trecho_literal": "Concessão dos Serviços Públicos de Fornecimento de Água e Esgotamento Sanitário nos Municípios do Bloco 1"},
+   {"norma": "Decreto 48.209/2022 (assinatura eletrônica)", "trecho_literal": "Decreto nº 48.209, de 19 de setembro de 2022"}
+  ],
+  "decisoes_ou_pedidos": [
+   "Avaliar a necessidade de reforço estrutural nos demais poços dos parafusos"
+  ],
+  "retrabalho_ou_problema": "Dois relatórios (209/2024 e 259/2024) tratam da mesma vistoria de 14/08/2024 com fases de obra diferentes (demolição do recobrimento neste; cura do concreto no 259), sem indicação de nova vistoria. O prazo de término informado é considerado não cumprível pela própria fiscalização.",
+  "indicios_esforco": "Vistoria in loco com 10 fotos (localização, trajeto do esgoto, comportas do poço 4, parede apicoada, nova armadura, canteiro, instalações de apoio); revisão e De acordo em cadeia."
+ }
+]

@@ -1,0 +1,572 @@
+{
+ "codigo": "FIS",
+ "versao_especificacao": "ESPECIFICACAO_AVALIACAO.md, versões 2 (ancoragem em fatos) e 3 (situação do código e variabilidade como dispersão), adaptadas a um processo com vários casos internos",
+ "fontes": "mapeamento/fatos_FIS.json e mapeamento/casos_FIS.json (fatos citados pelo id entre parênteses), fichas/fichas_parte1..6.json, mapeamento/modelo_FIS.json, mapeamento/vinculos_FIS.json, mapeamento/evidencias_FIS.md. Sem trilha de andamentos do SEI: nenhuma conclusão se apoia em permanência de unidade; horas de trabalho não medidas.",
+ "sintese": "Situação: estudo de caso de um único processo anual, com indicativo por relatório — cada um dos 23 relatórios do PDF (casos.total) é um caso do subprocesso vistoria → relatório → \"De acordo\" → ofício, mas os autos exportados são um recorte (23 relatórios no PDF, contagem.relatorios_no_pdf, contra 42 listados no parecer anual, contagem.relatorios_citados_parecer); nada aqui é padrão da agência. Dentro da CASAN, o tempo se concentra entre a vistoria e a 1ª assinatura do relatório (mediana de 34 du entre os relatórios, casos.vistoria_1a_assinatura.mediana_du), bem acima da revisão até o \"De acordo\" (mediana de 4,5 du entre os relatórios, casos.revisao_aprovacao.mediana_du) e do \"De acordo\" ao ofício (mediana de 1 du entre os relatórios oficiados, casos.aprovacao_oficio.mediana_du). O fluxo funciona em lotes (7 dias distintos de \"De acordo\", lotes.aprovacao.n) e com cadeia de assinaturas não padronizada (8 cadeias distintas, casos.cadeias_distintas). Depois do envio, o recorte tem um único parecer consolidado sobre as respostas do ano, assinado 159 du depois do último ofício (intervalo.ultimo_oficio_parecer_du), tempo que mistura o prazo da concessionária, análise e fila, não separáveis. Defeitos de forma recorrentes nos relatórios (datas internas divergentes, texto de modelo de outro município ou sistema, nome da unidade divergente entre cabeçalho e texto) e relatórios aprovados sem ofício de encaminhamento nos autos exportados são os principais riscos de controle.",
+ "fatos_sintese": [
+  "casos.total",
+  "contagem.relatorios_no_pdf",
+  "contagem.relatorios_citados_parecer",
+  "casos.vistoria_1a_assinatura.mediana_du",
+  "casos.revisao_aprovacao.mediana_du",
+  "casos.aprovacao_oficio.mediana_du",
+  "lotes.aprovacao.n",
+  "casos.cadeias_distintas",
+  "intervalo.ultimo_oficio_parecer_du"
+ ],
+ "leitura_metricas": "Ciclo de cada relatório, da vistoria ao e-mail à concessionária: mediana de 62 du entre os 9 relatórios com os dois marcos (casos.vistoria_email.mediana_du; casos.vistoria_email.n), de 31 du a 173 du (casos.vistoria_email.min_du; casos.vistoria_email.max_du). Considerando todos os relatórios com vistoria datada, não só os oficiados nos autos, o trecho vistoria → 1ª assinatura (mediana de 34 du entre os relatórios, casos.vistoria_1a_assinatura.mediana_du) mistura redação e espera e não se separa sem andamentos; o texto recebe a data do cabeçalho perto da assinatura (mediana de 1 du entre os relatórios, casos.redacao_1a_assinatura.mediana_du). A revisão até o \"De acordo\" tem mediana de 4,5 du entre os relatórios (casos.revisao_aprovacao.mediana_du), dos quais o intervalo entre a última assinatura técnica e o \"De acordo\" tem mediana de 2 du entre os relatórios (casos.ultima_tecnica_aprovacao.mediana_du); o ofício sai com mediana de 1 du entre os relatórios oficiados (casos.aprovacao_oficio.mediana_du) e o e-mail com mediana de 0 du entre os relatórios oficiados (casos.oficio_email.mediana_du). Assinaturas: mediana de 4 assinaturas por relatório (casos.assinaturas.mediana) em mediana de 3 dias distintos por relatório (casos.dias_com_assinatura.mediana). Fora do ciclo do relatório, o último ofício só foi seguido pelo parecer anual 159 du depois (intervalo.ultimo_oficio_parecer_du), tempo de terceiros e de fila indeterminado (respostas fora dos autos), e o parecer chegou à Procuradoria 118 dias corridos depois (intervalo.parecer_procuradoria). Sem horas de trabalho medidas, a eficiência do ciclo (PCE) não pode ser calculada.",
+ "fatos_leitura_metricas": [
+  "casos.vistoria_email.mediana_du",
+  "casos.vistoria_email.n",
+  "casos.vistoria_email.min_du",
+  "casos.vistoria_email.max_du",
+  "casos.vistoria_1a_assinatura.mediana_du",
+  "casos.redacao_1a_assinatura.mediana_du",
+  "casos.revisao_aprovacao.mediana_du",
+  "casos.ultima_tecnica_aprovacao.mediana_du",
+  "casos.aprovacao_oficio.mediana_du",
+  "casos.oficio_email.mediana_du",
+  "casos.assinaturas.mediana",
+  "casos.dias_com_assinatura.mediana",
+  "intervalo.ultimo_oficio_parecer_du",
+  "intervalo.parecer_procuradoria"
+ ],
+ "vsm": {
+  "observacao": "Tempo de valor × espera por trecho do ciclo do relatório. Valor = trabalho que transforma a informação (vistoria, redação técnica, análise); espera = intervalo sem ato registrado. Sem horas medidas, cada trecho é classificado, não quantificado em horas; PCE não calculável.",
+  "etapas": [
+   {
+    "trecho": "Vistoria em campo (t2)",
+    "classificacao": "valor",
+    "evidencia": "Vistoria in loco registrada numa única data por relatório (ficha); o trabalho é a constatação técnica com fotos e, na maioria dos relatórios, checklist anexo (fichas dos relatórios).",
+    "fatos_usados": []
+   },
+   {
+    "trecho": "Vistoria → 1ª assinatura do relatório (t2)",
+    "classificacao": "misto: redação + espera, não separável",
+    "evidencia": "Mediana de 34 du entre os relatórios (casos.vistoria_1a_assinatura.mediana_du), máximo de 171 du (casos.vistoria_1a_assinatura.max_du). Em vários relatórios a conclusão do texto traz data bem anterior à 1ª assinatura (fichas do RF 010, RF 056, RF 052, RF 070, RF 073, RF 065, RF 212, RF 213, RF 214 e RF 017), indício de texto pronto esperando assinatura — hipótese a confirmar.",
+    "fatos_usados": [
+     "casos.vistoria_1a_assinatura.mediana_du",
+     "casos.vistoria_1a_assinatura.max_du"
+    ]
+   },
+   {
+    "trecho": "1ª assinatura → \"De acordo\" (t3)",
+    "classificacao": "controle (revisão ou ciência, a confirmar), com espera",
+    "evidencia": "Mediana de 4,5 du entre os relatórios (casos.revisao_aprovacao.mediana_du), máximo de 35 du (casos.revisao_aprovacao.max_du); da última assinatura técnica ao \"De acordo\": mediana de 2 du entre os relatórios, máximo de 20 du (casos.ultima_tecnica_aprovacao.mediana_du; casos.ultima_tecnica_aprovacao.max_du).",
+    "fatos_usados": [
+     "casos.revisao_aprovacao.mediana_du",
+     "casos.revisao_aprovacao.max_du",
+     "casos.ultima_tecnica_aprovacao.mediana_du",
+     "casos.ultima_tecnica_aprovacao.max_du"
+    ]
+   },
+   {
+    "trecho": "\"De acordo\" → ofício → e-mail (t4)",
+    "classificacao": "necessária sem valor, rápida",
+    "evidencia": "Mediana de 1 du entre os relatórios oficiados até o ofício (casos.aprovacao_oficio.mediana_du) e de 0 du entre os relatórios oficiados até o e-mail (casos.oficio_email.mediana_du).",
+    "fatos_usados": [
+     "casos.aprovacao_oficio.mediana_du",
+     "casos.oficio_email.mediana_du"
+    ]
+   },
+   {
+    "trecho": "Último ofício → parecer anual (e1, t5)",
+    "classificacao": "espera de terceiros + fila + análise, não separável",
+    "evidencia": "159 du (intervalo.ultimo_oficio_parecer_du), com prazo de resposta de 30 dias nos ofícios (oficios.prazo_resposta_unico); respostas da concessionária fora dos autos.",
+    "fatos_usados": [
+     "intervalo.ultimo_oficio_parecer_du",
+     "oficios.prazo_resposta_unico"
+    ]
+   },
+   {
+    "trecho": "Parecer → Procuradoria (t6, e2, t7, t8)",
+    "classificacao": "espera de terceiros + reanálise, não separável",
+    "evidencia": "118 dias corridos (intervalo.parecer_procuradoria); manifestação da concessionária e reiteração da CASAN não estão no PDF.",
+    "fatos_usados": [
+     "intervalo.parecer_procuradoria"
+    ]
+   }
+  ]
+ },
+ "gargalo": {
+  "onde": "Gargalo declarado (Teoria das Restrições, hipótese a validar com a CASAN): a passagem da vistoria à 1ª assinatura do relatório (t2), isto é, a produção e a colocação em assinatura do relatório de fiscalização pela equipe da CASAN. É o maior trecho do ciclo interno e é controlável pela própria CASAN; é hipótese, não comprovada, que ele condicione o ritmo dos lotes e dos ofícios (as maiores esperas dos lotes RF 010 a RF 012 e RF 155 a RF 158 estão na revisão até o \"De acordo\"). Restrição secundária: a análise consolidada das respostas (t5), com um único parecer para todos os relatórios do ano no recorte; o intervalo dela é maior, mas é um só caso e inclui o prazo da concessionária, por isso não foi declarada como gargalo principal.",
+  "evidencia": "Vistoria → 1ª assinatura: mediana de 34 du entre os relatórios (casos.vistoria_1a_assinatura.mediana_du; n de 21 relatórios, casos.vistoria_1a_assinatura.n), de 18 du a 171 du (casos.vistoria_1a_assinatura.min_du; casos.vistoria_1a_assinatura.max_du), contra mediana de 4,5 du entre os relatórios da 1ª assinatura ao \"De acordo\" (casos.revisao_aprovacao.mediana_du) e de 1 du entre os relatórios oficiados do \"De acordo\" ao ofício (casos.aprovacao_oficio.mediana_du). O caso extremo é o RF 017 (doc 28): 247 dias corridos da vistoria ao \"De acordo\" (rel17.vistoria_aprov_dc). O intervalo mistura redação e fila e não se reparte por unidade nem por pessoa (sem andamentos do SEI). Na restrição secundária, o parecer anual saiu 159 du depois do último ofício (intervalo.ultimo_oficio_parecer_du), período que inclui o prazo de 30 dias dado à concessionária (oficios.prazo_resposta_unico) e tempo indeterminado.",
+  "atividades": [
+   "t2",
+   "t5"
+  ],
+  "fatos_usados": [
+   "casos.vistoria_1a_assinatura.mediana_du",
+   "casos.vistoria_1a_assinatura.n",
+   "casos.vistoria_1a_assinatura.min_du",
+   "casos.vistoria_1a_assinatura.max_du",
+   "casos.revisao_aprovacao.mediana_du",
+   "casos.aprovacao_oficio.mediana_du",
+   "rel17.vistoria_aprov_dc",
+   "intervalo.ultimo_oficio_parecer_du",
+   "oficios.prazo_resposta_unico"
+  ]
+ },
+ "variabilidade": "Dispersão entre relatórios, não típico × crítico. Vistoria → 1ª assinatura vai de 18 du a 171 du (casos.vistoria_1a_assinatura.min_du; casos.vistoria_1a_assinatura.max_du) e a revisão até o \"De acordo\" de 1 du a 35 du (casos.revisao_aprovacao.min_du; casos.revisao_aprovacao.max_du). Os relatórios do mesmo lote compartilham a data do \"De acordo\" (mediana de 3 relatórios por lote, máximo de 6, lotes.aprovacao.tamanho_mediana; lotes.aprovacao.tamanho_max) e, em geral, também a vistoria e a 1ª assinatura; hipótese a confirmar: o tempo de um relatório depende mais do lote em que entra do que do próprio relatório. Pontos de dispersão visíveis: no lote de RF 155 a RF 158 passaram até 20 du entre a última assinatura técnica e o \"De acordo\" (casos.ultima_tecnica_aprovacao.max_du); o RF 017 teve a 1ª assinatura 171 du depois da vistoria (casos.vistoria_1a_assinatura.max_du); a ordem dos cargos nas assinaturas não é fixa (8 cadeias distintas, casos.cadeias_distintas), sem relação demonstrada com o tempo. Com poucos relatórios por lote, estes números são ordem de grandeza.",
+ "fatos_variabilidade": [
+  "casos.vistoria_1a_assinatura.min_du",
+  "casos.vistoria_1a_assinatura.max_du",
+  "casos.revisao_aprovacao.min_du",
+  "casos.revisao_aprovacao.max_du",
+  "lotes.aprovacao.tamanho_mediana",
+  "lotes.aprovacao.tamanho_max",
+  "casos.ultima_tecnica_aprovacao.max_du",
+  "casos.cadeias_distintas"
+ ],
+ "desperdicios": [
+  {
+   "tipo": "Espera",
+   "evidencia": "Possível relatório pronto ou quase pronto aguardando assinatura (hipótese): vistoria → 1ª assinatura com mediana de 34 du entre os relatórios (casos.vistoria_1a_assinatura.mediana_du), enquanto a data do cabeçalho fica a mediana de 1 du entre os relatórios da 1ª assinatura (casos.redacao_1a_assinatura.mediana_du) e a conclusão de vários textos traz data anterior (fichas do RF 010, RF 056, RF 052, RF 059, RF 070, RF 073, RF 065, RF 212, RF 213, RF 214 e RF 017). Quanto é fila e quanto é redação, a medir.",
+   "atividades": [
+    "t2"
+   ],
+   "severidade": "alta",
+   "fatos_usados": [
+    "casos.vistoria_1a_assinatura.mediana_du",
+    "casos.redacao_1a_assinatura.mediana_du"
+   ]
+  },
+  {
+   "tipo": "Estoque",
+   "evidencia": "Aprovação e encaminhamento em lotes: 7 dias distintos de \"De acordo\" no ano (lotes.aprovacao.n), com mediana de 3 relatórios por lote e máximo de 6 (lotes.aprovacao.tamanho_mediana; lotes.aprovacao.tamanho_max), e só 3 ofícios de encaminhamento nos autos (oficios.encaminhamento). O trabalho em lote pode reter relatórios aprovados até o ofício seguinte; o lote de RF 155 a RF 158 recebeu o \"De acordo\" depois do Ofício 682 e não aparece em nenhum ofício dos autos.",
+   "atividades": [
+    "t3",
+    "t4"
+   ],
+   "severidade": "média",
+   "fatos_usados": [
+    "lotes.aprovacao.n",
+    "lotes.aprovacao.tamanho_mediana",
+    "lotes.aprovacao.tamanho_max",
+    "oficios.encaminhamento"
+   ]
+  },
+  {
+   "tipo": "Defeitos/retrabalho",
+   "evidencia": "Defeitos de forma nos relatórios (fichas): datas internas divergentes entre vistoria, conclusão, cabeçalho e assinaturas (RF 010, RF 011, RF 056, RF 052, RF 059, RF 070, RF 073, RF 065, RF 212, RF 213, RF 214, RF 017, RF 259); texto de modelo citando outro município (RF 212, RF 213, RF 214) ou outro sistema (RF 017); nome da unidade divergente entre cabeçalho e texto (RF 090) e resposta que cita outra estação (RF 065); RF 209 e RF 259 tratam da mesma vistoria com fases de obra diferentes. Esses defeitos podem fragilizar a prova numa contestação.",
+   "atividades": [
+    "t2",
+    "t3"
+   ],
+   "severidade": "alta",
+   "fatos_usados": []
+  },
+  {
+   "tipo": "Defeitos/retrabalho",
+   "evidencia": "Encaminhamento não rastreável nos autos exportados: 12 relatórios sem ofício de encaminhamento nos autos (casos.variante.sem_oficio_de_encaminhamento_nos_autos) contra 10 com ofício (casos.variante.com_oficio_de_encaminhamento_nos_autos); o Ofício 349 cita 12 relatórios, dos quais 3 têm texto no PDF (of1.relatorios_citados; of1.relatorios_no_pdf), e o Ofício 682 cita 5, com 1 no PDF (of2.relatorios_citados; of2.relatorios_no_pdf). Um relatório (RF 227) está no PDF sem texto nem assinatura (casos.variante.sem_texto_nem_assinatura_no_pdf).",
+   "atividades": [
+    "t4"
+   ],
+   "severidade": "alta",
+   "fatos_usados": [
+    "casos.variante.sem_oficio_de_encaminhamento_nos_autos",
+    "casos.variante.com_oficio_de_encaminhamento_nos_autos",
+    "of1.relatorios_citados",
+    "of1.relatorios_no_pdf",
+    "of2.relatorios_citados",
+    "of2.relatorios_no_pdf",
+    "casos.variante.sem_texto_nem_assinatura_no_pdf"
+   ]
+  },
+  {
+   "tipo": "Superprocessamento",
+   "evidencia": "Mediana de 4 assinaturas por relatório, máximo de 6 (casos.assinaturas.mediana; casos.assinaturas.max), em 8 cadeias distintas de cargos (casos.cadeias_distintas), a ordem dos cargos nas assinaturas varia entre relatórios; não se sabe o que cada assinatura acrescenta (revisão técnica, formal ou ciência).",
+   "atividades": [
+    "t2",
+    "t3"
+   ],
+   "severidade": "média",
+   "fatos_usados": [
+    "casos.assinaturas.mediana",
+    "casos.assinaturas.max",
+    "casos.cadeias_distintas"
+   ]
+  },
+  {
+   "tipo": "Espera",
+   "evidencia": "Análise das respostas concentrada num parecer anual: do último ofício ao parecer passaram 159 du (intervalo.ultimo_oficio_parecer_du), período que inclui o prazo de resposta de 30 dias dado à concessionária (oficios.prazo_resposta_unico). As respostas e cronogramas não constam dos autos exportados e só aparecem analisados no parecer consolidado, que conclui por atendimento parcial com prazos postergados. Separar tempo de terceiros de fila não é possível (respostas fora dos autos).",
+   "atividades": [
+    "t5"
+   ],
+   "severidade": "alta",
+   "fatos_usados": [
+    "intervalo.ultimo_oficio_parecer_du",
+    "oficios.prazo_resposta_unico"
+   ]
+  },
+  {
+   "tipo": "Talento não aproveitado",
+   "evidencia": "Especialistas em Regulação aparecem como signatários ao lado de Assistentes e Assessores em cadeias que se alternam (casos.cadeias_distintas); hipótese: a redação de partes repetitivas (identificação, checklist, recomendações semelhantes para não conformidades reiteradas, como falta de identificação e de motobomba reserva nas fichas do RF 010, RF 011 e RF 012) consome tempo técnico que poderia ir à análise. Horas a medir.",
+   "atividades": [
+    "t2"
+   ],
+   "severidade": "baixa",
+   "fatos_usados": [
+    "casos.cadeias_distintas"
+   ]
+  }
+ ],
+ "atividades": {
+  "t1": {
+   "valor": "necessária sem valor",
+   "justificativa_valor": "Agendar a vistoria garante acesso às unidades, mas não produz constatação técnica.",
+   "potencial_ia": "médio",
+   "tipos_ia": [
+    "redação assistida de minuta",
+    "monitoramento de prazos e alertas",
+    "automação de tramitação (RPA no SEI)"
+   ],
+   "aplicacao_ia": "Gerar o ofício de agendamento a partir do cronograma anual e do cadastro de ativos (código e tipo de unidade), e alertar quando a antecedência ficar curta.",
+   "ganho_esperado": "Reduz trabalho de expediente; a antecedência observada foi de 1 du entre o e-mail e a 1ª vistoria agendada (of3.antecedencia_agendamento_du), num único ofício de agendamento nos autos (oficios.agendamento). Ganho a medir.",
+   "controle_humano": "Gerente define o cronograma, as unidades e assina o ofício.",
+   "melhoria_lean": "Publicar cronograma anual de vistorias por concessionária, como pede a Deliberação 4216/2021, e fixar antecedência mínima de aviso.",
+   "fatos_usados": [
+    "of3.antecedencia_agendamento_du",
+    "oficios.agendamento"
+   ]
+  },
+  "t2": {
+   "valor": "agrega valor",
+   "justificativa_valor": "A vistoria e o relatório constatam as não conformidades e dão base a todo o ciclo regulatório.",
+   "potencial_ia": "alto",
+   "tipos_ia": [
+    "redação assistida de minuta",
+    "extração de dados de documentos",
+    "verificação de conformidade",
+    "monitoramento de prazos e alertas"
+   ],
+   "aplicacao_ia": "A partir do checklist de campo e das fotos legendadas, montar a minuta do relatório no modelo da CASAN (identificação, descrição, não conformidades, recomendações); conferir automaticamente coerência de datas (vistoria, conclusão, cabeçalho), nome e município da unidade e trechos de modelo não ajustados; buscar não conformidades já apontadas na mesma unidade ou em unidades parecidas; alertar o relatório sem 1ª assinatura depois de um limite de dias úteis desde a vistoria.",
+   "ganho_esperado": "Ataca a espera e o trabalho: o trecho vistoria → 1ª assinatura tem mediana de 34 du entre os relatórios (casos.vistoria_1a_assinatura.mediana_du); quanto dele é redação, a medir. Relatórios com mediana de 5 não conformidades e máximo de 11 (casos.nao_conformidades.mediana; casos.nao_conformidades.max) se prestam a minuta estruturada.",
+   "controle_humano": "A constatação em campo, o juízo técnico sobre gravidade e prazo e a assinatura continuam com a equipe de fiscalização.",
+   "melhoria_lean": "Meta interna de prazo vistoria → relatório assinado; checklist digital preenchido em campo; um relatório por vistoria (evitar o par RF 209 e RF 259 da mesma vistoria).",
+   "fatos_usados": [
+    "casos.vistoria_1a_assinatura.mediana_du",
+    "casos.nao_conformidades.mediana",
+    "casos.nao_conformidades.max"
+   ]
+  },
+  "t3": {
+   "valor": "necessária sem valor",
+   "justificativa_valor": "O \"De acordo\" do Gerente é controle hierárquico exigido; não altera o conteúdo técnico quando não há devolução.",
+   "potencial_ia": "médio",
+   "tipos_ia": [
+    "monitoramento de prazos e alertas",
+    "verificação de conformidade"
+   ],
+   "aplicacao_ia": "Fila de relatórios aguardando o \"De acordo\" com contagem de dias úteis e alerta; checagem automática de forma antes de o relatório chegar ao Gerente (datas, unidade, município, anexos citados), para que a revisão humana fique no mérito.",
+   "ganho_esperado": "Reduz espera: 1ª assinatura → \"De acordo\" com mediana de 4,5 du entre os relatórios e máximo de 35 du (casos.revisao_aprovacao.mediana_du; casos.revisao_aprovacao.max_du); intervalo da última assinatura técnica ao \"De acordo\" com máximo de 20 du (casos.ultima_tecnica_aprovacao.max_du).",
+   "controle_humano": "Aprovação e assinatura do Gerente.",
+   "melhoria_lean": "Padronizar a cadeia de assinaturas (elaborado / revisado / de acordo) e aprovar em fluxo contínuo, não em lote.",
+   "fatos_usados": [
+    "casos.revisao_aprovacao.mediana_du",
+    "casos.revisao_aprovacao.max_du",
+    "casos.ultima_tecnica_aprovacao.max_du"
+   ]
+  },
+  "t4": {
+   "valor": "necessária sem valor",
+   "justificativa_valor": "Notificar a concessionária é exigência para abrir o prazo de resposta; o ofício em si não agrega conteúdo técnico.",
+   "potencial_ia": "alto",
+   "tipos_ia": [
+    "redação assistida de minuta",
+    "automação de tramitação (RPA no SEI)",
+    "verificação de conformidade"
+   ],
+   "aplicacao_ia": "Gerar o ofício e o e-mail assim que o relatório recebe o \"De acordo\", com a lista de relatórios conferida contra os aprovados e ainda não oficiados; acusar relatório aprovado sem ofício e ofício que cita relatório ausente do processo.",
+   "ganho_esperado": "O trecho já é rápido (mediana de 1 du entre os relatórios oficiados, casos.aprovacao_oficio.mediana_du); o ganho é de controle: 12 relatórios sem ofício nos autos (casos.variante.sem_oficio_de_encaminhamento_nos_autos).",
+   "controle_humano": "Gerente assina o ofício; prazo de resposta definido pela CASAN.",
+   "melhoria_lean": "Oficiar cada relatório (ou lote semanal) logo após o \"De acordo\"; prazo de resposta expresso em dias úteis ou corridos.",
+   "fatos_usados": [
+    "casos.aprovacao_oficio.mediana_du",
+    "casos.variante.sem_oficio_de_encaminhamento_nos_autos"
+   ]
+  },
+  "t5": {
+   "valor": "agrega valor",
+   "justificativa_valor": "A análise das providências verifica se as não conformidades foram sanadas, que é o resultado regulatório da fiscalização.",
+   "potencial_ia": "alto",
+   "tipos_ia": [
+    "extração de dados de documentos",
+    "sumarização e linha do tempo",
+    "painel e indicadores",
+    "monitoramento de prazos e alertas"
+   ],
+   "aplicacao_ia": "Extrair de cada resposta da concessionária as providências, prazos e cronogramas por não conformidade; manter um painel de pendências por relatório e unidade; alertar vencimento de prazo e cronograma; gerar a base do parecer anual já consolidada.",
+   "ganho_esperado": "Reduz espera e trabalho: do último ofício ao parecer passaram 159 du (intervalo.ultimo_oficio_parecer_du), num parecer único sobre 42 relatórios (contagem.relatorios_citados_parecer); com acompanhamento contínuo, o parecer deixa de depender de juntar tudo no fim. Quanto, a medir.",
+   "controle_humano": "Juízo técnico sobre atendimento, conclusão do parecer e \"De acordo\" do Gerente.",
+   "melhoria_lean": "Analisar cada resposta quando chega (fluxo contínuo) e manter o parecer anual só como consolidação.",
+   "fatos_usados": [
+    "intervalo.ultimo_oficio_parecer_du",
+    "contagem.relatorios_citados_parecer"
+   ]
+  },
+  "t6": {
+   "valor": "necessária sem valor",
+   "justificativa_valor": "Dar ciência do parecer garante o contraditório; peça não está nos autos exportados (inferida).",
+   "potencial_ia": "baixo",
+   "tipos_ia": [
+    "automação de tramitação (RPA no SEI)"
+   ],
+   "aplicacao_ia": "Gerar e enviar a comunicação do parecer pelo SEI com registro da ciência.",
+   "ganho_esperado": "A medir: a peça e sua data não estão no PDF.",
+   "controle_humano": "Unidade responsável assina a comunicação.",
+   "melhoria_lean": "Definir quem comunica o parecer (CASAN ou SECEX) e juntar a peça ao processo.",
+   "fatos_usados": []
+  },
+  "t7": {
+   "valor": "necessária sem valor",
+   "justificativa_valor": "Responder à contestação é parte do contraditório; a reiteração não muda a conclusão técnica.",
+   "potencial_ia": "médio",
+   "tipos_ia": [
+    "sumarização e linha do tempo",
+    "busca de precedentes e normas",
+    "redação assistida de minuta"
+   ],
+   "aplicacao_ia": "Resumir a manifestação da concessionária, separar argumentos novos dos já respondidos no parecer e localizar as cláusulas contratuais e normas que sustentam o escopo da fiscalização.",
+   "ganho_esperado": "Reduz trabalho de reanálise; tempo não medido (peças fora dos autos). A medir.",
+   "controle_humano": "Juízo técnico e assinatura da CASAN.",
+   "melhoria_lean": "Tese-padrão sobre o escopo da fiscalização (obrigações contratuais além dos indicadores) aprovada uma vez e reutilizada.",
+   "fatos_usados": []
+  },
+  "t8": {
+   "valor": "necessária sem valor",
+   "justificativa_valor": "Encaminhamento que formula a questão jurídica; tramitação sem conteúdo técnico novo.",
+   "potencial_ia": "médio",
+   "tipos_ia": [
+    "sumarização e linha do tempo",
+    "automação de tramitação (RPA no SEI)"
+   ],
+   "aplicacao_ia": "Gerar o resumo do processo (relatórios, parecer, manifestação, reiteração) para o despacho à Procuradoria.",
+   "ganho_esperado": "Reduz trabalho de leitura; o trecho parecer → Procuradoria somou 118 dias corridos (intervalo.parecer_procuradoria), mas inclui manifestação da concessionária e reiteração fora dos autos: efeito na espera a medir.",
+   "controle_humano": "SECEX decide o encaminhamento e assina o despacho.",
+   "melhoria_lean": "",
+   "fatos_usados": [
+    "intervalo.parecer_procuradoria"
+   ]
+  },
+  "t9": {
+   "valor": "necessária sem valor",
+   "justificativa_valor": "Análise jurídica dos fundamentos é controle de legalidade diante do pedido de arquivamento.",
+   "potencial_ia": "médio",
+   "tipos_ia": [
+    "busca de precedentes e normas",
+    "sumarização e linha do tempo"
+   ],
+   "aplicacao_ia": "Levantar manifestações jurídicas anteriores sobre o escopo da fiscalização em contratos de concessão de saneamento e organizar os fundamentos citados no parecer.",
+   "ganho_esperado": "A medir: atividade em curso no fim do recorte, sem peça nos autos.",
+   "controle_humano": "Parecer jurídico e assinatura da Procuradoria.",
+   "melhoria_lean": "",
+   "fatos_usados": []
+  }
+ },
+ "oportunidades": [
+  {
+   "titulo": "Alerta de relatório sem assinatura desde a vistoria e meta interna de prazo",
+   "categoria": "IA + Lean",
+   "descricao": "Registrar a data de cada vistoria no SEI (ou planilha de controle) e gerar alerta ao elaborador e ao Gerente quando o relatório não tiver a 1ª assinatura em um limite de dias úteis; fixar meta interna vistoria → relatório assinado.",
+   "atividades": [
+    "t2",
+    "t3"
+   ],
+   "ganho_esperado": "Ataca a espera no gargalo: mediana de 34 du entre os relatórios da vistoria à 1ª assinatura e máximo de 171 du (casos.vistoria_1a_assinatura.mediana_du; casos.vistoria_1a_assinatura.max_du). Reduz espera, não trabalho; quanto, a medir depois de separar redação de fila.",
+   "impacto": "alto",
+   "esforco": "baixo",
+   "prerequisitos": "Registro estruturado da data da vistoria; meta aprovada pela gerência da CASAN.",
+   "riscos": "Alerta sem responsável por agir; meta que estimule relatório apressado.",
+   "fatos_usados": [
+    "casos.vistoria_1a_assinatura.mediana_du",
+    "casos.vistoria_1a_assinatura.max_du"
+   ]
+  },
+  {
+   "titulo": "Fluxo contínuo de aprovação e encaminhamento, com cadeia de assinaturas padronizada",
+   "categoria": "Lean",
+   "descricao": "Definir a cadeia elaborado / revisado / de acordo por papel e aprovar e oficiar cada relatório (ou lote semanal) logo após a revisão, em vez de lotes ocasionais.",
+   "atividades": [
+    "t3",
+    "t4"
+   ],
+   "ganho_esperado": "Reduz espera e estoque: 7 lotes de aprovação no ano (lotes.aprovacao.n), 8 cadeias distintas (casos.cadeias_distintas), intervalo da última assinatura técnica ao \"De acordo\" com máximo de 20 du (casos.ultima_tecnica_aprovacao.max_du).",
+   "impacto": "médio",
+   "esforco": "baixo",
+   "prerequisitos": "Norma interna da CASAN sobre papéis de assinatura.",
+   "riscos": "Mais ofícios por ano para a concessionária; resolver com envio agrupado semanal.",
+   "fatos_usados": [
+    "lotes.aprovacao.n",
+    "casos.cadeias_distintas",
+    "casos.ultima_tecnica_aprovacao.max_du"
+   ]
+  },
+  {
+   "titulo": "Conferência automática relatório aprovado × ofício enviado",
+   "categoria": "IA + Lean",
+   "descricao": "Rotina que cruza relatórios com \"De acordo\" e ofícios de encaminhamento do processo, acusa relatório aprovado sem ofício e ofício que cita relatório ausente, e gera a minuta do ofício com a lista conferida.",
+   "atividades": [
+    "t4"
+   ],
+   "ganho_esperado": "Ganho de controle: 12 relatórios sem ofício nos autos (casos.variante.sem_oficio_de_encaminhamento_nos_autos); Ofício 349 com 12 relatórios citados e 3 no PDF (of1.relatorios_citados; of1.relatorios_no_pdf). Reduz risco de relatório não notificado, não tempo.",
+   "impacto": "alto",
+   "esforco": "baixo",
+   "prerequisitos": "Extração dos documentos do processo no SEI; numeração padronizada dos relatórios.",
+   "riscos": "Falso alarme se o encaminhamento ocorrer em outro processo; prever marcação manual.",
+   "fatos_usados": [
+    "casos.variante.sem_oficio_de_encaminhamento_nos_autos",
+    "of1.relatorios_citados",
+    "of1.relatorios_no_pdf"
+   ]
+  },
+  {
+   "titulo": "Minuta assistida do relatório com verificação de forma",
+   "categoria": "IA",
+   "descricao": "Gerar a minuta do relatório a partir do checklist de campo e das fotos, no modelo da CASAN, e verificar automaticamente datas, unidade, município, anexos citados e não conformidades já apontadas na mesma unidade.",
+   "atividades": [
+    "t2",
+    "t3"
+   ],
+   "ganho_esperado": "Reduz trabalho de redação e defeitos de forma (datas divergentes, texto de modelo de outro município, nome de unidade divergente, nas fichas); cada relatório registra mediana de 5 não conformidades de campo entre os relatórios (casos.nao_conformidades.mediana), conteúdo que a minuta estrutura. Efeito na espera depende de quanto do trecho de 34 du de mediana entre os relatórios é redação (casos.vistoria_1a_assinatura.mediana_du): a medir.",
+   "impacto": "alto",
+   "esforco": "médio",
+   "prerequisitos": "Checklist digital por tipo de unidade (EEAT, EEE, ETA, ETE); modelo oficial do relatório; base das não conformidades anteriores.",
+   "riscos": "Texto genérico que não reflita a vistoria; a equipe precisa revisar cada constatação.",
+   "fatos_usados": [
+    "casos.nao_conformidades.mediana",
+    "casos.vistoria_1a_assinatura.mediana_du"
+   ]
+  },
+  {
+   "titulo": "Acompanhamento contínuo das respostas da concessionária",
+   "categoria": "IA + Lean",
+   "descricao": "Juntar e analisar cada resposta quando chega, com extração das providências e cronogramas por não conformidade, painel de pendências por unidade e alerta de prazo vencido; o parecer anual passa a consolidar o painel.",
+   "atividades": [
+    "t5"
+   ],
+   "ganho_esperado": "Ataca a restrição secundária: 159 du do último ofício ao parecer (intervalo.ultimo_oficio_parecer_du), com prazo de 30 dias nos ofícios (oficios.prazo_resposta_unico). Reduz espera e trabalho de consolidação; quanto, a medir.",
+   "impacto": "alto",
+   "esforco": "médio",
+   "prerequisitos": "Respostas juntadas ao processo (hoje fora dos autos exportados); identificação de cada não conformidade.",
+   "riscos": "Painel desatualizado se as respostas continuarem fora do processo.",
+   "fatos_usados": [
+    "intervalo.ultimo_oficio_parecer_du",
+    "oficios.prazo_resposta_unico"
+   ]
+  },
+  {
+   "titulo": "Dossiê automático para contestação e análise jurídica",
+   "categoria": "IA",
+   "descricao": "Sumarizar relatórios, parecer, manifestação e reiteração em linha do tempo e localizar as cláusulas e normas sobre o escopo da fiscalização, para a CASAN, a SECEX e a Procuradoria.",
+   "atividades": [
+    "t7",
+    "t8",
+    "t9"
+   ],
+   "ganho_esperado": "Reduz trabalho de leitura; o trecho parecer → Procuradoria somou 118 dias corridos (intervalo.parecer_procuradoria), mas a parte de espera não é separável: a medir.",
+   "impacto": "médio",
+   "esforco": "médio",
+   "prerequisitos": "Peças da contestação e da reiteração no processo; base de normas e contratos.",
+   "riscos": "IA não decide a tese jurídica; o parecer e a decisão sobre o arquivamento ficam com a Procuradoria e o Conselho-Diretor.",
+   "fatos_usados": [
+    "intervalo.parecer_procuradoria"
+   ]
+  }
+ ],
+ "riscos": [
+  {
+   "risco": "Relatório aprovado sem notificação comprovada nos autos, o que dificulta cobrar o prazo de resposta.",
+   "evidencia": "12 relatórios sem ofício de encaminhamento nos autos (casos.variante.sem_oficio_de_encaminhamento_nos_autos).",
+   "atividades": [
+    "t4"
+   ],
+   "fatos_usados": [
+    "casos.variante.sem_oficio_de_encaminhamento_nos_autos"
+   ]
+  },
+  {
+   "risco": "Prova fragilizada por defeitos de forma nos relatórios, explorável na contestação.",
+   "evidencia": "Datas internas divergentes, texto de modelo de outro município (RF 212, RF 213, RF 214) e de outro sistema (RF 017), nas fichas.",
+   "atividades": [
+    "t2",
+    "t3"
+   ],
+   "fatos_usados": []
+  },
+  {
+   "risco": "Constatação desatualizada quando o relatório sai muito depois da vistoria.",
+   "evidencia": "Vistoria → 1ª assinatura de até 171 du (casos.vistoria_1a_assinatura.max_du), no RF 017.",
+   "atividades": [
+    "t2"
+   ],
+   "fatos_usados": [
+    "casos.vistoria_1a_assinatura.max_du"
+   ]
+  },
+  {
+   "risco": "Prazo de resposta ambíguo e sem acompanhamento registrado nos autos exportados.",
+   "evidencia": "Prazo único de 30 dias nos ofícios, sem dizer se úteis ou corridos (oficios.prazo_resposta_unico); no recorte, a análise das respostas só aparece no parecer consolidado.",
+   "atividades": [
+    "t4",
+    "t5"
+   ],
+   "fatos_usados": [
+    "oficios.prazo_resposta_unico"
+   ]
+  },
+  {
+   "risco": "Escopo da fiscalização questionado e pedido de arquivamento pendente.",
+   "evidencia": "Despacho à Procuradoria (doc 34) registra a tese da concessionária de que a fiscalização se limitaria aos indicadores de desempenho.",
+   "atividades": [
+    "t7",
+    "t8",
+    "t9"
+   ],
+   "fatos_usados": []
+  },
+  {
+   "risco": "Rastreabilidade incompleta do processo exportado.",
+   "evidencia": "23 relatórios no PDF contra 42 no parecer (contagem.relatorios_no_pdf; contagem.relatorios_citados_parecer); respostas, manifestação da concessionária e reiteração da CASAN fora dos autos; a ciência do parecer, se houve, não consta.",
+   "atividades": [
+    "t5",
+    "t6",
+    "t7"
+   ],
+   "fatos_usados": [
+    "contagem.relatorios_no_pdf",
+    "contagem.relatorios_citados_parecer"
+   ]
+  }
+ ],
+ "indicadores_sugeridos": [
+  "Dias úteis da vistoria à 1ª assinatura do relatório, mediana e máximo por trimestre",
+  "Dias úteis da 1ª assinatura ao \"De acordo\" do Gerente",
+  "Relatórios aprovados sem ofício de encaminhamento (estoque) e há quantos dias úteis",
+  "Dias úteis do \"De acordo\" ao ofício e ao e-mail",
+  "Respostas da concessionária analisadas dentro do prazo × pendentes, por não conformidade",
+  "Relatórios com defeito de forma apontado na revisão (datas, unidade, modelo)",
+  "Não conformidades reiteradas na mesma unidade entre anos"
+ ],
+ "perguntas_validacao": [
+  "Entre a vistoria e a 1ª assinatura, quanto é redação e quanto é relatório pronto aguardando assinatura? A data \"Em ...\" da conclusão marca o fim da redação?",
+  "Por que o RF 017 foi assinado tantos meses depois da vistoria?",
+  "O que cada assinatura (Assistente, Assessor) acrescenta: revisão técnica, revisão formal ou ciência? Há devolução de relatório para ajuste?",
+  "Qual o critério para fechar um lote de aprovação e de ofício?",
+  "Onde estão os ofícios dos relatórios sem encaminhamento nos autos (RF 052, RF 056, RF 059, RF 065, RF 070, RF 073, RF 090, RF 153, RF 155 a RF 158)? Foram enviados por outro processo?",
+  "As respostas da concessionária são analisadas à medida que chegam ou só no parecer anual? Onde são juntadas?",
+  "O prazo de resposta do ofício é em dias úteis ou corridos?",
+  "Existe cronograma anual de vistorias e checklist digital por tipo de unidade?",
+  "Quem dá ciência do parecer à concessionária, CASAN ou SECEX?",
+  "RF 209 e RF 259 são duplicados ou etapas distintas da obra?"
+ ],
+ "validado_contra": {
+  "fatos_sha": "450d9d79f0ff50b3",
+  "fatos": [
+   "mapeamento/fatos_FIS.json",
+   "mapeamento/casos_FIS.json"
+  ],
+  "validador": "scripts/validar_avaliacao_fis.py",
+  "data": "2026-11-14 18:53"
+ }
+}

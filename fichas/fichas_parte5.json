@@ -1,0 +1,223 @@
+[
+  {
+    "n": 1,
+    "sei": "86827856",
+    "tipo": "Relatório de Fiscalização",
+    "numero": "212/2024",
+    "paginas": "161-167",
+    "data_documento": "05/11/2024",
+    "unidade_emissora": "CASAN",
+    "funcao_autor": "Especialista em Regulação (CASAN)",
+    "destinatario": "",
+    "acao_no_processo": "vistoria_relatorio",
+    "resumo": "Relatório de rotina sobre a operação da EEE Mário Quintão (Águas do Rio, Bloco 01), em Porto Novo, São Gonçalo/RJ, vistoriada em 20/08/2024. A estação foi projetada para 150 L/s e recalca para a ETE São Gonçalo; há um conjunto moto-bomba com duas bombas instaladas, operando de forma alternada. Foram recomendadas a instalação de guarda-corpo no poço de sucção e a sinalização de risco de choque elétrico. O texto afirma que a maioria dos itens do anexo está de acordo com as boas práticas sanitárias e de engenharia.",
+    "fiscalizacao": {
+      "instalacao": "EEE Mário Quintão",
+      "tipo_instalacao": "EEE",
+      "concessionaria": "Águas do Rio",
+      "municipio_bairro": "Porto Novo, São Gonçalo/RJ",
+      "data_vistoria": "20/08/2024",
+      "nao_conformidades": [
+        "Poço de sucção sem guarda-corpo adequado",
+        "Adesivo de perigo pequeno e sem a simbologia adequada no painel em funcionamento",
+        "Quatro linhas de recalque com apenas duas bombas instaladas (uma reserva); linhas não operantes em estudo",
+        "Uma das duas estruturas de gradeamento fora de funcionamento",
+        "Sinalização de risco de choque elétrico a providenciar"
+      ],
+      "prazo_para_sanar": "",
+      "elaborado_revisado_aprovado": "Especialista em Regulação (CASAN); Engenheiro (CASAN); De acordo: Gerente da Câmara de Saneamento"
+    },
+    "prazos": [],
+    "valores": [],
+    "normas_citadas": [
+      {"norma": "Lei Federal 11.445/2007", "trecho_literal": "a Lei Federal nº 11.445/2007 e o Decreto Federal nº 7.217/2010"},
+      {"norma": "Decreto Federal 7.217/2010", "trecho_literal": "Decreto Federal nº 7.217/2010"},
+      {"norma": "Resoluções CONAMA", "trecho_literal": "Resoluções do CONAMA"},
+      {"norma": "Normas técnicas ABNT", "trecho_literal": "normativas técnicas da ABNT"},
+      {"norma": "Portarias do Ministério da Saúde", "trecho_literal": "Portarias do Ministério da Saúde e Vigilância Sanitária"},
+      {"norma": "Contrato de Concessão", "trecho_literal": "do Contrato de Concessão."},
+      {"norma": "Decreto RJ 48.209/2022", "trecho_literal": "Decreto nº 48.209, de 19 de setembro de 2022"}
+    ],
+    "decisoes_ou_pedidos": [
+      "Providenciar guarda-corpo para o poço de sucção",
+      "Providenciar sinalização de segurança de risco de choque elétrico"
+    ],
+    "retrabalho_ou_problema": "Documento assinado em 05/11/2024, cerca de 11 semanas após a vistoria de 20/08/2024; a conclusão do texto está datada de 10/10/2024, em divergência com a data do documento. Texto de modelo menciona 'município de Pomerode' em vez de São Gonçalo. As marcações SIM/NÃO do checklist não são identificáveis no texto extraído, por isso o anexo não foi transcrito item a item.",
+    "indicios_esforco": "Vistoria in loco com 9 fotos; checklist de 27 itens em anexo; elaboração, revisão e 'De acordo' em cadeia (três assinaturas eletrônicas, incluindo a da Gerência)."
+  },
+  {
+    "n": 2,
+    "sei": "86826650",
+    "tipo": "Relatório de Fiscalização",
+    "numero": "213/2024",
+    "paginas": "168-174",
+    "data_documento": "05/11/2024",
+    "unidade_emissora": "CASAN",
+    "funcao_autor": "Especialista em Regulação (CASAN)",
+    "destinatario": "",
+    "acao_no_processo": "vistoria_relatorio",
+    "resumo": "Relatório de fiscalização programada da EEE Frederico Marques (Águas do Rio, Bloco 01), em Boa Vista, São Gonçalo/RJ, vistoriada em 20/08/2024. A estação, projetada para 12,5 L/s, estava inoperante: não recebia efluentes e não tinha conjuntos motor-bomba nem gradeamento instalados. Foi informado pela concessionária que a linha de chegada estava em by-pass com o tronco principal para a ETE São Gonçalo. Foram recomendados estudo sobre reativação, manutenção e conservação do local e sinalização de risco de choque elétrico.",
+    "fiscalizacao": {
+      "instalacao": "EEE Frederico Marques",
+      "tipo_instalacao": "EEE",
+      "concessionaria": "Águas do Rio",
+      "municipio_bairro": "Boa Vista, São Gonçalo/RJ",
+      "data_vistoria": "20/08/2024",
+      "nao_conformidades": [
+        "Estação sem conjuntos motor-bomba nas duas linhas de recalque, que apresentavam estado considerável de corrosão",
+        "Ausência de gradeamento no poço de chegada e de manivela na peça de comporta",
+        "Linha de chegada em by-pass com o tronco principal, segundo informado pela concessionária",
+        "Sinalização de risco de choque elétrico a providenciar, mesmo com os quadros desligados",
+        "Necessidade de manutenção e conservação do local, inclusive retirada de água de chuva dos poços"
+      ],
+      "prazo_para_sanar": "",
+      "elaborado_revisado_aprovado": "Especialista em Regulação (CASAN); Engenheiro (CASAN); De acordo: Gerente da Câmara de Saneamento"
+    },
+    "prazos": [],
+    "valores": [],
+    "normas_citadas": [
+      {"norma": "Lei Federal 11.445/2007", "trecho_literal": "a Lei Federal nº 11.445/2007 e o Decreto Federal nº 7.217/2010"},
+      {"norma": "Decreto Federal 7.217/2010", "trecho_literal": "Decreto Federal nº 7.217/2010"},
+      {"norma": "Resoluções CONAMA", "trecho_literal": "CONAMA e também aquelas editas pela"},
+      {"norma": "Normas técnicas ABNT", "trecho_literal": "normativas técnicas da ABNT"},
+      {"norma": "Portarias do Ministério da Saúde", "trecho_literal": "Portarias do Ministério da Saúde e"},
+      {"norma": "Contrato de Concessão", "trecho_literal": "do Contrato de Concessão."},
+      {"norma": "Decreto RJ 48.209/2022", "trecho_literal": "Decreto nº 48.209, de 19 de setembro de 2022"}
+    ],
+    "decisoes_ou_pedidos": [
+      "Apresentar estudo sobre reativação da elevatória, se existir",
+      "Manter segurança, manutenção e conservação do local, inclusive retirada de água de chuva dos poços",
+      "Providenciar sinalização de segurança de risco de choque elétrico, ainda que os quadros estejam desligados"
+    ],
+    "retrabalho_ou_problema": "Documento assinado em 05/11/2024, cerca de 11 semanas após a vistoria de 20/08/2024; a conclusão do texto está datada de 29/08/2024, em divergência com a data do documento. Texto de modelo menciona 'município de Pomerode'. Recomendação de estudo de reativação sem prazo definido. As marcações SIM/NÃO do checklist não são identificáveis no texto extraído.",
+    "indicios_esforco": "Vistoria in loco com 7 fotos; checklist de 27 itens em anexo; revisão em cadeia com 'De acordo' da Gerência (três assinaturas eletrônicas)."
+  },
+  {
+    "n": 3,
+    "sei": "86826664",
+    "tipo": "Relatório de Fiscalização",
+    "numero": "214/2024",
+    "paginas": "175-179",
+    "data_documento": "05/11/2024",
+    "unidade_emissora": "CASAN",
+    "funcao_autor": "Especialista em Regulação (CASAN)",
+    "destinatario": "",
+    "acao_no_processo": "vistoria_relatorio",
+    "resumo": "Relatório de rotina da EEE Piscinão (Águas do Rio, Bloco 01), em Boa Vista, São Gonçalo/RJ, vistoriada em 20/08/2024. A estação, com vazão de 39,6 L/s, foi projetada para duas bombas de 4 CV e está ativa, recalcando para a ETE São Gonçalo, mas com apenas uma bomba submersa instalada e sem telemetria. O quadro elétrico não possui automação nem identificação de risco de choque. Foram recomendadas a sinalização de risco de choque elétrico e a automação e telemetria da unidade.",
+    "fiscalizacao": {
+      "instalacao": "EEE Piscinão",
+      "tipo_instalacao": "EEE",
+      "concessionaria": "Águas do Rio",
+      "municipio_bairro": "Boa Vista, São Gonçalo/RJ",
+      "data_vistoria": "20/08/2024",
+      "nao_conformidades": [
+        "Duas linhas de recalque com apenas uma bomba instalada",
+        "Quadro elétrico sem automação e sem identificação de risco de choque",
+        "Ausência de automação e telemetria"
+      ],
+      "prazo_para_sanar": "",
+      "elaborado_revisado_aprovado": "Especialista em Regulação (CASAN); Engenheiro (CASAN); De acordo: Gerente da Câmara de Saneamento"
+    },
+    "prazos": [],
+    "valores": [],
+    "normas_citadas": [
+      {"norma": "Lei Federal 11.445/2007", "trecho_literal": "a Lei Federal nº 11.445/2007 e o Decreto Federal nº 7.217/2010"},
+      {"norma": "Decreto Federal 7.217/2010", "trecho_literal": "Decreto Federal nº 7.217/2010"},
+      {"norma": "Resoluções CONAMA", "trecho_literal": "Resoluções do CONAMA e"},
+      {"norma": "Normas técnicas ABNT", "trecho_literal": "normativas técnicas da ABNT"},
+      {"norma": "Portarias do Ministério da Saúde", "trecho_literal": "Portarias do Ministério da Saúde e Vigilância Sanitária"},
+      {"norma": "Contrato de Concessão", "trecho_literal": "do Contrato de Concessão."},
+      {"norma": "Decreto RJ 48.209/2022", "trecho_literal": "Decreto nº 48.209, de 19 de setembro de 2022"}
+    ],
+    "decisoes_ou_pedidos": [
+      "Providenciar sinalização de segurança de risco de choque elétrico",
+      "Recomendada automação e telemetria da estação"
+    ],
+    "retrabalho_ou_problema": "Documento assinado em 05/11/2024, cerca de 11 semanas após a vistoria de 20/08/2024; a conclusão do texto está datada de 11/10/2024, em divergência com a data do documento. Texto de modelo menciona 'município de Pomerode'. O poço de gradeamento não foi visualizado na vistoria, por falta de equipamento para levantar a tampa recém-instalada (lacuna de inspeção). A recomendação de sinalização de risco de choque elétrico se repete nos relatórios 212/2024 e 213/2024.",
+    "indicios_esforco": "Vistoria in loco com 3 fotos; checklist de 27 itens em anexo; revisão em cadeia com 'De acordo' da Gerência (três assinaturas eletrônicas)."
+  },
+  {
+    "n": 4,
+    "sei": "87028948",
+    "tipo": "Relatório de Fiscalização",
+    "numero": "017/2024",
+    "paginas": "180-197",
+    "data_documento": "07/11/2024",
+    "unidade_emissora": "CASAN",
+    "funcao_autor": "Especialista em Regulação (CASAN)",
+    "destinatario": "",
+    "acao_no_processo": "vistoria_relatorio",
+    "resumo": "Relatório de fiscalização direta da ETE São Gonçalo (Águas do Rio, Bloco 1), em Boa Vista, São Gonçalo/RJ, realizada em 06/03/2024. A ETE tem licença para 450 L/s e opera com média de 350 L/s, em funcionamento 24h. Constatou-se que o processo de tratamento estava em funcionamento, mas com gradeamento médio fora de operação, corrosão e falta de manutenção em diversos componentes, três dos oito aeradores parados e secador térmico e dois biodigestores que nunca entraram em operação. O relatório fez oito recomendações e solicitações, e a conclusão considera que as pendências não impactam o bom funcionamento da ETE, mas devem receber atenção.",
+    "fiscalizacao": {
+      "instalacao": "ETE São Gonçalo",
+      "tipo_instalacao": "ETE",
+      "concessionaria": "Águas do Rio - Bloco 1",
+      "municipio_bairro": "Boa Vista, São Gonçalo/RJ",
+      "data_vistoria": "06/03/2024",
+      "nao_conformidades": [
+        "Gradeamento médio (duas grades mecanizadas) fora de operação, com corrosão extrema e falta de manutenção",
+        "Caixa de chegada sem guarda-corpos e com armadura exposta",
+        "Caixa lateral de visita da elevatória sem fechamento adequado e com ligação elétrica sem proteção",
+        "Guarda-corpos instáveis nos desaneradores e falta de guarda-corpo no decantador secundário 2",
+        "Grade fina mecanizada em elevado estado de corrosão",
+        "Calha Parshall com sujidades nas paredes, indicando falta de manutenção",
+        "Uma das duas centrífugas de lodo em manutenção; abrigo e tubulações com indícios de falta de manutenção e oxidação",
+        "Três dos oito aeradores fora de operação",
+        "Cerca de isolamento do reservatório de oxigênio com falhas",
+        "Comportas com alto grau de corrosão",
+        "Secador térmico e dois biodigestores sem operação, segundo a concessionária"
+      ],
+      "prazo_para_sanar": "",
+      "elaborado_revisado_aprovado": "Especialista em Regulação (CASAN); Engenheiro (CASAN); De acordo: Gerente da Câmara de Saneamento"
+    },
+    "prazos": [],
+    "valores": [],
+    "normas_citadas": [
+      {"norma": "Lei Federal 11.445/2007", "trecho_literal": "a Lei Federal nº 11.445/2007 e o Decreto Federal nº 7.217/2010"},
+      {"norma": "Decreto Federal 7.217/2010", "trecho_literal": "Decreto Federal nº 7.217/2010"},
+      {"norma": "Resoluções CONAMA", "trecho_literal": "Resoluções do CONAMA"},
+      {"norma": "Normas técnicas ABNT", "trecho_literal": "normas técnicas da ABNT"},
+      {"norma": "Portarias do Ministério da Saúde", "trecho_literal": "Portarias do Ministério da Saúde e da Vigilância Sanitária"},
+      {"norma": "Contrato de Concessão (Bloco 1, água e esgotamento sanitário)", "trecho_literal": "de Concessão dos Serviços Públicos de Fornecimento de Água e Esgotamento Sanitário nos Municípios do Bloco 1."},
+      {"norma": "Decreto RJ 48.209/2022", "trecho_literal": "Decreto nº 48.209, de 19 de setembro de 2022"}
+    ],
+    "decisoes_ou_pedidos": [
+      "Providenciar manutenção na caixa de chegada",
+      "Providenciar manutenção no gradeamento fino mecanizado",
+      "Providenciar manutenção de demais componentes com alta corrosão, principalmente comportas",
+      "Providenciar o cronograma de intervenções de manutenção geral da ETE",
+      "Apresentar justificativa para o não funcionamento de três dos oito aeradores",
+      "Providenciar conserto da cerca de isolamento do reservatório de oxigênio",
+      "Informar se existe planejamento para operação dos biodigestores e do secador térmico",
+      "Apresentar as análises do efluente tratado dos últimos 90 dias"
+    ],
+    "retrabalho_ou_problema": "Vistoria em 06/03/2024 e documento assinado em 07/11/2024, cerca de oito meses depois; a conclusão do texto está datada de 16/10/2024. Título e introdução tratam de 'Sistema de Distribuição de Água do Bloco 01' e 'Sistema de Abastecimento de Água', mas o objeto é a ETE de esgoto (texto de modelo não ajustado). Corrosão e falta de manutenção aparecem em vários componentes, com necessidade de cronograma de manutenção geral ainda solicitado. Análises do efluente tratado dos últimos 90 dias solicitadas, sem resposta neste trecho.",
+    "indicios_esforco": "Vistoria in loco com 34 fotos; início no escritório operacional com medição de vazões no painel de comando; inspeção de múltiplas unidades (gradeamento, desaneradores, decantadores, tanque de aeração, recirculação, laboratório); revisão em cadeia com 'De acordo' da Gerência."
+  },
+  {
+    "n": 5,
+    "sei": "87188346",
+    "tipo": "Ofício",
+    "numero": "946",
+    "paginas": "198-199",
+    "data_documento": "08/11/2024",
+    "unidade_emissora": "CASAN",
+    "funcao_autor": "Gerente da Câmara de Saneamento",
+    "destinatario": "Diretor Presidente da Concessionária Águas do Rio - Bloco 1",
+    "acao_no_processo": "notificacao_concessionaria",
+    "resumo": "Ofício da CASAN à concessionária Águas do Rio - Bloco 1 encaminhando seis relatórios de fiscalização (259/2024, 209/2024, 212/2024, 213/2024, 214/2024 e 017/2024) e solicitando manifestação, no prazo de 30 dias, sobre as orientações e recomendações técnicas apontadas nos relatórios. O ofício foi assinado eletronicamente pelo Gerente da Câmara de Saneamento em 11/11/2024.",
+    "fiscalizacao": null,
+    "prazos": [
+      {"trecho_literal": "no prazo de 30 (trinta) dias", "quantidade": "30", "unidade": "dias"}
+    ],
+    "valores": [],
+    "normas_citadas": [
+      {"norma": "Decreto RJ 48.209/2022", "trecho_literal": "do Decreto nº 48.209, de 19 de"}
+    ],
+    "decisoes_ou_pedidos": [
+      "Manifestação da concessionária, no prazo de 30 dias, sobre as orientações e recomendações técnicas dos seis relatórios listados"
+    ],
+    "retrabalho_ou_problema": "Os relatórios 259/2024 e 209/2024 listados não constam desta parte do arquivo. Não há resposta da concessionária neste trecho do processo.",
+    "indicios_esforco": "Encaminhamento de seis relatórios com lista de referências; pedido de manifestação com prazo; assinatura eletrônica da Gerência."
+  }
+]

@@ -1,0 +1,1027 @@
+{
+ "codigo": "FIS",
+ "caso": "SEI-480002/001314/2024",
+ "observacao": "Estudo de caso de um processo anual com vários casos internos: cada relatório de fiscalização é um caso do subprocesso vistoria → relatório → 'De acordo' → ofício → e-mail; a análise das respostas tem um único caso (parecer anual). Toda faixa de efeito é hipótese, a calibrar com a CASAN e com os andamentos do SEI; horas de trabalho e custo não foram medidos e não são simulados. O campo 'atividades' traz as atividades do modelo AS-IS (modelo_FIS.json) que mudam; 'atividades_tobe' traz as do modelo TO-BE (modelo_tobe_FIS.json); 'efeito.atividades' usa os ids das ocorrências de casos_FIS.json (mapa em 'mapa_atividades'), porque é nelas que scripts/simular_tobe_fis.py aplica o efeito. Nenhuma melhoria encurta o prazo concedido à concessionária (R-FIS-07, R-FIS-08, R-FIS-10) nem o aviso prévio da vistoria (R-FIS-18): esses requisitos aparecem em 'prazo_protegido' quando a melhoria toca a atividade que eles protegem. Melhoria com efeito 'qualitativo' não entra na simulação de tempo: atua em conformidade, rastreabilidade ou efetividade, e o indicador correspondente está em controles_FIS.json.",
+ "fases": {
+  "1": "Rápidas: organização do trabalho dentro da CASAN, sem norma nova nem tecnologia nova (metas internas, fluxo contínuo, ofício imediato, modelo de relatório corrigido, juntada das respostas). Corresponde à fase 1 da metodologia (ajuste do fluxo).",
+  "2": "Estruturantes: rito e norma interna, padrão técnico e acordo com outras unidades (checklist e modelo por tipo de unidade, análise contínua das respostas com prazo interno, cronograma e aviso, regra de escalada, tese-padrão com a Procuradoria), ainda sem sistema novo.",
+  "3": "Digitais e automação: painel e alertas sobre o SEI, documentos gerados por regra, formulário eletrônico de resposta, e IA com controle humano (minuta do relatório, extração das respostas, priorização por risco). Junta as fases 2 e 3 da metodologia (regras e dados; IA)."
+ },
+ "mapa_atividades": {
+  "a1_vistoria": "t2",
+  "a2_elaborar_relatorio": "t2",
+  "a3_revisar_aprovar": "t3",
+  "a4_oficiar_concessionaria": "t4",
+  "a5_enviar_email": "t4",
+  "a6_analisar_resposta": "t5",
+  "nota": "a6_analisar_resposta não existe em casos_FIS.json: é montada por scripts/simular_tobe_fis.py com a data do Parecer CASAN 250/2025 (marco.parecer), para medir o ciclo até o parecer por relatório. Sua espera tem uma parte protegida (prazo da concessionária) e uma parte da agência."
+ },
+ "tipos_efeito": {
+  "teto_espera": "Espera antes da ocorrência limitada ao teto (du); a parte protegida (prazo de terceiro) não é cortada.",
+  "teto_execucao": "Extensão do FIS: a revisão e as assinaturas (a3) estão registradas como execução; a duração fica limitada ao teto (du).",
+  "reduz_espera_pct": "Espera antes × (1 − %), só na parte da agência.",
+  "qualitativo": "Sem efeito simulado no tempo; atua em conformidade, rastreabilidade, qualidade ou efetividade."
+ },
+ "benchmark_fontes": {
+  "B-FIS-01": "Warrener, Pessoa e Gomes (2024), fiscalização remota × presencial de água e esgoto em MG, doi 10.36659/dae.2024.058 (verificação: 'corrigir', correções aplicadas)",
+  "B-FIS-02": "Masoud (2017), Application of Lean philosophy to routine inspection of bridges, doi 10.58088/y7dz-t902",
+  "B-FIS-03": "Siedschlag (2011), relatório eletrônico de monitoramento e conformidade no Clean Water Act (Ohio), http://hdl.handle.net/10822/553916 (verificação: 'corrigir', correções aplicadas)",
+  "B-FIS-04": "Gunnarsdóttir et al. (2012), Benefits of Water Safety Plans, doi 10.1021/es300372h",
+  "B-FIS-05": "De Witte e Saal (2009), sunshine regulation no setor de água neerlandês, doi 10.1007/s11149-009-9112-5 (verificação: 'corrigir', correções aplicadas)",
+  "B-FIS-06": "Environment Agency (2023), Water and sewerage companies in England: environmental performance report 2022, gov.uk (verificação: 'corrigir', correções aplicadas)",
+  "B-fiscalizacao-01": "Hino, Benami e Brooks (2018), Machine learning for environmental monitoring, doi 10.1038/s41893-018-0142-9",
+  "B-fiscalizacao-02": "Johnson, Levine e Toffel (2023), Improving Regulatory Effectiveness through Better Targeting (OSHA), doi 10.1257/app.20200659 (verificação: 'corrigir', correções aplicadas)",
+  "B-fiscalizacao-04": "City of Chicago (2014), Food Inspection Forecasting, https://chicago.github.io/food-inspections-evaluation/",
+  "B-fiscalizacao-06": "OCDE (2021), Data-Driven, Information-Enabled Regulatory Delivery, doi 10.1787/8f99ec8c-en (verificação: 'corrigir', correções aplicadas)",
+  "B-fiscalizacao-07": "Blundell, Gowrisankaran e Langer (2020), Escalation of Scrutiny, doi 10.1257/aer.20181012",
+  "B-fiscalizacao-08": "Johnson (2020), Regulation by Shaming, doi 10.1257/aer.20180501",
+  "B-fiscalizacao-11": "Nielsen e Parker (2009), Testing responsive regulation in regulatory enforcement, doi 10.1111/j.1748-5991.2009.01064.x",
+  "B-fiscalizacao-12": "Mascini e van Wijk (2009), Responsive regulation at the Dutch Food and Consumer Product Safety Authority, doi 10.1111/j.1748-5991.2009.01047.x",
+  "B-fiscalizacao-13": "Bennear e Olmstead (2008), The impacts of the right to know, doi 10.1016/j.jeem.2008.03.002",
+  "B-fiscalizacao-14": "ANEEL (2018), Fiscalização Preventiva e Orientativa: Reformas na Fiscalização da ANEEL (apresentação de 23/03/2018), gov.br"
+ },
+ "melhorias": [
+  {
+   "id": "M-FIS-01",
+   "fase": 1,
+   "titulo": "Meta interna da vistoria ao relatório assinado, com fila visível",
+   "descricao": "A gerência da CASAN fixa um prazo interno, em dias úteis, da vistoria à 1ª assinatura do relatório e mantém uma fila simples (planilha compartilhada) com a data de cada vistoria, o responsável pela redação e a idade do relatório. Relatório com texto pronto vai à assinatura no mesmo dia; o que passa do prazo é tratado na reunião semanal da equipe.",
+   "atividades": [
+    "t2"
+   ],
+   "atividades_tobe": [
+    "t4"
+   ],
+   "ataca": [
+    {
+     "tipo": "gargalo",
+     "atividade": "t2",
+     "referencia": "avaliacao_FIS.json, gargalo (vistoria → 1ª assinatura)"
+    },
+    {
+     "tipo": "desperdicio",
+     "categoria": "Espera",
+     "atividades": [
+      "t2"
+     ]
+    }
+   ],
+   "efeito": {
+    "tipo": "teto_espera",
+    "atividades": [
+     "a2_elaborar_relatorio"
+    ],
+    "parte": "toda",
+    "unidade": "du",
+    "cenarios": {
+     "conservador": 30,
+     "esperado": 25,
+     "otimista": 18
+    }
+   },
+   "efeito_esperado": "Espera da vistoria à 1ª assinatura limitada a 30 du (conservador), 25 du (esperado) ou 18 du (otimista) por relatório.",
+   "premissa": "Parte relevante do intervalo é relatório pronto aguardando assinatura (data do fecho anterior à 1ª assinatura em vários relatórios, fichas) e não falta de capacidade de redação; a equipe consegue manter o prazo sem reduzir o número de vistorias.",
+   "fatos": [
+    "casos.vistoria_1a_assinatura.mediana_du",
+    "casos.vistoria_1a_assinatura.min_du",
+    "casos.vistoria_1a_assinatura.max_du",
+    "casos.vistoria_1a_assinatura.n",
+    "casos.redacao_1a_assinatura.mediana_du",
+    "rel17.vistoria_aprov_dc"
+   ],
+   "requisitos": [
+    "R-FIS-03",
+    "R-FIS-04",
+    "R-FIS-12"
+   ],
+   "prazo_protegido": [],
+   "benchmark": [
+    "B-FIS-02",
+    "B-FIS-01"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "Linha de base: mediana de 34 du entre 21 relatórios, de 18 du a 171 du (casos.vistoria_1a_assinatura.mediana_du; casos.vistoria_1a_assinatura.n; casos.vistoria_1a_assinatura.min_du; casos.vistoria_1a_assinatura.max_du). A decomposição calculada na linha de base (lb.vistoria_fecho.*, lb.fecho_1a_assinatura.* em resultado_tobe_FIS.json) mostra que o texto do relatório é fechado bem antes da 1ª assinatura. Esperado (25 du): o 3º quartil da vistoria ao fecho do texto (lb.vistoria_fecho.q3_du) mais alguns dias úteis para conferência e assinatura; otimista (18 du): o menor intervalo já obtido pela equipe no ano (casos.vistoria_1a_assinatura.min_du); conservador (30 du): pouco abaixo da mediana, só corta a cauda. B-FIS-02 mostra que a redação do relatório pode ocupar de um terço à metade do tempo de inspeção e que só 42% do tempo agrega valor; B-FIS-01 relata redução média de 44% no tempo até o relatório numa fiscalização de saneamento — ambos sustentam a prática e são teto de outro contexto, não meta.",
+   "riscos": "Prazo interno que empurre relatório incompleto à assinatura; mitigar com a conferência de forma (M-FIS-05) e com o indicador de devoluções. A meta não pode sacrificar a motivação do relatório (R-FIS-12).",
+   "dependencias": "Decisão da gerência da CASAN; registro da data da vistoria na fila (hoje só no texto do relatório).",
+   "controle_humano": "só na fase 3"
+  },
+  {
+   "id": "M-FIS-02",
+   "fase": 1,
+   "titulo": "Aprovação em fluxo contínuo, com cadeia elaborado / revisado / de acordo",
+   "descricao": "A CASAN define três papéis de assinatura por relatório (elaborado por, revisado por, de acordo do Gerente) e o que cada um confere. O relatório segue ao Gerente quando a revisão termina, sem esperar outros relatórios para formar lote; o 'De acordo' é dado em até 5 dias úteis da 1ª assinatura, como pede a IN AGENERSA 128/2024 desde 01/10/2024.",
+   "atividades": [
+    "t3"
+   ],
+   "atividades_tobe": [
+    "t6"
+   ],
+   "ataca": [
+    {
+     "tipo": "desperdicio",
+     "categoria": "Estoque",
+     "atividades": [
+      "t3",
+      "t4"
+     ]
+    },
+    {
+     "tipo": "desperdicio",
+     "categoria": "Superprocessamento",
+     "atividades": [
+      "t2",
+      "t3"
+     ]
+    }
+   ],
+   "efeito": {
+    "tipo": "teto_execucao",
+    "atividades": [
+     "a3_revisar_aprovar"
+    ],
+    "unidade": "du",
+    "cenarios": {
+     "conservador": 10,
+     "esperado": 5,
+     "otimista": 3
+    }
+   },
+   "efeito_esperado": "Duração da 1ª assinatura ao 'De acordo' limitada a 10 du (conservador), 5 du (esperado, prazo do R-FIS-04) ou 3 du (otimista).",
+   "premissa": "As esperas longas da revisão vêm da formação de lotes e de rodadas de assinatura sem papel definido, não de devolução para correção de mérito; a cadeia padronizada não reduz o controle de qualidade.",
+   "fatos": [
+    "casos.revisao_aprovacao.mediana_du",
+    "casos.revisao_aprovacao.max_du",
+    "casos.ultima_tecnica_aprovacao.max_du",
+    "lotes.aprovacao.n",
+    "lotes.aprovacao.tamanho_mediana",
+    "lotes.aprovacao.tamanho_max",
+    "casos.assinaturas.mediana",
+    "casos.cadeias_distintas"
+   ],
+   "requisitos": [
+    "R-FIS-04",
+    "R-FIS-05"
+   ],
+   "prazo_protegido": [],
+   "benchmark": [
+    "B-fiscalizacao-12",
+    "B-FIS-02"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "O esperado (5 du) é o prazo do R-FIS-04 (IN AGENERSA 128/2024, art. 32), já cumprido nos relatórios do período de vigência; o otimista (3 du) fica acima da mediana da última assinatura técnica ao 'De acordo' (casos.ultima_tecnica_aprovacao.mediana_du); o conservador (10 du) admite um ciclo de devolução. Linha de base: mediana de 4,5 du, máximo de 35 du (casos.revisao_aprovacao.mediana_du; casos.revisao_aprovacao.max_du), 7 lotes no ano (lotes.aprovacao.n) e 8 cadeias distintas (casos.cadeias_distintas). B-fiscalizacao-12 (variação de estilo entre fiscais num mesmo órgão) sustenta a padronização de papéis; não dá número.",
+   "riscos": "Mais ofícios por ano para a concessionária (tratado em M-FIS-03 com envio agrupado semanal). Revisão reduzida a formalidade se os papéis não disserem o que se confere.",
+   "dependencias": "Ordem de serviço da gerência da CASAN com os papéis de assinatura.",
+   "controle_humano": "só na fase 3"
+  },
+  {
+   "id": "M-FIS-03",
+   "fase": 1,
+   "titulo": "Ofício no dia útil seguinte ao 'De acordo', com prazo expresso e unidade de contagem",
+   "descricao": "Cada relatório aprovado é oficiado à concessionária no dia útil seguinte ao 'De acordo' (ou no lote semanal, se a gerência preferir agrupar), com o número de todos os relatórios encaminhados, o prazo de resposta e a unidade de contagem (dias úteis ou corridos) escritos no ofício, e o e-mail de envio juntado no mesmo processo. A CASAN mantém a lista aprovado × oficiado.",
+   "atividades": [
+    "t4"
+   ],
+   "atividades_tobe": [
+    "t7"
+   ],
+   "ataca": [
+    {
+     "tipo": "desperdicio",
+     "categoria": "Estoque",
+     "atividades": [
+      "t3",
+      "t4"
+     ]
+    },
+    {
+     "tipo": "desperdicio",
+     "categoria": "Defeitos/retrabalho",
+     "atividades": [
+      "t4"
+     ],
+     "nota": "encaminhamento não rastreável nos autos"
+    }
+   ],
+   "efeito": {
+    "tipo": "teto_espera",
+    "atividades": [
+     "a4_oficiar_concessionaria"
+    ],
+    "parte": "toda",
+    "unidade": "du",
+    "cenarios": {
+     "conservador": 3,
+     "esperado": 1,
+     "otimista": 0
+    }
+   },
+   "efeito_esperado": "Espera do 'De acordo' ao ofício limitada a 3 du (conservador), 1 du (esperado) ou no mesmo dia (otimista).",
+   "premissa": "O ofício não depende de outro ato além do 'De acordo'; agrupar semanalmente não passa de 3 du no conservador.",
+   "fatos": [
+    "casos.aprovacao_oficio.mediana_du",
+    "casos.aprovacao_oficio.max_du",
+    "casos.variante.sem_oficio_de_encaminhamento_nos_autos",
+    "casos.variante.com_oficio_de_encaminhamento_nos_autos",
+    "of1.relatorios_citados",
+    "of1.relatorios_no_pdf",
+    "oficios.prazo_resposta_unico"
+   ],
+   "requisitos": [
+    "R-FIS-05",
+    "R-FIS-06",
+    "R-FIS-07",
+    "R-FIS-08",
+    "R-FIS-10"
+   ],
+   "prazo_protegido": [
+    "R-FIS-07",
+    "R-FIS-10"
+   ],
+   "benchmark": [
+    "B-fiscalizacao-14"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "Linha de base: mediana de 1 du e máximo de 6 du entre os 10 relatórios oficiados nos autos (casos.aprovacao_oficio.mediana_du; casos.aprovacao_oficio.max_du). O ganho em tempo é pequeno; o ganho principal é de controle: 12 relatórios sem ofício nos autos (casos.variante.sem_oficio_de_encaminhamento_nos_autos) e prazo de 30 dias sem unidade de contagem (oficios.prazo_resposta_unico). B-fiscalizacao-14 (ANEEL: tempestividade de envio de informações de 71% para 95% com alertas e orientação) sustenta o acompanhamento do envio, não o número. O prazo concedido à concessionária não muda (R-FIS-07, R-FIS-10).",
+   "riscos": "Envio fracionado aumenta o número de ofícios; a concessionária pode pedir agrupamento.",
+   "dependencias": "Resposta da Procuradoria sobre a unidade de contagem do prazo (R-FIS-08).",
+   "controle_humano": "só na fase 3"
+  },
+  {
+   "id": "M-FIS-04",
+   "fase": 1,
+   "titulo": "Análise das respostas por ofício, sem esperar o parecer anual",
+   "descricao": "Vencido o prazo de cada ofício de encaminhamento, a CASAN analisa as respostas e cronogramas daquele lote e registra, por relatório e por não conformidade, o que foi sanado, o que está em plano de ação e o que está pendente, numa nota técnica parcial juntada ao processo. O parecer anual passa a somar as notas parciais.",
+   "atividades": [
+    "t5"
+   ],
+   "atividades_tobe": [
+    "t8"
+   ],
+   "ataca": [
+    {
+     "tipo": "restricao_secundaria",
+     "atividade": "t5",
+     "referencia": "avaliacao_FIS.json, gargalo (análise consolidada das respostas)"
+    },
+    {
+     "tipo": "desperdicio",
+     "categoria": "Espera",
+     "atividades": [
+      "t5"
+     ]
+    }
+   ],
+   "efeito": {
+    "tipo": "teto_espera",
+    "atividades": [
+     "a6_analisar_resposta"
+    ],
+    "parte": "toda",
+    "unidade": "du",
+    "cenarios": {
+     "conservador": 60,
+     "esperado": 40,
+     "otimista": 25
+    }
+   },
+   "efeito_esperado": "Depois do prazo protegido da concessionária, a análise da resposta de cada relatório sai em até 60 du (conservador), 40 du (esperado) ou 25 du (otimista).",
+   "premissa": "As respostas chegam dentro do prazo do ofício (ou o atraso é registrado como pendência, sem segurar a análise); a equipe tem capacidade para analisar por lote ao longo do ano o que hoje analisa de uma vez.",
+   "fatos": [
+    "intervalo.ultimo_oficio_parecer_du",
+    "oficios.prazo_resposta_unico",
+    "contagem.relatorios_citados_parecer",
+    "marco.parecer"
+   ],
+   "requisitos": [
+    "R-FIS-09",
+    "R-FIS-10",
+    "R-FIS-11",
+    "R-FIS-13"
+   ],
+   "prazo_protegido": [
+    "R-FIS-10"
+   ],
+   "benchmark": [
+    "B-fiscalizacao-14",
+    "B-fiscalizacao-07"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "Linha de base: o parecer anual saiu 159 du depois do último ofício (intervalo.ultimo_oficio_parecer_du) e cobre 42 relatórios (contagem.relatorios_citados_parecer); para os relatórios oficiados no início do ano a espera é muito maior (calculada por relatório na linha de base). A parte protegida é o prazo do ofício lido como 30 dias úteis (a leitura mais longa, enquanto a Procuradoria não fixa a contagem, R-FIS-08) mais 5 du de margem, como na regra de espera de terceiros da metodologia; o teto vale só para o tempo da agência. Faixa de 60, 40 e 25 du: hipótese, sem caso medido de análise por lote. B-fiscalizacao-14 (planos de melhoria acompanhados reduziram em cerca de 40% a recorrência de falhas) e B-fiscalizacao-07 (escalonamento dinâmico) sustentam acompanhar a resposta perto do prazo, não o número.",
+   "riscos": "Notas parciais sem padrão viram retrabalho na consolidação; resolver com o registro por não conformidade (M-FIS-08, M-FIS-14).",
+   "dependencias": "M-FIS-06 (respostas juntadas ao processo); decisão da gerência da CASAN.",
+   "controle_humano": "só na fase 3"
+  },
+  {
+   "id": "M-FIS-05",
+   "fase": 1,
+   "titulo": "Modelo de relatório corrigido: fundamento normativo e conferência de forma antes da assinatura",
+   "descricao": "O modelo de relatório da CASAN passa a trazer, em campo próprio, a base legal e contratual da fiscalização e a data da vistoria; antes da 1ª assinatura, o elaborador confere numa lista curta: datas (vistoria, fecho, cabeçalho), nome e município da unidade, trechos de modelo não ajustados e anexos citados.",
+   "atividades": [
+    "t2",
+    "t3"
+   ],
+   "atividades_tobe": [
+    "t4",
+    "t5"
+   ],
+   "ataca": [
+    {
+     "tipo": "desperdicio",
+     "categoria": "Defeitos/retrabalho",
+     "atividades": [
+      "t2",
+      "t3"
+     ],
+     "nota": "datas divergentes, texto de modelo de outro município ou sistema"
+    }
+   ],
+   "efeito": {
+    "tipo": "qualitativo"
+   },
+   "efeito_esperado": "Sem efeito no tempo simulado. Conformidade do R-FIS-12 (motivação) de 86,4% dos relatórios verificáveis (conformidade_FIS.json) para 100%; relatório sem data de vistoria deixa de existir.",
+   "premissa": "Os defeitos de forma vêm do reaproveitamento de modelo, não de desconhecimento técnico; uma lista curta antes da assinatura os evita sem alongar a redação.",
+   "fatos": [
+    "casos.sem_vistoria_datada",
+    "casos.total"
+   ],
+   "requisitos": [
+    "R-FIS-12",
+    "R-FIS-03"
+   ],
+   "prazo_protegido": [],
+   "benchmark": [
+    "B-fiscalizacao-12"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "Conformidade de 86,4% no R-FIS-12, com 3 relatórios sem fundamento normativo (RF 10, RF 11 e RF 12; conformidade_FIS.json), e 2 relatórios sem vistoria datada (casos.sem_vistoria_datada). Sem efeito em tempo. B-fiscalizacao-12 sustenta reduzir a variação de forma entre fiscais.",
+   "riscos": "Lista de conferência preenchida sem conferir; o controle automático vem na fase 3 (M-FIS-15).",
+   "dependencias": "Revisão do modelo pela gerência da CASAN; confirmação da Procuradoria sobre a exigência de motivação (item R-FIS-12).",
+   "controle_humano": "só na fase 3"
+  },
+  {
+   "id": "M-FIS-06",
+   "fase": 1,
+   "titulo": "Respostas da concessionária juntadas ao processo da fiscalização, com data de protocolo",
+   "descricao": "Toda resposta, cronograma ou plano de ação da concessionária sobre um relatório é juntado ao processo da fiscalização do ano (ou relacionado a ele no SEI), com a data de recebimento registrada. O parecer cita as peças pelo número SEI.",
+   "atividades": [
+    "t5"
+   ],
+   "atividades_tobe": [
+    "t8"
+   ],
+   "ataca": [
+    {
+     "tipo": "desperdicio",
+     "categoria": "Defeitos/retrabalho",
+     "atividades": [
+      "t4"
+     ],
+     "nota": "rastreabilidade incompleta dos autos"
+    },
+    {
+     "tipo": "restricao_secundaria",
+     "atividade": "t5"
+    }
+   ],
+   "efeito": {
+    "tipo": "qualitativo"
+   },
+   "efeito_esperado": "Sem efeito no tempo simulado. Torna verificáveis os requisitos hoje 'sem evidência' sobre a resposta e a análise (R-FIS-08, R-FIS-09, R-FIS-11) e dá a data de resposta que a simulação teve de supor.",
+   "premissa": "As respostas existem e estão em outro processo ou caixa de e-mail; juntar não depende de sistema novo.",
+   "fatos": [
+    "contagem.relatorios_citados_parecer",
+    "contagem.relatorios_no_pdf"
+   ],
+   "requisitos": [
+    "R-FIS-08",
+    "R-FIS-09",
+    "R-FIS-11"
+   ],
+   "prazo_protegido": [],
+   "benchmark": [
+    "B-FIS-03"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "O parecer lista 42 relatórios e o PDF traz 23 (contagem.relatorios_citados_parecer; contagem.relatorios_no_pdf); as respostas não estão nos autos exportados. B-FIS-03 (relatório eletrônico do regulado com efeito positivo sobre a conformidade) sustenta trazer a resposta para dentro do processo; não dá número.",
+   "riscos": "Processo do ano fica volumoso; usar processo relacionado por unidade, se a SECEX preferir.",
+   "dependencias": "Acordo com a SECEX sobre onde a concessionária protocola.",
+   "controle_humano": "só na fase 3"
+  },
+  {
+   "id": "M-FIS-07",
+   "fase": 2,
+   "titulo": "Checklist e modelo de relatório por tipo de unidade, com gravidade e prazo-padrão por não conformidade",
+   "descricao": "A CASAN aprova um checklist de campo e um modelo de relatório para cada tipo de unidade do Bloco 1 (elevatória de água, elevatória de esgoto, ETA, ETE), com lista fechada de não conformidades, critério de gravidade e prazo-padrão de saneamento por gravidade. O relatório passa a ser montado a partir do checklist preenchido em campo, com redação livre só nas constatações específicas.",
+   "atividades": [
+    "t2"
+   ],
+   "atividades_tobe": [
+    "t3",
+    "t4"
+   ],
+   "ataca": [
+    {
+     "tipo": "gargalo",
+     "atividade": "t2"
+    },
+    {
+     "tipo": "desperdicio",
+     "categoria": "Talento não aproveitado",
+     "atividades": [
+      "t2"
+     ]
+    }
+   ],
+   "efeito": {
+    "tipo": "reduz_espera_pct",
+    "atividades": [
+     "a2_elaborar_relatorio"
+    ],
+    "unidade": "%",
+    "cenarios": {
+     "conservador": 15,
+     "esperado": 25,
+     "otimista": 35
+    }
+   },
+   "efeito_esperado": "Depois do teto da fase 1, o tempo da vistoria à 1ª assinatura cai mais 15% (conservador), 25% (esperado) ou 35% (otimista).",
+   "premissa": "Parte do tempo restante é redação de trechos repetitivos (identificação, checklist, recomendações semelhantes para não conformidades reiteradas); o checklist fechado a encurta sem perder constatações.",
+   "fatos": [
+    "casos.nao_conformidades.mediana",
+    "casos.nao_conformidades.max",
+    "casos.vistoria_1a_assinatura.mediana_du",
+    "contagem.nao_conformidades_total"
+   ],
+   "requisitos": [
+    "R-FIS-09",
+    "R-FIS-12"
+   ],
+   "prazo_protegido": [],
+   "benchmark": [
+    "B-fiscalizacao-12",
+    "B-FIS-02",
+    "B-FIS-01"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "Relatórios com mediana de 5 e máximo de 11 não conformidades (casos.nao_conformidades.mediana; casos.nao_conformidades.max), 113 no total (contagem.nao_conformidades_total), muitas reiteradas entre unidades, segundo as fichas. B-FIS-02 mede a redação como um terço à metade do tempo de inspeção; B-FIS-01 relata 44% de redução no tempo até o relatório em outro desenho de fiscalização. Faixa de 15% a 35%: hipótese, abaixo do teto de B-FIS-01, porque parte do tempo já foi cortada pelo teto da fase 1 (M-FIS-01) e o checklist não elimina a redação das constatações.",
+   "riscos": "Checklist fechado que esconda constatação fora da lista; manter campo livre obrigatório. Prazo-padrão por gravidade precisa de aval da Procuradoria (R-FIS-09).",
+   "dependencias": "Ato da gerência da CASAN aprovando checklists, gravidades e prazos; validação jurídica dos prazos-padrão.",
+   "controle_humano": "só na fase 3"
+  },
+  {
+   "id": "M-FIS-08",
+   "fase": 2,
+   "titulo": "Análise contínua das respostas por relatório, com prazo interno, e parecer anual só de consolidação",
+   "descricao": "Ato da CASAN fixa o rito: vencido o prazo do ofício, a resposta de cada relatório é analisada em prazo interno (referência: 15 dias do Regimento, art. 27, III), com registro por não conformidade em planilha-padrão (sanada, em plano com data, pendente). O parecer anual consolida as análises e traz as estatísticas do ano; não reabre o mérito.",
+   "atividades": [
+    "t5"
+   ],
+   "atividades_tobe": [
+    "t8",
+    "t11"
+   ],
+   "ataca": [
+    {
+     "tipo": "restricao_secundaria",
+     "atividade": "t5"
+    },
+    {
+     "tipo": "desperdicio",
+     "categoria": "Espera",
+     "atividades": [
+      "t5"
+     ]
+    }
+   ],
+   "efeito": {
+    "tipo": "teto_espera",
+    "atividades": [
+     "a6_analisar_resposta"
+    ],
+    "parte": "toda",
+    "unidade": "du",
+    "cenarios": {
+     "conservador": 40,
+     "esperado": 20,
+     "otimista": 12
+    }
+   },
+   "efeito_esperado": "Depois do prazo protegido, a análise da resposta de cada relatório sai em até 40 du (conservador), 20 du (esperado) ou 12 du (otimista).",
+   "premissa": "Com o registro por não conformidade e o prazo interno escritos, a análise de um relatório cabe em poucas semanas; a equipe absorve o fluxo contínuo sem atrasar as vistorias (validar capacidade com a CASAN).",
+   "fatos": [
+    "intervalo.ultimo_oficio_parecer_du",
+    "contagem.relatorios_citados_parecer",
+    "oficios.prazo_resposta_unico"
+   ],
+   "requisitos": [
+    "R-FIS-09",
+    "R-FIS-10",
+    "R-FIS-11",
+    "R-FIS-13"
+   ],
+   "prazo_protegido": [
+    "R-FIS-10"
+   ],
+   "benchmark": [
+    "B-fiscalizacao-14",
+    "B-FIS-04"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "Baixa o teto da fase 1 (M-FIS-04) pela nova capacidade: rito escrito, prazo interno e planilha-padrão por não conformidade. O otimista (12 du) fica perto dos 15 dias corridos do Regimento (R-FIS-11) convertidos em dias úteis; esperado de 20 du e conservador de 40 du: hipótese. B-fiscalizacao-14 (planos de melhoria acompanhados) e B-FIS-04 (plano de ação permanente do prestador auditado pelo regulador, com queda significativa da não conformidade) sustentam o acompanhamento contínuo; não dão número de tempo.",
+   "riscos": "Prazo interno que vire análise superficial; manter o indicador de qualidade (notas parciais reabertas na consolidação). Capacidade da equipe é a principal incerteza.",
+   "dependencias": "Ato da gerência da CASAN; M-FIS-06; resposta da Procuradoria sobre a aplicação do art. 27, III, do Regimento à análise das respostas (R-FIS-11).",
+   "controle_humano": "só na fase 3"
+  },
+  {
+   "id": "M-FIS-09",
+   "fase": 2,
+   "titulo": "Cronograma anual de vistorias juntado antes da 1ª vistoria e Aviso de Fiscalização com antecedência mínima",
+   "descricao": "No início do exercício, a CASAN junta ao processo o cronograma anual das unidades do Bloco 1 a vistoriar (todas as estações de tratamento e as elevatórias escolhidas) e envia o Aviso de Fiscalização com pelo menos 48 horas de antecedência de cada vistoria, por modelo.",
+   "atividades": [
+    "t1"
+   ],
+   "atividades_tobe": [
+    "t1",
+    "t2"
+   ],
+   "ataca": [
+    {
+     "tipo": "desperdicio",
+     "categoria": "Defeitos/retrabalho",
+     "atividades": [
+      "t1"
+     ],
+     "nota": "cronograma não juntado; antecedência de aviso curta"
+    }
+   ],
+   "efeito": {
+    "tipo": "qualitativo"
+   },
+   "efeito_esperado": "Sem efeito no tempo simulado. Torna conformes os requisitos de cronograma (R-FIS-02) e de aviso (R-FIS-18), hoje sem evidência, e permite verificar a cobertura anual (R-FIS-03).",
+   "premissa": "A CASAN já planeja as vistorias; o ganho é registrar o plano e padronizar o aviso.",
+   "fatos": [
+    "of3.antecedencia_agendamento_du",
+    "oficios.agendamento"
+   ],
+   "requisitos": [
+    "R-FIS-02",
+    "R-FIS-03",
+    "R-FIS-18"
+   ],
+   "prazo_protegido": [
+    "R-FIS-18"
+   ],
+   "benchmark": [
+    "B-fiscalizacao-02"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "Um único ofício de agendamento nos autos, com 1 du de antecedência entre o e-mail e a 1ª vistoria agendada (oficios.agendamento; of3.antecedencia_agendamento_du). Sem efeito em tempo. B-fiscalizacao-02 sustenta tratar a escolha das unidades como decisão planejada; o critério de risco vem na fase 3 (M-FIS-16).",
+   "riscos": "Cronograma rígido que impeça vistoria por denúncia ou acidente; prever vistorias extraordinárias fora do cronograma.",
+   "dependencias": "Resposta da Procuradoria sobre o cronograma do art. 2º da Deliberação 4216/2021 (item R-FIS-02).",
+   "controle_humano": "só na fase 3"
+  },
+  {
+   "id": "M-FIS-10",
+   "fase": 2,
+   "titulo": "Regra escrita de escalada para não conformidade não sanada",
+   "descricao": "Ato da CASAN, validado pela Procuradoria, define o que acontece quando a não conformidade não é sanada nem tem plano no prazo: vistoria de retorno em prazo fixo; na reincidência ou na gravidade alta, proposta de notificação de infração, com defesa prévia, em processo sancionatório próprio. A regra é comunicada à concessionária junto com o relatório.",
+   "atividades": [
+    "t5",
+    "g1"
+   ],
+   "atividades_tobe": [
+    "t9"
+   ],
+   "ataca": [
+    {
+     "tipo": "restricao_secundaria",
+     "atividade": "t5",
+     "nota": "consequência do descumprimento só aparece no parecer anual"
+    }
+   ],
+   "efeito": {
+    "tipo": "qualitativo"
+   },
+   "efeito_esperado": "Sem efeito no tempo simulado. Efeito esperado em efetividade: menos não conformidades reiteradas na mesma unidade e menos contestação do escopo, porque a consequência é conhecida antes.",
+   "premissa": "A concessionária responde a consequência previsível; a escalada respeita o procedimento sancionatório (R-FIS-16).",
+   "fatos": [
+    "marco.despacho_procuradoria",
+    "intervalo.parecer_procuradoria",
+    "oficios.prazo_resposta_unico"
+   ],
+   "requisitos": [
+    "R-FIS-09",
+    "R-FIS-16"
+   ],
+   "prazo_protegido": [],
+   "benchmark": [
+    "B-fiscalizacao-07",
+    "B-fiscalizacao-11"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "No caso, a consequência do descumprimento só aparece no parecer anual, e a contestação levou o processo à Procuradoria 118 dias corridos depois do parecer (intervalo.parecer_procuradoria; marco.despacho_procuradoria). B-fiscalizacao-07 estima que sem escalonamento dinâmico o dano da poluição seria 164% maior com as mesmas multas; B-fiscalizacao-11 adverte que a escalada só funciona se for previsível. Sem número transferível para o tempo.",
+   "riscos": "Escalada aplicada sem defesa prévia; a regra só propõe a notificação, a decisão segue o rito sancionatório.",
+   "dependencias": "Parecer da Procuradoria; aprovação da gerência da CASAN e, se necessário, do Conselho-Diretor.",
+   "controle_humano": "só na fase 3"
+  },
+  {
+   "id": "M-FIS-11",
+   "fase": 2,
+   "titulo": "Tese-padrão sobre o escopo da fiscalização, aprovada com a Procuradoria",
+   "descricao": "A CASAN e a Procuradoria fixam uma vez a tese de que a fiscalização programada alcança as obrigações contratuais de operação e manutenção das unidades, além dos indicadores de desempenho, e a reutilizam nas respostas à concessionária. Só questão jurídica nova vai à Procuradoria.",
+   "atividades": [
+    "t7",
+    "t8"
+   ],
+   "atividades_tobe": [
+    "t13",
+    "t14"
+   ],
+   "ataca": [
+    {
+     "tipo": "desperdicio",
+     "categoria": "Espera",
+     "atividades": [
+      "t7",
+      "t8",
+      "t9"
+     ],
+     "nota": "contestação do escopo e envio à Procuradoria"
+    }
+   ],
+   "efeito": {
+    "tipo": "qualitativo"
+   },
+   "efeito_esperado": "Sem efeito no tempo simulado (as peças da contestação não estão nos autos). Efeito esperado: menos envios à Procuradoria por tese repetida e resposta técnica mais curta.",
+   "premissa": "A contestação do escopo se repete entre anos e concessionárias; a tese firmada pela Procuradoria vale para os próximos processos.",
+   "fatos": [
+    "intervalo.parecer_procuradoria",
+    "marco.despacho_procuradoria"
+   ],
+   "requisitos": [
+    "R-FIS-13",
+    "R-FIS-14",
+    "R-FIS-15"
+   ],
+   "prazo_protegido": [],
+   "benchmark": [
+    "B-fiscalizacao-11"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "Do parecer ao envio à Procuradoria passaram 118 dias corridos (intervalo.parecer_procuradoria), com manifestação da concessionária e reiteração da CASAN fora dos autos. B-fiscalizacao-11 sustenta regra previsível; sem número.",
+   "riscos": "Tese genérica que não responda ao argumento concreto; a CASAN continua respondendo ponto a ponto.",
+   "dependencias": "Manifestação da Procuradoria no processo atual (fim do recorte).",
+   "controle_humano": "só na fase 3"
+  },
+  {
+   "id": "M-FIS-12",
+   "fase": 3,
+   "titulo": "Painel de prazos da fiscalização com alertas sobre o SEI",
+   "descricao": "Um painel lê os andamentos e documentos do SEI e mostra, por relatório: dias úteis desde a vistoria sem 1ª assinatura, dias desde a 1ª assinatura sem 'De acordo', relatório aprovado sem ofício, prazo de resposta vencendo ou vencido e resposta recebida sem análise. Alertas vão ao responsável e ao Gerente no limiar de cada meta.",
+   "atividades": [
+    "t2",
+    "t3",
+    "t4",
+    "t5"
+   ],
+   "atividades_tobe": [
+    "t10"
+   ],
+   "ataca": [
+    {
+     "tipo": "gargalo",
+     "atividade": "t2"
+    },
+    {
+     "tipo": "restricao_secundaria",
+     "atividade": "t5"
+    },
+    {
+     "tipo": "desperdicio",
+     "categoria": "Estoque",
+     "atividades": [
+      "t3",
+      "t4"
+     ]
+    }
+   ],
+   "efeito": {
+    "tipo": "qualitativo",
+    "nota": "sustenta os tetos das fases 1 e 2; não baixa nenhum teto, para não contar o ganho duas vezes"
+   },
+   "efeito_esperado": "Sem ganho adicional simulado: o painel é o que faz os tetos de M-FIS-01, M-FIS-02, M-FIS-03, M-FIS-04 e M-FIS-08 serem cumpridos no cenário esperado em vez de no conservador. Os indicadores I-FIS-01 a I-FIS-05 passam a ser medidos de forma contínua.",
+   "premissa": "Há acesso de leitura aos andamentos do SEI (relatório ou API) ou, na falta dele, a fila da fase 1 alimenta o painel.",
+   "fatos": [
+    "casos.vistoria_1a_assinatura.max_du",
+    "casos.revisao_aprovacao.max_du",
+    "casos.variante.sem_oficio_de_encaminhamento_nos_autos",
+    "intervalo.ultimo_oficio_parecer_du"
+   ],
+   "requisitos": [
+    "R-FIS-04",
+    "R-FIS-06",
+    "R-FIS-08",
+    "R-FIS-11",
+    "R-FIS-17"
+   ],
+   "prazo_protegido": [],
+   "benchmark": [
+    "B-fiscalizacao-14",
+    "B-fiscalizacao-06"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "Contagem dupla: as fases se compõem, e um alerta sobre uma espera que a fase 1 ou 2 já limitou não soma nada; por isso o efeito é registrado como sustentação dos tetos, não como novo teto. B-fiscalizacao-14 (alertas automáticos e conformidade de envio de 71% para 95%) sustenta a prática.",
+   "riscos": "Alerta sem responsável por agir; painel com dado incompleto do SEI (os autos exportados já mostraram ofícios fora do processo).",
+   "dependencias": "Acesso aos andamentos do SEI (relatório gerencial ou API); cadastro das datas de vistoria (fase 1).",
+   "controle_humano": "Painel sem decisão automática: o Gerente da CASAN decide o que fazer com cada alerta; a regra de cálculo de dias úteis é conferida trimestralmente contra 5 relatórios escolhidos ao acaso."
+  },
+  {
+   "id": "M-FIS-13",
+   "fase": 3,
+   "titulo": "Ofício e e-mail gerados no 'De acordo', com conferência aprovado × oficiado",
+   "descricao": "Ao ser dado o 'De acordo', o sistema gera a minuta do ofício por modelo (relatórios, prazo e unidade de contagem preenchidos) e, depois da assinatura do Gerente, envia o e-mail e junta o comprovante. Uma rotina cruza relatórios aprovados e ofícios e acusa relatório aprovado sem ofício e ofício que cita relatório ausente do processo.",
+   "atividades": [
+    "t4"
+   ],
+   "atividades_tobe": [
+    "t7"
+   ],
+   "ataca": [
+    {
+     "tipo": "desperdicio",
+     "categoria": "Defeitos/retrabalho",
+     "atividades": [
+      "t4"
+     ]
+    },
+    {
+     "tipo": "desperdicio",
+     "categoria": "Estoque",
+     "atividades": [
+      "t4"
+     ]
+    }
+   ],
+   "efeito": {
+    "tipo": "teto_espera",
+    "atividades": [
+     "a4_oficiar_concessionaria",
+     "a5_enviar_email"
+    ],
+    "parte": "toda",
+    "unidade": "du",
+    "cenarios": {
+     "conservador": 1,
+     "esperado": 0,
+     "otimista": 0
+    }
+   },
+   "efeito_esperado": "Ofício e e-mail no mesmo dia do 'De acordo' (esperado e otimista) ou no dia útil seguinte (conservador); nenhum relatório aprovado sem ofício.",
+   "premissa": "Modelo de ofício aprovado e assinatura do Gerente no mesmo dia do 'De acordo'.",
+   "fatos": [
+    "casos.aprovacao_oficio.mediana_du",
+    "casos.oficio_email.max_du",
+    "casos.variante.sem_oficio_de_encaminhamento_nos_autos",
+    "of2.relatorios_citados",
+    "of2.relatorios_no_pdf"
+   ],
+   "requisitos": [
+    "R-FIS-05",
+    "R-FIS-06",
+    "R-FIS-07",
+    "R-FIS-10"
+   ],
+   "prazo_protegido": [
+    "R-FIS-07",
+    "R-FIS-10"
+   ],
+   "benchmark": [
+    "B-fiscalizacao-14"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "Baixa o teto da fase 1 (M-FIS-03) porque a minuta já sai pronta no 'De acordo'. Linha de base: mediana de 1 du do 'De acordo' ao ofício e máximo de 1 du do ofício ao e-mail (casos.aprovacao_oficio.mediana_du; casos.oficio_email.max_du). Ganho principal de controle: 12 relatórios sem ofício nos autos (casos.variante.sem_oficio_de_encaminhamento_nos_autos). B-fiscalizacao-14 sustenta a prática.",
+   "riscos": "Ofício gerado com lista errada; a conferência aprovado × oficiado roda antes da assinatura.",
+   "dependencias": "Modelo de documento no SEI com campos; integração ou rotina sobre o SEI para o cruzamento.",
+   "controle_humano": "O Gerente da CASAN assina todo ofício; a lista de relatórios gerada é conferida pelo elaborador antes da assinatura (100%)."
+  },
+  {
+   "id": "M-FIS-14",
+   "fase": 3,
+   "titulo": "Formulário eletrônico de resposta por não conformidade, com extração assistida das respostas em PDF",
+   "descricao": "A concessionária responde em formulário eletrônico, um registro por não conformidade (providência, data, evidência anexada, cronograma), recebido no SEI ou em sistema integrado. Respostas que ainda chegarem em PDF passam por extração assistida por IA, que preenche os mesmos campos com a página de origem, para conferência do analista. O painel (M-FIS-12) mostra o vencimento e o estado de cada item.",
+   "atividades": [
+    "t5"
+   ],
+   "atividades_tobe": [
+    "t8"
+   ],
+   "ataca": [
+    {
+     "tipo": "restricao_secundaria",
+     "atividade": "t5"
+    },
+    {
+     "tipo": "desperdicio",
+     "categoria": "Espera",
+     "atividades": [
+      "t5"
+     ]
+    }
+   ],
+   "efeito": {
+    "tipo": "teto_espera",
+    "atividades": [
+     "a6_analisar_resposta"
+    ],
+    "parte": "toda",
+    "unidade": "du",
+    "cenarios": {
+     "conservador": 30,
+     "esperado": 15,
+     "otimista": 8
+    }
+   },
+   "efeito_esperado": "Depois do prazo protegido, a análise da resposta de cada relatório sai em até 30 du (conservador), 15 du (esperado) ou 8 du (otimista).",
+   "premissa": "A concessionária adota o formulário (exigência em ofício ou norma); a resposta estruturada elimina a leitura e a transcrição, e sobra o juízo técnico.",
+   "fatos": [
+    "intervalo.ultimo_oficio_parecer_du",
+    "contagem.nao_conformidades_total",
+    "contagem.relatorios_citados_parecer"
+   ],
+   "requisitos": [
+    "R-FIS-08",
+    "R-FIS-09",
+    "R-FIS-10",
+    "R-FIS-11"
+   ],
+   "prazo_protegido": [
+    "R-FIS-10"
+   ],
+   "benchmark": [
+    "B-FIS-03",
+    "B-fiscalizacao-06"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "Baixa o teto da fase 2 (M-FIS-08) pela nova capacidade: a resposta chega estruturada por não conformidade (113 itens no ano no recorte, contagem.nao_conformidades_total) e o painel mostra o vencimento. Faixa de 30, 15 e 8 du: hipótese; o otimista fica abaixo dos 15 dias corridos do Regimento (R-FIS-11). B-FIS-03 (relatório eletrônico via web com efeito positivo sobre a conformidade) e B-fiscalizacao-06 (histórico estruturado por operador) sustentam a prática; são teto de outro contexto. Horas não medidas: o ganho em trabalho não é simulado.",
+   "riscos": "Extração errada de prazo ou providência; mitigado pela conferência de 100% dos campos extraídos (Q-FIS-02). Concessionária que não adote o formulário: manter a extração assistida como contingência.",
+   "dependencias": "Norma ou ofício que exija o formulário; formulário no SEI (peticionamento) ou sistema integrado; serviço de IA aprovado pela TI e pela gestão de dados.",
+   "controle_humano": "O analista da CASAN confere 100% dos campos extraídos por IA contra a página de origem antes de registrar a análise; o juízo de sanado / em plano / pendente é sempre do analista; amostra trimestral de 5 respostas reanalisada por segundo servidor sem a ferramenta."
+  },
+  {
+   "id": "M-FIS-15",
+   "fase": 3,
+   "titulo": "Checklist digital em campo e minuta assistida do relatório, com checagem automática de forma",
+   "descricao": "A equipe preenche o checklist (M-FIS-07) em tablet ou celular durante a vistoria, com fotos datadas e localizadas. Ao voltar, um assistente de IA monta a minuta do relatório no modelo da CASAN a partir do checklist e das legendas, sugere não conformidades já apontadas na mesma unidade em anos anteriores e roda a checagem automática de forma (datas, unidade, município, fundamento, anexos citados). A redação final e a assinatura são da equipe.",
+   "atividades": [
+    "t2",
+    "t3"
+   ],
+   "atividades_tobe": [
+    "t3",
+    "t4",
+    "t5"
+   ],
+   "ataca": [
+    {
+     "tipo": "gargalo",
+     "atividade": "t2"
+    },
+    {
+     "tipo": "desperdicio",
+     "categoria": "Defeitos/retrabalho",
+     "atividades": [
+      "t2",
+      "t3"
+     ]
+    },
+    {
+     "tipo": "desperdicio",
+     "categoria": "Talento não aproveitado",
+     "atividades": [
+      "t2"
+     ]
+    }
+   ],
+   "efeito": {
+    "tipo": "reduz_espera_pct",
+    "atividades": [
+     "a2_elaborar_relatorio"
+    ],
+    "unidade": "%",
+    "cenarios": {
+     "conservador": 10,
+     "esperado": 20,
+     "otimista": 30
+    }
+   },
+   "efeito_esperado": "Depois das fases 1 e 2, o tempo da vistoria à 1ª assinatura cai mais 10% (conservador), 20% (esperado) ou 30% (otimista), líquido da revisão humana da minuta.",
+   "premissa": "A redação e a transcrição do checklist ainda ocupam parte do tempo depois da fase 2; a revisão da minuta pela equipe custa menos que a redação.",
+   "fatos": [
+    "casos.vistoria_1a_assinatura.mediana_du",
+    "casos.nao_conformidades.mediana",
+    "casos.sem_vistoria_datada"
+   ],
+   "requisitos": [
+    "R-FIS-12",
+    "R-FIS-04"
+   ],
+   "prazo_protegido": [],
+   "benchmark": [
+    "B-FIS-02",
+    "B-FIS-01"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "Conta líquida: parcela de redação e transcrição que resta depois do checklist (fase 2) × ganho bruto da minuta − tempo de revisão humana; sem horas medidas, a faixa de 10% a 30% é hipótese e fica abaixo dos 44% de B-FIS-01 (outro desenho de fiscalização, teto, não meta). B-FIS-02 mostra que a redação é a etapa longa do relatório de inspeção. A checagem de forma ataca os defeitos registrados nas fichas e os 2 relatórios sem vistoria datada (casos.sem_vistoria_datada).",
+   "riscos": "Minuta que repita não conformidade antiga já sanada ou que induza a equipe a não olhar o que está fora do checklist; mitigado pelo controle Q-FIS-01. Fotos sem metadado confiável.",
+   "dependencias": "M-FIS-07 em uso; dispositivos de campo; serviço de IA aprovado; base de relatórios anteriores por unidade.",
+   "controle_humano": "A equipe que fez a vistoria revê toda a minuta e confere cada não conformidade contra as fotos e o checklist (100%); o Gerente confere a conclusão; a assinatura é bloqueada enquanto a checagem de forma tiver pendência; amostra trimestral de 3 relatórios refeita sem a ferramenta por outro fiscal."
+  },
+  {
+   "id": "M-FIS-16",
+   "fase": 3,
+   "titulo": "Priorização das vistorias por risco, com histórico de não conformidades por unidade",
+   "descricao": "Com as não conformidades estruturadas por unidade (M-FIS-07, M-FIS-14), um modelo simples de risco (reincidência, gravidade, tipo de unidade, tempo desde a última vistoria) ordena as unidades para o cronograma anual. A cobertura mínima de todas as estações de tratamento continua; o modelo decide a ordem e as vistorias de retorno.",
+   "atividades": [
+    "t1"
+   ],
+   "atividades_tobe": [
+    "t1"
+   ],
+   "ataca": [
+    {
+     "tipo": "restricao_secundaria",
+     "atividade": "t5",
+     "nota": "efetividade da fiscalização, hoje medida só no parecer anual"
+    }
+   ],
+   "efeito": {
+    "tipo": "qualitativo"
+   },
+   "efeito_esperado": "Sem efeito no tempo do ciclo. Efeito esperado em efetividade: mais não conformidades críticas achadas mais cedo no ano com a mesma equipe.",
+   "premissa": "Há histórico estruturado de pelo menos um ciclo anual completo; a cobertura legal mínima (R-FIS-03) é mantida fora do modelo.",
+   "fatos": [
+    "contagem.nao_conformidades_total",
+    "contagem.relatorios_citados_parecer"
+   ],
+   "requisitos": [
+    "R-FIS-02",
+    "R-FIS-03"
+   ],
+   "prazo_protegido": [],
+   "benchmark": [
+    "B-fiscalizacao-01",
+    "B-fiscalizacao-02",
+    "B-fiscalizacao-04",
+    "B-fiscalizacao-06"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "113 não conformidades em 23 relatórios no recorte (contagem.nao_conformidades_total) são a base inicial. B-fiscalizacao-01 (dobra as violações detectadas com restrições realistas), B-fiscalizacao-02 (dobro de lesões evitadas pela seleção), B-fiscalizacao-04 (violações críticas achadas 7,5 dias antes) e B-fiscalizacao-06 (precisão de 61% a 66% nos 5% a 10% de maior risco) são resultados de outros setores e escalas: teto, não meta. Sem efeito no tempo do ciclo.",
+   "riscos": "Modelo enviesado pelo próprio histórico de vistorias (só se acha onde se olha); reservar parte das vistorias para escolha aleatória.",
+   "dependencias": "Histórico estruturado (M-FIS-07, M-FIS-14); cadastro de unidades do Bloco 1.",
+   "controle_humano": "O Gerente da CASAN aprova o cronograma e pode alterar a ordem com justificativa registrada; o modelo e seus pesos são revistos uma vez por ano, com a taxa de acerto do ano anterior (Q-FIS-03)."
+  },
+  {
+   "id": "M-FIS-17",
+   "fase": 3,
+   "titulo": "Painel público das não conformidades por unidade e do seu estado",
+   "descricao": "A AGENERSA publica, por unidade do Bloco 1, as não conformidades abertas, em plano e resolvidas, atualizadas a cada relatório e a cada análise de resposta, a partir dos mesmos dados do painel interno.",
+   "atividades": [
+    "t5",
+    "t6"
+   ],
+   "atividades_tobe": [
+    "t10",
+    "t11"
+   ],
+   "ataca": [
+    {
+     "tipo": "restricao_secundaria",
+     "atividade": "t5"
+    }
+   ],
+   "efeito": {
+    "tipo": "qualitativo"
+   },
+   "efeito_esperado": "Sem efeito no tempo do ciclo. Efeito esperado em efetividade: pressão por saneamento sem novas vistorias.",
+   "premissa": "Os dados das fases 2 e 3 estão completos e conferidos; a publicação respeita sigilo de segurança das instalações.",
+   "fatos": [
+    "contagem.relatorios_citados_parecer",
+    "contagem.nao_conformidades_total"
+   ],
+   "requisitos": [
+    "R-FIS-09"
+   ],
+   "prazo_protegido": [],
+   "benchmark": [
+    "B-fiscalizacao-13",
+    "B-FIS-05",
+    "B-fiscalizacao-08"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "B-fiscalizacao-13 (redução de 30% a 44% nas violações com divulgação direta ao usuário, saneamento), B-FIS-05 (publicação comparada no setor de água) e B-fiscalizacao-08 (uma divulgação equivale a 210 inspeções em dissuasão) sustentam a prática em outros contextos: teto, não meta.",
+   "riscos": "Publicar não conformidade ainda contestada; publicar só após o prazo de resposta e com o estado informado.",
+   "dependencias": "M-FIS-12 e M-FIS-14; decisão do Conselho-Diretor sobre a publicação; aval da Procuradoria.",
+   "controle_humano": "A CASAN valida cada atualização antes da publicação (100% dos itens novos); itens contestados aparecem como 'em análise'."
+  }
+ ]
+}

@@ -1,0 +1,974 @@
+{
+ "codigo": "FIS",
+ "caso": "SEI-480002/001314/2024",
+ "definicoes": {
+  "dc": "dias corridos",
+  "du": "dias úteis, calendário RJ em scripts/fatos_fis.py (hipótese)",
+  "observacao": "PDF é recorte do processo: 24 dos relatórios citados no Parecer 250/2025 têm texto; respostas da concessionária não constam. Sem trilha de andamentos do SEI."
+ },
+ "fatos": [
+  {
+   "id": "contagem.documentos",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Documentos no PDF exportado",
+   "valor": 34,
+   "unidade": "documentos",
+   "definicao": "fronteiras FIM_DOCS",
+   "origem": "PDF"
+  },
+  {
+   "id": "contagem.paginas",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Páginas do PDF",
+   "valor": 233,
+   "unidade": "páginas",
+   "definicao": "",
+   "origem": "PDF"
+  },
+  {
+   "id": "contagem.relatório",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Documentos do tipo Relatório de Fiscalização",
+   "valor": 23,
+   "unidade": "documentos",
+   "definicao": "classificação por padrão de texto",
+   "origem": "PDF"
+  },
+  {
+   "id": "contagem.ofício",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Documentos do tipo Ofício",
+   "valor": 4,
+   "unidade": "documentos",
+   "definicao": "classificação por padrão de texto",
+   "origem": "PDF"
+  },
+  {
+   "id": "contagem.e-mail",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Documentos do tipo E-mail",
+   "valor": 4,
+   "unidade": "documentos",
+   "definicao": "classificação por padrão de texto",
+   "origem": "PDF"
+  },
+  {
+   "id": "contagem.parecer",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Documentos do tipo Parecer",
+   "valor": 1,
+   "unidade": "documentos",
+   "definicao": "classificação por padrão de texto",
+   "origem": "PDF"
+  },
+  {
+   "id": "contagem.despacho",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Documentos do tipo Despacho",
+   "valor": 2,
+   "unidade": "documentos",
+   "definicao": "classificação por padrão de texto",
+   "origem": "PDF"
+  },
+  {
+   "id": "contagem.relatorios_citados_parecer",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Relatórios listados no Parecer 250/2025 (escopo anual)",
+   "valor": 42,
+   "unidade": "relatórios",
+   "definicao": "lista do item I do parecer",
+   "origem": "doc 32 (SEI 104033188)"
+  },
+  {
+   "id": "contagem.relatorios_no_pdf",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Relatórios de fiscalização com texto no PDF",
+   "valor": 23,
+   "unidade": "relatórios",
+   "definicao": "",
+   "origem": "PDF"
+  },
+  {
+   "id": "relSEI69710124.elab_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF (SEI 69710124, nº não detectado no texto): 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 53,
+   "unidade": "dc",
+   "definicao": "data da assinatura do Gerente − data da 1ª assinatura",
+   "origem": "doc 1 (SEI 69710124)"
+  },
+  {
+   "id": "relSEI69710124.assinaturas",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF (SEI 69710124, nº não detectado no texto): nº de assinaturas eletrônicas",
+   "valor": 6,
+   "unidade": "assinaturas",
+   "definicao": "",
+   "origem": "doc 1 (SEI 69710124)"
+  },
+  {
+   "id": "relSEI69710124.vistoria_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF (SEI 69710124, nº não detectado no texto): vistoria até aprovação",
+   "valor": 102,
+   "unidade": "dc",
+   "definicao": "data do 'De acordo' − data da vistoria (ficha)",
+   "origem": "doc 1 (SEI 69710124)"
+  },
+  {
+   "id": "relSEI69712392.elab_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF (SEI 69712392, nº não detectado no texto): 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 53,
+   "unidade": "dc",
+   "definicao": "data da assinatura do Gerente − data da 1ª assinatura",
+   "origem": "doc 2 (SEI 69712392)"
+  },
+  {
+   "id": "relSEI69712392.assinaturas",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF (SEI 69712392, nº não detectado no texto): nº de assinaturas eletrônicas",
+   "valor": 6,
+   "unidade": "assinaturas",
+   "definicao": "",
+   "origem": "doc 2 (SEI 69712392)"
+  },
+  {
+   "id": "relSEI69712392.vistoria_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF (SEI 69712392, nº não detectado no texto): vistoria até aprovação",
+   "valor": 102,
+   "unidade": "dc",
+   "definicao": "data do 'De acordo' − data da vistoria (ficha)",
+   "origem": "doc 2 (SEI 69712392)"
+  },
+  {
+   "id": "rel12.elab_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 12: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 53,
+   "unidade": "dc",
+   "definicao": "data da assinatura do Gerente − data da 1ª assinatura",
+   "origem": "doc 3 (SEI 69716140)"
+  },
+  {
+   "id": "rel12.assinaturas",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 12: nº de assinaturas eletrônicas",
+   "valor": 6,
+   "unidade": "assinaturas",
+   "definicao": "",
+   "origem": "doc 3 (SEI 69716140)"
+  },
+  {
+   "id": "rel56.elab_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 56: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 14,
+   "unidade": "dc",
+   "definicao": "data da assinatura do Gerente − data da 1ª assinatura",
+   "origem": "doc 6 (SEI 74334571)"
+  },
+  {
+   "id": "rel56.assinaturas",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 56: nº de assinaturas eletrônicas",
+   "valor": 4,
+   "unidade": "assinaturas",
+   "definicao": "",
+   "origem": "doc 6 (SEI 74334571)"
+  },
+  {
+   "id": "rel56.vistoria_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 56: vistoria até aprovação",
+   "valor": 50,
+   "unidade": "dc",
+   "definicao": "data do 'De acordo' − data da vistoria (ficha)",
+   "origem": "doc 6 (SEI 74334571)"
+  },
+  {
+   "id": "rel52.elab_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 52: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 14,
+   "unidade": "dc",
+   "definicao": "data da assinatura do Gerente − data da 1ª assinatura",
+   "origem": "doc 7 (SEI 74336951)"
+  },
+  {
+   "id": "rel52.assinaturas",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 52: nº de assinaturas eletrônicas",
+   "valor": 5,
+   "unidade": "assinaturas",
+   "definicao": "",
+   "origem": "doc 7 (SEI 74336951)"
+  },
+  {
+   "id": "rel52.vistoria_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 52: vistoria até aprovação",
+   "valor": 52,
+   "unidade": "dc",
+   "definicao": "data do 'De acordo' − data da vistoria (ficha)",
+   "origem": "doc 7 (SEI 74336951)"
+  },
+  {
+   "id": "relSEI74338948.elab_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF (SEI 74338948, nº não detectado no texto): 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 14,
+   "unidade": "dc",
+   "definicao": "data da assinatura do Gerente − data da 1ª assinatura",
+   "origem": "doc 8 (SEI 74338948)"
+  },
+  {
+   "id": "relSEI74338948.assinaturas",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF (SEI 74338948, nº não detectado no texto): nº de assinaturas eletrônicas",
+   "valor": 4,
+   "unidade": "assinaturas",
+   "definicao": "",
+   "origem": "doc 8 (SEI 74338948)"
+  },
+  {
+   "id": "relSEI74338948.vistoria_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF (SEI 74338948, nº não detectado no texto): vistoria até aprovação",
+   "valor": 50,
+   "unidade": "dc",
+   "definicao": "data do 'De acordo' − data da vistoria (ficha)",
+   "origem": "doc 8 (SEI 74338948)"
+  },
+  {
+   "id": "relSEI75824232.elab_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF (SEI 75824232, nº não detectado no texto): 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 6,
+   "unidade": "dc",
+   "definicao": "data da assinatura do Gerente − data da 1ª assinatura",
+   "origem": "doc 9 (SEI 75824232)"
+  },
+  {
+   "id": "relSEI75824232.assinaturas",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF (SEI 75824232, nº não detectado no texto): nº de assinaturas eletrônicas",
+   "valor": 5,
+   "unidade": "assinaturas",
+   "definicao": "",
+   "origem": "doc 9 (SEI 75824232)"
+  },
+  {
+   "id": "relSEI75824232.vistoria_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF (SEI 75824232, nº não detectado no texto): vistoria até aprovação",
+   "valor": 69,
+   "unidade": "dc",
+   "definicao": "data do 'De acordo' − data da vistoria (ficha)",
+   "origem": "doc 9 (SEI 75824232)"
+  },
+  {
+   "id": "rel73.elab_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 73: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 7,
+   "unidade": "dc",
+   "definicao": "data da assinatura do Gerente − data da 1ª assinatura",
+   "origem": "doc 10 (SEI 75824539)"
+  },
+  {
+   "id": "rel73.assinaturas",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 73: nº de assinaturas eletrônicas",
+   "valor": 5,
+   "unidade": "assinaturas",
+   "definicao": "",
+   "origem": "doc 10 (SEI 75824539)"
+  },
+  {
+   "id": "rel73.vistoria_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 73: vistoria até aprovação",
+   "valor": 61,
+   "unidade": "dc",
+   "definicao": "data do 'De acordo' − data da vistoria (ficha)",
+   "origem": "doc 10 (SEI 75824539)"
+  },
+  {
+   "id": "rel65.elab_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 65: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 4,
+   "unidade": "dc",
+   "definicao": "data da assinatura do Gerente − data da 1ª assinatura",
+   "origem": "doc 11 (SEI 76104339)"
+  },
+  {
+   "id": "rel65.assinaturas",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 65: nº de assinaturas eletrônicas",
+   "valor": 5,
+   "unidade": "assinaturas",
+   "definicao": "",
+   "origem": "doc 11 (SEI 76104339)"
+  },
+  {
+   "id": "rel65.vistoria_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 65: vistoria até aprovação",
+   "valor": 55,
+   "unidade": "dc",
+   "definicao": "data do 'De acordo' − data da vistoria (ficha)",
+   "origem": "doc 11 (SEI 76104339)"
+  },
+  {
+   "id": "relSEI76213730.elab_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF (SEI 76213730, nº não detectado no texto): 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 4,
+   "unidade": "dc",
+   "definicao": "data da assinatura do Gerente − data da 1ª assinatura",
+   "origem": "doc 12 (SEI 76213730)"
+  },
+  {
+   "id": "relSEI76213730.assinaturas",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF (SEI 76213730, nº não detectado no texto): nº de assinaturas eletrônicas",
+   "valor": 5,
+   "unidade": "assinaturas",
+   "definicao": "",
+   "origem": "doc 12 (SEI 76213730)"
+  },
+  {
+   "id": "relSEI76213730.vistoria_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF (SEI 76213730, nº não detectado no texto): vistoria até aprovação",
+   "valor": 61,
+   "unidade": "dc",
+   "definicao": "data do 'De acordo' − data da vistoria (ficha)",
+   "origem": "doc 12 (SEI 76213730)"
+  },
+  {
+   "id": "rel159.elab_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 159: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 4,
+   "unidade": "dc",
+   "definicao": "data da assinatura do Gerente − data da 1ª assinatura",
+   "origem": "doc 13 (SEI 79901118)"
+  },
+  {
+   "id": "rel159.assinaturas",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 159: nº de assinaturas eletrônicas",
+   "valor": 5,
+   "unidade": "assinaturas",
+   "definicao": "",
+   "origem": "doc 13 (SEI 79901118)"
+  },
+  {
+   "id": "rel159.vistoria_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 159: vistoria até aprovação",
+   "valor": 41,
+   "unidade": "dc",
+   "definicao": "data do 'De acordo' − data da vistoria (ficha)",
+   "origem": "doc 13 (SEI 79901118)"
+  },
+  {
+   "id": "rel155.elab_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 155: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 46,
+   "unidade": "dc",
+   "definicao": "data da assinatura do Gerente − data da 1ª assinatura",
+   "origem": "doc 16 (SEI 80655356)"
+  },
+  {
+   "id": "rel155.assinaturas",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 155: nº de assinaturas eletrônicas",
+   "valor": 4,
+   "unidade": "assinaturas",
+   "definicao": "",
+   "origem": "doc 16 (SEI 80655356)"
+  },
+  {
+   "id": "rel155.vistoria_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 155: vistoria até aprovação",
+   "valor": 70,
+   "unidade": "dc",
+   "definicao": "data do 'De acordo' − data da vistoria (ficha)",
+   "origem": "doc 16 (SEI 80655356)"
+  },
+  {
+   "id": "rel156.elab_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 156: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 46,
+   "unidade": "dc",
+   "definicao": "data da assinatura do Gerente − data da 1ª assinatura",
+   "origem": "doc 17 (SEI 80654568)"
+  },
+  {
+   "id": "rel156.assinaturas",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 156: nº de assinaturas eletrônicas",
+   "valor": 4,
+   "unidade": "assinaturas",
+   "definicao": "",
+   "origem": "doc 17 (SEI 80654568)"
+  },
+  {
+   "id": "rel156.vistoria_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 156: vistoria até aprovação",
+   "valor": 70,
+   "unidade": "dc",
+   "definicao": "data do 'De acordo' − data da vistoria (ficha)",
+   "origem": "doc 17 (SEI 80654568)"
+  },
+  {
+   "id": "rel157.elab_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 157: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 46,
+   "unidade": "dc",
+   "definicao": "data da assinatura do Gerente − data da 1ª assinatura",
+   "origem": "doc 18 (SEI 80656194)"
+  },
+  {
+   "id": "rel157.assinaturas",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 157: nº de assinaturas eletrônicas",
+   "valor": 4,
+   "unidade": "assinaturas",
+   "definicao": "",
+   "origem": "doc 18 (SEI 80656194)"
+  },
+  {
+   "id": "rel157.vistoria_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 157: vistoria até aprovação",
+   "valor": 70,
+   "unidade": "dc",
+   "definicao": "data do 'De acordo' − data da vistoria (ficha)",
+   "origem": "doc 18 (SEI 80656194)"
+  },
+  {
+   "id": "rel158.elab_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 158: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 46,
+   "unidade": "dc",
+   "definicao": "data da assinatura do Gerente − data da 1ª assinatura",
+   "origem": "doc 19 (SEI 80656240)"
+  },
+  {
+   "id": "rel158.assinaturas",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 158: nº de assinaturas eletrônicas",
+   "valor": 4,
+   "unidade": "assinaturas",
+   "definicao": "",
+   "origem": "doc 19 (SEI 80656240)"
+  },
+  {
+   "id": "rel158.vistoria_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 158: vistoria até aprovação",
+   "valor": 70,
+   "unidade": "dc",
+   "definicao": "data do 'De acordo' − data da vistoria (ficha)",
+   "origem": "doc 19 (SEI 80656240)"
+  },
+  {
+   "id": "rel153.elab_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 153: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 6,
+   "unidade": "dc",
+   "definicao": "data da assinatura do Gerente − data da 1ª assinatura",
+   "origem": "doc 22 (SEI 82895573)"
+  },
+  {
+   "id": "rel153.assinaturas",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 153: nº de assinaturas eletrônicas",
+   "valor": 4,
+   "unidade": "assinaturas",
+   "definicao": "",
+   "origem": "doc 22 (SEI 82895573)"
+  },
+  {
+   "id": "rel153.vistoria_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 153: vistoria até aprovação",
+   "valor": 63,
+   "unidade": "dc",
+   "definicao": "data do 'De acordo' − data da vistoria (ficha)",
+   "origem": "doc 22 (SEI 82895573)"
+  },
+  {
+   "id": "rel259.elab_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 259: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 2,
+   "unidade": "dc",
+   "definicao": "data da assinatura do Gerente − data da 1ª assinatura",
+   "origem": "doc 23 (SEI 86162193)"
+  },
+  {
+   "id": "rel259.assinaturas",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 259: nº de assinaturas eletrônicas",
+   "valor": 3,
+   "unidade": "assinaturas",
+   "definicao": "",
+   "origem": "doc 23 (SEI 86162193)"
+  },
+  {
+   "id": "rel259.vistoria_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 259: vistoria até aprovação",
+   "valor": 86,
+   "unidade": "dc",
+   "definicao": "data do 'De acordo' − data da vistoria (ficha)",
+   "origem": "doc 23 (SEI 86162193)"
+  },
+  {
+   "id": "rel209.elab_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 209: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 2,
+   "unidade": "dc",
+   "definicao": "data da assinatura do Gerente − data da 1ª assinatura",
+   "origem": "doc 24 (SEI 86161531)"
+  },
+  {
+   "id": "rel209.assinaturas",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 209: nº de assinaturas eletrônicas",
+   "valor": 3,
+   "unidade": "assinaturas",
+   "definicao": "",
+   "origem": "doc 24 (SEI 86161531)"
+  },
+  {
+   "id": "rel209.vistoria_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 209: vistoria até aprovação",
+   "valor": 86,
+   "unidade": "dc",
+   "definicao": "data do 'De acordo' − data da vistoria (ficha)",
+   "origem": "doc 24 (SEI 86161531)"
+  },
+  {
+   "id": "rel212.elab_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 212: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 2,
+   "unidade": "dc",
+   "definicao": "data da assinatura do Gerente − data da 1ª assinatura",
+   "origem": "doc 25 (SEI 86827856)"
+  },
+  {
+   "id": "rel212.assinaturas",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 212: nº de assinaturas eletrônicas",
+   "valor": 3,
+   "unidade": "assinaturas",
+   "definicao": "",
+   "origem": "doc 25 (SEI 86827856)"
+  },
+  {
+   "id": "rel212.vistoria_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 212: vistoria até aprovação",
+   "valor": 80,
+   "unidade": "dc",
+   "definicao": "data do 'De acordo' − data da vistoria (ficha)",
+   "origem": "doc 25 (SEI 86827856)"
+  },
+  {
+   "id": "rel213.elab_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 213: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 2,
+   "unidade": "dc",
+   "definicao": "data da assinatura do Gerente − data da 1ª assinatura",
+   "origem": "doc 26 (SEI 86826650)"
+  },
+  {
+   "id": "rel213.assinaturas",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 213: nº de assinaturas eletrônicas",
+   "valor": 3,
+   "unidade": "assinaturas",
+   "definicao": "",
+   "origem": "doc 26 (SEI 86826650)"
+  },
+  {
+   "id": "rel213.vistoria_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 213: vistoria até aprovação",
+   "valor": 80,
+   "unidade": "dc",
+   "definicao": "data do 'De acordo' − data da vistoria (ficha)",
+   "origem": "doc 26 (SEI 86826650)"
+  },
+  {
+   "id": "rel214.elab_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 214: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 2,
+   "unidade": "dc",
+   "definicao": "data da assinatura do Gerente − data da 1ª assinatura",
+   "origem": "doc 27 (SEI 86826664)"
+  },
+  {
+   "id": "rel214.assinaturas",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 214: nº de assinaturas eletrônicas",
+   "valor": 3,
+   "unidade": "assinaturas",
+   "definicao": "",
+   "origem": "doc 27 (SEI 86826664)"
+  },
+  {
+   "id": "rel214.vistoria_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 214: vistoria até aprovação",
+   "valor": 80,
+   "unidade": "dc",
+   "definicao": "data do 'De acordo' − data da vistoria (ficha)",
+   "origem": "doc 27 (SEI 86826664)"
+  },
+  {
+   "id": "rel17.elab_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 17: 1ª assinatura até 'De acordo' do Gerente",
+   "valor": 1,
+   "unidade": "dc",
+   "definicao": "data da assinatura do Gerente − data da 1ª assinatura",
+   "origem": "doc 28 (SEI 87028948)"
+  },
+  {
+   "id": "rel17.assinaturas",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 17: nº de assinaturas eletrônicas",
+   "valor": 3,
+   "unidade": "assinaturas",
+   "definicao": "",
+   "origem": "doc 28 (SEI 87028948)"
+  },
+  {
+   "id": "rel17.vistoria_aprov_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "RF 17: vistoria até aprovação",
+   "valor": 247,
+   "unidade": "dc",
+   "definicao": "data do 'De acordo' − data da vistoria (ficha)",
+   "origem": "doc 28 (SEI 87028948)"
+  },
+  {
+   "id": "ciclo.elab_aprov_mediana_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Mediana: 1ª assinatura do relatório até aprovação do Gerente",
+   "valor": 6.5,
+   "unidade": "dc",
+   "definicao": "22 relatórios com assinatura no PDF",
+   "origem": "rel*.elab_aprov_dc"
+  },
+  {
+   "id": "ciclo.elab_aprov_max_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Máximo: 1ª assinatura até aprovação",
+   "valor": 53,
+   "unidade": "dc",
+   "definicao": "",
+   "origem": "rel*.elab_aprov_dc"
+  },
+  {
+   "id": "ciclo.assinaturas_mediana",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Mediana de assinaturas por relatório",
+   "valor": 4.0,
+   "unidade": "assinaturas",
+   "definicao": "",
+   "origem": "rel*.assinaturas"
+  },
+  {
+   "id": "oficio1.data",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício de encaminhamento 1 à concessionária",
+   "valor": "2024-05-08",
+   "unidade": "data",
+   "definicao": "assinatura do Gerente",
+   "origem": "doc 4 (SEI 74141761)"
+  },
+  {
+   "id": "oficio1.relatorios",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 1: relatórios encaminhados",
+   "valor": 12,
+   "unidade": "relatórios",
+   "definicao": "números citados no ofício",
+   "origem": "doc 4 (SEI 74141761)"
+  },
+  {
+   "id": "oficio1.envio_email_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 1: assinatura até envio por e-mail",
+   "valor": 0,
+   "unidade": "dc",
+   "definicao": "",
+   "origem": "doc 5 (SEI 74179603)"
+  },
+  {
+   "id": "oficio1.espera_max_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 1: maior espera entre aprovação de um relatório do lote e o ofício",
+   "valor": 9,
+   "unidade": "dc",
+   "definicao": "data do ofício − data do 'De acordo' (só relatórios presentes no PDF)",
+   "origem": "doc 4"
+  },
+  {
+   "id": "oficio1.espera_min_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 1: menor espera entre aprovação e ofício",
+   "valor": 9,
+   "unidade": "dc",
+   "definicao": "",
+   "origem": "doc 4"
+  },
+  {
+   "id": "oficio1.prazo_resposta",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 1: prazo dado à concessionária",
+   "valor": 30,
+   "unidade": "dias",
+   "definicao": "trecho 'prazo de N (...) dias' do ofício",
+   "origem": "doc 4"
+  },
+  {
+   "id": "oficio2.data",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício de encaminhamento 2 à concessionária",
+   "valor": "2024-08-07",
+   "unidade": "data",
+   "definicao": "assinatura do Gerente",
+   "origem": "doc 14 (SEI 80501066)"
+  },
+  {
+   "id": "oficio2.relatorios",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 2: relatórios encaminhados",
+   "valor": 5,
+   "unidade": "relatórios",
+   "definicao": "números citados no ofício",
+   "origem": "doc 14 (SEI 80501066)"
+  },
+  {
+   "id": "oficio2.envio_email_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 2: assinatura até envio por e-mail",
+   "valor": 1,
+   "unidade": "dc",
+   "definicao": "",
+   "origem": "doc 15 (SEI 80626379)"
+  },
+  {
+   "id": "oficio2.espera_max_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 2: maior espera entre aprovação de um relatório do lote e o ofício",
+   "valor": 1,
+   "unidade": "dc",
+   "definicao": "data do ofício − data do 'De acordo' (só relatórios presentes no PDF)",
+   "origem": "doc 14"
+  },
+  {
+   "id": "oficio2.espera_min_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 2: menor espera entre aprovação e ofício",
+   "valor": 1,
+   "unidade": "dc",
+   "definicao": "",
+   "origem": "doc 14"
+  },
+  {
+   "id": "oficio2.prazo_resposta",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 2: prazo dado à concessionária",
+   "valor": 30,
+   "unidade": "dias",
+   "definicao": "trecho 'prazo de N (...) dias' do ofício",
+   "origem": "doc 14"
+  },
+  {
+   "id": "oficio3.data",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício de encaminhamento 3 à concessionária",
+   "valor": "2024-09-09",
+   "unidade": "data",
+   "definicao": "assinatura do Gerente",
+   "origem": "doc 20 (SEI 82718456)"
+  },
+  {
+   "id": "oficio3.relatorios",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 3: relatórios encaminhados",
+   "valor": 0,
+   "unidade": "relatórios",
+   "definicao": "números citados no ofício",
+   "origem": "doc 20 (SEI 82718456)"
+  },
+  {
+   "id": "oficio3.envio_email_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 3: assinatura até envio por e-mail",
+   "valor": 0,
+   "unidade": "dc",
+   "definicao": "",
+   "origem": "doc 21 (SEI 82834832)"
+  },
+  {
+   "id": "oficio4.data",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício de encaminhamento 4 à concessionária",
+   "valor": "2024-11-11",
+   "unidade": "data",
+   "definicao": "assinatura do Gerente",
+   "origem": "doc 29 (SEI 87188346)"
+  },
+  {
+   "id": "oficio4.relatorios",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 4: relatórios encaminhados",
+   "valor": 6,
+   "unidade": "relatórios",
+   "definicao": "números citados no ofício",
+   "origem": "doc 29 (SEI 87188346)"
+  },
+  {
+   "id": "oficio4.envio_email_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 4: assinatura até envio por e-mail",
+   "valor": 0,
+   "unidade": "dc",
+   "definicao": "",
+   "origem": "doc 30 (SEI 87308946)"
+  },
+  {
+   "id": "oficio4.espera_max_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 4: maior espera entre aprovação de um relatório do lote e o ofício",
+   "valor": 3,
+   "unidade": "dc",
+   "definicao": "data do ofício − data do 'De acordo' (só relatórios presentes no PDF)",
+   "origem": "doc 29"
+  },
+  {
+   "id": "oficio4.espera_min_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 4: menor espera entre aprovação e ofício",
+   "valor": 3,
+   "unidade": "dc",
+   "definicao": "",
+   "origem": "doc 29"
+  },
+  {
+   "id": "oficio4.prazo_resposta",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 4: prazo dado à concessionária",
+   "valor": 30,
+   "unidade": "dias",
+   "definicao": "trecho 'prazo de N (...) dias' do ofício",
+   "origem": "doc 29"
+  },
+  {
+   "id": "marco.primeiro_relatorio",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Marco: 1ª assinatura de relatório no PDF",
+   "valor": "2024-03-07",
+   "unidade": "data",
+   "definicao": "",
+   "origem": "rels"
+  },
+  {
+   "id": "marco.ultimo_oficio",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Marco: último ofício de encaminhamento",
+   "valor": "2024-11-11",
+   "unidade": "data",
+   "definicao": "",
+   "origem": "doc 29"
+  },
+  {
+   "id": "marco.parecer",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Marco: Parecer CASAN 250/2025 (análise das respostas)",
+   "valor": "2025-07-08",
+   "unidade": "data",
+   "definicao": "",
+   "origem": "doc 32 (SEI 104033188)"
+  },
+  {
+   "id": "marco.despacho_procuradoria",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Marco: envio à Procuradoria (última peça)",
+   "valor": "2025-11-03",
+   "unidade": "data",
+   "definicao": "",
+   "origem": "doc 34 (SEI 117907053)"
+  },
+  {
+   "id": "intervalo.ultimo_oficio_parecer",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Último ofício até o parecer de análise das respostas",
+   "valor": 239,
+   "unidade": "dc",
+   "definicao": "",
+   "origem": "marco.ultimo_oficio → marco.parecer"
+  },
+  {
+   "id": "intervalo.ultimo_oficio_parecer_du",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Último ofício até o parecer (dias úteis)",
+   "valor": 159,
+   "unidade": "du",
+   "definicao": "calendário RJ (hipótese)",
+   "origem": "idem"
+  },
+  {
+   "id": "intervalo.parecer_procuradoria",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Parecer até envio à Procuradoria",
+   "valor": 118,
+   "unidade": "dc",
+   "definicao": "",
+   "origem": "marco.parecer → marco.despacho_procuradoria"
+  },
+  {
+   "id": "intervalo.total_aberto",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Duração até a última peça (processo ainda aberto)",
+   "valor": 606,
+   "unidade": "dc",
+   "definicao": "",
+   "origem": "marco.primeiro_relatorio → marco.despacho_procuradoria"
+  },
+  {
+   "id": "contagem.nao_conformidades_total",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Não conformidades listadas nos relatórios do PDF (fichas)",
+   "valor": 113,
+   "unidade": "itens",
+   "definicao": "soma de fiscalizacao.nao_conformidades nas fichas",
+   "origem": "fichas/"
+  }
+ ]
+}

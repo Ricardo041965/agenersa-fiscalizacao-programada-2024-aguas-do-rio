@@ -1,0 +1,397 @@
+{
+ "codigo": "FIS",
+ "gerado_por": "scripts/priorizacao_fis.py",
+ "hipotese": true,
+ "nota": "Medição dos critérios da matriz do capítulo 11 com proxies declarados; horas e premissas de custo são hipótese até calibração com a CASAN. Unidade de caso: relatório de fiscalização.",
+ "ancoras_horas": {
+  "fonte": "saida/fase4/matriz_automacao.json (P06.sinais, P06.horas_caso) e saida/fase2/casos_P06.json (t3)",
+  "horas_por_peca_analise_P06": 3.7,
+  "horas_por_peca_apoio_P06": 0.61,
+  "horas_parecer_tecnico_por_caso_P06_t3": 11.39,
+  "escala_cenarios": {
+   "conservador": 0.584,
+   "esperado": 1.0,
+   "otimista": 1.416
+  },
+  "hipotese": true
+ },
+ "pecas_ano_por_atividade": {
+  "t1": {
+   "relatorios": 0,
+   "pareceres": 0,
+   "apoio": 2
+  },
+  "t2": {
+   "relatorios": 42,
+   "pareceres": 0,
+   "apoio": 0
+  },
+  "t3": {
+   "relatorios": 0,
+   "pareceres": 0,
+   "apoio": 0
+  },
+  "t4": {
+   "relatorios": 0,
+   "pareceres": 0,
+   "apoio": 6
+  },
+  "t5": {
+   "relatorios": 0,
+   "pareceres": 1,
+   "apoio": 1
+  },
+  "t6": {
+   "relatorios": 0,
+   "pareceres": 0,
+   "apoio": 0
+  },
+  "t7": {
+   "relatorios": 0,
+   "pareceres": 0,
+   "apoio": 0
+  },
+  "t8": {
+   "relatorios": 0,
+   "pareceres": 0,
+   "apoio": 1
+  },
+  "t9": {
+   "relatorios": 0,
+   "pareceres": 0,
+   "apoio": 0
+  }
+ },
+ "horas_ano_por_atividade": {
+  "t1": {
+   "conservador": 0.7,
+   "esperado": 1.2,
+   "otimista": 1.7
+  },
+  "t2": {
+   "conservador": 90.8,
+   "esperado": 155.6,
+   "otimista": 220.4
+  },
+  "t3": {
+   "conservador": 0.0,
+   "esperado": 0.0,
+   "otimista": 0.0
+  },
+  "t4": {
+   "conservador": 2.1,
+   "esperado": 3.6,
+   "otimista": 5.1
+  },
+  "t5": {
+   "conservador": 7.0,
+   "esperado": 12.0,
+   "otimista": 17.0
+  },
+  "t6": {
+   "conservador": 0.0,
+   "esperado": 0.0,
+   "otimista": 0.0
+  },
+  "t7": {
+   "conservador": 0.0,
+   "esperado": 0.0,
+   "otimista": 0.0
+  },
+  "t8": {
+   "conservador": 0.4,
+   "esperado": 0.6,
+   "otimista": 0.9
+  },
+  "t9": {
+   "conservador": 0.0,
+   "esperado": 0.0,
+   "otimista": 0.0
+  }
+ },
+ "sinais": {
+  "pecas_analise": 23,
+  "relatorios_com_texto": 22,
+  "frac_estruturado": 0.913,
+  "frac_nao_estruturado": 1.0,
+  "frac_norma_substantiva": 0.87,
+  "frac_checklist": 0.783,
+  "nao_conformidades": 113,
+  "categorias_nc": {
+   "conservação e corrosão": {
+    "itens": 15,
+    "relatorios": 10
+   },
+   "vazamento e infiltração": {
+    "itens": 11,
+    "relatorios": 7
+   },
+   "identificação da unidade": {
+    "itens": 10,
+    "relatorios": 10
+   },
+   "instalação elétrica": {
+    "itens": 10,
+    "relatorios": 6
+   },
+   "registros de manutenção no local": {
+    "itens": 10,
+    "relatorios": 10
+   },
+   "sinalização de risco elétrico": {
+    "itens": 9,
+    "relatorios": 8
+   },
+   "outras": {
+    "itens": 8,
+    "relatorios": 7
+   },
+   "falta de bomba reserva": {
+    "itens": 7,
+    "relatorios": 7
+   },
+   "gradeamento": {
+    "itens": 6,
+    "relatorios": 5
+   },
+   "iluminação": {
+    "itens": 6,
+    "relatorios": 6
+   },
+   "equipamento inoperante": {
+    "itens": 5,
+    "relatorios": 3
+   },
+   "guarda-corpo, tampa e segurança": {
+    "itens": 5,
+    "relatorios": 4
+   },
+   "acesso não restrito": {
+    "itens": 4,
+    "relatorios": 4
+   },
+   "licença e documentos": {
+    "itens": 4,
+    "relatorios": 4
+   },
+   "ventilação e circulação de ar": {
+    "itens": 2,
+    "relatorios": 2
+   },
+   "espaço para operação": {
+    "itens": 1,
+    "relatorios": 1
+   }
+  },
+  "categorias_recorrentes": [
+   "acesso não restrito",
+   "conservação e corrosão",
+   "equipamento inoperante",
+   "falta de bomba reserva",
+   "gradeamento",
+   "guarda-corpo, tampa e segurança",
+   "identificação da unidade",
+   "iluminação",
+   "instalação elétrica",
+   "licença e documentos",
+   "registros de manutenção no local",
+   "sinalização de risco elétrico",
+   "vazamento e infiltração"
+  ],
+  "frac_nc_em_categoria_recorrente": 0.903,
+  "caminho_mais_frequente": 0.522,
+  "caminhos_distintos": 3,
+  "variabilidade": 0.13,
+  "requisitos": 18,
+  "requisitos_teste_computavel": 17,
+  "normas": 36,
+  "normas_com_texto_nos_autos": 15,
+  "pct_conforme_casos": 96.2,
+  "casos_sem_evidencia": 35,
+  "mchar_ano": 0.477
+ },
+ "metricas": {
+  "volume_processo": 7.6,
+  "volume_relatorio": 42,
+  "analise": 0.965,
+  "dados": 0.957,
+  "regras": 0.826,
+  "padrao": 0.712,
+  "completude": 0.99
+ },
+ "notas": {
+  "analise": 5,
+  "dados": 5,
+  "regras": 4,
+  "padrao": 5,
+  "completude": 5,
+  "volume_processo": 2,
+  "volume_relatorio": 4
+ },
+ "nota_composta": {
+  "unidade_processo": 81.0,
+  "unidade_relatorio": 91.0,
+  "conservadora_unidade_processo": 62.0,
+  "conservadora_unidade_relatorio": 72.0
+ },
+ "portoes": {
+  "nota_volume_processo": false,
+  "nota_volume_relatorio": true,
+  "nota_regras": true,
+  "casos": true,
+  "volume_medido_com_revocacao": false
+ },
+ "atividades_automatizaveis": [
+  "t1",
+  "t2",
+  "t3",
+  "t4",
+  "t5",
+  "t7",
+  "t8",
+  "t9"
+ ],
+ "capacidades": [
+  "automação de tramitação (RPA no SEI)",
+  "busca de precedentes e normas",
+  "extração de dados de documentos",
+  "monitoramento de prazos e alertas",
+  "painel e indicadores",
+  "redação assistida de minuta",
+  "sumarização e linha do tempo",
+  "verificação de conformidade"
+ ],
+ "horas_dev": {
+  "isolado": 744.3,
+  "incremental": 136.3
+ },
+ "cenarios": {
+  "conservador": {
+   "horas_ano_total": 101.0,
+   "fracao_automatizavel": 0.397,
+   "horas_liberadas_ano": 40.1,
+   "retorno_ano": 1313,
+   "custo_construcao": 165719,
+   "custo_incremental": 31959,
+   "custo_llm_ano": 4.77,
+   "custo_ano": 33149,
+   "liquido_ano": -31835,
+   "liquido_incremental_ano": -5083,
+   "payback_anos": null,
+   "payback_incremental_anos": null,
+   "saldo_5_anos": -324896,
+   "saldo_5_anos_incremental": -57376,
+   "relatorios_ano_para_empatar_incremental": 204.6,
+   "relatorios_ano_para_cobrir_custo_ano_isolado": 1060.3,
+   "relatorios_ano_payback_5_anos_isolado": 2120.4,
+   "retorno_por_relatorio": 31.3
+  },
+  "esperado": {
+   "horas_ano_total": 173.1,
+   "fracao_automatizavel": 0.597,
+   "horas_liberadas_ano": 103.3,
+   "retorno_ano": 5406,
+   "custo_construcao": 114792,
+   "custo_incremental": 23592,
+   "custo_llm_ano": 2.39,
+   "custo_ano": 22961,
+   "liquido_ano": -17555,
+   "liquido_incremental_ano": 685,
+   "payback_anos": null,
+   "payback_incremental_anos": 34.5,
+   "saldo_5_anos": -202568,
+   "saldo_5_anos_incremental": -20168,
+   "relatorios_ano_para_empatar_incremental": 36.7,
+   "relatorios_ano_para_cobrir_custo_ano_isolado": 178.4,
+   "relatorios_ano_payback_5_anos_isolado": 356.8,
+   "retorno_por_relatorio": 128.7
+  },
+  "otimista": {
+   "horas_ano_total": 245.1,
+   "fracao_automatizavel": 0.796,
+   "horas_liberadas_ano": 195.2,
+   "retorno_ano": 14045,
+   "custo_construcao": 78753,
+   "custo_incremental": 17953,
+   "custo_llm_ano": 0.95,
+   "custo_ano": 15751,
+   "liquido_ano": -1707,
+   "liquido_incremental_ano": 10453,
+   "payback_anos": null,
+   "payback_incremental_anos": 1.7,
+   "saldo_5_anos": -87287,
+   "saldo_5_anos_incremental": 34313,
+   "relatorios_ano_para_empatar_incremental": 10.7,
+   "relatorios_ano_para_cobrir_custo_ano_isolado": 47.1,
+   "relatorios_ano_payback_5_anos_isolado": 94.2,
+   "retorno_por_relatorio": 334.4
+  }
+ },
+ "p06": {
+  "nota_composta": 62.0,
+  "notas": {
+   "volume": 2,
+   "analise": 5,
+   "dados": 3,
+   "regras": 3,
+   "padrao": 2,
+   "completude": 5
+  },
+  "metricas": {
+   "volume": 7.6,
+   "analise": 0.669,
+   "dados": 0.5,
+   "regras": 0.676,
+   "padrao": 0.359,
+   "completude": 0.876
+  },
+  "prioridade": "próxima onda",
+  "cenarios": {
+   "conservador": {
+    "fracao_automatizavel": 0.368,
+    "custo_construcao": 184123,
+    "custo_incremental": 50363,
+    "horas_liberadas_ano": 62.3,
+    "fte_liberado": 0.03,
+    "retorno_ano": 2038,
+    "custo_ano": 36831,
+    "custo_llm_ano": 7,
+    "liquido_ano": -34794,
+    "liquido_incremental_ano": -8042,
+    "payback_anos": null,
+    "payback_incremental_anos": null,
+    "saldo_horizonte": -358090
+   },
+   "esperado": {
+    "fracao_automatizavel": 0.56,
+    "custo_construcao": 127340,
+    "custo_incremental": 36140,
+    "horas_liberadas_ano": 162.7,
+    "fte_liberado": 0.09,
+    "retorno_ano": 8515,
+    "custo_ano": 25471,
+    "custo_llm_ano": 3,
+    "liquido_ano": -16956,
+    "liquido_incremental_ano": 1284,
+    "payback_anos": null,
+    "payback_incremental_anos": 28.1,
+    "saldo_horizonte": -212121
+   },
+   "otimista": {
+    "fracao_automatizavel": 0.753,
+    "custo_construcao": 87118,
+    "custo_incremental": 26318,
+    "horas_liberadas_ano": 309.7,
+    "fte_liberado": 0.17,
+    "retorno_ano": 22289,
+    "custo_ano": 17425,
+    "custo_llm_ano": 1,
+    "liquido_ano": 4864,
+    "liquido_incremental_ano": 17024,
+    "payback_anos": 17.9,
+    "payback_incremental_anos": 1.5,
+    "saldo_horizonte": -62799
+   }
+  }
+ }
+}

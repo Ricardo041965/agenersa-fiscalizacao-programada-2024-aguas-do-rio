@@ -1,0 +1,3301 @@
+{
+ "codigo": "FIS",
+ "caso": "SEI-480002/001314/2024",
+ "observacao": "Vários casos dentro de um processo: cada Relatório de Fiscalização é um caso do subprocesso vistoria → relatório → revisão/assinaturas → 'De acordo' → ofício → e-mail. Datas: vistoria e data escrita vêm das fichas; assinaturas e e-mails, do texto do PDF (linha_do_tempo_FIS.json). A atividade a2 mede só a 1ª assinatura: o intervalo vistoria → 1ª assinatura mistura redação e espera. Dias úteis pelo calendário RJ de scripts/fatos_fis.py (hipótese). Posse, horas e espera de terceiros não medidas (sem andamentos do SEI; resposta da concessionária fora dos autos): ficam nulas. Relatórios sem ofício nos autos não têm a4/a5: o encaminhamento pode estar em ofício não exportado.",
+ "definicoes": {
+  "dc": "dias corridos",
+  "du": "dias úteis, calendário RJ (hipótese)",
+  "intervalos": {
+   "vistoria_1a_assinatura": "Vistoria até a 1ª assinatura do relatório (redação + espera) (vistoria → assinatura_1)",
+   "redacao_1a_assinatura": "Data escrita no relatório até a 1ª assinatura (data_texto → assinatura_1)",
+   "revisao_aprovacao": "1ª assinatura até o 'De acordo' do Gerente (revisão e assinaturas) (assinatura_1 → aprovacao)",
+   "ultima_tecnica_aprovacao": "Última assinatura antes do Gerente até o 'De acordo' (assinatura_pre_gerente → aprovacao)",
+   "vistoria_aprovacao": "Vistoria até o 'De acordo' do Gerente (vistoria → aprovacao)",
+   "aprovacao_oficio": "'De acordo' até a assinatura do ofício de encaminhamento (aprovacao → oficio)",
+   "oficio_email": "Assinatura do ofício até o envio do e-mail pelo SEI (oficio → email)",
+   "vistoria_email": "Vistoria até o envio à concessionária (ciclo completo) (vistoria → email)"
+  }
+ },
+ "estatisticas": {
+  "vistoria_1a_assinatura.dc": {
+   "n": 21,
+   "mediana": 51,
+   "min": 24,
+   "max": 246
+  },
+  "vistoria_1a_assinatura.du": {
+   "n": 21,
+   "mediana": 34,
+   "min": 18,
+   "max": 171
+  },
+  "redacao_1a_assinatura.dc": {
+   "n": 22,
+   "mediana": 1.0,
+   "min": 0,
+   "max": 13
+  },
+  "redacao_1a_assinatura.du": {
+   "n": 22,
+   "mediana": 1.0,
+   "min": 0,
+   "max": 8
+  },
+  "revisao_aprovacao.dc": {
+   "n": 22,
+   "mediana": 6.5,
+   "min": 1,
+   "max": 53
+  },
+  "revisao_aprovacao.du": {
+   "n": 22,
+   "mediana": 4.5,
+   "min": 1,
+   "max": 35
+  },
+  "ultima_tecnica_aprovacao.dc": {
+   "n": 22,
+   "mediana": 4.0,
+   "min": 0,
+   "max": 28
+  },
+  "ultima_tecnica_aprovacao.du": {
+   "n": 22,
+   "mediana": 2.0,
+   "min": 0,
+   "max": 20
+  },
+  "vistoria_aprovacao.dc": {
+   "n": 21,
+   "mediana": 70,
+   "min": 41,
+   "max": 247
+  },
+  "vistoria_aprovacao.du": {
+   "n": 21,
+   "mediana": 50,
+   "min": 29,
+   "max": 172
+  },
+  "aprovacao_oficio.dc": {
+   "n": 10,
+   "mediana": 3.0,
+   "min": 1,
+   "max": 9
+  },
+  "aprovacao_oficio.du": {
+   "n": 10,
+   "mediana": 1.0,
+   "min": 1,
+   "max": 6
+  },
+  "oficio_email.dc": {
+   "n": 10,
+   "mediana": 0.0,
+   "min": 0,
+   "max": 1
+  },
+  "oficio_email.du": {
+   "n": 10,
+   "mediana": 0.0,
+   "min": 0,
+   "max": 1
+  },
+  "vistoria_email.dc": {
+   "n": 9,
+   "mediana": 89,
+   "min": 43,
+   "max": 250
+  },
+  "vistoria_email.du": {
+   "n": 9,
+   "mediana": 62,
+   "min": 31,
+   "max": 173
+  }
+ },
+ "lotes_aprovacao": {
+  "2024-04-29": [
+   "RF010",
+   "RF011",
+   "RF012"
+  ],
+  "2024-05-24": [
+   "RF056",
+   "RF052",
+   "RF059"
+  ],
+  "2024-06-10": [
+   "RF070",
+   "RF073",
+   "RF065",
+   "RF090"
+  ],
+  "2024-08-06": [
+   "RF159"
+  ],
+  "2024-09-17": [
+   "RF153"
+  ],
+  "2024-09-24": [
+   "RF155",
+   "RF156",
+   "RF157",
+   "RF158"
+  ],
+  "2024-11-08": [
+   "RF259",
+   "RF209",
+   "RF212",
+   "RF213",
+   "RF214",
+   "RF017"
+  ]
+ },
+ "cadeias_assinatura": {
+  "Assistente → Assessor → Gerente": 6,
+  "Especialista em Regulação → Assessor → Gerente": 5,
+  "Especialista em Regulação → Assessor → Especialista em Regulação → Gerente": 4,
+  "Especialista em Regulação → Assistente → Gerente": 3,
+  "Especialista em Regulação → Assistente → Assessor → Gerente": 1,
+  "Assessor → Especialista em Regulação → Assistente → Especialista em Regulação → Gerente": 1,
+  "Especialista em Regulação → Assistente → Assessor → Especialista em Regulação → Gerente": 1,
+  "Assistente → Assessor → Assistente → Gerente": 1
+ },
+ "oficios": [
+  {
+   "ordem": 1,
+   "doc_n": 4,
+   "sei": "74141761",
+   "numero": 349,
+   "finalidade": "encaminhar relatórios",
+   "data_texto": "2024-05-08",
+   "assinatura": "2024-05-08",
+   "email": "2024-05-08",
+   "email_doc_n": 5,
+   "relatorios_citados": [
+    10,
+    11,
+    12,
+    33,
+    34,
+    38,
+    46,
+    47,
+    48,
+    53,
+    54,
+    55
+   ],
+   "prazo_resposta_dias": 30,
+   "datas_vistoria_agendada": []
+  },
+  {
+   "ordem": 2,
+   "doc_n": 14,
+   "sei": "80501066",
+   "numero": 682,
+   "finalidade": "encaminhar relatórios",
+   "data_texto": "2024-08-07",
+   "assinatura": "2024-08-07",
+   "email": "2024-08-08",
+   "email_doc_n": 15,
+   "relatorios_citados": [
+    111,
+    123,
+    134,
+    135,
+    159
+   ],
+   "prazo_resposta_dias": 30,
+   "datas_vistoria_agendada": []
+  },
+  {
+   "ordem": 3,
+   "doc_n": 20,
+   "sei": "82718456",
+   "numero": 757,
+   "finalidade": "agendar vistoria",
+   "data_texto": "2024-09-06",
+   "assinatura": "2024-09-09",
+   "email": "2024-09-09",
+   "email_doc_n": 21,
+   "relatorios_citados": [],
+   "prazo_resposta_dias": null,
+   "datas_vistoria_agendada": [
+    "2024-09-10",
+    "2024-09-11",
+    "2024-09-12"
+   ]
+  },
+  {
+   "ordem": 4,
+   "doc_n": 29,
+   "sei": "87188346",
+   "numero": 946,
+   "finalidade": "encaminhar relatórios",
+   "data_texto": "2024-11-08",
+   "assinatura": "2024-11-11",
+   "email": "2024-11-11",
+   "email_doc_n": 30,
+   "relatorios_citados": [
+    17,
+    209,
+    212,
+    213,
+    214,
+    259
+   ],
+   "prazo_resposta_dias": 30,
+   "datas_vistoria_agendada": []
+  }
+ ],
+ "casos": [
+  {
+   "id": "RF010",
+   "relatorio": "10/2024",
+   "doc_n": 1,
+   "sei": "69710124",
+   "paginas": "1-12",
+   "instalacao": "EEAT Praça Paris - Glória (estação elevatória de água)",
+   "tipo_instalacao": "EEAT",
+   "variante": "com ofício de encaminhamento nos autos",
+   "datas": {
+    "vistoria": "2024-01-18",
+    "data_texto": "2024-03-05",
+    "assinatura_1": "2024-03-07",
+    "assinatura_pre_gerente": "2024-04-24",
+    "aprovacao": "2024-04-29",
+    "oficio": "2024-05-08",
+    "email": "2024-05-08"
+   },
+   "oficio_numero": 349,
+   "oficio_doc_n": 4,
+   "n_assinaturas": 6,
+   "dias_com_assinatura": 4,
+   "cadeia_assinaturas": "Especialista em Regulação → Assistente → Gerente",
+   "nao_conformidades": 5,
+   "prazo_para_sanar_no_relatorio": false,
+   "intervalos": {
+    "vistoria_1a_assinatura": {
+     "dc": 49,
+     "du": 33
+    },
+    "redacao_1a_assinatura": {
+     "dc": 2,
+     "du": 2
+    },
+    "revisao_aprovacao": {
+     "dc": 53,
+     "du": 35
+    },
+    "ultima_tecnica_aprovacao": {
+     "dc": 5,
+     "du": 3
+    },
+    "vistoria_aprovacao": {
+     "dc": 102,
+     "du": 68
+    },
+    "aprovacao_oficio": {
+     "dc": 9,
+     "du": 6
+    },
+    "oficio_email": {
+     "dc": 0,
+     "du": 0
+    },
+    "vistoria_email": {
+     "dc": 111,
+     "du": 74
+    }
+   },
+   "ocorrencias": [
+    {
+     "atividade": "a1_vistoria",
+     "inicio": "2024-01-18",
+     "fim": "2024-01-18",
+     "espera_antes_du": 0.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a2_elaborar_relatorio",
+     "inicio": "2024-03-07",
+     "fim": "2024-03-07",
+     "espera_antes_du": 33.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a3_revisar_aprovar",
+     "inicio": "2024-03-07",
+     "fim": "2024-04-29",
+     "espera_antes_du": 0.0,
+     "execucao_du": 35.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a4_oficiar_concessionaria",
+     "inicio": "2024-05-08",
+     "fim": "2024-05-08",
+     "espera_antes_du": 6.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a5_enviar_email",
+     "inicio": "2024-05-08",
+     "fim": "2024-05-08",
+     "espera_antes_du": 0.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    }
+   ]
+  },
+  {
+   "id": "RF011",
+   "relatorio": "11/2024",
+   "doc_n": 2,
+   "sei": "69712392",
+   "paginas": "13-18",
+   "instalacao": "Estação Elevatória de Água Tratada Barão de Guaratiba (EEAT Barão de Guaratiba)",
+   "tipo_instalacao": "EEAT",
+   "variante": "com ofício de encaminhamento nos autos",
+   "datas": {
+    "vistoria": "2024-01-18",
+    "data_texto": "2024-03-05",
+    "assinatura_1": "2024-03-07",
+    "assinatura_pre_gerente": "2024-04-24",
+    "aprovacao": "2024-04-29",
+    "oficio": "2024-05-08",
+    "email": "2024-05-08"
+   },
+   "oficio_numero": 349,
+   "oficio_doc_n": 4,
+   "n_assinaturas": 6,
+   "dias_com_assinatura": 4,
+   "cadeia_assinaturas": "Especialista em Regulação → Assistente → Gerente",
+   "nao_conformidades": 2,
+   "prazo_para_sanar_no_relatorio": false,
+   "intervalos": {
+    "vistoria_1a_assinatura": {
+     "dc": 49,
+     "du": 33
+    },
+    "redacao_1a_assinatura": {
+     "dc": 2,
+     "du": 2
+    },
+    "revisao_aprovacao": {
+     "dc": 53,
+     "du": 35
+    },
+    "ultima_tecnica_aprovacao": {
+     "dc": 5,
+     "du": 3
+    },
+    "vistoria_aprovacao": {
+     "dc": 102,
+     "du": 68
+    },
+    "aprovacao_oficio": {
+     "dc": 9,
+     "du": 6
+    },
+    "oficio_email": {
+     "dc": 0,
+     "du": 0
+    },
+    "vistoria_email": {
+     "dc": 111,
+     "du": 74
+    }
+   },
+   "ocorrencias": [
+    {
+     "atividade": "a1_vistoria",
+     "inicio": "2024-01-18",
+     "fim": "2024-01-18",
+     "espera_antes_du": 0.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a2_elaborar_relatorio",
+     "inicio": "2024-03-07",
+     "fim": "2024-03-07",
+     "espera_antes_du": 33.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a3_revisar_aprovar",
+     "inicio": "2024-03-07",
+     "fim": "2024-04-29",
+     "espera_antes_du": 0.0,
+     "execucao_du": 35.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a4_oficiar_concessionaria",
+     "inicio": "2024-05-08",
+     "fim": "2024-05-08",
+     "espera_antes_du": 6.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a5_enviar_email",
+     "inicio": "2024-05-08",
+     "fim": "2024-05-08",
+     "espera_antes_du": 0.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    }
+   ]
+  },
+  {
+   "id": "RF012",
+   "relatorio": "12/2024",
+   "doc_n": 3,
+   "sei": "69716140",
+   "paginas": "19-27",
+   "instalacao": "EEAT Cisterna do Aterro (estação elevatória de água)",
+   "tipo_instalacao": "EEAT",
+   "variante": "com ofício de encaminhamento nos autos",
+   "datas": {
+    "vistoria": null,
+    "data_texto": "2024-03-05",
+    "assinatura_1": "2024-03-07",
+    "assinatura_pre_gerente": "2024-04-24",
+    "aprovacao": "2024-04-29",
+    "oficio": "2024-05-08",
+    "email": "2024-05-08"
+   },
+   "oficio_numero": 349,
+   "oficio_doc_n": 4,
+   "n_assinaturas": 6,
+   "dias_com_assinatura": 4,
+   "cadeia_assinaturas": "Especialista em Regulação → Assistente → Gerente",
+   "nao_conformidades": 4,
+   "prazo_para_sanar_no_relatorio": false,
+   "intervalos": {
+    "redacao_1a_assinatura": {
+     "dc": 2,
+     "du": 2
+    },
+    "revisao_aprovacao": {
+     "dc": 53,
+     "du": 35
+    },
+    "ultima_tecnica_aprovacao": {
+     "dc": 5,
+     "du": 3
+    },
+    "aprovacao_oficio": {
+     "dc": 9,
+     "du": 6
+    },
+    "oficio_email": {
+     "dc": 0,
+     "du": 0
+    }
+   },
+   "ocorrencias": [
+    {
+     "atividade": "a2_elaborar_relatorio",
+     "inicio": "2024-03-07",
+     "fim": "2024-03-07",
+     "espera_antes_du": 0.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a3_revisar_aprovar",
+     "inicio": "2024-03-07",
+     "fim": "2024-04-29",
+     "espera_antes_du": 0.0,
+     "execucao_du": 35.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a4_oficiar_concessionaria",
+     "inicio": "2024-05-08",
+     "fim": "2024-05-08",
+     "espera_antes_du": 6.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a5_enviar_email",
+     "inicio": "2024-05-08",
+     "fim": "2024-05-08",
+     "espera_antes_du": 0.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    }
+   ]
+  },
+  {
+   "id": "RF056",
+   "relatorio": "56/2024",
+   "doc_n": 6,
+   "sei": "74334571",
+   "paginas": "31-38",
+   "instalacao": "EEE 34 - Cantagalo (Estação Elevatória de Esgoto Cantagalo)",
+   "tipo_instalacao": "EEE",
+   "variante": "sem ofício de encaminhamento nos autos",
+   "datas": {
+    "vistoria": "2024-04-04",
+    "data_texto": "2024-05-10",
+    "assinatura_1": "2024-05-10",
+    "assinatura_pre_gerente": "2024-05-20",
+    "aprovacao": "2024-05-24",
+    "oficio": null,
+    "email": null
+   },
+   "oficio_numero": null,
+   "oficio_doc_n": null,
+   "n_assinaturas": 4,
+   "dias_com_assinatura": 3,
+   "cadeia_assinaturas": "Especialista em Regulação → Assessor → Especialista em Regulação → Gerente",
+   "nao_conformidades": 9,
+   "prazo_para_sanar_no_relatorio": true,
+   "intervalos": {
+    "vistoria_1a_assinatura": {
+     "dc": 36,
+     "du": 24
+    },
+    "redacao_1a_assinatura": {
+     "dc": 0,
+     "du": 0
+    },
+    "revisao_aprovacao": {
+     "dc": 14,
+     "du": 10
+    },
+    "ultima_tecnica_aprovacao": {
+     "dc": 4,
+     "du": 4
+    },
+    "vistoria_aprovacao": {
+     "dc": 50,
+     "du": 34
+    }
+   },
+   "ocorrencias": [
+    {
+     "atividade": "a1_vistoria",
+     "inicio": "2024-04-04",
+     "fim": "2024-04-04",
+     "espera_antes_du": 0.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a2_elaborar_relatorio",
+     "inicio": "2024-05-10",
+     "fim": "2024-05-10",
+     "espera_antes_du": 24.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a3_revisar_aprovar",
+     "inicio": "2024-05-10",
+     "fim": "2024-05-24",
+     "espera_antes_du": 0.0,
+     "execucao_du": 10.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    }
+   ]
+  },
+  {
+   "id": "RF052",
+   "relatorio": "52/2024",
+   "doc_n": 7,
+   "sei": "74336951",
+   "paginas": "39-47",
+   "instalacao": "EEE São Conrado (EEE49)",
+   "tipo_instalacao": "EEE",
+   "variante": "sem ofício de encaminhamento nos autos",
+   "datas": {
+    "vistoria": "2024-04-02",
+    "data_texto": "2024-05-10",
+    "assinatura_1": "2024-05-10",
+    "assinatura_pre_gerente": "2024-05-20",
+    "aprovacao": "2024-05-24",
+    "oficio": null,
+    "email": null
+   },
+   "oficio_numero": null,
+   "oficio_doc_n": null,
+   "n_assinaturas": 5,
+   "dias_com_assinatura": 3,
+   "cadeia_assinaturas": "Especialista em Regulação → Assessor → Especialista em Regulação → Gerente",
+   "nao_conformidades": 4,
+   "prazo_para_sanar_no_relatorio": true,
+   "intervalos": {
+    "vistoria_1a_assinatura": {
+     "dc": 38,
+     "du": 26
+    },
+    "redacao_1a_assinatura": {
+     "dc": 0,
+     "du": 0
+    },
+    "revisao_aprovacao": {
+     "dc": 14,
+     "du": 10
+    },
+    "ultima_tecnica_aprovacao": {
+     "dc": 4,
+     "du": 4
+    },
+    "vistoria_aprovacao": {
+     "dc": 52,
+     "du": 36
+    }
+   },
+   "ocorrencias": [
+    {
+     "atividade": "a1_vistoria",
+     "inicio": "2024-04-02",
+     "fim": "2024-04-02",
+     "espera_antes_du": 0.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a2_elaborar_relatorio",
+     "inicio": "2024-05-10",
+     "fim": "2024-05-10",
+     "espera_antes_du": 26.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a3_revisar_aprovar",
+     "inicio": "2024-05-10",
+     "fim": "2024-05-24",
+     "espera_antes_du": 0.0,
+     "execucao_du": 10.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    }
+   ]
+  },
+  {
+   "id": "RF059",
+   "relatorio": "59/2024",
+   "doc_n": 8,
+   "sei": "74338948",
+   "paginas": "48-54",
+   "instalacao": "EEE 30 - Captação em Tempo Seco Cantagalo",
+   "tipo_instalacao": "EEE",
+   "variante": "sem ofício de encaminhamento nos autos",
+   "datas": {
+    "vistoria": "2024-04-04",
+    "data_texto": "2024-05-10",
+    "assinatura_1": "2024-05-10",
+    "assinatura_pre_gerente": "2024-05-20",
+    "aprovacao": "2024-05-24",
+    "oficio": null,
+    "email": null
+   },
+   "oficio_numero": null,
+   "oficio_doc_n": null,
+   "n_assinaturas": 4,
+   "dias_com_assinatura": 3,
+   "cadeia_assinaturas": "Especialista em Regulação → Assessor → Especialista em Regulação → Gerente",
+   "nao_conformidades": 6,
+   "prazo_para_sanar_no_relatorio": true,
+   "intervalos": {
+    "vistoria_1a_assinatura": {
+     "dc": 36,
+     "du": 24
+    },
+    "redacao_1a_assinatura": {
+     "dc": 0,
+     "du": 0
+    },
+    "revisao_aprovacao": {
+     "dc": 14,
+     "du": 10
+    },
+    "ultima_tecnica_aprovacao": {
+     "dc": 4,
+     "du": 4
+    },
+    "vistoria_aprovacao": {
+     "dc": 50,
+     "du": 34
+    }
+   },
+   "ocorrencias": [
+    {
+     "atividade": "a1_vistoria",
+     "inicio": "2024-04-04",
+     "fim": "2024-04-04",
+     "espera_antes_du": 0.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a2_elaborar_relatorio",
+     "inicio": "2024-05-10",
+     "fim": "2024-05-10",
+     "espera_antes_du": 24.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a3_revisar_aprovar",
+     "inicio": "2024-05-10",
+     "fim": "2024-05-24",
+     "espera_antes_du": 0.0,
+     "execucao_du": 10.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    }
+   ]
+  },
+  {
+   "id": "RF070",
+   "relatorio": "70/2024",
+   "doc_n": 9,
+   "sei": "75824232",
+   "paginas": "55-62",
+   "instalacao": "EEE Aquarela do Brasil (EEE 96)",
+   "tipo_instalacao": "EEE",
+   "variante": "sem ofício de encaminhamento nos autos",
+   "datas": {
+    "vistoria": "2024-04-02",
+    "data_texto": "2024-06-03",
+    "assinatura_1": "2024-06-04",
+    "assinatura_pre_gerente": "2024-06-06",
+    "aprovacao": "2024-06-10",
+    "oficio": null,
+    "email": null
+   },
+   "oficio_numero": null,
+   "oficio_doc_n": null,
+   "n_assinaturas": 5,
+   "dias_com_assinatura": 4,
+   "cadeia_assinaturas": "Especialista em Regulação → Assessor → Gerente",
+   "nao_conformidades": 6,
+   "prazo_para_sanar_no_relatorio": true,
+   "intervalos": {
+    "vistoria_1a_assinatura": {
+     "dc": 63,
+     "du": 42
+    },
+    "redacao_1a_assinatura": {
+     "dc": 1,
+     "du": 1
+    },
+    "revisao_aprovacao": {
+     "dc": 6,
+     "du": 4
+    },
+    "ultima_tecnica_aprovacao": {
+     "dc": 4,
+     "du": 2
+    },
+    "vistoria_aprovacao": {
+     "dc": 69,
+     "du": 46
+    }
+   },
+   "ocorrencias": [
+    {
+     "atividade": "a1_vistoria",
+     "inicio": "2024-04-02",
+     "fim": "2024-04-02",
+     "espera_antes_du": 0.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a2_elaborar_relatorio",
+     "inicio": "2024-06-04",
+     "fim": "2024-06-04",
+     "espera_antes_du": 42.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a3_revisar_aprovar",
+     "inicio": "2024-06-04",
+     "fim": "2024-06-10",
+     "espera_antes_du": 0.0,
+     "execucao_du": 4.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    }
+   ]
+  },
+  {
+   "id": "RF073",
+   "relatorio": "73/2024",
+   "doc_n": 10,
+   "sei": "75824539",
+   "paginas": "63-75",
+   "instalacao": "EEE Parafuso",
+   "tipo_instalacao": "EEE",
+   "variante": "sem ofício de encaminhamento nos autos",
+   "datas": {
+    "vistoria": "2024-04-10",
+    "data_texto": "2024-06-03",
+    "assinatura_1": "2024-06-03",
+    "assinatura_pre_gerente": "2024-06-06",
+    "aprovacao": "2024-06-10",
+    "oficio": null,
+    "email": null
+   },
+   "oficio_numero": null,
+   "oficio_doc_n": null,
+   "n_assinaturas": 5,
+   "dias_com_assinatura": 3,
+   "cadeia_assinaturas": "Especialista em Regulação → Assistente → Assessor → Gerente",
+   "nao_conformidades": 6,
+   "prazo_para_sanar_no_relatorio": true,
+   "intervalos": {
+    "vistoria_1a_assinatura": {
+     "dc": 54,
+     "du": 35
+    },
+    "redacao_1a_assinatura": {
+     "dc": 0,
+     "du": 0
+    },
+    "revisao_aprovacao": {
+     "dc": 7,
+     "du": 5
+    },
+    "ultima_tecnica_aprovacao": {
+     "dc": 4,
+     "du": 2
+    },
+    "vistoria_aprovacao": {
+     "dc": 61,
+     "du": 40
+    }
+   },
+   "ocorrencias": [
+    {
+     "atividade": "a1_vistoria",
+     "inicio": "2024-04-10",
+     "fim": "2024-04-10",
+     "espera_antes_du": 0.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a2_elaborar_relatorio",
+     "inicio": "2024-06-03",
+     "fim": "2024-06-03",
+     "espera_antes_du": 35.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a3_revisar_aprovar",
+     "inicio": "2024-06-03",
+     "fim": "2024-06-10",
+     "espera_antes_du": 0.0,
+     "execucao_du": 5.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    }
+   ]
+  },
+  {
+   "id": "RF065",
+   "relatorio": "65/2024",
+   "doc_n": 11,
+   "sei": "76104339",
+   "paginas": "76-87",
+   "instalacao": "EEE Leblon (EEE 51)",
+   "tipo_instalacao": "EEE",
+   "variante": "sem ofício de encaminhamento nos autos",
+   "datas": {
+    "vistoria": "2024-04-16",
+    "data_texto": "2024-06-05",
+    "assinatura_1": "2024-06-06",
+    "assinatura_pre_gerente": "2024-06-07",
+    "aprovacao": "2024-06-10",
+    "oficio": null,
+    "email": null
+   },
+   "oficio_numero": null,
+   "oficio_doc_n": null,
+   "n_assinaturas": 5,
+   "dias_com_assinatura": 3,
+   "cadeia_assinaturas": "Especialista em Regulação → Assessor → Especialista em Regulação → Gerente",
+   "nao_conformidades": 8,
+   "prazo_para_sanar_no_relatorio": false,
+   "intervalos": {
+    "vistoria_1a_assinatura": {
+     "dc": 51,
+     "du": 34
+    },
+    "redacao_1a_assinatura": {
+     "dc": 1,
+     "du": 1
+    },
+    "revisao_aprovacao": {
+     "dc": 4,
+     "du": 2
+    },
+    "ultima_tecnica_aprovacao": {
+     "dc": 3,
+     "du": 1
+    },
+    "vistoria_aprovacao": {
+     "dc": 55,
+     "du": 36
+    }
+   },
+   "ocorrencias": [
+    {
+     "atividade": "a1_vistoria",
+     "inicio": "2024-04-16",
+     "fim": "2024-04-16",
+     "espera_antes_du": 0.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a2_elaborar_relatorio",
+     "inicio": "2024-06-06",
+     "fim": "2024-06-06",
+     "espera_antes_du": 34.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a3_revisar_aprovar",
+     "inicio": "2024-06-06",
+     "fim": "2024-06-10",
+     "espera_antes_du": 0.0,
+     "execucao_du": 2.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    }
+   ]
+  },
+  {
+   "id": "RF090",
+   "relatorio": "90/2024",
+   "doc_n": 12,
+   "sei": "76213730",
+   "paginas": "88-100",
+   "instalacao": "EEE 16 / André Azevedo (Hipica)",
+   "tipo_instalacao": "EEE",
+   "variante": "sem ofício de encaminhamento nos autos",
+   "datas": {
+    "vistoria": "2024-04-10",
+    "data_texto": "2024-06-06",
+    "assinatura_1": "2024-06-06",
+    "assinatura_pre_gerente": "2024-06-10",
+    "aprovacao": "2024-06-10",
+    "oficio": null,
+    "email": null
+   },
+   "oficio_numero": null,
+   "oficio_doc_n": null,
+   "n_assinaturas": 5,
+   "dias_com_assinatura": 3,
+   "cadeia_assinaturas": "Assessor → Especialista em Regulação → Assistente → Especialista em Regulação → Gerente",
+   "nao_conformidades": 4,
+   "prazo_para_sanar_no_relatorio": false,
+   "intervalos": {
+    "vistoria_1a_assinatura": {
+     "dc": 57,
+     "du": 38
+    },
+    "redacao_1a_assinatura": {
+     "dc": 0,
+     "du": 0
+    },
+    "revisao_aprovacao": {
+     "dc": 4,
+     "du": 2
+    },
+    "ultima_tecnica_aprovacao": {
+     "dc": 0,
+     "du": 0
+    },
+    "vistoria_aprovacao": {
+     "dc": 61,
+     "du": 40
+    }
+   },
+   "ocorrencias": [
+    {
+     "atividade": "a1_vistoria",
+     "inicio": "2024-04-10",
+     "fim": "2024-04-10",
+     "espera_antes_du": 0.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a2_elaborar_relatorio",
+     "inicio": "2024-06-06",
+     "fim": "2024-06-06",
+     "espera_antes_du": 38.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a3_revisar_aprovar",
+     "inicio": "2024-06-06",
+     "fim": "2024-06-10",
+     "espera_antes_du": 0.0,
+     "execucao_du": 2.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    }
+   ]
+  },
+  {
+   "id": "RF159",
+   "relatorio": "159/2024",
+   "doc_n": 13,
+   "sei": "79901118",
+   "paginas": "101-107",
+   "instalacao": "EEAT Ojuara",
+   "tipo_instalacao": "EEAT",
+   "variante": "com ofício de encaminhamento nos autos",
+   "datas": {
+    "vistoria": "2024-06-26",
+    "data_texto": "2024-07-30",
+    "assinatura_1": "2024-08-02",
+    "assinatura_pre_gerente": "2024-08-02",
+    "aprovacao": "2024-08-06",
+    "oficio": "2024-08-07",
+    "email": "2024-08-08"
+   },
+   "oficio_numero": 682,
+   "oficio_doc_n": 14,
+   "n_assinaturas": 5,
+   "dias_com_assinatura": 2,
+   "cadeia_assinaturas": "Especialista em Regulação → Assistente → Assessor → Especialista em Regulação → Gerente",
+   "nao_conformidades": 3,
+   "prazo_para_sanar_no_relatorio": false,
+   "intervalos": {
+    "vistoria_1a_assinatura": {
+     "dc": 37,
+     "du": 27
+    },
+    "redacao_1a_assinatura": {
+     "dc": 3,
+     "du": 3
+    },
+    "revisao_aprovacao": {
+     "dc": 4,
+     "du": 2
+    },
+    "ultima_tecnica_aprovacao": {
+     "dc": 4,
+     "du": 2
+    },
+    "vistoria_aprovacao": {
+     "dc": 41,
+     "du": 29
+    },
+    "aprovacao_oficio": {
+     "dc": 1,
+     "du": 1
+    },
+    "oficio_email": {
+     "dc": 1,
+     "du": 1
+    },
+    "vistoria_email": {
+     "dc": 43,
+     "du": 31
+    }
+   },
+   "ocorrencias": [
+    {
+     "atividade": "a1_vistoria",
+     "inicio": "2024-06-26",
+     "fim": "2024-06-26",
+     "espera_antes_du": 0.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a2_elaborar_relatorio",
+     "inicio": "2024-08-02",
+     "fim": "2024-08-02",
+     "espera_antes_du": 27.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a3_revisar_aprovar",
+     "inicio": "2024-08-02",
+     "fim": "2024-08-06",
+     "espera_antes_du": 0.0,
+     "execucao_du": 2.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a4_oficiar_concessionaria",
+     "inicio": "2024-08-07",
+     "fim": "2024-08-07",
+     "espera_antes_du": 1.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a5_enviar_email",
+     "inicio": "2024-08-08",
+     "fim": "2024-08-08",
+     "espera_antes_du": 1.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    }
+   ]
+  },
+  {
+   "id": "RF155",
+   "relatorio": "155/2024",
+   "doc_n": 16,
+   "sei": "80655356",
+   "paginas": "111-117",
+   "instalacao": "EEAT 791 - Canal",
+   "tipo_instalacao": "EEAT",
+   "variante": "sem ofício de encaminhamento nos autos",
+   "datas": {
+    "vistoria": "2024-07-16",
+    "data_texto": "2024-08-09",
+    "assinatura_1": "2024-08-09",
+    "assinatura_pre_gerente": "2024-08-27",
+    "aprovacao": "2024-09-24",
+    "oficio": null,
+    "email": null
+   },
+   "oficio_numero": null,
+   "oficio_doc_n": null,
+   "n_assinaturas": 4,
+   "dias_com_assinatura": 4,
+   "cadeia_assinaturas": "Assistente → Assessor → Gerente",
+   "nao_conformidades": 9,
+   "prazo_para_sanar_no_relatorio": true,
+   "intervalos": {
+    "vistoria_1a_assinatura": {
+     "dc": 24,
+     "du": 18
+    },
+    "redacao_1a_assinatura": {
+     "dc": 0,
+     "du": 0
+    },
+    "revisao_aprovacao": {
+     "dc": 46,
+     "du": 32
+    },
+    "ultima_tecnica_aprovacao": {
+     "dc": 28,
+     "du": 20
+    },
+    "vistoria_aprovacao": {
+     "dc": 70,
+     "du": 50
+    }
+   },
+   "ocorrencias": [
+    {
+     "atividade": "a1_vistoria",
+     "inicio": "2024-07-16",
+     "fim": "2024-07-16",
+     "espera_antes_du": 0.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a2_elaborar_relatorio",
+     "inicio": "2024-08-09",
+     "fim": "2024-08-09",
+     "espera_antes_du": 18.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a3_revisar_aprovar",
+     "inicio": "2024-08-09",
+     "fim": "2024-09-24",
+     "espera_antes_du": 0.0,
+     "execucao_du": 32.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    }
+   ]
+  },
+  {
+   "id": "RF156",
+   "relatorio": "156/2024",
+   "doc_n": 17,
+   "sei": "80654568",
+   "paginas": "118-125",
+   "instalacao": "EEAT 790 - Mageense",
+   "tipo_instalacao": "EEAT",
+   "variante": "sem ofício de encaminhamento nos autos",
+   "datas": {
+    "vistoria": "2024-07-16",
+    "data_texto": "2024-08-09",
+    "assinatura_1": "2024-08-09",
+    "assinatura_pre_gerente": "2024-08-27",
+    "aprovacao": "2024-09-24",
+    "oficio": null,
+    "email": null
+   },
+   "oficio_numero": null,
+   "oficio_doc_n": null,
+   "n_assinaturas": 4,
+   "dias_com_assinatura": 4,
+   "cadeia_assinaturas": "Assistente → Assessor → Gerente",
+   "nao_conformidades": 6,
+   "prazo_para_sanar_no_relatorio": true,
+   "intervalos": {
+    "vistoria_1a_assinatura": {
+     "dc": 24,
+     "du": 18
+    },
+    "redacao_1a_assinatura": {
+     "dc": 0,
+     "du": 0
+    },
+    "revisao_aprovacao": {
+     "dc": 46,
+     "du": 32
+    },
+    "ultima_tecnica_aprovacao": {
+     "dc": 28,
+     "du": 20
+    },
+    "vistoria_aprovacao": {
+     "dc": 70,
+     "du": 50
+    }
+   },
+   "ocorrencias": [
+    {
+     "atividade": "a1_vistoria",
+     "inicio": "2024-07-16",
+     "fim": "2024-07-16",
+     "espera_antes_du": 0.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a2_elaborar_relatorio",
+     "inicio": "2024-08-09",
+     "fim": "2024-08-09",
+     "espera_antes_du": 18.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a3_revisar_aprovar",
+     "inicio": "2024-08-09",
+     "fim": "2024-09-24",
+     "espera_antes_du": 0.0,
+     "execucao_du": 32.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    }
+   ]
+  },
+  {
+   "id": "RF157",
+   "relatorio": "157/2024",
+   "doc_n": 18,
+   "sei": "80656194",
+   "paginas": "126-130",
+   "instalacao": "EEAT 792 - Presídio I",
+   "tipo_instalacao": "EEAT",
+   "variante": "sem ofício de encaminhamento nos autos",
+   "datas": {
+    "vistoria": "2024-07-16",
+    "data_texto": "2024-08-09",
+    "assinatura_1": "2024-08-09",
+    "assinatura_pre_gerente": "2024-08-27",
+    "aprovacao": "2024-09-24",
+    "oficio": null,
+    "email": null
+   },
+   "oficio_numero": null,
+   "oficio_doc_n": null,
+   "n_assinaturas": 4,
+   "dias_com_assinatura": 4,
+   "cadeia_assinaturas": "Assistente → Assessor → Gerente",
+   "nao_conformidades": 6,
+   "prazo_para_sanar_no_relatorio": true,
+   "intervalos": {
+    "vistoria_1a_assinatura": {
+     "dc": 24,
+     "du": 18
+    },
+    "redacao_1a_assinatura": {
+     "dc": 0,
+     "du": 0
+    },
+    "revisao_aprovacao": {
+     "dc": 46,
+     "du": 32
+    },
+    "ultima_tecnica_aprovacao": {
+     "dc": 28,
+     "du": 20
+    },
+    "vistoria_aprovacao": {
+     "dc": 70,
+     "du": 50
+    }
+   },
+   "ocorrencias": [
+    {
+     "atividade": "a1_vistoria",
+     "inicio": "2024-07-16",
+     "fim": "2024-07-16",
+     "espera_antes_du": 0.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a2_elaborar_relatorio",
+     "inicio": "2024-08-09",
+     "fim": "2024-08-09",
+     "espera_antes_du": 18.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a3_revisar_aprovar",
+     "inicio": "2024-08-09",
+     "fim": "2024-09-24",
+     "espera_antes_du": 0.0,
+     "execucao_du": 32.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    }
+   ]
+  },
+  {
+   "id": "RF158",
+   "relatorio": "158/2024",
+   "doc_n": 19,
+   "sei": "80656240",
+   "paginas": "131-137",
+   "instalacao": "EEAT 794 - Meu Boi",
+   "tipo_instalacao": "EEAT",
+   "variante": "sem ofício de encaminhamento nos autos",
+   "datas": {
+    "vistoria": "2024-07-16",
+    "data_texto": "2024-08-09",
+    "assinatura_1": "2024-08-09",
+    "assinatura_pre_gerente": "2024-08-27",
+    "aprovacao": "2024-09-24",
+    "oficio": null,
+    "email": null
+   },
+   "oficio_numero": null,
+   "oficio_doc_n": null,
+   "n_assinaturas": 4,
+   "dias_com_assinatura": 4,
+   "cadeia_assinaturas": "Assistente → Assessor → Gerente",
+   "nao_conformidades": 9,
+   "prazo_para_sanar_no_relatorio": true,
+   "intervalos": {
+    "vistoria_1a_assinatura": {
+     "dc": 24,
+     "du": 18
+    },
+    "redacao_1a_assinatura": {
+     "dc": 0,
+     "du": 0
+    },
+    "revisao_aprovacao": {
+     "dc": 46,
+     "du": 32
+    },
+    "ultima_tecnica_aprovacao": {
+     "dc": 28,
+     "du": 20
+    },
+    "vistoria_aprovacao": {
+     "dc": 70,
+     "du": 50
+    }
+   },
+   "ocorrencias": [
+    {
+     "atividade": "a1_vistoria",
+     "inicio": "2024-07-16",
+     "fim": "2024-07-16",
+     "espera_antes_du": 0.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a2_elaborar_relatorio",
+     "inicio": "2024-08-09",
+     "fim": "2024-08-09",
+     "espera_antes_du": 18.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a3_revisar_aprovar",
+     "inicio": "2024-08-09",
+     "fim": "2024-09-24",
+     "espera_antes_du": 0.0,
+     "execucao_du": 32.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    }
+   ]
+  },
+  {
+   "id": "RF153",
+   "relatorio": "153/2024",
+   "doc_n": 22,
+   "sei": "82895573",
+   "paginas": "141-147",
+   "instalacao": "ETA Magé (Sistema Roncador)",
+   "tipo_instalacao": "ETA",
+   "variante": "sem ofício de encaminhamento nos autos",
+   "datas": {
+    "vistoria": "2024-07-16",
+    "data_texto": "2024-09-10",
+    "assinatura_1": "2024-09-11",
+    "assinatura_pre_gerente": "2024-09-16",
+    "aprovacao": "2024-09-17",
+    "oficio": null,
+    "email": null
+   },
+   "oficio_numero": null,
+   "oficio_doc_n": null,
+   "n_assinaturas": 4,
+   "dias_com_assinatura": 3,
+   "cadeia_assinaturas": "Assistente → Assessor → Assistente → Gerente",
+   "nao_conformidades": 2,
+   "prazo_para_sanar_no_relatorio": true,
+   "intervalos": {
+    "vistoria_1a_assinatura": {
+     "dc": 57,
+     "du": 41
+    },
+    "redacao_1a_assinatura": {
+     "dc": 1,
+     "du": 1
+    },
+    "revisao_aprovacao": {
+     "dc": 6,
+     "du": 4
+    },
+    "ultima_tecnica_aprovacao": {
+     "dc": 1,
+     "du": 1
+    },
+    "vistoria_aprovacao": {
+     "dc": 63,
+     "du": 45
+    }
+   },
+   "ocorrencias": [
+    {
+     "atividade": "a1_vistoria",
+     "inicio": "2024-07-16",
+     "fim": "2024-07-16",
+     "espera_antes_du": 0.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a2_elaborar_relatorio",
+     "inicio": "2024-09-11",
+     "fim": "2024-09-11",
+     "espera_antes_du": 41.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a3_revisar_aprovar",
+     "inicio": "2024-09-11",
+     "fim": "2024-09-17",
+     "espera_antes_du": 0.0,
+     "execucao_du": 4.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    }
+   ]
+  },
+  {
+   "id": "RF259",
+   "relatorio": "259/2024",
+   "doc_n": 23,
+   "sei": "86162193",
+   "paginas": "148-154",
+   "instalacao": "EEE Parafuso (obra de reforma)",
+   "tipo_instalacao": "EEE",
+   "variante": "com ofício de encaminhamento nos autos",
+   "datas": {
+    "vistoria": "2024-08-14",
+    "data_texto": "2024-10-24",
+    "assinatura_1": "2024-11-06",
+    "assinatura_pre_gerente": "2024-11-06",
+    "aprovacao": "2024-11-08",
+    "oficio": "2024-11-11",
+    "email": "2024-11-11"
+   },
+   "oficio_numero": 946,
+   "oficio_doc_n": 29,
+   "n_assinaturas": 3,
+   "dias_com_assinatura": 2,
+   "cadeia_assinaturas": "Assistente → Assessor → Gerente",
+   "nao_conformidades": 0,
+   "prazo_para_sanar_no_relatorio": false,
+   "intervalos": {
+    "vistoria_1a_assinatura": {
+     "dc": 84,
+     "du": 59
+    },
+    "redacao_1a_assinatura": {
+     "dc": 13,
+     "du": 8
+    },
+    "revisao_aprovacao": {
+     "dc": 2,
+     "du": 2
+    },
+    "ultima_tecnica_aprovacao": {
+     "dc": 2,
+     "du": 2
+    },
+    "vistoria_aprovacao": {
+     "dc": 86,
+     "du": 61
+    },
+    "aprovacao_oficio": {
+     "dc": 3,
+     "du": 1
+    },
+    "oficio_email": {
+     "dc": 0,
+     "du": 0
+    },
+    "vistoria_email": {
+     "dc": 89,
+     "du": 62
+    }
+   },
+   "ocorrencias": [
+    {
+     "atividade": "a1_vistoria",
+     "inicio": "2024-08-14",
+     "fim": "2024-08-14",
+     "espera_antes_du": 0.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a2_elaborar_relatorio",
+     "inicio": "2024-11-06",
+     "fim": "2024-11-06",
+     "espera_antes_du": 59.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a3_revisar_aprovar",
+     "inicio": "2024-11-06",
+     "fim": "2024-11-08",
+     "espera_antes_du": 0.0,
+     "execucao_du": 2.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a4_oficiar_concessionaria",
+     "inicio": "2024-11-11",
+     "fim": "2024-11-11",
+     "espera_antes_du": 1.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a5_enviar_email",
+     "inicio": "2024-11-11",
+     "fim": "2024-11-11",
+     "espera_antes_du": 0.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    }
+   ]
+  },
+  {
+   "id": "RF209",
+   "relatorio": "209/2024",
+   "doc_n": 24,
+   "sei": "86161531",
+   "paginas": "155-160",
+   "instalacao": "EEE Parafuso (obra de reforma)",
+   "tipo_instalacao": "EEE",
+   "variante": "com ofício de encaminhamento nos autos",
+   "datas": {
+    "vistoria": "2024-08-14",
+    "data_texto": "2024-10-24",
+    "assinatura_1": "2024-11-06",
+    "assinatura_pre_gerente": "2024-11-06",
+    "aprovacao": "2024-11-08",
+    "oficio": "2024-11-11",
+    "email": "2024-11-11"
+   },
+   "oficio_numero": 946,
+   "oficio_doc_n": 29,
+   "n_assinaturas": 3,
+   "dias_com_assinatura": 2,
+   "cadeia_assinaturas": "Assistente → Assessor → Gerente",
+   "nao_conformidades": 0,
+   "prazo_para_sanar_no_relatorio": false,
+   "intervalos": {
+    "vistoria_1a_assinatura": {
+     "dc": 84,
+     "du": 59
+    },
+    "redacao_1a_assinatura": {
+     "dc": 13,
+     "du": 8
+    },
+    "revisao_aprovacao": {
+     "dc": 2,
+     "du": 2
+    },
+    "ultima_tecnica_aprovacao": {
+     "dc": 2,
+     "du": 2
+    },
+    "vistoria_aprovacao": {
+     "dc": 86,
+     "du": 61
+    },
+    "aprovacao_oficio": {
+     "dc": 3,
+     "du": 1
+    },
+    "oficio_email": {
+     "dc": 0,
+     "du": 0
+    },
+    "vistoria_email": {
+     "dc": 89,
+     "du": 62
+    }
+   },
+   "ocorrencias": [
+    {
+     "atividade": "a1_vistoria",
+     "inicio": "2024-08-14",
+     "fim": "2024-08-14",
+     "espera_antes_du": 0.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a2_elaborar_relatorio",
+     "inicio": "2024-11-06",
+     "fim": "2024-11-06",
+     "espera_antes_du": 59.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a3_revisar_aprovar",
+     "inicio": "2024-11-06",
+     "fim": "2024-11-08",
+     "espera_antes_du": 0.0,
+     "execucao_du": 2.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a4_oficiar_concessionaria",
+     "inicio": "2024-11-11",
+     "fim": "2024-11-11",
+     "espera_antes_du": 1.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a5_enviar_email",
+     "inicio": "2024-11-11",
+     "fim": "2024-11-11",
+     "espera_antes_du": 0.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    }
+   ]
+  },
+  {
+   "id": "RF212",
+   "relatorio": "212/2024",
+   "doc_n": 25,
+   "sei": "86827856",
+   "paginas": "161-167",
+   "instalacao": "EEE Mário Quintão",
+   "tipo_instalacao": "EEE",
+   "variante": "com ofício de encaminhamento nos autos",
+   "datas": {
+    "vistoria": "2024-08-20",
+    "data_texto": "2024-11-05",
+    "assinatura_1": "2024-11-06",
+    "assinatura_pre_gerente": "2024-11-06",
+    "aprovacao": "2024-11-08",
+    "oficio": "2024-11-11",
+    "email": "2024-11-11"
+   },
+   "oficio_numero": 946,
+   "oficio_doc_n": 29,
+   "n_assinaturas": 3,
+   "dias_com_assinatura": 2,
+   "cadeia_assinaturas": "Especialista em Regulação → Assessor → Gerente",
+   "nao_conformidades": 5,
+   "prazo_para_sanar_no_relatorio": false,
+   "intervalos": {
+    "vistoria_1a_assinatura": {
+     "dc": 78,
+     "du": 55
+    },
+    "redacao_1a_assinatura": {
+     "dc": 1,
+     "du": 1
+    },
+    "revisao_aprovacao": {
+     "dc": 2,
+     "du": 2
+    },
+    "ultima_tecnica_aprovacao": {
+     "dc": 2,
+     "du": 2
+    },
+    "vistoria_aprovacao": {
+     "dc": 80,
+     "du": 57
+    },
+    "aprovacao_oficio": {
+     "dc": 3,
+     "du": 1
+    },
+    "oficio_email": {
+     "dc": 0,
+     "du": 0
+    },
+    "vistoria_email": {
+     "dc": 83,
+     "du": 58
+    }
+   },
+   "ocorrencias": [
+    {
+     "atividade": "a1_vistoria",
+     "inicio": "2024-08-20",
+     "fim": "2024-08-20",
+     "espera_antes_du": 0.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a2_elaborar_relatorio",
+     "inicio": "2024-11-06",
+     "fim": "2024-11-06",
+     "espera_antes_du": 55.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a3_revisar_aprovar",
+     "inicio": "2024-11-06",
+     "fim": "2024-11-08",
+     "espera_antes_du": 0.0,
+     "execucao_du": 2.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a4_oficiar_concessionaria",
+     "inicio": "2024-11-11",
+     "fim": "2024-11-11",
+     "espera_antes_du": 1.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a5_enviar_email",
+     "inicio": "2024-11-11",
+     "fim": "2024-11-11",
+     "espera_antes_du": 0.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    }
+   ]
+  },
+  {
+   "id": "RF213",
+   "relatorio": "213/2024",
+   "doc_n": 26,
+   "sei": "86826650",
+   "paginas": "168-174",
+   "instalacao": "EEE Frederico Marques",
+   "tipo_instalacao": "EEE",
+   "variante": "com ofício de encaminhamento nos autos",
+   "datas": {
+    "vistoria": "2024-08-20",
+    "data_texto": "2024-11-05",
+    "assinatura_1": "2024-11-06",
+    "assinatura_pre_gerente": "2024-11-06",
+    "aprovacao": "2024-11-08",
+    "oficio": "2024-11-11",
+    "email": "2024-11-11"
+   },
+   "oficio_numero": 946,
+   "oficio_doc_n": 29,
+   "n_assinaturas": 3,
+   "dias_com_assinatura": 2,
+   "cadeia_assinaturas": "Especialista em Regulação → Assessor → Gerente",
+   "nao_conformidades": 5,
+   "prazo_para_sanar_no_relatorio": false,
+   "intervalos": {
+    "vistoria_1a_assinatura": {
+     "dc": 78,
+     "du": 55
+    },
+    "redacao_1a_assinatura": {
+     "dc": 1,
+     "du": 1
+    },
+    "revisao_aprovacao": {
+     "dc": 2,
+     "du": 2
+    },
+    "ultima_tecnica_aprovacao": {
+     "dc": 2,
+     "du": 2
+    },
+    "vistoria_aprovacao": {
+     "dc": 80,
+     "du": 57
+    },
+    "aprovacao_oficio": {
+     "dc": 3,
+     "du": 1
+    },
+    "oficio_email": {
+     "dc": 0,
+     "du": 0
+    },
+    "vistoria_email": {
+     "dc": 83,
+     "du": 58
+    }
+   },
+   "ocorrencias": [
+    {
+     "atividade": "a1_vistoria",
+     "inicio": "2024-08-20",
+     "fim": "2024-08-20",
+     "espera_antes_du": 0.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a2_elaborar_relatorio",
+     "inicio": "2024-11-06",
+     "fim": "2024-11-06",
+     "espera_antes_du": 55.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a3_revisar_aprovar",
+     "inicio": "2024-11-06",
+     "fim": "2024-11-08",
+     "espera_antes_du": 0.0,
+     "execucao_du": 2.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a4_oficiar_concessionaria",
+     "inicio": "2024-11-11",
+     "fim": "2024-11-11",
+     "espera_antes_du": 1.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a5_enviar_email",
+     "inicio": "2024-11-11",
+     "fim": "2024-11-11",
+     "espera_antes_du": 0.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    }
+   ]
+  },
+  {
+   "id": "RF214",
+   "relatorio": "214/2024",
+   "doc_n": 27,
+   "sei": "86826664",
+   "paginas": "175-179",
+   "instalacao": "EEE Piscinão",
+   "tipo_instalacao": "EEE",
+   "variante": "com ofício de encaminhamento nos autos",
+   "datas": {
+    "vistoria": "2024-08-20",
+    "data_texto": "2024-11-05",
+    "assinatura_1": "2024-11-06",
+    "assinatura_pre_gerente": "2024-11-06",
+    "aprovacao": "2024-11-08",
+    "oficio": "2024-11-11",
+    "email": "2024-11-11"
+   },
+   "oficio_numero": 946,
+   "oficio_doc_n": 29,
+   "n_assinaturas": 3,
+   "dias_com_assinatura": 2,
+   "cadeia_assinaturas": "Especialista em Regulação → Assessor → Gerente",
+   "nao_conformidades": 3,
+   "prazo_para_sanar_no_relatorio": false,
+   "intervalos": {
+    "vistoria_1a_assinatura": {
+     "dc": 78,
+     "du": 55
+    },
+    "redacao_1a_assinatura": {
+     "dc": 1,
+     "du": 1
+    },
+    "revisao_aprovacao": {
+     "dc": 2,
+     "du": 2
+    },
+    "ultima_tecnica_aprovacao": {
+     "dc": 2,
+     "du": 2
+    },
+    "vistoria_aprovacao": {
+     "dc": 80,
+     "du": 57
+    },
+    "aprovacao_oficio": {
+     "dc": 3,
+     "du": 1
+    },
+    "oficio_email": {
+     "dc": 0,
+     "du": 0
+    },
+    "vistoria_email": {
+     "dc": 83,
+     "du": 58
+    }
+   },
+   "ocorrencias": [
+    {
+     "atividade": "a1_vistoria",
+     "inicio": "2024-08-20",
+     "fim": "2024-08-20",
+     "espera_antes_du": 0.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a2_elaborar_relatorio",
+     "inicio": "2024-11-06",
+     "fim": "2024-11-06",
+     "espera_antes_du": 55.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a3_revisar_aprovar",
+     "inicio": "2024-11-06",
+     "fim": "2024-11-08",
+     "espera_antes_du": 0.0,
+     "execucao_du": 2.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a4_oficiar_concessionaria",
+     "inicio": "2024-11-11",
+     "fim": "2024-11-11",
+     "espera_antes_du": 1.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a5_enviar_email",
+     "inicio": "2024-11-11",
+     "fim": "2024-11-11",
+     "espera_antes_du": 0.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    }
+   ]
+  },
+  {
+   "id": "RF017",
+   "relatorio": "17/2024",
+   "doc_n": 28,
+   "sei": "87028948",
+   "paginas": "180-197",
+   "instalacao": "ETE São Gonçalo",
+   "tipo_instalacao": "ETE",
+   "variante": "com ofício de encaminhamento nos autos",
+   "datas": {
+    "vistoria": "2024-03-06",
+    "data_texto": "2024-11-07",
+    "assinatura_1": "2024-11-07",
+    "assinatura_pre_gerente": "2024-11-07",
+    "aprovacao": "2024-11-08",
+    "oficio": "2024-11-11",
+    "email": "2024-11-11"
+   },
+   "oficio_numero": 946,
+   "oficio_doc_n": 29,
+   "n_assinaturas": 3,
+   "dias_com_assinatura": 2,
+   "cadeia_assinaturas": "Especialista em Regulação → Assessor → Gerente",
+   "nao_conformidades": 11,
+   "prazo_para_sanar_no_relatorio": false,
+   "intervalos": {
+    "vistoria_1a_assinatura": {
+     "dc": 246,
+     "du": 171
+    },
+    "redacao_1a_assinatura": {
+     "dc": 0,
+     "du": 0
+    },
+    "revisao_aprovacao": {
+     "dc": 1,
+     "du": 1
+    },
+    "ultima_tecnica_aprovacao": {
+     "dc": 1,
+     "du": 1
+    },
+    "vistoria_aprovacao": {
+     "dc": 247,
+     "du": 172
+    },
+    "aprovacao_oficio": {
+     "dc": 3,
+     "du": 1
+    },
+    "oficio_email": {
+     "dc": 0,
+     "du": 0
+    },
+    "vistoria_email": {
+     "dc": 250,
+     "du": 173
+    }
+   },
+   "ocorrencias": [
+    {
+     "atividade": "a1_vistoria",
+     "inicio": "2024-03-06",
+     "fim": "2024-03-06",
+     "espera_antes_du": 0.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a2_elaborar_relatorio",
+     "inicio": "2024-11-07",
+     "fim": "2024-11-07",
+     "espera_antes_du": 171.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a3_revisar_aprovar",
+     "inicio": "2024-11-07",
+     "fim": "2024-11-08",
+     "espera_antes_du": 0.0,
+     "execucao_du": 1.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a4_oficiar_concessionaria",
+     "inicio": "2024-11-11",
+     "fim": "2024-11-11",
+     "espera_antes_du": 1.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    },
+    {
+     "atividade": "a5_enviar_email",
+     "inicio": "2024-11-11",
+     "fim": "2024-11-11",
+     "espera_antes_du": 0.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": null,
+     "horas_piso": null,
+     "horas_teto": null
+    }
+   ]
+  },
+  {
+   "id": "RF227",
+   "relatorio": "227/2024",
+   "doc_n": 31,
+   "sei": "91278977",
+   "paginas": "201-226",
+   "instalacao": "",
+   "tipo_instalacao": "",
+   "variante": "sem texto nem assinatura no PDF",
+   "datas": {
+    "vistoria": null,
+    "data_texto": null,
+    "assinatura_1": null,
+    "assinatura_pre_gerente": null,
+    "aprovacao": null,
+    "oficio": null,
+    "email": null
+   },
+   "oficio_numero": null,
+   "oficio_doc_n": null,
+   "n_assinaturas": 0,
+   "dias_com_assinatura": 0,
+   "cadeia_assinaturas": "",
+   "nao_conformidades": 0,
+   "prazo_para_sanar_no_relatorio": false,
+   "intervalos": {},
+   "ocorrencias": []
+  }
+ ],
+ "fatos": [
+  {
+   "id": "casos.vistoria_1a_assinatura.mediana_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoria até a 1ª assinatura do relatório (redação + espera) — mediana entre casos",
+   "valor": 51,
+   "unidade": "dc",
+   "definicao": "vistoria → assinatura_1; 21 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.vistoria_1a_assinatura.min_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoria até a 1ª assinatura do relatório (redação + espera) — min entre casos",
+   "valor": 24,
+   "unidade": "dc",
+   "definicao": "vistoria → assinatura_1; 21 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.vistoria_1a_assinatura.max_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoria até a 1ª assinatura do relatório (redação + espera) — max entre casos",
+   "valor": 246,
+   "unidade": "dc",
+   "definicao": "vistoria → assinatura_1; 21 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.vistoria_1a_assinatura.n",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoria até a 1ª assinatura do relatório (redação + espera) — relatórios com os dois marcos",
+   "valor": 21,
+   "unidade": "relatórios",
+   "definicao": "vistoria e assinatura_1 datados",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.vistoria_1a_assinatura.mediana_du",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoria até a 1ª assinatura do relatório (redação + espera) — mediana entre casos",
+   "valor": 34,
+   "unidade": "du",
+   "definicao": "vistoria → assinatura_1; 21 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.vistoria_1a_assinatura.min_du",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoria até a 1ª assinatura do relatório (redação + espera) — min entre casos",
+   "valor": 18,
+   "unidade": "du",
+   "definicao": "vistoria → assinatura_1; 21 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.vistoria_1a_assinatura.max_du",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoria até a 1ª assinatura do relatório (redação + espera) — max entre casos",
+   "valor": 171,
+   "unidade": "du",
+   "definicao": "vistoria → assinatura_1; 21 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.redacao_1a_assinatura.mediana_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Data escrita no relatório até a 1ª assinatura — mediana entre casos",
+   "valor": 1.0,
+   "unidade": "dc",
+   "definicao": "data_texto → assinatura_1; 22 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.redacao_1a_assinatura.min_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Data escrita no relatório até a 1ª assinatura — min entre casos",
+   "valor": 0,
+   "unidade": "dc",
+   "definicao": "data_texto → assinatura_1; 22 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.redacao_1a_assinatura.max_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Data escrita no relatório até a 1ª assinatura — max entre casos",
+   "valor": 13,
+   "unidade": "dc",
+   "definicao": "data_texto → assinatura_1; 22 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.redacao_1a_assinatura.n",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Data escrita no relatório até a 1ª assinatura — relatórios com os dois marcos",
+   "valor": 22,
+   "unidade": "relatórios",
+   "definicao": "data_texto e assinatura_1 datados",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.redacao_1a_assinatura.mediana_du",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Data escrita no relatório até a 1ª assinatura — mediana entre casos",
+   "valor": 1.0,
+   "unidade": "du",
+   "definicao": "data_texto → assinatura_1; 22 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.redacao_1a_assinatura.min_du",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Data escrita no relatório até a 1ª assinatura — min entre casos",
+   "valor": 0,
+   "unidade": "du",
+   "definicao": "data_texto → assinatura_1; 22 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.redacao_1a_assinatura.max_du",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Data escrita no relatório até a 1ª assinatura — max entre casos",
+   "valor": 8,
+   "unidade": "du",
+   "definicao": "data_texto → assinatura_1; 22 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.revisao_aprovacao.mediana_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "1ª assinatura até o 'De acordo' do Gerente (revisão e assinaturas) — mediana entre casos",
+   "valor": 6.5,
+   "unidade": "dc",
+   "definicao": "assinatura_1 → aprovacao; 22 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.revisao_aprovacao.min_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "1ª assinatura até o 'De acordo' do Gerente (revisão e assinaturas) — min entre casos",
+   "valor": 1,
+   "unidade": "dc",
+   "definicao": "assinatura_1 → aprovacao; 22 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.revisao_aprovacao.max_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "1ª assinatura até o 'De acordo' do Gerente (revisão e assinaturas) — max entre casos",
+   "valor": 53,
+   "unidade": "dc",
+   "definicao": "assinatura_1 → aprovacao; 22 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.revisao_aprovacao.n",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "1ª assinatura até o 'De acordo' do Gerente (revisão e assinaturas) — relatórios com os dois marcos",
+   "valor": 22,
+   "unidade": "relatórios",
+   "definicao": "assinatura_1 e aprovacao datados",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.revisao_aprovacao.mediana_du",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "1ª assinatura até o 'De acordo' do Gerente (revisão e assinaturas) — mediana entre casos",
+   "valor": 4.5,
+   "unidade": "du",
+   "definicao": "assinatura_1 → aprovacao; 22 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.revisao_aprovacao.min_du",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "1ª assinatura até o 'De acordo' do Gerente (revisão e assinaturas) — min entre casos",
+   "valor": 1,
+   "unidade": "du",
+   "definicao": "assinatura_1 → aprovacao; 22 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.revisao_aprovacao.max_du",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "1ª assinatura até o 'De acordo' do Gerente (revisão e assinaturas) — max entre casos",
+   "valor": 35,
+   "unidade": "du",
+   "definicao": "assinatura_1 → aprovacao; 22 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.ultima_tecnica_aprovacao.mediana_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Última assinatura antes do Gerente até o 'De acordo' — mediana entre casos",
+   "valor": 4.0,
+   "unidade": "dc",
+   "definicao": "assinatura_pre_gerente → aprovacao; 22 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.ultima_tecnica_aprovacao.min_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Última assinatura antes do Gerente até o 'De acordo' — min entre casos",
+   "valor": 0,
+   "unidade": "dc",
+   "definicao": "assinatura_pre_gerente → aprovacao; 22 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.ultima_tecnica_aprovacao.max_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Última assinatura antes do Gerente até o 'De acordo' — max entre casos",
+   "valor": 28,
+   "unidade": "dc",
+   "definicao": "assinatura_pre_gerente → aprovacao; 22 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.ultima_tecnica_aprovacao.n",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Última assinatura antes do Gerente até o 'De acordo' — relatórios com os dois marcos",
+   "valor": 22,
+   "unidade": "relatórios",
+   "definicao": "assinatura_pre_gerente e aprovacao datados",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.ultima_tecnica_aprovacao.mediana_du",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Última assinatura antes do Gerente até o 'De acordo' — mediana entre casos",
+   "valor": 2.0,
+   "unidade": "du",
+   "definicao": "assinatura_pre_gerente → aprovacao; 22 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.ultima_tecnica_aprovacao.min_du",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Última assinatura antes do Gerente até o 'De acordo' — min entre casos",
+   "valor": 0,
+   "unidade": "du",
+   "definicao": "assinatura_pre_gerente → aprovacao; 22 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.ultima_tecnica_aprovacao.max_du",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Última assinatura antes do Gerente até o 'De acordo' — max entre casos",
+   "valor": 20,
+   "unidade": "du",
+   "definicao": "assinatura_pre_gerente → aprovacao; 22 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.vistoria_aprovacao.mediana_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoria até o 'De acordo' do Gerente — mediana entre casos",
+   "valor": 70,
+   "unidade": "dc",
+   "definicao": "vistoria → aprovacao; 21 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.vistoria_aprovacao.min_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoria até o 'De acordo' do Gerente — min entre casos",
+   "valor": 41,
+   "unidade": "dc",
+   "definicao": "vistoria → aprovacao; 21 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.vistoria_aprovacao.max_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoria até o 'De acordo' do Gerente — max entre casos",
+   "valor": 247,
+   "unidade": "dc",
+   "definicao": "vistoria → aprovacao; 21 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.vistoria_aprovacao.n",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoria até o 'De acordo' do Gerente — relatórios com os dois marcos",
+   "valor": 21,
+   "unidade": "relatórios",
+   "definicao": "vistoria e aprovacao datados",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.vistoria_aprovacao.mediana_du",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoria até o 'De acordo' do Gerente — mediana entre casos",
+   "valor": 50,
+   "unidade": "du",
+   "definicao": "vistoria → aprovacao; 21 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.vistoria_aprovacao.min_du",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoria até o 'De acordo' do Gerente — min entre casos",
+   "valor": 29,
+   "unidade": "du",
+   "definicao": "vistoria → aprovacao; 21 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.vistoria_aprovacao.max_du",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoria até o 'De acordo' do Gerente — max entre casos",
+   "valor": 172,
+   "unidade": "du",
+   "definicao": "vistoria → aprovacao; 21 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.aprovacao_oficio.mediana_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "'De acordo' até a assinatura do ofício de encaminhamento — mediana entre casos",
+   "valor": 3.0,
+   "unidade": "dc",
+   "definicao": "aprovacao → oficio; 10 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.aprovacao_oficio.min_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "'De acordo' até a assinatura do ofício de encaminhamento — min entre casos",
+   "valor": 1,
+   "unidade": "dc",
+   "definicao": "aprovacao → oficio; 10 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.aprovacao_oficio.max_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "'De acordo' até a assinatura do ofício de encaminhamento — max entre casos",
+   "valor": 9,
+   "unidade": "dc",
+   "definicao": "aprovacao → oficio; 10 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.aprovacao_oficio.n",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "'De acordo' até a assinatura do ofício de encaminhamento — relatórios com os dois marcos",
+   "valor": 10,
+   "unidade": "relatórios",
+   "definicao": "aprovacao e oficio datados",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.aprovacao_oficio.mediana_du",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "'De acordo' até a assinatura do ofício de encaminhamento — mediana entre casos",
+   "valor": 1.0,
+   "unidade": "du",
+   "definicao": "aprovacao → oficio; 10 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.aprovacao_oficio.min_du",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "'De acordo' até a assinatura do ofício de encaminhamento — min entre casos",
+   "valor": 1,
+   "unidade": "du",
+   "definicao": "aprovacao → oficio; 10 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.aprovacao_oficio.max_du",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "'De acordo' até a assinatura do ofício de encaminhamento — max entre casos",
+   "valor": 6,
+   "unidade": "du",
+   "definicao": "aprovacao → oficio; 10 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.oficio_email.mediana_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Assinatura do ofício até o envio do e-mail pelo SEI — mediana entre casos",
+   "valor": 0.0,
+   "unidade": "dc",
+   "definicao": "oficio → email; 10 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.oficio_email.min_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Assinatura do ofício até o envio do e-mail pelo SEI — min entre casos",
+   "valor": 0,
+   "unidade": "dc",
+   "definicao": "oficio → email; 10 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.oficio_email.max_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Assinatura do ofício até o envio do e-mail pelo SEI — max entre casos",
+   "valor": 1,
+   "unidade": "dc",
+   "definicao": "oficio → email; 10 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.oficio_email.n",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Assinatura do ofício até o envio do e-mail pelo SEI — relatórios com os dois marcos",
+   "valor": 10,
+   "unidade": "relatórios",
+   "definicao": "oficio e email datados",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.oficio_email.mediana_du",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Assinatura do ofício até o envio do e-mail pelo SEI — mediana entre casos",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "oficio → email; 10 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.oficio_email.min_du",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Assinatura do ofício até o envio do e-mail pelo SEI — min entre casos",
+   "valor": 0,
+   "unidade": "du",
+   "definicao": "oficio → email; 10 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.oficio_email.max_du",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Assinatura do ofício até o envio do e-mail pelo SEI — max entre casos",
+   "valor": 1,
+   "unidade": "du",
+   "definicao": "oficio → email; 10 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.vistoria_email.mediana_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoria até o envio à concessionária (ciclo completo) — mediana entre casos",
+   "valor": 89,
+   "unidade": "dc",
+   "definicao": "vistoria → email; 9 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.vistoria_email.min_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoria até o envio à concessionária (ciclo completo) — min entre casos",
+   "valor": 43,
+   "unidade": "dc",
+   "definicao": "vistoria → email; 9 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.vistoria_email.max_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoria até o envio à concessionária (ciclo completo) — max entre casos",
+   "valor": 250,
+   "unidade": "dc",
+   "definicao": "vistoria → email; 9 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.vistoria_email.n",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoria até o envio à concessionária (ciclo completo) — relatórios com os dois marcos",
+   "valor": 9,
+   "unidade": "relatórios",
+   "definicao": "vistoria e email datados",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.vistoria_email.mediana_du",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoria até o envio à concessionária (ciclo completo) — mediana entre casos",
+   "valor": 62,
+   "unidade": "du",
+   "definicao": "vistoria → email; 9 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.vistoria_email.min_du",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoria até o envio à concessionária (ciclo completo) — min entre casos",
+   "valor": 31,
+   "unidade": "du",
+   "definicao": "vistoria → email; 9 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.vistoria_email.max_du",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoria até o envio à concessionária (ciclo completo) — max entre casos",
+   "valor": 173,
+   "unidade": "du",
+   "definicao": "vistoria → email; 9 relatórios com os dois marcos",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.total",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Relatórios de fiscalização tratados como casos",
+   "valor": 23,
+   "unidade": "relatórios",
+   "definicao": "documentos do tipo Relatório de Fiscalização na linha do tempo",
+   "origem": "linha_do_tempo_FIS.json"
+  },
+  {
+   "id": "casos.variante.com_oficio_de_encaminhamento_nos_autos",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Relatórios — com ofício de encaminhamento nos autos",
+   "valor": 10,
+   "unidade": "relatórios",
+   "definicao": "",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.variante.sem_oficio_de_encaminhamento_nos_autos",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Relatórios — sem ofício de encaminhamento nos autos",
+   "valor": 12,
+   "unidade": "relatórios",
+   "definicao": "",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.variante.sem_texto_nem_assinatura_no_pdf",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Relatórios — sem texto nem assinatura no PDF",
+   "valor": 1,
+   "unidade": "relatórios",
+   "definicao": "",
+   "origem": "casos_FIS.json"
+  },
+  {
+   "id": "casos.assinaturas.mediana",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Assinaturas eletrônicas por relatório — mediana",
+   "valor": 4.0,
+   "unidade": "assinaturas",
+   "definicao": "22 relatórios assinados",
+   "origem": "casos"
+  },
+  {
+   "id": "casos.assinaturas.max",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Assinaturas eletrônicas por relatório — máximo",
+   "valor": 6,
+   "unidade": "assinaturas",
+   "definicao": "",
+   "origem": "casos"
+  },
+  {
+   "id": "casos.dias_com_assinatura.mediana",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Dias distintos com assinatura por relatório — mediana",
+   "valor": 3.0,
+   "unidade": "dias",
+   "definicao": "rodadas de assinatura",
+   "origem": "casos"
+  },
+  {
+   "id": "casos.dias_com_assinatura.max",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Dias distintos com assinatura por relatório — máximo",
+   "valor": 4,
+   "unidade": "dias",
+   "definicao": "",
+   "origem": "casos"
+  },
+  {
+   "id": "casos.cadeias_distintas",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Cadeias de cargos signatários distintas",
+   "valor": 8,
+   "unidade": "cadeias",
+   "definicao": "sequência de cargos na ordem das assinaturas, sem repetição consecutiva",
+   "origem": "casos"
+  },
+  {
+   "id": "casos.sem_vistoria_datada",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Relatórios sem data de vistoria na ficha",
+   "valor": 2,
+   "unidade": "relatórios",
+   "definicao": "",
+   "origem": "casos"
+  },
+  {
+   "id": "casos.com_prazo_para_sanar",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Relatórios que fixam prazo para sanar (ficha)",
+   "valor": 10,
+   "unidade": "relatórios",
+   "definicao": "fiscalizacao.prazo_para_sanar",
+   "origem": "casos"
+  },
+  {
+   "id": "casos.nao_conformidades.mediana",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Não conformidades por relatório — mediana",
+   "valor": 5.0,
+   "unidade": "itens",
+   "definicao": "22 relatórios assinados (fichas)",
+   "origem": "casos"
+  },
+  {
+   "id": "casos.nao_conformidades.max",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Não conformidades por relatório — máximo",
+   "valor": 11,
+   "unidade": "itens",
+   "definicao": "",
+   "origem": "casos"
+  },
+  {
+   "id": "casos.nao_conformidades.sem_nc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Relatórios sem não conformidade listada",
+   "valor": 2,
+   "unidade": "relatórios",
+   "definicao": "",
+   "origem": "casos"
+  },
+  {
+   "id": "lotes.aprovacao.n",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Dias distintos de 'De acordo' do Gerente (lotes de aprovação)",
+   "valor": 7,
+   "unidade": "lotes",
+   "definicao": "relatórios aprovados no mesmo dia formam um lote",
+   "origem": "casos"
+  },
+  {
+   "id": "lotes.aprovacao.tamanho_mediana",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Relatórios por lote de aprovação — mediana",
+   "valor": 3,
+   "unidade": "relatórios",
+   "definicao": "",
+   "origem": "casos"
+  },
+  {
+   "id": "lotes.aprovacao.tamanho_max",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Relatórios por lote de aprovação — máximo",
+   "valor": 6,
+   "unidade": "relatórios",
+   "definicao": "",
+   "origem": "casos"
+  },
+  {
+   "id": "of1.finalidade_encaminhar",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 349/2024: encaminha relatórios (1) ou agenda vistoria (0)",
+   "valor": 1,
+   "unidade": "indicador",
+   "definicao": "relatórios citados no texto",
+   "origem": "doc 4 (SEI 74141761)"
+  },
+  {
+   "id": "of1.relatorios_citados",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 349/2024: relatórios citados",
+   "valor": 12,
+   "unidade": "relatórios",
+   "definicao": "",
+   "origem": "doc 4"
+  },
+  {
+   "id": "of1.relatorios_no_pdf",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 349/2024: relatórios citados com texto no PDF",
+   "valor": 3,
+   "unidade": "relatórios",
+   "definicao": "",
+   "origem": "doc 4"
+  },
+  {
+   "id": "of1.texto_assinatura_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 349/2024: data escrita até a assinatura",
+   "valor": 0,
+   "unidade": "dc",
+   "definicao": "data da assinatura − data do cabeçalho",
+   "origem": "doc 4"
+  },
+  {
+   "id": "of1.texto_assinatura_du",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 349/2024: data escrita até a assinatura (du)",
+   "valor": 0,
+   "unidade": "du",
+   "definicao": "calendário RJ (hipótese)",
+   "origem": "doc 4"
+  },
+  {
+   "id": "of2.finalidade_encaminhar",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 682/2024: encaminha relatórios (1) ou agenda vistoria (0)",
+   "valor": 1,
+   "unidade": "indicador",
+   "definicao": "relatórios citados no texto",
+   "origem": "doc 14 (SEI 80501066)"
+  },
+  {
+   "id": "of2.relatorios_citados",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 682/2024: relatórios citados",
+   "valor": 5,
+   "unidade": "relatórios",
+   "definicao": "",
+   "origem": "doc 14"
+  },
+  {
+   "id": "of2.relatorios_no_pdf",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 682/2024: relatórios citados com texto no PDF",
+   "valor": 1,
+   "unidade": "relatórios",
+   "definicao": "",
+   "origem": "doc 14"
+  },
+  {
+   "id": "of2.texto_assinatura_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 682/2024: data escrita até a assinatura",
+   "valor": 0,
+   "unidade": "dc",
+   "definicao": "data da assinatura − data do cabeçalho",
+   "origem": "doc 14"
+  },
+  {
+   "id": "of2.texto_assinatura_du",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 682/2024: data escrita até a assinatura (du)",
+   "valor": 0,
+   "unidade": "du",
+   "definicao": "calendário RJ (hipótese)",
+   "origem": "doc 14"
+  },
+  {
+   "id": "of3.finalidade_encaminhar",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 757/2024: encaminha relatórios (1) ou agenda vistoria (0)",
+   "valor": 0,
+   "unidade": "indicador",
+   "definicao": "relatórios citados no texto",
+   "origem": "doc 20 (SEI 82718456)"
+  },
+  {
+   "id": "of3.texto_assinatura_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 757/2024: data escrita até a assinatura",
+   "valor": 3,
+   "unidade": "dc",
+   "definicao": "data da assinatura − data do cabeçalho",
+   "origem": "doc 20"
+  },
+  {
+   "id": "of3.texto_assinatura_du",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 757/2024: data escrita até a assinatura (du)",
+   "valor": 1,
+   "unidade": "du",
+   "definicao": "calendário RJ (hipótese)",
+   "origem": "doc 20"
+  },
+  {
+   "id": "of3.vistorias_agendadas_dias",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 757/2024: dias de vistoria agendados",
+   "valor": 3,
+   "unidade": "dias",
+   "definicao": "trecho 'Datas das Vistorias'",
+   "origem": "doc 20"
+  },
+  {
+   "id": "of3.antecedencia_agendamento_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 757/2024: envio do e-mail até a 1ª vistoria agendada",
+   "valor": 1,
+   "unidade": "dc",
+   "definicao": "1ª data agendada − data do e-mail",
+   "origem": "docs 20, 21"
+  },
+  {
+   "id": "of3.antecedencia_agendamento_du",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 757/2024: envio do e-mail até a 1ª vistoria agendada (du)",
+   "valor": 1,
+   "unidade": "du",
+   "definicao": "calendário RJ (hipótese)",
+   "origem": "docs 20, 21"
+  },
+  {
+   "id": "of4.finalidade_encaminhar",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 946/2024: encaminha relatórios (1) ou agenda vistoria (0)",
+   "valor": 1,
+   "unidade": "indicador",
+   "definicao": "relatórios citados no texto",
+   "origem": "doc 29 (SEI 87188346)"
+  },
+  {
+   "id": "of4.relatorios_citados",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 946/2024: relatórios citados",
+   "valor": 6,
+   "unidade": "relatórios",
+   "definicao": "",
+   "origem": "doc 29"
+  },
+  {
+   "id": "of4.relatorios_no_pdf",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 946/2024: relatórios citados com texto no PDF",
+   "valor": 6,
+   "unidade": "relatórios",
+   "definicao": "",
+   "origem": "doc 29"
+  },
+  {
+   "id": "of4.texto_assinatura_dc",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 946/2024: data escrita até a assinatura",
+   "valor": 3,
+   "unidade": "dc",
+   "definicao": "data da assinatura − data do cabeçalho",
+   "origem": "doc 29"
+  },
+  {
+   "id": "of4.texto_assinatura_du",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício 946/2024: data escrita até a assinatura (du)",
+   "valor": 1,
+   "unidade": "du",
+   "definicao": "calendário RJ (hipótese)",
+   "origem": "doc 29"
+  },
+  {
+   "id": "oficios.encaminhamento",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofícios de encaminhamento de relatórios nos autos",
+   "valor": 3,
+   "unidade": "ofícios",
+   "definicao": "",
+   "origem": "casos"
+  },
+  {
+   "id": "oficios.agendamento",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofícios de agendamento de vistoria nos autos",
+   "valor": 1,
+   "unidade": "ofícios",
+   "definicao": "",
+   "origem": "casos"
+  },
+  {
+   "id": "oficios.prazo_resposta_unico",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Prazo de resposta dado em todos os ofícios de encaminhamento",
+   "valor": 30,
+   "unidade": "dias",
+   "definicao": "trecho 'prazo de N (...) dias'; não diz se úteis ou corridos",
+   "origem": "casos"
+  }
+ ]
+}

@@ -1,0 +1,2478 @@
+{
+ "codigo": "FIS",
+ "caso": "SEI-480002/001314/2024",
+ "carimbo_linha_base": "577e10af35ddc9788b385f25c0668bd253c6c5de3addc7527249253b5feb7776",
+ "ciclos": {
+  "vistoria_email": "Vistoria → e-mail de envio à concessionária",
+  "vistoria_aprovacao": "Vistoria → 'De acordo' do Gerente",
+  "ate_parecer": "Vistoria → parecer (análise da resposta do relatório)"
+ },
+ "casos_com_ocorrencias": 22,
+ "melhorias_simuladas": [
+  "M-FIS-01",
+  "M-FIS-02",
+  "M-FIS-03",
+  "M-FIS-04",
+  "M-FIS-07",
+  "M-FIS-08",
+  "M-FIS-13",
+  "M-FIS-14",
+  "M-FIS-15"
+ ],
+ "melhorias_qualitativas": [
+  "M-FIS-05",
+  "M-FIS-06",
+  "M-FIS-09",
+  "M-FIS-10",
+  "M-FIS-11",
+  "M-FIS-12",
+  "M-FIS-16",
+  "M-FIS-17"
+ ],
+ "linha_base": {
+  "vistoria_email": {
+   "n": 9,
+   "media": 72.2,
+   "mediana": 62.0,
+   "q1": 58.0,
+   "q3": 74.0,
+   "min": 31.0,
+   "max": 173.0
+  },
+  "vistoria_aprovacao": {
+   "n": 21,
+   "media": 54.3,
+   "mediana": 50.0,
+   "q1": 40.0,
+   "q3": 57.0,
+   "min": 29.0,
+   "max": 172.0
+  },
+  "ate_parecer": {
+   "n": 21,
+   "media": 275.8,
+   "mediana": 256.0,
+   "q1": 242.0,
+   "q3": 312.0,
+   "min": 217.0,
+   "max": 364.0
+  },
+  "componentes": {
+   "a2_elaborar_relatorio": {
+    "n": 21,
+    "media": 42.0,
+    "mediana": 34.0,
+    "q1": 24.0,
+    "q3": 55.0,
+    "min": 18.0,
+    "max": 171.0
+   },
+   "a3_revisar_aprovar": {
+    "n": 21,
+    "media": 12.3,
+    "mediana": 4.0,
+    "q1": 2.0,
+    "q3": 32.0,
+    "min": 1.0,
+    "max": 35.0
+   },
+   "a4_oficiar_concessionaria": {
+    "n": 9,
+    "media": 2.1,
+    "mediana": 1.0,
+    "q1": 1.0,
+    "q3": 1.0,
+    "min": 1.0,
+    "max": 6.0
+   },
+   "a6_analisar_resposta": {
+    "n": 21,
+    "media": 220.5,
+    "mediana": 197.0,
+    "q1": 159.0,
+    "q3": 268.0,
+    "min": 159.0,
+    "max": 290.0
+   },
+   "a6_agencia": {
+    "n": 21,
+    "media": 185.5,
+    "mediana": 162.0,
+    "q1": 124.0,
+    "q3": 233.0,
+    "min": 124.0,
+    "max": 255.0
+   },
+   "a6_protegida": {
+    "n": 21,
+    "media": 35.0,
+    "mediana": 35.0,
+    "q1": 35.0,
+    "q3": 35.0,
+    "min": 35.0,
+    "max": 35.0
+   }
+  },
+  "conformidade_temporal": {
+   "R-FIS-04": {
+    "n": 22,
+    "conformes": 12,
+    "pct": 54.5
+   }
+  }
+ },
+ "decomposicao_a2": {
+  "nota": "Data do fecho do texto lida em conformidade_FIS.json (datas_lidas_dos_autos); relatórios com vistoria, fecho e 1ª assinatura datados. Indício de texto pronto aguardando assinatura, a confirmar com a CASAN.",
+  "vistoria_fecho": {
+   "n": 21,
+   "media": 22.4,
+   "mediana": 12.0,
+   "q1": 7.0,
+   "q3": 21.0,
+   "min": 0,
+   "max": 156
+  },
+  "fecho_1a_assinatura": {
+   "n": 21,
+   "media": 19.6,
+   "mediana": 17.0,
+   "q1": 11.0,
+   "q3": 30.0,
+   "min": 2,
+   "max": 50
+  }
+ },
+ "fases": {
+  "1": {
+   "conservador": {
+    "vistoria_email": {
+     "n": 9,
+     "media": 34.9,
+     "mediana": 33.0,
+     "q1": 33.0,
+     "q3": 33.0,
+     "min": 31.0,
+     "max": 43.0
+    },
+    "vistoria_aprovacao": {
+     "n": 21,
+     "media": 32.5,
+     "mediana": 32.0,
+     "q1": 31.0,
+     "q3": 34.0,
+     "min": 28.0,
+     "max": 40.0
+    },
+    "ate_parecer": {
+     "n": 21,
+     "media": 128.2,
+     "mediana": 128.0,
+     "q1": 127.0,
+     "q3": 129.0,
+     "min": 123.0,
+     "max": 138.0
+    },
+    "componentes": {
+     "a2_elaborar_relatorio": {
+      "n": 21,
+      "media": 26.8,
+      "mediana": 30.0,
+      "q1": 24.0,
+      "q3": 30.0,
+      "min": 18.0,
+      "max": 30.0
+     },
+     "a3_revisar_aprovar": {
+      "n": 21,
+      "media": 5.7,
+      "mediana": 4.0,
+      "q1": 2.0,
+      "q3": 10.0,
+      "min": 1.0,
+      "max": 10.0
+     },
+     "a4_oficiar_concessionaria": {
+      "n": 9,
+      "media": 1.4,
+      "mediana": 1.0,
+      "q1": 1.0,
+      "q3": 1.0,
+      "min": 1.0,
+      "max": 3.0
+     },
+     "a6_analisar_resposta": {
+      "n": 21,
+      "media": 95.0,
+      "mediana": 95.0,
+      "q1": 95.0,
+      "q3": 95.0,
+      "min": 95.0,
+      "max": 95.0
+     },
+     "a6_agencia": {
+      "n": 21,
+      "media": 60.0,
+      "mediana": 60.0,
+      "q1": 60.0,
+      "q3": 60.0,
+      "min": 60.0,
+      "max": 60.0
+     },
+     "a6_protegida": {
+      "n": 21,
+      "media": 35.0,
+      "mediana": 35.0,
+      "q1": 35.0,
+      "q3": 35.0,
+      "min": 35.0,
+      "max": 35.0
+     }
+    },
+    "conformidade_temporal": {
+     "R-FIS-04": {
+      "n": 22,
+      "conformes": 12,
+      "pct": 54.5
+     }
+    },
+    "ganho_mediana_pct": {
+     "vistoria_email": 46.8,
+     "vistoria_aprovacao": 36.0,
+     "ate_parecer": 50.0
+    },
+    "ganho_media_pct": {
+     "vistoria_email": 51.7,
+     "vistoria_aprovacao": 40.1,
+     "ate_parecer": 53.5
+    },
+    "prazo_protegido_preservado": true
+   },
+   "esperado": {
+    "vistoria_email": {
+     "n": 9,
+     "media": 28.7,
+     "mediana": 28.0,
+     "q1": 28.0,
+     "q3": 29.0,
+     "min": 27.0,
+     "max": 31.0
+    },
+    "vistoria_aprovacao": {
+     "n": 21,
+     "media": 27.1,
+     "mediana": 27.0,
+     "q1": 27.0,
+     "q3": 29.0,
+     "min": 23.0,
+     "max": 30.0
+    },
+    "ate_parecer": {
+     "n": 21,
+     "media": 102.6,
+     "mediana": 103.0,
+     "q1": 102.0,
+     "q3": 104.0,
+     "min": 98.0,
+     "max": 106.0
+    },
+    "componentes": {
+     "a2_elaborar_relatorio": {
+      "n": 21,
+      "media": 23.6,
+      "mediana": 25.0,
+      "q1": 24.0,
+      "q3": 25.0,
+      "min": 18.0,
+      "max": 25.0
+     },
+     "a3_revisar_aprovar": {
+      "n": 21,
+      "media": 3.6,
+      "mediana": 4.0,
+      "q1": 2.0,
+      "q3": 5.0,
+      "min": 1.0,
+      "max": 5.0
+     },
+     "a4_oficiar_concessionaria": {
+      "n": 9,
+      "media": 1.0,
+      "mediana": 1.0,
+      "q1": 1.0,
+      "q3": 1.0,
+      "min": 1.0,
+      "max": 1.0
+     },
+     "a6_analisar_resposta": {
+      "n": 21,
+      "media": 75.0,
+      "mediana": 75.0,
+      "q1": 75.0,
+      "q3": 75.0,
+      "min": 75.0,
+      "max": 75.0
+     },
+     "a6_agencia": {
+      "n": 21,
+      "media": 40.0,
+      "mediana": 40.0,
+      "q1": 40.0,
+      "q3": 40.0,
+      "min": 40.0,
+      "max": 40.0
+     },
+     "a6_protegida": {
+      "n": 21,
+      "media": 35.0,
+      "mediana": 35.0,
+      "q1": 35.0,
+      "q3": 35.0,
+      "min": 35.0,
+      "max": 35.0
+     }
+    },
+    "conformidade_temporal": {
+     "R-FIS-04": {
+      "n": 22,
+      "conformes": 22,
+      "pct": 100.0
+     }
+    },
+    "ganho_mediana_pct": {
+     "vistoria_email": 54.8,
+     "vistoria_aprovacao": 46.0,
+     "ate_parecer": 59.8
+    },
+    "ganho_media_pct": {
+     "vistoria_email": 60.2,
+     "vistoria_aprovacao": 50.1,
+     "ate_parecer": 62.8
+    },
+    "prazo_protegido_preservado": true
+   },
+   "otimista": {
+    "vistoria_email": {
+     "n": 9,
+     "media": 20.2,
+     "mediana": 20.0,
+     "q1": 20.0,
+     "q3": 21.0,
+     "min": 19.0,
+     "max": 21.0
+    },
+    "vistoria_aprovacao": {
+     "n": 21,
+     "media": 20.5,
+     "mediana": 21.0,
+     "q1": 20.0,
+     "q3": 21.0,
+     "min": 19.0,
+     "max": 21.0
+    },
+    "ate_parecer": {
+     "n": 21,
+     "media": 80.6,
+     "mediana": 81.0,
+     "q1": 80.0,
+     "q3": 81.0,
+     "min": 79.0,
+     "max": 81.0
+    },
+    "componentes": {
+     "a2_elaborar_relatorio": {
+      "n": 21,
+      "media": 18.0,
+      "mediana": 18.0,
+      "q1": 18.0,
+      "q3": 18.0,
+      "min": 18.0,
+      "max": 18.0
+     },
+     "a3_revisar_aprovar": {
+      "n": 21,
+      "media": 2.5,
+      "mediana": 3.0,
+      "q1": 2.0,
+      "q3": 3.0,
+      "min": 1.0,
+      "max": 3.0
+     },
+     "a4_oficiar_concessionaria": {
+      "n": 9,
+      "media": 0.0,
+      "mediana": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "a6_analisar_resposta": {
+      "n": 21,
+      "media": 60.0,
+      "mediana": 60.0,
+      "q1": 60.0,
+      "q3": 60.0,
+      "min": 60.0,
+      "max": 60.0
+     },
+     "a6_agencia": {
+      "n": 21,
+      "media": 25.0,
+      "mediana": 25.0,
+      "q1": 25.0,
+      "q3": 25.0,
+      "min": 25.0,
+      "max": 25.0
+     },
+     "a6_protegida": {
+      "n": 21,
+      "media": 35.0,
+      "mediana": 35.0,
+      "q1": 35.0,
+      "q3": 35.0,
+      "min": 35.0,
+      "max": 35.0
+     }
+    },
+    "conformidade_temporal": {
+     "R-FIS-04": {
+      "n": 22,
+      "conformes": 22,
+      "pct": 100.0
+     }
+    },
+    "ganho_mediana_pct": {
+     "vistoria_email": 67.7,
+     "vistoria_aprovacao": 58.0,
+     "ate_parecer": 68.4
+    },
+    "ganho_media_pct": {
+     "vistoria_email": 72.0,
+     "vistoria_aprovacao": 62.2,
+     "ate_parecer": 70.8
+    },
+    "prazo_protegido_preservado": true
+   }
+  },
+  "2": {
+   "conservador": {
+    "vistoria_email": {
+     "n": 9,
+     "media": 30.4,
+     "mediana": 28.5,
+     "q1": 28.5,
+     "q3": 28.5,
+     "min": 26.9,
+     "max": 38.5
+    },
+    "vistoria_aprovacao": {
+     "n": 21,
+     "media": 28.5,
+     "mediana": 27.5,
+     "q1": 26.5,
+     "q3": 30.4,
+     "min": 24.9,
+     "max": 35.5
+    },
+    "ate_parecer": {
+     "n": 21,
+     "media": 104.2,
+     "mediana": 103.5,
+     "q1": 102.5,
+     "q3": 105.4,
+     "min": 100.3,
+     "max": 113.5
+    },
+    "componentes": {
+     "a2_elaborar_relatorio": {
+      "n": 21,
+      "media": 22.8,
+      "mediana": 25.5,
+      "q1": 20.4,
+      "q3": 25.5,
+      "min": 15.3,
+      "max": 25.5
+     },
+     "a3_revisar_aprovar": {
+      "n": 21,
+      "media": 5.7,
+      "mediana": 4.0,
+      "q1": 2.0,
+      "q3": 10.0,
+      "min": 1.0,
+      "max": 10.0
+     },
+     "a4_oficiar_concessionaria": {
+      "n": 9,
+      "media": 1.4,
+      "mediana": 1.0,
+      "q1": 1.0,
+      "q3": 1.0,
+      "min": 1.0,
+      "max": 3.0
+     },
+     "a6_analisar_resposta": {
+      "n": 21,
+      "media": 75.0,
+      "mediana": 75.0,
+      "q1": 75.0,
+      "q3": 75.0,
+      "min": 75.0,
+      "max": 75.0
+     },
+     "a6_agencia": {
+      "n": 21,
+      "media": 40.0,
+      "mediana": 40.0,
+      "q1": 40.0,
+      "q3": 40.0,
+      "min": 40.0,
+      "max": 40.0
+     },
+     "a6_protegida": {
+      "n": 21,
+      "media": 35.0,
+      "mediana": 35.0,
+      "q1": 35.0,
+      "q3": 35.0,
+      "min": 35.0,
+      "max": 35.0
+     }
+    },
+    "conformidade_temporal": {
+     "R-FIS-04": {
+      "n": 22,
+      "conformes": 12,
+      "pct": 54.5
+     }
+    },
+    "ganho_mediana_pct": {
+     "vistoria_email": 54.0,
+     "vistoria_aprovacao": 45.0,
+     "ate_parecer": 59.6
+    },
+    "ganho_media_pct": {
+     "vistoria_email": 57.9,
+     "vistoria_aprovacao": 47.5,
+     "ate_parecer": 62.2
+    },
+    "prazo_protegido_preservado": true
+   },
+   "esperado": {
+    "vistoria_email": {
+     "n": 9,
+     "media": 22.4,
+     "mediana": 21.8,
+     "q1": 21.8,
+     "q3": 22.8,
+     "min": 20.8,
+     "max": 24.8
+    },
+    "vistoria_aprovacao": {
+     "n": 21,
+     "media": 21.2,
+     "mediana": 20.8,
+     "q1": 20.8,
+     "q3": 23.0,
+     "min": 18.5,
+     "max": 23.8
+    },
+    "ate_parecer": {
+     "n": 21,
+     "media": 76.7,
+     "mediana": 76.8,
+     "q1": 75.8,
+     "q3": 78.0,
+     "min": 73.5,
+     "max": 79.8
+    },
+    "componentes": {
+     "a2_elaborar_relatorio": {
+      "n": 21,
+      "media": 17.7,
+      "mediana": 18.8,
+      "q1": 18.0,
+      "q3": 18.8,
+      "min": 13.5,
+      "max": 18.8
+     },
+     "a3_revisar_aprovar": {
+      "n": 21,
+      "media": 3.6,
+      "mediana": 4.0,
+      "q1": 2.0,
+      "q3": 5.0,
+      "min": 1.0,
+      "max": 5.0
+     },
+     "a4_oficiar_concessionaria": {
+      "n": 9,
+      "media": 1.0,
+      "mediana": 1.0,
+      "q1": 1.0,
+      "q3": 1.0,
+      "min": 1.0,
+      "max": 1.0
+     },
+     "a6_analisar_resposta": {
+      "n": 21,
+      "media": 55.0,
+      "mediana": 55.0,
+      "q1": 55.0,
+      "q3": 55.0,
+      "min": 55.0,
+      "max": 55.0
+     },
+     "a6_agencia": {
+      "n": 21,
+      "media": 20.0,
+      "mediana": 20.0,
+      "q1": 20.0,
+      "q3": 20.0,
+      "min": 20.0,
+      "max": 20.0
+     },
+     "a6_protegida": {
+      "n": 21,
+      "media": 35.0,
+      "mediana": 35.0,
+      "q1": 35.0,
+      "q3": 35.0,
+      "min": 35.0,
+      "max": 35.0
+     }
+    },
+    "conformidade_temporal": {
+     "R-FIS-04": {
+      "n": 22,
+      "conformes": 22,
+      "pct": 100.0
+     }
+    },
+    "ganho_mediana_pct": {
+     "vistoria_email": 64.8,
+     "vistoria_aprovacao": 58.4,
+     "ate_parecer": 70.0
+    },
+    "ganho_media_pct": {
+     "vistoria_email": 69.0,
+     "vistoria_aprovacao": 61.0,
+     "ate_parecer": 72.2
+    },
+    "prazo_protegido_preservado": true
+   },
+   "otimista": {
+    "vistoria_email": {
+     "n": 9,
+     "media": 13.9,
+     "mediana": 13.7,
+     "q1": 13.7,
+     "q3": 14.7,
+     "min": 12.7,
+     "max": 14.7
+    },
+    "vistoria_aprovacao": {
+     "n": 21,
+     "media": 14.2,
+     "mediana": 14.7,
+     "q1": 13.7,
+     "q3": 14.7,
+     "min": 12.7,
+     "max": 14.7
+    },
+    "ate_parecer": {
+     "n": 21,
+     "media": 61.3,
+     "mediana": 61.7,
+     "q1": 60.7,
+     "q3": 61.7,
+     "min": 59.7,
+     "max": 61.7
+    },
+    "componentes": {
+     "a2_elaborar_relatorio": {
+      "n": 21,
+      "media": 11.7,
+      "mediana": 11.7,
+      "q1": 11.7,
+      "q3": 11.7,
+      "min": 11.7,
+      "max": 11.7
+     },
+     "a3_revisar_aprovar": {
+      "n": 21,
+      "media": 2.5,
+      "mediana": 3.0,
+      "q1": 2.0,
+      "q3": 3.0,
+      "min": 1.0,
+      "max": 3.0
+     },
+     "a4_oficiar_concessionaria": {
+      "n": 9,
+      "media": 0.0,
+      "mediana": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "a6_analisar_resposta": {
+      "n": 21,
+      "media": 47.0,
+      "mediana": 47.0,
+      "q1": 47.0,
+      "q3": 47.0,
+      "min": 47.0,
+      "max": 47.0
+     },
+     "a6_agencia": {
+      "n": 21,
+      "media": 12.0,
+      "mediana": 12.0,
+      "q1": 12.0,
+      "q3": 12.0,
+      "min": 12.0,
+      "max": 12.0
+     },
+     "a6_protegida": {
+      "n": 21,
+      "media": 35.0,
+      "mediana": 35.0,
+      "q1": 35.0,
+      "q3": 35.0,
+      "min": 35.0,
+      "max": 35.0
+     }
+    },
+    "conformidade_temporal": {
+     "R-FIS-04": {
+      "n": 22,
+      "conformes": 22,
+      "pct": 100.0
+     }
+    },
+    "ganho_mediana_pct": {
+     "vistoria_email": 77.9,
+     "vistoria_aprovacao": 70.6,
+     "ate_parecer": 75.9
+    },
+    "ganho_media_pct": {
+     "vistoria_email": 80.7,
+     "vistoria_aprovacao": 73.8,
+     "ate_parecer": 77.8
+    },
+    "prazo_protegido_preservado": true
+   }
+  },
+  "3": {
+   "conservador": {
+    "vistoria_email": {
+     "n": 9,
+     "media": 27.5,
+     "mediana": 25.9,
+     "q1": 25.9,
+     "q3": 25.9,
+     "min": 24.7,
+     "max": 34.0
+    },
+    "vistoria_aprovacao": {
+     "n": 21,
+     "media": 26.2,
+     "mediana": 24.9,
+     "q1": 23.9,
+     "q3": 27.9,
+     "min": 22.7,
+     "max": 33.0
+    },
+    "ate_parecer": {
+     "n": 21,
+     "media": 91.7,
+     "mediana": 91.0,
+     "q1": 90.0,
+     "q3": 93.0,
+     "min": 88.8,
+     "max": 99.0
+    },
+    "componentes": {
+     "a2_elaborar_relatorio": {
+      "n": 21,
+      "media": 20.5,
+      "mediana": 22.9,
+      "q1": 18.4,
+      "q3": 22.9,
+      "min": 13.8,
+      "max": 22.9
+     },
+     "a3_revisar_aprovar": {
+      "n": 21,
+      "media": 5.7,
+      "mediana": 4.0,
+      "q1": 2.0,
+      "q3": 10.0,
+      "min": 1.0,
+      "max": 10.0
+     },
+     "a4_oficiar_concessionaria": {
+      "n": 9,
+      "media": 1.0,
+      "mediana": 1.0,
+      "q1": 1.0,
+      "q3": 1.0,
+      "min": 1.0,
+      "max": 1.0
+     },
+     "a6_analisar_resposta": {
+      "n": 21,
+      "media": 65.0,
+      "mediana": 65.0,
+      "q1": 65.0,
+      "q3": 65.0,
+      "min": 65.0,
+      "max": 65.0
+     },
+     "a6_agencia": {
+      "n": 21,
+      "media": 30.0,
+      "mediana": 30.0,
+      "q1": 30.0,
+      "q3": 30.0,
+      "min": 30.0,
+      "max": 30.0
+     },
+     "a6_protegida": {
+      "n": 21,
+      "media": 35.0,
+      "mediana": 35.0,
+      "q1": 35.0,
+      "q3": 35.0,
+      "min": 35.0,
+      "max": 35.0
+     }
+    },
+    "conformidade_temporal": {
+     "R-FIS-04": {
+      "n": 22,
+      "conformes": 12,
+      "pct": 54.5
+     }
+    },
+    "ganho_mediana_pct": {
+     "vistoria_email": 58.2,
+     "vistoria_aprovacao": 50.2,
+     "ate_parecer": 64.5
+    },
+    "ganho_media_pct": {
+     "vistoria_email": 61.9,
+     "vistoria_aprovacao": 51.7,
+     "ate_parecer": 66.8
+    },
+    "prazo_protegido_preservado": true
+   },
+   "esperado": {
+    "vistoria_email": {
+     "n": 9,
+     "media": 17.6,
+     "mediana": 17.0,
+     "q1": 17.0,
+     "q3": 17.0,
+     "min": 16.0,
+     "max": 20.0
+    },
+    "vistoria_aprovacao": {
+     "n": 21,
+     "media": 17.7,
+     "mediana": 17.0,
+     "q1": 17.0,
+     "q3": 19.4,
+     "min": 15.8,
+     "max": 20.0
+    },
+    "ate_parecer": {
+     "n": 21,
+     "media": 67.7,
+     "mediana": 67.0,
+     "q1": 67.0,
+     "q3": 69.4,
+     "min": 65.8,
+     "max": 70.0
+    },
+    "componentes": {
+     "a2_elaborar_relatorio": {
+      "n": 21,
+      "media": 14.1,
+      "mediana": 15.0,
+      "q1": 14.4,
+      "q3": 15.0,
+      "min": 10.8,
+      "max": 15.0
+     },
+     "a3_revisar_aprovar": {
+      "n": 21,
+      "media": 3.6,
+      "mediana": 4.0,
+      "q1": 2.0,
+      "q3": 5.0,
+      "min": 1.0,
+      "max": 5.0
+     },
+     "a4_oficiar_concessionaria": {
+      "n": 9,
+      "media": 0.0,
+      "mediana": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "a6_analisar_resposta": {
+      "n": 21,
+      "media": 50.0,
+      "mediana": 50.0,
+      "q1": 50.0,
+      "q3": 50.0,
+      "min": 50.0,
+      "max": 50.0
+     },
+     "a6_agencia": {
+      "n": 21,
+      "media": 15.0,
+      "mediana": 15.0,
+      "q1": 15.0,
+      "q3": 15.0,
+      "min": 15.0,
+      "max": 15.0
+     },
+     "a6_protegida": {
+      "n": 21,
+      "media": 35.0,
+      "mediana": 35.0,
+      "q1": 35.0,
+      "q3": 35.0,
+      "min": 35.0,
+      "max": 35.0
+     }
+    },
+    "conformidade_temporal": {
+     "R-FIS-04": {
+      "n": 22,
+      "conformes": 22,
+      "pct": 100.0
+     }
+    },
+    "ganho_mediana_pct": {
+     "vistoria_email": 72.6,
+     "vistoria_aprovacao": 66.0,
+     "ate_parecer": 73.8
+    },
+    "ganho_media_pct": {
+     "vistoria_email": 75.6,
+     "vistoria_aprovacao": 67.4,
+     "ate_parecer": 75.5
+    },
+    "prazo_protegido_preservado": true
+   },
+   "otimista": {
+    "vistoria_email": {
+     "n": 9,
+     "media": 10.3,
+     "mediana": 10.2,
+     "q1": 10.2,
+     "q3": 10.2,
+     "min": 9.2,
+     "max": 11.2
+    },
+    "vistoria_aprovacao": {
+     "n": 21,
+     "media": 10.7,
+     "mediana": 11.2,
+     "q1": 10.2,
+     "q3": 11.2,
+     "min": 9.2,
+     "max": 11.2
+    },
+    "ate_parecer": {
+     "n": 21,
+     "media": 53.7,
+     "mediana": 54.2,
+     "q1": 53.2,
+     "q3": 54.2,
+     "min": 52.2,
+     "max": 54.2
+    },
+    "componentes": {
+     "a2_elaborar_relatorio": {
+      "n": 21,
+      "media": 8.2,
+      "mediana": 8.2,
+      "q1": 8.2,
+      "q3": 8.2,
+      "min": 8.2,
+      "max": 8.2
+     },
+     "a3_revisar_aprovar": {
+      "n": 21,
+      "media": 2.5,
+      "mediana": 3.0,
+      "q1": 2.0,
+      "q3": 3.0,
+      "min": 1.0,
+      "max": 3.0
+     },
+     "a4_oficiar_concessionaria": {
+      "n": 9,
+      "media": 0.0,
+      "mediana": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "a6_analisar_resposta": {
+      "n": 21,
+      "media": 43.0,
+      "mediana": 43.0,
+      "q1": 43.0,
+      "q3": 43.0,
+      "min": 43.0,
+      "max": 43.0
+     },
+     "a6_agencia": {
+      "n": 21,
+      "media": 8.0,
+      "mediana": 8.0,
+      "q1": 8.0,
+      "q3": 8.0,
+      "min": 8.0,
+      "max": 8.0
+     },
+     "a6_protegida": {
+      "n": 21,
+      "media": 35.0,
+      "mediana": 35.0,
+      "q1": 35.0,
+      "q3": 35.0,
+      "min": 35.0,
+      "max": 35.0
+     }
+    },
+    "conformidade_temporal": {
+     "R-FIS-04": {
+      "n": 22,
+      "conformes": 22,
+      "pct": 100.0
+     }
+    },
+    "ganho_mediana_pct": {
+     "vistoria_email": 83.5,
+     "vistoria_aprovacao": 77.6,
+     "ate_parecer": 78.8
+    },
+    "ganho_media_pct": {
+     "vistoria_email": 85.7,
+     "vistoria_aprovacao": 80.3,
+     "ate_parecer": 80.5
+    },
+    "prazo_protegido_preservado": true
+   }
+  }
+ },
+ "sensibilidade": {
+  "fase": 3,
+  "cenario": "esperado",
+  "leitura": "quanto pioram as medianas e médias (du) se a melhoria for retirada",
+  "sem_cada_melhoria": [
+   {
+    "melhoria": "M-FIS-01",
+    "fase": 1,
+    "vistoria_email_mediana_du": 18.0,
+    "vistoria_email_media_du": 21.4,
+    "ate_parecer_mediana_du": 7.8,
+    "ate_parecer_media_du": 11.1
+   },
+   {
+    "melhoria": "M-FIS-02",
+    "fase": 1,
+    "vistoria_email_mediana_du": 0.0,
+    "vistoria_email_media_du": 6.6,
+    "ate_parecer_mediana_du": 2.0,
+    "ate_parecer_media_du": 8.7
+   },
+   {
+    "melhoria": "M-FIS-07",
+    "fase": 2,
+    "vistoria_email_mediana_du": 5.0,
+    "vistoria_email_media_du": 5.0,
+    "ate_parecer_mediana_du": 5.0,
+    "ate_parecer_media_du": 4.7
+   },
+   {
+    "melhoria": "M-FIS-15",
+    "fase": 3,
+    "vistoria_email_mediana_du": 3.8,
+    "vistoria_email_media_du": 3.7,
+    "ate_parecer_mediana_du": 3.8,
+    "ate_parecer_media_du": 3.5
+   },
+   {
+    "melhoria": "M-FIS-14",
+    "fase": 3,
+    "vistoria_email_mediana_du": 0.0,
+    "vistoria_email_media_du": 0.0,
+    "ate_parecer_mediana_du": 5.0,
+    "ate_parecer_media_du": 5.0
+   },
+   {
+    "melhoria": "M-FIS-13",
+    "fase": 3,
+    "vistoria_email_mediana_du": 1.0,
+    "vistoria_email_media_du": 1.1,
+    "ate_parecer_mediana_du": 1.0,
+    "ate_parecer_media_du": 0.5
+   },
+   {
+    "melhoria": "M-FIS-03",
+    "fase": 1,
+    "vistoria_email_mediana_du": 0.0,
+    "vistoria_email_media_du": 0.0,
+    "ate_parecer_mediana_du": 0.0,
+    "ate_parecer_media_du": 0.0
+   },
+   {
+    "melhoria": "M-FIS-04",
+    "fase": 1,
+    "vistoria_email_mediana_du": 0.0,
+    "vistoria_email_media_du": 0.0,
+    "ate_parecer_mediana_du": 0.0,
+    "ate_parecer_media_du": 0.0
+   },
+   {
+    "melhoria": "M-FIS-08",
+    "fase": 2,
+    "vistoria_email_mediana_du": 0.0,
+    "vistoria_email_media_du": 0.0,
+    "ate_parecer_mediana_du": 0.0,
+    "ate_parecer_media_du": 0.0
+   }
+  ]
+ },
+ "checagens": {
+  "prazo_protegido_preservado_em_todas_as_fases": true,
+  "fase0_reproduz_casos": true,
+  "nota": "R-FIS-10 (prazo mínimo entre o envio e o parecer) e R-FIS-07 (prazo concedido) ficam fora do corte: a parte protegida da espera de a6 nunca é reduzida. R-FIS-11 (15 dias da última resposta ao parecer) não é simulável: as datas das respostas não estão nos autos."
+ },
+ "leitura_critica": [
+  "Fase 2, esperado: ganho de 64.8% na mediana do ciclo 'Vistoria → e-mail de envio à concessionária' (acima de 60%: revisar o parâmetro e validar com a CASAN)",
+  "Fase 2, esperado: ganho de 70.0% na mediana do ciclo 'Vistoria → parecer (análise da resposta do relatório)' (acima de 60%: revisar o parâmetro e validar com a CASAN)",
+  "Fase 3, esperado: ganho de 72.6% na mediana do ciclo 'Vistoria → e-mail de envio à concessionária' (acima de 60%: revisar o parâmetro e validar com a CASAN)",
+  "Fase 3, esperado: ganho de 66.0% na mediana do ciclo 'Vistoria → 'De acordo' do Gerente' (acima de 60%: revisar o parâmetro e validar com a CASAN)",
+  "Fase 3, esperado: ganho de 73.8% na mediana do ciclo 'Vistoria → parecer (análise da resposta do relatório)' (acima de 60%: revisar o parâmetro e validar com a CASAN)"
+ ],
+ "ressalvas": [
+  "Horas de trabalho e custo não medidos (sem andamentos do SEI nem fichas de esforço): nenhum total anual em horas, FTE ou R$ é calculado; qualquer valor desse tipo é hipótese a levantar.",
+  "Dias úteis pelo calendário RJ de scripts/fatos_fis.py (pontos facultativos não conferidos).",
+  "Recorte dos autos: 23 relatórios no PDF contra 42 no parecer; os sem ofício nos autos não entram no ciclo vistoria → e-mail.",
+  "R-FIS-04 vale desde 01/10/2024; a conformidade aqui é contrafactual (regra aplicada a todos os relatórios do ano), diferente da medida em conformidade_FIS.json (só no período de vigência).",
+  "No ciclo até o parecer, a parte protegida é hipótese de leitura do prazo (30 du + 5 du).",
+  "Medianas com 9 relatórios (vistoria → e-mail) e 21 (demais ciclos) são instáveis: tratar os percentuais como ordem de grandeza.",
+  "No AS-IS o ciclo até o parecer é dominado pela espera do parecer anual único; o ganho do TO-BE nesse ciclo vem da mudança de rito (análise por relatório), não de produtividade, e depende de capacidade da equipe a validar."
+ ],
+ "fatos": [
+  {
+   "id": "lb.vistoria_email.n",
+   "valor": 9,
+   "unidade": "relatórios",
+   "descricao": "Linha de base — Vistoria → e-mail de envio à concessionária: n"
+  },
+  {
+   "id": "lb.vistoria_email.mediana_du",
+   "valor": 62.0,
+   "unidade": "du",
+   "descricao": "Linha de base — Vistoria → e-mail de envio à concessionária: mediana"
+  },
+  {
+   "id": "lb.vistoria_email.q1_du",
+   "valor": 58.0,
+   "unidade": "du",
+   "descricao": "Linha de base — Vistoria → e-mail de envio à concessionária: q1"
+  },
+  {
+   "id": "lb.vistoria_email.q3_du",
+   "valor": 74.0,
+   "unidade": "du",
+   "descricao": "Linha de base — Vistoria → e-mail de envio à concessionária: q3"
+  },
+  {
+   "id": "lb.vistoria_email.media_du",
+   "valor": 72.2,
+   "unidade": "du",
+   "descricao": "Linha de base — Vistoria → e-mail de envio à concessionária: media"
+  },
+  {
+   "id": "lb.vistoria_email.min_du",
+   "valor": 31.0,
+   "unidade": "du",
+   "descricao": "Linha de base — Vistoria → e-mail de envio à concessionária: min"
+  },
+  {
+   "id": "lb.vistoria_email.max_du",
+   "valor": 173.0,
+   "unidade": "du",
+   "descricao": "Linha de base — Vistoria → e-mail de envio à concessionária: max"
+  },
+  {
+   "id": "lb.vistoria_aprovacao.n",
+   "valor": 21,
+   "unidade": "relatórios",
+   "descricao": "Linha de base — Vistoria → 'De acordo' do Gerente: n"
+  },
+  {
+   "id": "lb.vistoria_aprovacao.mediana_du",
+   "valor": 50.0,
+   "unidade": "du",
+   "descricao": "Linha de base — Vistoria → 'De acordo' do Gerente: mediana"
+  },
+  {
+   "id": "lb.vistoria_aprovacao.q1_du",
+   "valor": 40.0,
+   "unidade": "du",
+   "descricao": "Linha de base — Vistoria → 'De acordo' do Gerente: q1"
+  },
+  {
+   "id": "lb.vistoria_aprovacao.q3_du",
+   "valor": 57.0,
+   "unidade": "du",
+   "descricao": "Linha de base — Vistoria → 'De acordo' do Gerente: q3"
+  },
+  {
+   "id": "lb.vistoria_aprovacao.media_du",
+   "valor": 54.3,
+   "unidade": "du",
+   "descricao": "Linha de base — Vistoria → 'De acordo' do Gerente: media"
+  },
+  {
+   "id": "lb.vistoria_aprovacao.min_du",
+   "valor": 29.0,
+   "unidade": "du",
+   "descricao": "Linha de base — Vistoria → 'De acordo' do Gerente: min"
+  },
+  {
+   "id": "lb.vistoria_aprovacao.max_du",
+   "valor": 172.0,
+   "unidade": "du",
+   "descricao": "Linha de base — Vistoria → 'De acordo' do Gerente: max"
+  },
+  {
+   "id": "lb.ate_parecer.n",
+   "valor": 21,
+   "unidade": "relatórios",
+   "descricao": "Linha de base — Vistoria → parecer (análise da resposta do relatório): n"
+  },
+  {
+   "id": "lb.ate_parecer.mediana_du",
+   "valor": 256.0,
+   "unidade": "du",
+   "descricao": "Linha de base — Vistoria → parecer (análise da resposta do relatório): mediana"
+  },
+  {
+   "id": "lb.ate_parecer.q1_du",
+   "valor": 242.0,
+   "unidade": "du",
+   "descricao": "Linha de base — Vistoria → parecer (análise da resposta do relatório): q1"
+  },
+  {
+   "id": "lb.ate_parecer.q3_du",
+   "valor": 312.0,
+   "unidade": "du",
+   "descricao": "Linha de base — Vistoria → parecer (análise da resposta do relatório): q3"
+  },
+  {
+   "id": "lb.ate_parecer.media_du",
+   "valor": 275.8,
+   "unidade": "du",
+   "descricao": "Linha de base — Vistoria → parecer (análise da resposta do relatório): media"
+  },
+  {
+   "id": "lb.ate_parecer.min_du",
+   "valor": 217.0,
+   "unidade": "du",
+   "descricao": "Linha de base — Vistoria → parecer (análise da resposta do relatório): min"
+  },
+  {
+   "id": "lb.ate_parecer.max_du",
+   "valor": 364.0,
+   "unidade": "du",
+   "descricao": "Linha de base — Vistoria → parecer (análise da resposta do relatório): max"
+  },
+  {
+   "id": "lb.vistoria_fecho.n",
+   "valor": 21,
+   "unidade": "relatórios",
+   "descricao": "Linha de base — decomposição de a2 (vistoria_fecho): n"
+  },
+  {
+   "id": "lb.vistoria_fecho.mediana_du",
+   "valor": 12.0,
+   "unidade": "du",
+   "descricao": "Linha de base — decomposição de a2 (vistoria_fecho): mediana"
+  },
+  {
+   "id": "lb.vistoria_fecho.q1_du",
+   "valor": 7.0,
+   "unidade": "du",
+   "descricao": "Linha de base — decomposição de a2 (vistoria_fecho): q1"
+  },
+  {
+   "id": "lb.vistoria_fecho.q3_du",
+   "valor": 21.0,
+   "unidade": "du",
+   "descricao": "Linha de base — decomposição de a2 (vistoria_fecho): q3"
+  },
+  {
+   "id": "lb.vistoria_fecho.min_du",
+   "valor": 0,
+   "unidade": "du",
+   "descricao": "Linha de base — decomposição de a2 (vistoria_fecho): min"
+  },
+  {
+   "id": "lb.vistoria_fecho.max_du",
+   "valor": 156,
+   "unidade": "du",
+   "descricao": "Linha de base — decomposição de a2 (vistoria_fecho): max"
+  },
+  {
+   "id": "lb.fecho_1a_assinatura.n",
+   "valor": 21,
+   "unidade": "relatórios",
+   "descricao": "Linha de base — decomposição de a2 (fecho_1a_assinatura): n"
+  },
+  {
+   "id": "lb.fecho_1a_assinatura.mediana_du",
+   "valor": 17.0,
+   "unidade": "du",
+   "descricao": "Linha de base — decomposição de a2 (fecho_1a_assinatura): mediana"
+  },
+  {
+   "id": "lb.fecho_1a_assinatura.q1_du",
+   "valor": 11.0,
+   "unidade": "du",
+   "descricao": "Linha de base — decomposição de a2 (fecho_1a_assinatura): q1"
+  },
+  {
+   "id": "lb.fecho_1a_assinatura.q3_du",
+   "valor": 30.0,
+   "unidade": "du",
+   "descricao": "Linha de base — decomposição de a2 (fecho_1a_assinatura): q3"
+  },
+  {
+   "id": "lb.fecho_1a_assinatura.min_du",
+   "valor": 2,
+   "unidade": "du",
+   "descricao": "Linha de base — decomposição de a2 (fecho_1a_assinatura): min"
+  },
+  {
+   "id": "lb.fecho_1a_assinatura.max_du",
+   "valor": 50,
+   "unidade": "du",
+   "descricao": "Linha de base — decomposição de a2 (fecho_1a_assinatura): max"
+  },
+  {
+   "id": "lb.componente.a2_elaborar_relatorio.n",
+   "valor": 21,
+   "unidade": "relatórios",
+   "descricao": "Linha de base — a2_elaborar_relatorio: n"
+  },
+  {
+   "id": "lb.componente.a2_elaborar_relatorio.mediana_du",
+   "valor": 34.0,
+   "unidade": "du",
+   "descricao": "Linha de base — a2_elaborar_relatorio: mediana"
+  },
+  {
+   "id": "lb.componente.a2_elaborar_relatorio.q1_du",
+   "valor": 24.0,
+   "unidade": "du",
+   "descricao": "Linha de base — a2_elaborar_relatorio: q1"
+  },
+  {
+   "id": "lb.componente.a2_elaborar_relatorio.q3_du",
+   "valor": 55.0,
+   "unidade": "du",
+   "descricao": "Linha de base — a2_elaborar_relatorio: q3"
+  },
+  {
+   "id": "lb.componente.a2_elaborar_relatorio.max_du",
+   "valor": 171.0,
+   "unidade": "du",
+   "descricao": "Linha de base — a2_elaborar_relatorio: max"
+  },
+  {
+   "id": "lb.componente.a3_revisar_aprovar.n",
+   "valor": 21,
+   "unidade": "relatórios",
+   "descricao": "Linha de base — a3_revisar_aprovar: n"
+  },
+  {
+   "id": "lb.componente.a3_revisar_aprovar.mediana_du",
+   "valor": 4.0,
+   "unidade": "du",
+   "descricao": "Linha de base — a3_revisar_aprovar: mediana"
+  },
+  {
+   "id": "lb.componente.a3_revisar_aprovar.q1_du",
+   "valor": 2.0,
+   "unidade": "du",
+   "descricao": "Linha de base — a3_revisar_aprovar: q1"
+  },
+  {
+   "id": "lb.componente.a3_revisar_aprovar.q3_du",
+   "valor": 32.0,
+   "unidade": "du",
+   "descricao": "Linha de base — a3_revisar_aprovar: q3"
+  },
+  {
+   "id": "lb.componente.a3_revisar_aprovar.max_du",
+   "valor": 35.0,
+   "unidade": "du",
+   "descricao": "Linha de base — a3_revisar_aprovar: max"
+  },
+  {
+   "id": "lb.componente.a4_oficiar_concessionaria.n",
+   "valor": 9,
+   "unidade": "relatórios",
+   "descricao": "Linha de base — a4_oficiar_concessionaria: n"
+  },
+  {
+   "id": "lb.componente.a4_oficiar_concessionaria.mediana_du",
+   "valor": 1.0,
+   "unidade": "du",
+   "descricao": "Linha de base — a4_oficiar_concessionaria: mediana"
+  },
+  {
+   "id": "lb.componente.a4_oficiar_concessionaria.q1_du",
+   "valor": 1.0,
+   "unidade": "du",
+   "descricao": "Linha de base — a4_oficiar_concessionaria: q1"
+  },
+  {
+   "id": "lb.componente.a4_oficiar_concessionaria.q3_du",
+   "valor": 1.0,
+   "unidade": "du",
+   "descricao": "Linha de base — a4_oficiar_concessionaria: q3"
+  },
+  {
+   "id": "lb.componente.a4_oficiar_concessionaria.max_du",
+   "valor": 6.0,
+   "unidade": "du",
+   "descricao": "Linha de base — a4_oficiar_concessionaria: max"
+  },
+  {
+   "id": "lb.componente.a6_agencia.n",
+   "valor": 21,
+   "unidade": "relatórios",
+   "descricao": "Linha de base — a6_agencia: n"
+  },
+  {
+   "id": "lb.componente.a6_agencia.mediana_du",
+   "valor": 162.0,
+   "unidade": "du",
+   "descricao": "Linha de base — a6_agencia: mediana"
+  },
+  {
+   "id": "lb.componente.a6_agencia.q1_du",
+   "valor": 124.0,
+   "unidade": "du",
+   "descricao": "Linha de base — a6_agencia: q1"
+  },
+  {
+   "id": "lb.componente.a6_agencia.q3_du",
+   "valor": 233.0,
+   "unidade": "du",
+   "descricao": "Linha de base — a6_agencia: q3"
+  },
+  {
+   "id": "lb.componente.a6_agencia.max_du",
+   "valor": 255.0,
+   "unidade": "du",
+   "descricao": "Linha de base — a6_agencia: max"
+  },
+  {
+   "id": "lb.R-FIS-04.pct",
+   "valor": 54.5,
+   "unidade": "%",
+   "descricao": "Linha de base — R-FIS-04 aplicado a todos os relatórios (contrafactual)"
+  },
+  {
+   "id": "tobe.f1.conservador.vistoria_email.mediana_du",
+   "valor": 33.0,
+   "unidade": "du",
+   "descricao": "Fase 1, conservador — Vistoria → e-mail de envio à concessionária: mediana"
+  },
+  {
+   "id": "tobe.f1.conservador.vistoria_email.media_du",
+   "valor": 34.9,
+   "unidade": "du",
+   "descricao": "Fase 1, conservador — Vistoria → e-mail de envio à concessionária: média"
+  },
+  {
+   "id": "tobe.f1.conservador.vistoria_email.ganho_mediana_pct",
+   "valor": 46.8,
+   "unidade": "%",
+   "descricao": "Fase 1, conservador — Vistoria → e-mail de envio à concessionária: ganho da mediana sobre a linha de base"
+  },
+  {
+   "id": "tobe.f1.conservador.vistoria_aprovacao.mediana_du",
+   "valor": 32.0,
+   "unidade": "du",
+   "descricao": "Fase 1, conservador — Vistoria → 'De acordo' do Gerente: mediana"
+  },
+  {
+   "id": "tobe.f1.conservador.vistoria_aprovacao.media_du",
+   "valor": 32.5,
+   "unidade": "du",
+   "descricao": "Fase 1, conservador — Vistoria → 'De acordo' do Gerente: média"
+  },
+  {
+   "id": "tobe.f1.conservador.vistoria_aprovacao.ganho_mediana_pct",
+   "valor": 36.0,
+   "unidade": "%",
+   "descricao": "Fase 1, conservador — Vistoria → 'De acordo' do Gerente: ganho da mediana sobre a linha de base"
+  },
+  {
+   "id": "tobe.f1.conservador.ate_parecer.mediana_du",
+   "valor": 128.0,
+   "unidade": "du",
+   "descricao": "Fase 1, conservador — Vistoria → parecer (análise da resposta do relatório): mediana"
+  },
+  {
+   "id": "tobe.f1.conservador.ate_parecer.media_du",
+   "valor": 128.2,
+   "unidade": "du",
+   "descricao": "Fase 1, conservador — Vistoria → parecer (análise da resposta do relatório): média"
+  },
+  {
+   "id": "tobe.f1.conservador.ate_parecer.ganho_mediana_pct",
+   "valor": 50.0,
+   "unidade": "%",
+   "descricao": "Fase 1, conservador — Vistoria → parecer (análise da resposta do relatório): ganho da mediana sobre a linha de base"
+  },
+  {
+   "id": "tobe.f1.conservador.componente.a2_elaborar_relatorio.mediana_du",
+   "valor": 30.0,
+   "unidade": "du",
+   "descricao": "Fase 1, conservador — a2_elaborar_relatorio: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f1.conservador.componente.a3_revisar_aprovar.mediana_du",
+   "valor": 4.0,
+   "unidade": "du",
+   "descricao": "Fase 1, conservador — a3_revisar_aprovar: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f1.conservador.componente.a4_oficiar_concessionaria.mediana_du",
+   "valor": 1.0,
+   "unidade": "du",
+   "descricao": "Fase 1, conservador — a4_oficiar_concessionaria: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f1.conservador.componente.a6_agencia.mediana_du",
+   "valor": 60.0,
+   "unidade": "du",
+   "descricao": "Fase 1, conservador — a6_agencia: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f1.conservador.R-FIS-04.pct",
+   "valor": 54.5,
+   "unidade": "%",
+   "descricao": "Fase 1, conservador — R-FIS-04 aplicado a todos os relatórios"
+  },
+  {
+   "id": "tobe.f1.esperado.vistoria_email.mediana_du",
+   "valor": 28.0,
+   "unidade": "du",
+   "descricao": "Fase 1, esperado — Vistoria → e-mail de envio à concessionária: mediana"
+  },
+  {
+   "id": "tobe.f1.esperado.vistoria_email.media_du",
+   "valor": 28.7,
+   "unidade": "du",
+   "descricao": "Fase 1, esperado — Vistoria → e-mail de envio à concessionária: média"
+  },
+  {
+   "id": "tobe.f1.esperado.vistoria_email.ganho_mediana_pct",
+   "valor": 54.8,
+   "unidade": "%",
+   "descricao": "Fase 1, esperado — Vistoria → e-mail de envio à concessionária: ganho da mediana sobre a linha de base"
+  },
+  {
+   "id": "tobe.f1.esperado.vistoria_aprovacao.mediana_du",
+   "valor": 27.0,
+   "unidade": "du",
+   "descricao": "Fase 1, esperado — Vistoria → 'De acordo' do Gerente: mediana"
+  },
+  {
+   "id": "tobe.f1.esperado.vistoria_aprovacao.media_du",
+   "valor": 27.1,
+   "unidade": "du",
+   "descricao": "Fase 1, esperado — Vistoria → 'De acordo' do Gerente: média"
+  },
+  {
+   "id": "tobe.f1.esperado.vistoria_aprovacao.ganho_mediana_pct",
+   "valor": 46.0,
+   "unidade": "%",
+   "descricao": "Fase 1, esperado — Vistoria → 'De acordo' do Gerente: ganho da mediana sobre a linha de base"
+  },
+  {
+   "id": "tobe.f1.esperado.ate_parecer.mediana_du",
+   "valor": 103.0,
+   "unidade": "du",
+   "descricao": "Fase 1, esperado — Vistoria → parecer (análise da resposta do relatório): mediana"
+  },
+  {
+   "id": "tobe.f1.esperado.ate_parecer.media_du",
+   "valor": 102.6,
+   "unidade": "du",
+   "descricao": "Fase 1, esperado — Vistoria → parecer (análise da resposta do relatório): média"
+  },
+  {
+   "id": "tobe.f1.esperado.ate_parecer.ganho_mediana_pct",
+   "valor": 59.8,
+   "unidade": "%",
+   "descricao": "Fase 1, esperado — Vistoria → parecer (análise da resposta do relatório): ganho da mediana sobre a linha de base"
+  },
+  {
+   "id": "tobe.f1.esperado.componente.a2_elaborar_relatorio.mediana_du",
+   "valor": 25.0,
+   "unidade": "du",
+   "descricao": "Fase 1, esperado — a2_elaborar_relatorio: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f1.esperado.componente.a3_revisar_aprovar.mediana_du",
+   "valor": 4.0,
+   "unidade": "du",
+   "descricao": "Fase 1, esperado — a3_revisar_aprovar: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f1.esperado.componente.a4_oficiar_concessionaria.mediana_du",
+   "valor": 1.0,
+   "unidade": "du",
+   "descricao": "Fase 1, esperado — a4_oficiar_concessionaria: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f1.esperado.componente.a6_agencia.mediana_du",
+   "valor": 40.0,
+   "unidade": "du",
+   "descricao": "Fase 1, esperado — a6_agencia: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f1.esperado.R-FIS-04.pct",
+   "valor": 100.0,
+   "unidade": "%",
+   "descricao": "Fase 1, esperado — R-FIS-04 aplicado a todos os relatórios"
+  },
+  {
+   "id": "tobe.f1.otimista.vistoria_email.mediana_du",
+   "valor": 20.0,
+   "unidade": "du",
+   "descricao": "Fase 1, otimista — Vistoria → e-mail de envio à concessionária: mediana"
+  },
+  {
+   "id": "tobe.f1.otimista.vistoria_email.media_du",
+   "valor": 20.2,
+   "unidade": "du",
+   "descricao": "Fase 1, otimista — Vistoria → e-mail de envio à concessionária: média"
+  },
+  {
+   "id": "tobe.f1.otimista.vistoria_email.ganho_mediana_pct",
+   "valor": 67.7,
+   "unidade": "%",
+   "descricao": "Fase 1, otimista — Vistoria → e-mail de envio à concessionária: ganho da mediana sobre a linha de base"
+  },
+  {
+   "id": "tobe.f1.otimista.vistoria_aprovacao.mediana_du",
+   "valor": 21.0,
+   "unidade": "du",
+   "descricao": "Fase 1, otimista — Vistoria → 'De acordo' do Gerente: mediana"
+  },
+  {
+   "id": "tobe.f1.otimista.vistoria_aprovacao.media_du",
+   "valor": 20.5,
+   "unidade": "du",
+   "descricao": "Fase 1, otimista — Vistoria → 'De acordo' do Gerente: média"
+  },
+  {
+   "id": "tobe.f1.otimista.vistoria_aprovacao.ganho_mediana_pct",
+   "valor": 58.0,
+   "unidade": "%",
+   "descricao": "Fase 1, otimista — Vistoria → 'De acordo' do Gerente: ganho da mediana sobre a linha de base"
+  },
+  {
+   "id": "tobe.f1.otimista.ate_parecer.mediana_du",
+   "valor": 81.0,
+   "unidade": "du",
+   "descricao": "Fase 1, otimista — Vistoria → parecer (análise da resposta do relatório): mediana"
+  },
+  {
+   "id": "tobe.f1.otimista.ate_parecer.media_du",
+   "valor": 80.6,
+   "unidade": "du",
+   "descricao": "Fase 1, otimista — Vistoria → parecer (análise da resposta do relatório): média"
+  },
+  {
+   "id": "tobe.f1.otimista.ate_parecer.ganho_mediana_pct",
+   "valor": 68.4,
+   "unidade": "%",
+   "descricao": "Fase 1, otimista — Vistoria → parecer (análise da resposta do relatório): ganho da mediana sobre a linha de base"
+  },
+  {
+   "id": "tobe.f1.otimista.componente.a2_elaborar_relatorio.mediana_du",
+   "valor": 18.0,
+   "unidade": "du",
+   "descricao": "Fase 1, otimista — a2_elaborar_relatorio: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f1.otimista.componente.a3_revisar_aprovar.mediana_du",
+   "valor": 3.0,
+   "unidade": "du",
+   "descricao": "Fase 1, otimista — a3_revisar_aprovar: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f1.otimista.componente.a4_oficiar_concessionaria.mediana_du",
+   "valor": 0.0,
+   "unidade": "du",
+   "descricao": "Fase 1, otimista — a4_oficiar_concessionaria: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f1.otimista.componente.a6_agencia.mediana_du",
+   "valor": 25.0,
+   "unidade": "du",
+   "descricao": "Fase 1, otimista — a6_agencia: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f1.otimista.R-FIS-04.pct",
+   "valor": 100.0,
+   "unidade": "%",
+   "descricao": "Fase 1, otimista — R-FIS-04 aplicado a todos os relatórios"
+  },
+  {
+   "id": "tobe.f2.conservador.vistoria_email.mediana_du",
+   "valor": 28.5,
+   "unidade": "du",
+   "descricao": "Fase 2, conservador — Vistoria → e-mail de envio à concessionária: mediana"
+  },
+  {
+   "id": "tobe.f2.conservador.vistoria_email.media_du",
+   "valor": 30.4,
+   "unidade": "du",
+   "descricao": "Fase 2, conservador — Vistoria → e-mail de envio à concessionária: média"
+  },
+  {
+   "id": "tobe.f2.conservador.vistoria_email.ganho_mediana_pct",
+   "valor": 54.0,
+   "unidade": "%",
+   "descricao": "Fase 2, conservador — Vistoria → e-mail de envio à concessionária: ganho da mediana sobre a linha de base"
+  },
+  {
+   "id": "tobe.f2.conservador.vistoria_aprovacao.mediana_du",
+   "valor": 27.5,
+   "unidade": "du",
+   "descricao": "Fase 2, conservador — Vistoria → 'De acordo' do Gerente: mediana"
+  },
+  {
+   "id": "tobe.f2.conservador.vistoria_aprovacao.media_du",
+   "valor": 28.5,
+   "unidade": "du",
+   "descricao": "Fase 2, conservador — Vistoria → 'De acordo' do Gerente: média"
+  },
+  {
+   "id": "tobe.f2.conservador.vistoria_aprovacao.ganho_mediana_pct",
+   "valor": 45.0,
+   "unidade": "%",
+   "descricao": "Fase 2, conservador — Vistoria → 'De acordo' do Gerente: ganho da mediana sobre a linha de base"
+  },
+  {
+   "id": "tobe.f2.conservador.ate_parecer.mediana_du",
+   "valor": 103.5,
+   "unidade": "du",
+   "descricao": "Fase 2, conservador — Vistoria → parecer (análise da resposta do relatório): mediana"
+  },
+  {
+   "id": "tobe.f2.conservador.ate_parecer.media_du",
+   "valor": 104.2,
+   "unidade": "du",
+   "descricao": "Fase 2, conservador — Vistoria → parecer (análise da resposta do relatório): média"
+  },
+  {
+   "id": "tobe.f2.conservador.ate_parecer.ganho_mediana_pct",
+   "valor": 59.6,
+   "unidade": "%",
+   "descricao": "Fase 2, conservador — Vistoria → parecer (análise da resposta do relatório): ganho da mediana sobre a linha de base"
+  },
+  {
+   "id": "tobe.f2.conservador.componente.a2_elaborar_relatorio.mediana_du",
+   "valor": 25.5,
+   "unidade": "du",
+   "descricao": "Fase 2, conservador — a2_elaborar_relatorio: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f2.conservador.componente.a3_revisar_aprovar.mediana_du",
+   "valor": 4.0,
+   "unidade": "du",
+   "descricao": "Fase 2, conservador — a3_revisar_aprovar: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f2.conservador.componente.a4_oficiar_concessionaria.mediana_du",
+   "valor": 1.0,
+   "unidade": "du",
+   "descricao": "Fase 2, conservador — a4_oficiar_concessionaria: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f2.conservador.componente.a6_agencia.mediana_du",
+   "valor": 40.0,
+   "unidade": "du",
+   "descricao": "Fase 2, conservador — a6_agencia: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f2.conservador.R-FIS-04.pct",
+   "valor": 54.5,
+   "unidade": "%",
+   "descricao": "Fase 2, conservador — R-FIS-04 aplicado a todos os relatórios"
+  },
+  {
+   "id": "tobe.f2.esperado.vistoria_email.mediana_du",
+   "valor": 21.8,
+   "unidade": "du",
+   "descricao": "Fase 2, esperado — Vistoria → e-mail de envio à concessionária: mediana"
+  },
+  {
+   "id": "tobe.f2.esperado.vistoria_email.media_du",
+   "valor": 22.4,
+   "unidade": "du",
+   "descricao": "Fase 2, esperado — Vistoria → e-mail de envio à concessionária: média"
+  },
+  {
+   "id": "tobe.f2.esperado.vistoria_email.ganho_mediana_pct",
+   "valor": 64.8,
+   "unidade": "%",
+   "descricao": "Fase 2, esperado — Vistoria → e-mail de envio à concessionária: ganho da mediana sobre a linha de base"
+  },
+  {
+   "id": "tobe.f2.esperado.vistoria_aprovacao.mediana_du",
+   "valor": 20.8,
+   "unidade": "du",
+   "descricao": "Fase 2, esperado — Vistoria → 'De acordo' do Gerente: mediana"
+  },
+  {
+   "id": "tobe.f2.esperado.vistoria_aprovacao.media_du",
+   "valor": 21.2,
+   "unidade": "du",
+   "descricao": "Fase 2, esperado — Vistoria → 'De acordo' do Gerente: média"
+  },
+  {
+   "id": "tobe.f2.esperado.vistoria_aprovacao.ganho_mediana_pct",
+   "valor": 58.4,
+   "unidade": "%",
+   "descricao": "Fase 2, esperado — Vistoria → 'De acordo' do Gerente: ganho da mediana sobre a linha de base"
+  },
+  {
+   "id": "tobe.f2.esperado.ate_parecer.mediana_du",
+   "valor": 76.8,
+   "unidade": "du",
+   "descricao": "Fase 2, esperado — Vistoria → parecer (análise da resposta do relatório): mediana"
+  },
+  {
+   "id": "tobe.f2.esperado.ate_parecer.media_du",
+   "valor": 76.7,
+   "unidade": "du",
+   "descricao": "Fase 2, esperado — Vistoria → parecer (análise da resposta do relatório): média"
+  },
+  {
+   "id": "tobe.f2.esperado.ate_parecer.ganho_mediana_pct",
+   "valor": 70.0,
+   "unidade": "%",
+   "descricao": "Fase 2, esperado — Vistoria → parecer (análise da resposta do relatório): ganho da mediana sobre a linha de base"
+  },
+  {
+   "id": "tobe.f2.esperado.componente.a2_elaborar_relatorio.mediana_du",
+   "valor": 18.8,
+   "unidade": "du",
+   "descricao": "Fase 2, esperado — a2_elaborar_relatorio: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f2.esperado.componente.a3_revisar_aprovar.mediana_du",
+   "valor": 4.0,
+   "unidade": "du",
+   "descricao": "Fase 2, esperado — a3_revisar_aprovar: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f2.esperado.componente.a4_oficiar_concessionaria.mediana_du",
+   "valor": 1.0,
+   "unidade": "du",
+   "descricao": "Fase 2, esperado — a4_oficiar_concessionaria: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f2.esperado.componente.a6_agencia.mediana_du",
+   "valor": 20.0,
+   "unidade": "du",
+   "descricao": "Fase 2, esperado — a6_agencia: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f2.esperado.R-FIS-04.pct",
+   "valor": 100.0,
+   "unidade": "%",
+   "descricao": "Fase 2, esperado — R-FIS-04 aplicado a todos os relatórios"
+  },
+  {
+   "id": "tobe.f2.otimista.vistoria_email.mediana_du",
+   "valor": 13.7,
+   "unidade": "du",
+   "descricao": "Fase 2, otimista — Vistoria → e-mail de envio à concessionária: mediana"
+  },
+  {
+   "id": "tobe.f2.otimista.vistoria_email.media_du",
+   "valor": 13.9,
+   "unidade": "du",
+   "descricao": "Fase 2, otimista — Vistoria → e-mail de envio à concessionária: média"
+  },
+  {
+   "id": "tobe.f2.otimista.vistoria_email.ganho_mediana_pct",
+   "valor": 77.9,
+   "unidade": "%",
+   "descricao": "Fase 2, otimista — Vistoria → e-mail de envio à concessionária: ganho da mediana sobre a linha de base"
+  },
+  {
+   "id": "tobe.f2.otimista.vistoria_aprovacao.mediana_du",
+   "valor": 14.7,
+   "unidade": "du",
+   "descricao": "Fase 2, otimista — Vistoria → 'De acordo' do Gerente: mediana"
+  },
+  {
+   "id": "tobe.f2.otimista.vistoria_aprovacao.media_du",
+   "valor": 14.2,
+   "unidade": "du",
+   "descricao": "Fase 2, otimista — Vistoria → 'De acordo' do Gerente: média"
+  },
+  {
+   "id": "tobe.f2.otimista.vistoria_aprovacao.ganho_mediana_pct",
+   "valor": 70.6,
+   "unidade": "%",
+   "descricao": "Fase 2, otimista — Vistoria → 'De acordo' do Gerente: ganho da mediana sobre a linha de base"
+  },
+  {
+   "id": "tobe.f2.otimista.ate_parecer.mediana_du",
+   "valor": 61.7,
+   "unidade": "du",
+   "descricao": "Fase 2, otimista — Vistoria → parecer (análise da resposta do relatório): mediana"
+  },
+  {
+   "id": "tobe.f2.otimista.ate_parecer.media_du",
+   "valor": 61.3,
+   "unidade": "du",
+   "descricao": "Fase 2, otimista — Vistoria → parecer (análise da resposta do relatório): média"
+  },
+  {
+   "id": "tobe.f2.otimista.ate_parecer.ganho_mediana_pct",
+   "valor": 75.9,
+   "unidade": "%",
+   "descricao": "Fase 2, otimista — Vistoria → parecer (análise da resposta do relatório): ganho da mediana sobre a linha de base"
+  },
+  {
+   "id": "tobe.f2.otimista.componente.a2_elaborar_relatorio.mediana_du",
+   "valor": 11.7,
+   "unidade": "du",
+   "descricao": "Fase 2, otimista — a2_elaborar_relatorio: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f2.otimista.componente.a3_revisar_aprovar.mediana_du",
+   "valor": 3.0,
+   "unidade": "du",
+   "descricao": "Fase 2, otimista — a3_revisar_aprovar: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f2.otimista.componente.a4_oficiar_concessionaria.mediana_du",
+   "valor": 0.0,
+   "unidade": "du",
+   "descricao": "Fase 2, otimista — a4_oficiar_concessionaria: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f2.otimista.componente.a6_agencia.mediana_du",
+   "valor": 12.0,
+   "unidade": "du",
+   "descricao": "Fase 2, otimista — a6_agencia: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f2.otimista.R-FIS-04.pct",
+   "valor": 100.0,
+   "unidade": "%",
+   "descricao": "Fase 2, otimista — R-FIS-04 aplicado a todos os relatórios"
+  },
+  {
+   "id": "tobe.f3.conservador.vistoria_email.mediana_du",
+   "valor": 25.9,
+   "unidade": "du",
+   "descricao": "Fase 3, conservador — Vistoria → e-mail de envio à concessionária: mediana"
+  },
+  {
+   "id": "tobe.f3.conservador.vistoria_email.media_du",
+   "valor": 27.5,
+   "unidade": "du",
+   "descricao": "Fase 3, conservador — Vistoria → e-mail de envio à concessionária: média"
+  },
+  {
+   "id": "tobe.f3.conservador.vistoria_email.ganho_mediana_pct",
+   "valor": 58.2,
+   "unidade": "%",
+   "descricao": "Fase 3, conservador — Vistoria → e-mail de envio à concessionária: ganho da mediana sobre a linha de base"
+  },
+  {
+   "id": "tobe.f3.conservador.vistoria_aprovacao.mediana_du",
+   "valor": 24.9,
+   "unidade": "du",
+   "descricao": "Fase 3, conservador — Vistoria → 'De acordo' do Gerente: mediana"
+  },
+  {
+   "id": "tobe.f3.conservador.vistoria_aprovacao.media_du",
+   "valor": 26.2,
+   "unidade": "du",
+   "descricao": "Fase 3, conservador — Vistoria → 'De acordo' do Gerente: média"
+  },
+  {
+   "id": "tobe.f3.conservador.vistoria_aprovacao.ganho_mediana_pct",
+   "valor": 50.2,
+   "unidade": "%",
+   "descricao": "Fase 3, conservador — Vistoria → 'De acordo' do Gerente: ganho da mediana sobre a linha de base"
+  },
+  {
+   "id": "tobe.f3.conservador.ate_parecer.mediana_du",
+   "valor": 91.0,
+   "unidade": "du",
+   "descricao": "Fase 3, conservador — Vistoria → parecer (análise da resposta do relatório): mediana"
+  },
+  {
+   "id": "tobe.f3.conservador.ate_parecer.media_du",
+   "valor": 91.7,
+   "unidade": "du",
+   "descricao": "Fase 3, conservador — Vistoria → parecer (análise da resposta do relatório): média"
+  },
+  {
+   "id": "tobe.f3.conservador.ate_parecer.ganho_mediana_pct",
+   "valor": 64.5,
+   "unidade": "%",
+   "descricao": "Fase 3, conservador — Vistoria → parecer (análise da resposta do relatório): ganho da mediana sobre a linha de base"
+  },
+  {
+   "id": "tobe.f3.conservador.componente.a2_elaborar_relatorio.mediana_du",
+   "valor": 22.9,
+   "unidade": "du",
+   "descricao": "Fase 3, conservador — a2_elaborar_relatorio: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f3.conservador.componente.a3_revisar_aprovar.mediana_du",
+   "valor": 4.0,
+   "unidade": "du",
+   "descricao": "Fase 3, conservador — a3_revisar_aprovar: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f3.conservador.componente.a4_oficiar_concessionaria.mediana_du",
+   "valor": 1.0,
+   "unidade": "du",
+   "descricao": "Fase 3, conservador — a4_oficiar_concessionaria: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f3.conservador.componente.a6_agencia.mediana_du",
+   "valor": 30.0,
+   "unidade": "du",
+   "descricao": "Fase 3, conservador — a6_agencia: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f3.conservador.R-FIS-04.pct",
+   "valor": 54.5,
+   "unidade": "%",
+   "descricao": "Fase 3, conservador — R-FIS-04 aplicado a todos os relatórios"
+  },
+  {
+   "id": "tobe.f3.esperado.vistoria_email.mediana_du",
+   "valor": 17.0,
+   "unidade": "du",
+   "descricao": "Fase 3, esperado — Vistoria → e-mail de envio à concessionária: mediana"
+  },
+  {
+   "id": "tobe.f3.esperado.vistoria_email.media_du",
+   "valor": 17.6,
+   "unidade": "du",
+   "descricao": "Fase 3, esperado — Vistoria → e-mail de envio à concessionária: média"
+  },
+  {
+   "id": "tobe.f3.esperado.vistoria_email.ganho_mediana_pct",
+   "valor": 72.6,
+   "unidade": "%",
+   "descricao": "Fase 3, esperado — Vistoria → e-mail de envio à concessionária: ganho da mediana sobre a linha de base"
+  },
+  {
+   "id": "tobe.f3.esperado.vistoria_aprovacao.mediana_du",
+   "valor": 17.0,
+   "unidade": "du",
+   "descricao": "Fase 3, esperado — Vistoria → 'De acordo' do Gerente: mediana"
+  },
+  {
+   "id": "tobe.f3.esperado.vistoria_aprovacao.media_du",
+   "valor": 17.7,
+   "unidade": "du",
+   "descricao": "Fase 3, esperado — Vistoria → 'De acordo' do Gerente: média"
+  },
+  {
+   "id": "tobe.f3.esperado.vistoria_aprovacao.ganho_mediana_pct",
+   "valor": 66.0,
+   "unidade": "%",
+   "descricao": "Fase 3, esperado — Vistoria → 'De acordo' do Gerente: ganho da mediana sobre a linha de base"
+  },
+  {
+   "id": "tobe.f3.esperado.ate_parecer.mediana_du",
+   "valor": 67.0,
+   "unidade": "du",
+   "descricao": "Fase 3, esperado — Vistoria → parecer (análise da resposta do relatório): mediana"
+  },
+  {
+   "id": "tobe.f3.esperado.ate_parecer.media_du",
+   "valor": 67.7,
+   "unidade": "du",
+   "descricao": "Fase 3, esperado — Vistoria → parecer (análise da resposta do relatório): média"
+  },
+  {
+   "id": "tobe.f3.esperado.ate_parecer.ganho_mediana_pct",
+   "valor": 73.8,
+   "unidade": "%",
+   "descricao": "Fase 3, esperado — Vistoria → parecer (análise da resposta do relatório): ganho da mediana sobre a linha de base"
+  },
+  {
+   "id": "tobe.f3.esperado.componente.a2_elaborar_relatorio.mediana_du",
+   "valor": 15.0,
+   "unidade": "du",
+   "descricao": "Fase 3, esperado — a2_elaborar_relatorio: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f3.esperado.componente.a3_revisar_aprovar.mediana_du",
+   "valor": 4.0,
+   "unidade": "du",
+   "descricao": "Fase 3, esperado — a3_revisar_aprovar: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f3.esperado.componente.a4_oficiar_concessionaria.mediana_du",
+   "valor": 0.0,
+   "unidade": "du",
+   "descricao": "Fase 3, esperado — a4_oficiar_concessionaria: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f3.esperado.componente.a6_agencia.mediana_du",
+   "valor": 15.0,
+   "unidade": "du",
+   "descricao": "Fase 3, esperado — a6_agencia: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f3.esperado.R-FIS-04.pct",
+   "valor": 100.0,
+   "unidade": "%",
+   "descricao": "Fase 3, esperado — R-FIS-04 aplicado a todos os relatórios"
+  },
+  {
+   "id": "tobe.f3.otimista.vistoria_email.mediana_du",
+   "valor": 10.2,
+   "unidade": "du",
+   "descricao": "Fase 3, otimista — Vistoria → e-mail de envio à concessionária: mediana"
+  },
+  {
+   "id": "tobe.f3.otimista.vistoria_email.media_du",
+   "valor": 10.3,
+   "unidade": "du",
+   "descricao": "Fase 3, otimista — Vistoria → e-mail de envio à concessionária: média"
+  },
+  {
+   "id": "tobe.f3.otimista.vistoria_email.ganho_mediana_pct",
+   "valor": 83.5,
+   "unidade": "%",
+   "descricao": "Fase 3, otimista — Vistoria → e-mail de envio à concessionária: ganho da mediana sobre a linha de base"
+  },
+  {
+   "id": "tobe.f3.otimista.vistoria_aprovacao.mediana_du",
+   "valor": 11.2,
+   "unidade": "du",
+   "descricao": "Fase 3, otimista — Vistoria → 'De acordo' do Gerente: mediana"
+  },
+  {
+   "id": "tobe.f3.otimista.vistoria_aprovacao.media_du",
+   "valor": 10.7,
+   "unidade": "du",
+   "descricao": "Fase 3, otimista — Vistoria → 'De acordo' do Gerente: média"
+  },
+  {
+   "id": "tobe.f3.otimista.vistoria_aprovacao.ganho_mediana_pct",
+   "valor": 77.6,
+   "unidade": "%",
+   "descricao": "Fase 3, otimista — Vistoria → 'De acordo' do Gerente: ganho da mediana sobre a linha de base"
+  },
+  {
+   "id": "tobe.f3.otimista.ate_parecer.mediana_du",
+   "valor": 54.2,
+   "unidade": "du",
+   "descricao": "Fase 3, otimista — Vistoria → parecer (análise da resposta do relatório): mediana"
+  },
+  {
+   "id": "tobe.f3.otimista.ate_parecer.media_du",
+   "valor": 53.7,
+   "unidade": "du",
+   "descricao": "Fase 3, otimista — Vistoria → parecer (análise da resposta do relatório): média"
+  },
+  {
+   "id": "tobe.f3.otimista.ate_parecer.ganho_mediana_pct",
+   "valor": 78.8,
+   "unidade": "%",
+   "descricao": "Fase 3, otimista — Vistoria → parecer (análise da resposta do relatório): ganho da mediana sobre a linha de base"
+  },
+  {
+   "id": "tobe.f3.otimista.componente.a2_elaborar_relatorio.mediana_du",
+   "valor": 8.2,
+   "unidade": "du",
+   "descricao": "Fase 3, otimista — a2_elaborar_relatorio: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f3.otimista.componente.a3_revisar_aprovar.mediana_du",
+   "valor": 3.0,
+   "unidade": "du",
+   "descricao": "Fase 3, otimista — a3_revisar_aprovar: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f3.otimista.componente.a4_oficiar_concessionaria.mediana_du",
+   "valor": 0.0,
+   "unidade": "du",
+   "descricao": "Fase 3, otimista — a4_oficiar_concessionaria: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f3.otimista.componente.a6_agencia.mediana_du",
+   "valor": 8.0,
+   "unidade": "du",
+   "descricao": "Fase 3, otimista — a6_agencia: mediana entre os relatórios"
+  },
+  {
+   "id": "tobe.f3.otimista.R-FIS-04.pct",
+   "valor": 100.0,
+   "unidade": "%",
+   "descricao": "Fase 3, otimista — R-FIS-04 aplicado a todos os relatórios"
+  },
+  {
+   "id": "sens.M-FIS-01.vistoria_email_mediana_du",
+   "valor": 18.0,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-01 (vistoria_email_mediana_du)"
+  },
+  {
+   "id": "sens.M-FIS-01.ate_parecer_mediana_du",
+   "valor": 7.8,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-01 (ate_parecer_mediana_du)"
+  },
+  {
+   "id": "sens.M-FIS-01.ate_parecer_media_du",
+   "valor": 11.1,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-01 (ate_parecer_media_du)"
+  },
+  {
+   "id": "sens.M-FIS-01.vistoria_email_media_du",
+   "valor": 21.4,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-01 (vistoria_email_media_du)"
+  },
+  {
+   "id": "sens.M-FIS-02.vistoria_email_mediana_du",
+   "valor": 0.0,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-02 (vistoria_email_mediana_du)"
+  },
+  {
+   "id": "sens.M-FIS-02.ate_parecer_mediana_du",
+   "valor": 2.0,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-02 (ate_parecer_mediana_du)"
+  },
+  {
+   "id": "sens.M-FIS-02.ate_parecer_media_du",
+   "valor": 8.7,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-02 (ate_parecer_media_du)"
+  },
+  {
+   "id": "sens.M-FIS-02.vistoria_email_media_du",
+   "valor": 6.6,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-02 (vistoria_email_media_du)"
+  },
+  {
+   "id": "sens.M-FIS-07.vistoria_email_mediana_du",
+   "valor": 5.0,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-07 (vistoria_email_mediana_du)"
+  },
+  {
+   "id": "sens.M-FIS-07.ate_parecer_mediana_du",
+   "valor": 5.0,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-07 (ate_parecer_mediana_du)"
+  },
+  {
+   "id": "sens.M-FIS-07.ate_parecer_media_du",
+   "valor": 4.7,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-07 (ate_parecer_media_du)"
+  },
+  {
+   "id": "sens.M-FIS-07.vistoria_email_media_du",
+   "valor": 5.0,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-07 (vistoria_email_media_du)"
+  },
+  {
+   "id": "sens.M-FIS-15.vistoria_email_mediana_du",
+   "valor": 3.8,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-15 (vistoria_email_mediana_du)"
+  },
+  {
+   "id": "sens.M-FIS-15.ate_parecer_mediana_du",
+   "valor": 3.8,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-15 (ate_parecer_mediana_du)"
+  },
+  {
+   "id": "sens.M-FIS-15.ate_parecer_media_du",
+   "valor": 3.5,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-15 (ate_parecer_media_du)"
+  },
+  {
+   "id": "sens.M-FIS-15.vistoria_email_media_du",
+   "valor": 3.7,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-15 (vistoria_email_media_du)"
+  },
+  {
+   "id": "sens.M-FIS-14.vistoria_email_mediana_du",
+   "valor": 0.0,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-14 (vistoria_email_mediana_du)"
+  },
+  {
+   "id": "sens.M-FIS-14.ate_parecer_mediana_du",
+   "valor": 5.0,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-14 (ate_parecer_mediana_du)"
+  },
+  {
+   "id": "sens.M-FIS-14.ate_parecer_media_du",
+   "valor": 5.0,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-14 (ate_parecer_media_du)"
+  },
+  {
+   "id": "sens.M-FIS-14.vistoria_email_media_du",
+   "valor": 0.0,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-14 (vistoria_email_media_du)"
+  },
+  {
+   "id": "sens.M-FIS-13.vistoria_email_mediana_du",
+   "valor": 1.0,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-13 (vistoria_email_mediana_du)"
+  },
+  {
+   "id": "sens.M-FIS-13.ate_parecer_mediana_du",
+   "valor": 1.0,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-13 (ate_parecer_mediana_du)"
+  },
+  {
+   "id": "sens.M-FIS-13.ate_parecer_media_du",
+   "valor": 0.5,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-13 (ate_parecer_media_du)"
+  },
+  {
+   "id": "sens.M-FIS-13.vistoria_email_media_du",
+   "valor": 1.1,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-13 (vistoria_email_media_du)"
+  },
+  {
+   "id": "sens.M-FIS-03.vistoria_email_mediana_du",
+   "valor": 0.0,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-03 (vistoria_email_mediana_du)"
+  },
+  {
+   "id": "sens.M-FIS-03.ate_parecer_mediana_du",
+   "valor": 0.0,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-03 (ate_parecer_mediana_du)"
+  },
+  {
+   "id": "sens.M-FIS-03.ate_parecer_media_du",
+   "valor": 0.0,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-03 (ate_parecer_media_du)"
+  },
+  {
+   "id": "sens.M-FIS-03.vistoria_email_media_du",
+   "valor": 0.0,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-03 (vistoria_email_media_du)"
+  },
+  {
+   "id": "sens.M-FIS-04.vistoria_email_mediana_du",
+   "valor": 0.0,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-04 (vistoria_email_mediana_du)"
+  },
+  {
+   "id": "sens.M-FIS-04.ate_parecer_mediana_du",
+   "valor": 0.0,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-04 (ate_parecer_mediana_du)"
+  },
+  {
+   "id": "sens.M-FIS-04.ate_parecer_media_du",
+   "valor": 0.0,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-04 (ate_parecer_media_du)"
+  },
+  {
+   "id": "sens.M-FIS-04.vistoria_email_media_du",
+   "valor": 0.0,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-04 (vistoria_email_media_du)"
+  },
+  {
+   "id": "sens.M-FIS-08.vistoria_email_mediana_du",
+   "valor": 0.0,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-08 (vistoria_email_mediana_du)"
+  },
+  {
+   "id": "sens.M-FIS-08.ate_parecer_mediana_du",
+   "valor": 0.0,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-08 (ate_parecer_mediana_du)"
+  },
+  {
+   "id": "sens.M-FIS-08.ate_parecer_media_du",
+   "valor": 0.0,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-08 (ate_parecer_media_du)"
+  },
+  {
+   "id": "sens.M-FIS-08.vistoria_email_media_du",
+   "valor": 0.0,
+   "unidade": "du",
+   "descricao": "Sensibilidade — piora sem M-FIS-08 (vistoria_email_media_du)"
+  }
+ ]
+}

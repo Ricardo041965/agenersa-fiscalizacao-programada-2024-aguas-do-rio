@@ -1,0 +1,273 @@
+[
+  {
+    "n": 1,
+    "sei": "74336951",
+    "tipo": "Relatório de Fiscalização",
+    "numero": "052/2024",
+    "paginas": "39-47",
+    "data_documento": "10/05/2024",
+    "unidade_emissora": "AGENERSA/CASAN",
+    "funcao_autor": "Especialista em Regulação (CASAN)",
+    "destinatario": "Concessionária Águas do Rio (Bloco 1)",
+    "acao_no_processo": "vistoria_relatorio",
+    "resumo": "Relatório da fiscalização programada da EEE São Conrado (EEE49), operada pela Águas do Rio (Bloco 1) e vistoriada em 02/04/2024 pela equipe da Câmara de Saneamento. Das quatro motobombas, duas operavam e duas são reserva; os painéis e dispositivos de segurança foram considerados adequados. Foram constatados vazamento em registro de motobomba, falta de registros de manutenção, caçambas de resíduos expostas a céu aberto e assoreamento na captação. Foram exigidas as correções, com prazo de 30 dias para sanar as não conformidades.",
+    "fiscalizacao": {
+      "instalacao": "EEE São Conrado (EEE49)",
+      "tipo_instalacao": "EEE",
+      "concessionaria": "Águas do Rio",
+      "municipio_bairro": "Av. Niemeyer, s/nº, bairro de São Conrado, Rio de Janeiro",
+      "data_vistoria": "02/04/2024",
+      "nao_conformidades": [
+        "Vazamento no registro de um conjunto motobomba",
+        "Falta de registros in loco de manutenções realizadas",
+        "Caçambas com resíduos expostos a céu aberto e com infiltração",
+        "Assoreamento no ponto de captação do esgoto"
+      ],
+      "prazo_para_sanar": "no prazo de 30 (trinta)",
+      "elaborado_revisado_aprovado": "Elaborado: três Especialistas em Regulação (CASAN); revisado: Engenheiro (CASAN); De acordo: Gerente da Câmara de Saneamento"
+    },
+    "prazos": [
+      {
+        "trecho_literal": "no prazo de 30 (trinta)",
+        "quantidade": "30",
+        "unidade": "dias"
+      }
+    ],
+    "valores": [],
+    "normas_citadas": [
+      {
+        "norma": "Lei Federal nº 11.445/2007",
+        "trecho_literal": "Lei Federal nº 11.445/2007"
+      },
+      {
+        "norma": "Decreto Federal nº 7.217/2010",
+        "trecho_literal": "Decreto Federal nº 7.217/2010"
+      },
+      {
+        "norma": "Resoluções do CONAMA",
+        "trecho_literal": "Resoluções do CONAMA"
+      },
+      {
+        "norma": "Normas técnicas ABNT",
+        "trecho_literal": "normas técnicas da ABNT"
+      },
+      {
+        "norma": "Contrato de Concessão",
+        "trecho_literal": "Contrato de Concessão"
+      },
+      {
+        "norma": "Decreto nº 48.209/2022 (assinatura eletrônica SEI)",
+        "trecho_literal": "Decreto nº 48.209, de 19 de setembro de 2022"
+      }
+    ],
+    "decisoes_ou_pedidos": [
+      "Concessionária deve sanar as não conformidades constatadas no prazo de 30 dias",
+      "Providenciar registros in loco de manutenções realizadas",
+      "Providenciar o conserto do registro com vazamento",
+      "Providenciar cobertura adequada para os resíduos nas caçambas",
+      "Providenciar aumento na altura do barramento da captação",
+      "Providenciar o desassoreamento na área de chegada do esgoto bruto"
+    ],
+    "retrabalho_ou_problema": "Texto da conclusão traz 'Em 24/04/2024', divergente das assinaturas eletrônicas de 10/05/2024 a 24/05/2024. Não havia registros in loco de manutenções, e o anexo marca a ausência de registros das manutenções realizadas.",
+    "indicios_esforco": "Vistoria in loco com três especialistas e representante da concessionária; 11 fotos; checklist anexo de conservação, operação e manutenção; revisão por engenheiro e De acordo do gerente; relatório com cinco exigências."
+  },
+  {
+    "n": 2,
+    "sei": "74338948",
+    "tipo": "Relatório de Fiscalização",
+    "numero": "059/2024",
+    "paginas": "48-54",
+    "data_documento": "10/05/2024",
+    "unidade_emissora": "AGENERSA/CASAN",
+    "funcao_autor": "Especialista em Regulação (CASAN)",
+    "destinatario": "Concessionária Águas do Rio (Bloco 1)",
+    "acao_no_processo": "vistoria_relatorio",
+    "resumo": "Relatório da fiscalização programada da EEE 30 (Captação em Tempo Seco Cantagalo), na Lagoa, operada pela Águas do Rio (Bloco 1) e vistoriada em 04/04/2024. A estação está em área pública, sem iluminação própria nem cercamento, e as bombas submersas não puderam ser avaliadas visualmente. Foram apontadas seis não conformidades, entre elas ausência de identificação da unidade, de cópia de licença ambiental, de sinalização de risco elétrico e de dispositivo para gerador, além de tampa quebrada. A concessionária deve sanar as não conformidades, comprovar a destinação ambientalmente adequada dos resíduos e detalhar procedimentos para interrupção de energia e inundação, no prazo de 30 dias.",
+    "fiscalizacao": {
+      "instalacao": "EEE 30 - Captação em Tempo Seco Cantagalo",
+      "tipo_instalacao": "EEE",
+      "concessionaria": "Águas do Rio",
+      "municipio_bairro": "Av. Epitácio Pessoa, próximo ao nº 2330 - Lagoa, Rio de Janeiro",
+      "data_vistoria": "04/04/2024",
+      "nao_conformidades": [
+        "Falta de registros in loco de manutenções realizadas",
+        "Não havia identificação da unidade",
+        "Ausência de cópia de documento de licença ambiental",
+        "Ausência de sinalização do risco de choque elétrico",
+        "Ausência de dispositivo que permita ligação de gerador",
+        "Tampa quebrada"
+      ],
+      "prazo_para_sanar": "no prazo de 30 (trinta) dias",
+      "elaborado_revisado_aprovado": "Elaborado: dois Especialistas em Regulação (CASAN); revisado: Engenheiro (CASAN); De acordo: Gerente da Câmara de Saneamento"
+    },
+    "prazos": [
+      {
+        "trecho_literal": "no prazo de 30 (trinta) dias",
+        "quantidade": "30",
+        "unidade": "dias"
+      }
+    ],
+    "valores": [],
+    "normas_citadas": [
+      {
+        "norma": "Lei Federal nº 11.445/2007",
+        "trecho_literal": "Lei Federal nº 11.445/2007"
+      },
+      {
+        "norma": "Decreto Federal nº 7.217/2010",
+        "trecho_literal": "Decreto Federal nº 7.217/2010"
+      },
+      {
+        "norma": "Resoluções do CONAMA",
+        "trecho_literal": "Resoluções do CONAMA"
+      },
+      {
+        "norma": "Normas técnicas ABNT",
+        "trecho_literal": "normas técnicas da ABNT"
+      },
+      {
+        "norma": "Decreto nº 48.209/2022 (assinatura eletrônica SEI)",
+        "trecho_literal": "Decreto nº 48.209, de 19 de setembro de 2022"
+      }
+    ],
+    "decisoes_ou_pedidos": [
+      "Concessionária deve sanar as não conformidades constatadas no prazo de 30 dias",
+      "Comprovar a destinação ambientalmente adequada dos resíduos sólidos da estação",
+      "Detalhar os procedimentos adotados em caso de interrupção do fornecimento de energia elétrica e em caso de inundação"
+    ],
+    "retrabalho_ou_problema": "Texto da conclusão traz 'Em 07/05/2024', divergente das assinaturas eletrônicas de 10/05/2024 a 24/05/2024. Conjuntos motobomba não avaliados por estarem submersos; contingência para inundação registrada como 'Sem informação'; estação sem identificação e sem registros de manutenção.",
+    "indicios_esforco": "Vistoria in loco; 7 fotos; checklist anexo; verificação de painel e tampas; revisão por engenheiro e De acordo do gerente."
+  },
+  {
+    "n": 3,
+    "sei": "75824232",
+    "tipo": "Relatório de Fiscalização",
+    "numero": "070/2024",
+    "paginas": "55-62",
+    "data_documento": "03/06/2024",
+    "unidade_emissora": "AGENERSA/CASAN",
+    "funcao_autor": "Especialista em Regulação (CASAN)",
+    "destinatario": "Concessionária Águas do Rio (Bloco 1)",
+    "acao_no_processo": "vistoria_relatorio",
+    "resumo": "Relatório da fiscalização periódica da EEE Aquarela do Brasil (EEE 96), no bairro de São Conrado, operada pela Águas do Rio (Bloco 1) e vistoriada em 02/04/2024. Segundo o operador, a unidade retomou funcionamento cerca de dois meses antes, e não possui identificação, acesso restrito, dispositivos de detecção de anormalidades, ligação para gerador ou extravasor. Foram listadas seis não conformidades, incluindo conservação precária, fiação inadequada no poço de sucção e ausência de prontuário de instalações elétricas e atestado de saúde ocupacional. Foram exigidas cinco providências no prazo de 30 dias.",
+    "fiscalizacao": {
+      "instalacao": "EEE Aquarela do Brasil (EEE 96)",
+      "tipo_instalacao": "EEE",
+      "concessionaria": "Águas do Rio",
+      "municipio_bairro": "São Conrado, Rio de Janeiro",
+      "data_vistoria": "02/04/2024",
+      "nao_conformidades": [
+        "Não verificada identificação da unidade",
+        "Estação em baixo estado de conservação e proteção",
+        "Sinalização pouco visível do adesivo de risco de choque elétrico no painel",
+        "Fiação disposta inadequadamente no poço de sucção",
+        "Falta de registros in loco de manutenções realizadas",
+        "Ausência de Prontuário de Instalações Elétricas, Atestado de Saúde Ocupacional e outros documentos"
+      ],
+      "prazo_para_sanar": "de 30 (trinta) dias",
+      "elaborado_revisado_aprovado": "Elaborado: três Especialistas em Regulação (CASAN); revisado: Engenheiro (CASAN); De acordo: Gerente da Câmara de Saneamento"
+    },
+    "prazos": [
+      {
+        "trecho_literal": "de 30 (trinta) dias",
+        "quantidade": "30",
+        "unidade": "dias"
+      }
+    ],
+    "valores": [],
+    "normas_citadas": [
+      {
+        "norma": "Lei Federal nº 11.445/2007",
+        "trecho_literal": "Lei Federal nº 11.445/2007"
+      },
+      {
+        "norma": "Decreto Federal nº 7.217/2010",
+        "trecho_literal": "Decreto Federal nº 7.217/2010"
+      },
+      {
+        "norma": "Normas técnicas ABNT",
+        "trecho_literal": "normativas técnicas da ABNT"
+      },
+      {
+        "norma": "Decreto nº 48.209/2022 (assinatura eletrônica SEI)",
+        "trecho_literal": "Decreto nº 48.209, de 19 de setembro de 2022"
+      }
+    ],
+    "decisoes_ou_pedidos": [
+      "Providenciar a identificação da unidade",
+      "Providenciar a conservação e proteção do local, incluindo a renovação da sinalização de choque elétrico no painel",
+      "Providenciar adequação da fiação elétrica no poço de sucção",
+      "Providenciar registros in loco de manutenções realizadas",
+      "Providenciar o Prontuário de Instalações Elétricas, Atestado de Saúde Ocupacional e outros documentos"
+    ],
+    "retrabalho_ou_problema": "Texto da conclusão traz 'Em 18/04/2024', divergente das assinaturas eletrônicas de 04/06/2024 a 10/06/2024. Bombas não avaliadas por estarem submersas; extravasor não identificado; não havia registros in loco de manutenções realizadas.",
+    "indicios_esforco": "Vistoria in loco; 7 fotos; checklist anexo; verificação de documentação administrativa e de segurança do trabalho; revisão por engenheiro e De acordo do gerente."
+  },
+  {
+    "n": 4,
+    "sei": "75824539",
+    "tipo": "Relatório de Fiscalização",
+    "numero": "073/2024",
+    "paginas": "63-75",
+    "data_documento": "03/06/2024",
+    "unidade_emissora": "AGENERSA/CASAN",
+    "funcao_autor": "Especialista em Regulação (CASAN)",
+    "destinatario": "Concessionária Águas do Rio (Bloco 01)",
+    "acao_no_processo": "vistoria_relatorio",
+    "resumo": "Relatório da fiscalização programada da Estação Elevatória de Esgotos Parafuso, em Copacabana, operada pela Águas do Rio (Bloco 01) e vistoriada em 10/04/2024 para verificar funcionamento e conservação. Três das quatro motobombas operam, totalizando 450 cv, e a equipe considerou a unidade em bom estado geral de conservação e operação. Foram apontadas não conformidades de iluminação, instalação elétrica fora da norma, extintor mal instalado, ferrugem em equipamentos e canaletas e tampa do painel corroídas. A concessionária informou obra de recuperação estrutural da laje das câmaras, iniciada em março/2024, e deve apresentar cronogramas físicos em 30 dias.",
+    "fiscalizacao": {
+      "instalacao": "EEE Parafuso",
+      "tipo_instalacao": "EEE",
+      "concessionaria": "Águas do Rio",
+      "municipio_bairro": "Av. Atlântica, entre as Ruas Sá Ferreira e Almirante Gonçalves, Copacabana, Rio de Janeiro",
+      "data_vistoria": "10/04/2024",
+      "nao_conformidades": [
+        "Iluminação artificial inadequada",
+        "Parte da instalação elétrica fora da norma (cabos no chão, fios fora de eletrodutos, caixas de passagem sem tampa)",
+        "Extintor de incêndio em local sem identificação e indevidamente instalado",
+        "Falta de manutenção em equipamento (ferrugem)",
+        "Canaletas porta-fios elétricos enferrujadas",
+        "Tampa do painel de controle sem manutenção (enferrujada)"
+      ],
+      "prazo_para_sanar": "no prazo de 30 dias",
+      "elaborado_revisado_aprovado": "Elaborado: Engenheiro (CASAN) e dois Especialistas em Regulação (CASAN); revisado: Engenheiro (CASAN); De acordo: Gerente da Câmara de Saneamento"
+    },
+    "prazos": [
+      {
+        "trecho_literal": "no prazo de 30 dias",
+        "quantidade": "30",
+        "unidade": "dias"
+      },
+      {
+        "trecho_literal": "no prazo de 30 dias",
+        "quantidade": "30",
+        "unidade": "dias"
+      }
+    ],
+    "valores": [],
+    "normas_citadas": [
+      {
+        "norma": "Lei Federal nº 11.445/2007",
+        "trecho_literal": "Lei Federal nº 11.445/2007"
+      },
+      {
+        "norma": "Decreto Federal nº 7.217/2010",
+        "trecho_literal": "Decreto Federal nº 7.217/2010"
+      },
+      {
+        "norma": "Resoluções do CONAMA",
+        "trecho_literal": "Resoluções do CONAMA"
+      },
+      {
+        "norma": "Decreto nº 48.209/2022 (assinatura eletrônica SEI)",
+        "trecho_literal": "Decreto nº 48.209, de 19 de setembro de 2022"
+      }
+    ],
+    "decisoes_ou_pedidos": [
+      "Apresentar cronograma físico das melhorias para eliminar as não conformidades no prazo de 30 dias",
+      "Apresentar cronograma físico das obras estruturais de construção da nova laje de cobertura/teto das câmaras, com impermeabilização e proteção anticorrosiva, no prazo de 30 dias"
+    ],
+    "retrabalho_ou_problema": "Obra de recuperação estrutural da laje das câmaras em andamento desde março/2024, com calçada sobre a laje isolada por risco de afundamento. Texto da conclusão traz 'Em 10/05/2024', divergente das assinaturas eletrônicas de 03/06/2024 a 10/06/2024. Não consta resposta da concessionária aos cronogramas no texto.",
+    "indicios_esforco": "Vistoria in loco com medição de potência por plaquetas; 22 fotos numeradas; checklist anexo; registro de informações técnicas fornecidas pela concessionária; revisão por engenheiro e De acordo do gerente."
+  }
+]
