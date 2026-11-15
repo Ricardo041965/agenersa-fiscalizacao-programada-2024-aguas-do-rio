@@ -53,6 +53,14 @@ python scripts/priorizacao_fis.py
 
 Geradores executados uma vez (registro do que foi feito): `montar_normas_fis.py` (normas_FIS.json) e `benchmark_*_fis.py` (benchmarking). O BPMN AS-IS e o TO-BE saem de `gerar_bpmn.py --modelos <pasta> --visualizador <pasta>` do repositório, rodado de `mapeamento-processos-sei/scripts`.
 
+## Relatório gerencial
+
+`relatorio/Relatorio_Mapeamento_Fiscalizacoes_2024.pdf`: síntese para a gestão (AS-IS com diagrama, gargalo, conformidade, benchmarking, TO-BE com diagrama, simulação, metas, priorização e pendências). Números lidos dos arquivos de `mapeamento/`. Para refazer (precisa de rede para o visualizador BPMN):
+
+```bash
+python scripts/gerar_relatorio_pdf.py
+```
+
 ## Limites que valem para tudo
 
 - **Recorte do processo.** O PDF traz 23 relatórios com texto, mas o Parecer CASAN 250/2025 lista 42; as respostas
