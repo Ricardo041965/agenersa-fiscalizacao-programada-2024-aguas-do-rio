@@ -9,17 +9,19 @@ O processo é do mesmo tipo que o **P06 – Fiscalização técnica de campo** d
 permite comparar o caso com a coorte P06 em todas as etapas.
 
 Fonte: o PDF exportado do SEI (233 páginas, 34 documentos). `texto/` contém nomes e e-mails de pessoas e **não vai
-para o git** (`.gitignore`). Para refazer, extraia de novo o texto do PDF (PyMuPDF, uma marca `===== PÁGINA N =====`
+para o git** (`.gitignore`). Para refazer, extraia de novo o texto do PDF em `fonte/` (PyMuPDF, uma marca `===== PÁGINA N =====`
 por página) em `texto/processo_completo.txt`.
 
 ## Pastas, na ordem do trabalho
 
 | Pasta | O que tem | Etapa do método |
 |---|---|---|
+| `fonte/` | PDF integral exportado do SEI (fonte única do mapeamento; contém nomes e e-mails, **fora do git**) | Coleta |
 | `texto/` | Texto integral extraído do PDF, índice dos 34 documentos e o texto dividido em 6 partes | Coleta (adaptada: PDF no lugar da Pesquisa Pública) |
 | `fichas/` | Uma ficha por documento: data, unidade, função, ação, instalação fiscalizada, não conformidades, prazos e normas em trecho literal | Conteúdo e esforço (fase 1) |
 | `scripts/` | `fatos_fis.py` (linha do tempo e intervalos), `casos_fis.py` (um caso por relatório), `conformidade_fis.py`, `verificar_trechos_fis.py`, `validar_avaliacao_fis.py`, `simular_tobe_fis.py`, `priorizacao_fis.py` | Etapas determinísticas |
 | `mapeamento/` | `fatos_FIS.json`, `linha_do_tempo_FIS.json`, `casos_FIS.*`, `evidencias_FIS.md`, `modelo_FIS.json` e `bpmn/` (AS-IS), `vinculos_FIS.json`, `avaliacao_FIS.json`, `normas_FIS.json`, `conformidade_FIS.*`, `benchmark_FIS.json` e `BENCHMARKING_FIS.md`, `melhorias_FIS.json`, `controles_FIS.json`, `modelo_tobe_FIS.json` e `bpmn_tobe/` (TO-BE), `priorizacao_FIS.md`, **`TOBE_FIS.md`** (relatório legível) | Fases 1 a 4 do mapeamento |
+| `relatorio/` | Relatório gerencial em PDF e o HTML usado para imprimi-lo (`scripts/gerar_relatorio_pdf.py`) | Comunicação à gestão |
 
 ## Como refazer (a partir desta pasta)
 
